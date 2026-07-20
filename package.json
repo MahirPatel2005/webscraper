@@ -1,0 +1,22 @@
+{
+  "name": "propnex-to-wix-sync",
+  "version": "1.0.0",
+  "description": "Scrapes PropNex listings daily and syncs them to a Wix Data/CMS collection, marking delisted/sold properties automatically",
+  "main": "src/scheduler.js",
+  "scripts": {
+    "start": "node src/scheduler.js",
+    "run-once": "node -e \"require('./src/scraper').runOnce().then(()=>process.exit(0))\"",
+    "clear-cache": "echo '{}' > data/processed.json && rm -f data/browser_session/SingletonLock && echo 'Cache + lock cleared ✓'"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.5",
+    "node-cron": "^3.0.3",
+    "puppeteer": "^23.6.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "winston": "^3.14.2"
+  }
+}
