@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node src/scheduler.js",
     "run-once": "node -e \"require('./src/scraper').runOnce().then(()=>process.exit(0))\"",
-    "clear-cache": "echo '{}' > data/processed.json && rm -f data/browser_session/SingletonLock && echo 'Cache + lock cleared ✓'"
+    "clear-cache": "echo '{}' > data/processed.json && rm -f data/browser_session/SingletonLock && echo 'Cache + lock cleared ✓'",
+    "dev": "npm --prefix frontend run dev"
   },
   "license": "UNLICENSED",
   "dependencies": {

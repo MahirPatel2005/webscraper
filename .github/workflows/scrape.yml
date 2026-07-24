@@ -1,0 +1,52 @@
+name: Daily Property Scraper
+
+on:
+  schedule:
+    # Run daily at 3:00 AM UTC (11:00 AM Singapore Time)
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+    # Allows manual trigger via the GitHub Actions tab
+
+permissions:
+  contents: write # Required to push commits back to the repo
+
+jobs:
+  scrape-and-sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Scraper
+        run: npm run run-once
+        env:
+          HEADLESS: 'true'
+          WIX_SYNC_ENABLED: ${{ secrets.WIX_SYNC_ENABLED || 'false' }}
+          WIX_SITE_ID: ${{ secrets.WIX_SITE_ID }}
+          WIX_API_KEY: ${{ secrets.WIX_API_KEY }}
+          WIX_DATA_COLLECTION_ID: ${{ secrets.WIX_DATA_COLLECTION_ID || 'Properties' }}
+
+      - name: Commit and Push Updated Listings
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Only commit if there are actual data changes
+          git add data/listings.json data/processed.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: automated daily listing scrape update"
+            git push origin main
+            echo "Listing files updated and pushed successfully."
+          else
+            echo "No listing changes detected today."
+          fi
