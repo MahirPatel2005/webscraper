@@ -45,13 +45,3 @@ Your repository now contains a workflow (`.github/workflows/scrape.yml`) that au
 3. Select the **Daily Property Scraper** workflow on the left sidebar.
 4. Click the **Run workflow** dropdown on the right side and click the green **Run workflow** button.
 5. Once completed, it will commit any updated property data back to `main`, which automatically triggers a new Vercel/Netlify redeployment.
-
-### Configuring Secrets (Optional: for Wix Sync)
-If you have `WIX_SYNC_ENABLED` active to sync properties directly to your Wix CMS collection, you need to add your API credentials as secure variables on GitHub:
-1. Go to your GitHub repository > **Settings** tab.
-2. Scroll down on the left sidebar to **Secrets and variables** > click **Actions**.
-3. Click **New repository secret** to add each of the following:
-   - Name: `WIX_SYNC_ENABLED` | Value: `true`
-   - Name: `WIX_SITE_ID` | Value: *Your site ID UUID*
-   - Name: `WIX_API_KEY` | Value: *Your Wix API key token*
-   - Name: `WIX_DATA_COLLECTION_ID` | Value: `Properties` (or your custom Wix collection ID)

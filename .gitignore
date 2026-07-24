@@ -1,6 +1,8 @@
  /.env
 node_modules
-data/
+data/*
+!data/listings.json
+!data/processed.json
 logs/
 .DS_Store
 .env

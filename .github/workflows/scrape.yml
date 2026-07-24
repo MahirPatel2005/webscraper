@@ -31,10 +31,6 @@ jobs:
         run: npm run run-once
         env:
           HEADLESS: 'true'
-          WIX_SYNC_ENABLED: ${{ secrets.WIX_SYNC_ENABLED || 'false' }}
-          WIX_SITE_ID: ${{ secrets.WIX_SITE_ID }}
-          WIX_API_KEY: ${{ secrets.WIX_API_KEY }}
-          WIX_DATA_COLLECTION_ID: ${{ secrets.WIX_DATA_COLLECTION_ID || 'Properties' }}
 
       - name: Commit and Push Updated Listings
         run: |
@@ -42,7 +38,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
           # Only commit if there are actual data changes
-          git add data/listings.json data/processed.json
+          git add -f data/listings.json data/processed.json
           if ! git diff --cached --quiet; then
             git commit -m "chore: automated daily listing scrape update"
             git push origin main
