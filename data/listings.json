@@ -232,7 +232,7 @@
       "Outdoor Fitness"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -247,9 +247,9 @@
     "baths": null,
     "floorAreaSqft": "646 - 1496",
     "price": null,
-    "psf": null,
+    "psf": 2357,
     "topYear": "2029",
-    "unitsSoldPercent": 0,
+    "unitsSoldPercent": 53.5,
     "tenure": "99 years",
     "totalUnits": 499,
     "developer": "Kingsford Lentor Project Pte Ltd",
@@ -435,7 +435,7 @@
       "Tennis Court"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -657,7 +657,7 @@
       "Wifi at common areas"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -979,7 +979,7 @@
       "Water Feature"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -1092,7 +1092,7 @@
       "Sky Grill"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -1330,7 +1330,7 @@
       "Accessible\n     Changing Room"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -1362,39 +1362,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
-    "delistedAt": null
-  },
-  {
-    "id": "duet-@-emily",
-    "slug": "duet-@-emily",
-    "url": "https://www.edgeprop.sg/new-launches/duet-@-emily",
-    "title": "Duet @ Emily",
-    "address": "D09 Singapore",
-    "district": "D09",
-    "propertyType": "Apartment",
-    "beds": null,
-    "baths": null,
-    "floorAreaSqft": null,
-    "price": null,
-    "psf": null,
-    "topYear": "2026",
-    "unitsSoldPercent": 0,
-    "tenure": "",
-    "totalUnits": 20,
-    "developer": "ZACD Property Pte Ltd",
-    "agentName": "",
-    "agentLicense": "",
-    "phone": "",
-    "image": "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg",
-    "images": [
-      "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg"
-    ],
-    "agentPhoto": "",
-    "layouts": [],
-    "facilities": [],
-    "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -1426,7 +1394,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -1458,7 +1426,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -1490,7 +1458,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -1522,7 +1490,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -1554,7 +1522,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -1586,7 +1554,39 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
+    "delistedAt": null
+  },
+  {
+    "id": "duet-@-emily",
+    "slug": "duet-@-emily",
+    "url": "https://www.edgeprop.sg/new-launches/duet-@-emily",
+    "title": "Duet @ Emily",
+    "address": "D09 Singapore",
+    "district": "D09",
+    "propertyType": "Apartment",
+    "beds": null,
+    "baths": null,
+    "floorAreaSqft": null,
+    "price": null,
+    "psf": 2559,
+    "topYear": "2026",
+    "unitsSoldPercent": 10,
+    "tenure": "",
+    "totalUnits": 20,
+    "developer": "ZACD Property Pte Ltd",
+    "agentName": "",
+    "agentLicense": "",
+    "phone": "",
+    "image": "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg",
+    "images": [
+      "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg"
+    ],
+    "agentPhoto": "",
+    "layouts": [],
+    "facilities": [],
+    "status": "active",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -1601,9 +1601,9 @@
     "baths": null,
     "floorAreaSqft": "646 - 2916",
     "price": null,
-    "psf": 2474,
+    "psf": 2476,
     "topYear": "2029",
-    "unitsSoldPercent": 67.6,
+    "unitsSoldPercent": 67,
     "tenure": "99 years",
     "totalUnits": 327,
     "developer": "Media Circle Alpha Development Pte Ltd Jointly developed by Qingjian Realty (South Pacific) Group Pte Ltd, Forsea Holdings, CYZ Land Pte. Ltd., Jianan Capital.",
@@ -1736,7 +1736,7 @@
       "Washrooms"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -1753,7 +1753,7 @@
     "price": null,
     "psf": 2869,
     "topYear": "",
-    "unitsSoldPercent": 72.2,
+    "unitsSoldPercent": 73,
     "tenure": "99 years",
     "totalUnits": 515,
     "developer": "SingHaiyi Group Pte Ltd, Chuan Capital Pte Ltd",
@@ -1868,7 +1868,7 @@
       "Consumer Switchrooms"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -2010,7 +2010,7 @@
       "53. Accessible toilet"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -2027,7 +2027,7 @@
     "price": null,
     "psf": 2551,
     "topYear": "2030",
-    "unitsSoldPercent": 93.7,
+    "unitsSoldPercent": 93.5,
     "tenure": "99 years",
     "totalUnits": 588,
     "developer": "Hoi Hup Sunway Tampines Residential Pte Ltd & Hoi Hup Sunway Tampines Commercial Pte Ltd",
@@ -2217,7 +2217,7 @@
       "Water Tank (Roof)"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -2437,7 +2437,7 @@
       "Water Tank (Roof)"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -2452,9 +2452,9 @@
     "baths": null,
     "floorAreaSqft": "538 - 1830",
     "price": null,
-    "psf": 3243,
+    "psf": 3244,
     "topYear": "2030",
-    "unitsSoldPercent": 93.8,
+    "unitsSoldPercent": 94.1,
     "tenure": "99 years",
     "totalUnits": 455,
     "developer": "GuocoLand Ltd",
@@ -2610,7 +2610,7 @@
       "Riverside Trail"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -2625,9 +2625,9 @@
     "baths": null,
     "floorAreaSqft": null,
     "price": null,
-    "psf": 2502,
+    "psf": 2506,
     "topYear": "2027",
-    "unitsSoldPercent": 21,
+    "unitsSoldPercent": 21.5,
     "tenure": "99 years",
     "totalUnits": 186,
     "developer": "Singapore United Estates (Pte) Ltd",
@@ -2642,7 +2642,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -2831,7 +2831,7 @@
       "Yoga Deck"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -3002,7 +3002,7 @@
       "Lookout●       Altitude Swing"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -3112,7 +3112,7 @@
       "40th Floor Facilities at Roof Garden- Outdoor Reading Lounge- Yoga Lawn- Sunset Terrace- Scented Garden- Alfresco Dinning with BBQ- Juniper Lounge- Hammock Deck- Horizon Terrace- Stargazing Deck- Sky Dining Terrace with\n      BBQ"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -3127,9 +3127,9 @@
     "baths": null,
     "floorAreaSqft": "646 - 1485",
     "price": null,
-    "psf": 2159,
+    "psf": 2160,
     "topYear": "",
-    "unitsSoldPercent": 96.2,
+    "unitsSoldPercent": 96.7,
     "tenure": "99 years",
     "totalUnits": 399,
     "developer": "GuocoLand (Singapore) Pte. Ltd. (“GLS”), together with TID Residential Pte. Ltd. (“TIDR”) and Intrepid Investments Pte. Ltd. (“Intrepid”)",
@@ -3208,7 +3208,7 @@
       "Playground"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -3240,7 +3240,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -3257,7 +3257,7 @@
     "price": null,
     "psf": 2178,
     "topYear": "2031",
-    "unitsSoldPercent": 97.6,
+    "unitsSoldPercent": 97.7,
     "tenure": "99 years",
     "totalUnits": 941,
     "developer": "GuocoLand",
@@ -3365,7 +3365,7 @@
       "10 Sky\n     Terraces"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -3397,7 +3397,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -3492,7 +3492,7 @@
       "Sky Loft with bar facilities"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -3507,9 +3507,9 @@
     "baths": null,
     "floorAreaSqft": "527 - 4144",
     "price": null,
-    "psf": 2984,
+    "psf": 2985,
     "topYear": "2029",
-    "unitsSoldPercent": 71.8,
+    "unitsSoldPercent": 72,
     "tenure": "99 years",
     "totalUnits": 596,
     "developer": "Valerian Residential Pte Ltd",
@@ -3648,7 +3648,7 @@
       "Sky Observatory"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -3663,9 +3663,9 @@
     "baths": null,
     "floorAreaSqft": "431 - 1539",
     "price": null,
-    "psf": 3386,
+    "psf": 3385,
     "topYear": "",
-    "unitsSoldPercent": 59.5,
+    "unitsSoldPercent": 59.8,
     "tenure": "999 years",
     "totalUnits": 348,
     "developer": "Frasers Property Singapore",
@@ -3740,7 +3740,7 @@
     ],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -3911,7 +3911,7 @@
       "H10 Water Tank (Roof)"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -3943,7 +3943,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -3958,9 +3958,9 @@
     "baths": null,
     "floorAreaSqft": "635 - 1744",
     "price": null,
-    "psf": 3104,
+    "psf": 3111,
     "topYear": "2029",
-    "unitsSoldPercent": 79,
+    "unitsSoldPercent": 81,
     "tenure": "Freehold",
     "totalUnits": 105,
     "developer": "Far East Organization",
@@ -4074,7 +4074,7 @@
       "Room"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -4089,9 +4089,9 @@
     "baths": null,
     "floorAreaSqft": "436 - 1647",
     "price": null,
-    "psf": 2983,
+    "psf": 2985,
     "topYear": "2029",
-    "unitsSoldPercent": 69.3,
+    "unitsSoldPercent": 69.5,
     "tenure": "99 years",
     "totalUnits": 937,
     "developer": "Kingsford Marina Development Pte Ltd",
@@ -4223,7 +4223,7 @@
       "Sky Viewing Pod"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -4238,9 +4238,9 @@
     "baths": null,
     "floorAreaSqft": "570 - 2131",
     "price": null,
-    "psf": 2564,
+    "psf": 2565,
     "topYear": "2029",
-    "unitsSoldPercent": 87.4,
+    "unitsSoldPercent": 87.7,
     "tenure": "99 years",
     "totalUnits": 358,
     "developer": "Media Circle Development Pte Ltd",
@@ -4389,7 +4389,7 @@
       "Sky Lawn"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -4613,7 +4613,7 @@
       "Jogging Trail"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -4690,7 +4690,7 @@
       "Yoga lawn"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -4705,9 +4705,9 @@
     "baths": null,
     "floorAreaSqft": "635 - 8816",
     "price": null,
-    "psf": 2840,
+    "psf": 2841,
     "topYear": "2029",
-    "unitsSoldPercent": 36.7,
+    "unitsSoldPercent": 37.2,
     "tenure": "99 years",
     "totalUnits": 188,
     "developer": "GMC Property Pte. Ltd.",
@@ -4795,39 +4795,7 @@
       "Level 3 Kid’s Splash"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
-    "delistedAt": null
-  },
-  {
-    "id": "elta",
-    "slug": "elta",
-    "url": "https://www.edgeprop.sg/new-launches/elta",
-    "title": "ELTA",
-    "address": "D05 Singapore",
-    "district": "D05",
-    "propertyType": "Apartment",
-    "beds": null,
-    "baths": null,
-    "floorAreaSqft": null,
-    "price": null,
-    "psf": 2606,
-    "topYear": "2028",
-    "unitsSoldPercent": 82.4,
-    "tenure": "99 years",
-    "totalUnits": 501,
-    "developer": "HC Land (Clementi) Pte Ltd  A joint venture between MCL Land and CSC Land Group",
-    "agentName": "",
-    "agentLicense": "",
-    "phone": "",
-    "image": "https://sg.tepcdn.com/s3fs-public/1052583501759383907.jpg",
-    "images": [
-      "https://sg.tepcdn.com/s3fs-public/1052583501759383907.jpg"
-    ],
-    "agentPhoto": "",
-    "layouts": [],
-    "facilities": [],
-    "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -4990,7 +4958,39 @@
       "Guard House"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
+    "delistedAt": null
+  },
+  {
+    "id": "elta",
+    "slug": "elta",
+    "url": "https://www.edgeprop.sg/new-launches/elta",
+    "title": "ELTA",
+    "address": "D05 Singapore",
+    "district": "D05",
+    "propertyType": "Apartment",
+    "beds": null,
+    "baths": null,
+    "floorAreaSqft": null,
+    "price": null,
+    "psf": 2606,
+    "topYear": "2028",
+    "unitsSoldPercent": 82.4,
+    "tenure": "99 years",
+    "totalUnits": 501,
+    "developer": "HC Land (Clementi) Pte Ltd  A joint venture between MCL Land and CSC Land Group",
+    "agentName": "",
+    "agentLicense": "",
+    "phone": "",
+    "image": "https://sg.tepcdn.com/s3fs-public/1052583501759383907.jpg",
+    "images": [
+      "https://sg.tepcdn.com/s3fs-public/1052583501759383907.jpg"
+    ],
+    "agentPhoto": "",
+    "layouts": [],
+    "facilities": [],
+    "status": "active",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -5025,7 +5025,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -5165,7 +5165,7 @@
       "Spice Garden"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -5180,9 +5180,9 @@
     "baths": null,
     "floorAreaSqft": "624 - 1722",
     "price": null,
-    "psf": 2614,
+    "psf": 2616,
     "topYear": "",
-    "unitsSoldPercent": 99.6,
+    "unitsSoldPercent": 99.8,
     "tenure": "99 years",
     "totalUnits": 552,
     "developer": "Golden Ray Edge 3 Pte. Ltd. (JV between MCL Land & Sinarmas Land)",
@@ -5341,7 +5341,7 @@
       "Bicycle Parking"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -5425,7 +5425,7 @@
       "●       Water Tank (Roof)"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -5440,7 +5440,7 @@
     "baths": null,
     "floorAreaSqft": null,
     "price": null,
-    "psf": 2639,
+    "psf": 2640,
     "topYear": "2028",
     "unitsSoldPercent": 96.4,
     "tenure": "99 years",
@@ -5763,7 +5763,7 @@
       "Foyer Lobby"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -5857,178 +5857,7 @@
       "One SOcial"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
-    "delistedAt": null
-  },
-  {
-    "id": "union-square-residences",
-    "slug": "union-square-residences",
-    "url": "https://www.edgeprop.sg/new-launches/union-square-residences",
-    "title": "Union Square Residences",
-    "address": "D01 Singapore",
-    "district": "D01",
-    "propertyType": "Condo",
-    "beds": null,
-    "baths": null,
-    "floorAreaSqft": "463 - 4833",
-    "price": null,
-    "psf": 2864,
-    "topYear": "2029",
-    "unitsSoldPercent": 54.4,
-    "tenure": "99 years",
-    "totalUnits": 366,
-    "developer": "City Developments Limited",
-    "agentName": "",
-    "agentLicense": "",
-    "phone": "",
-    "image": "https://sg.tepcdn.com/s3fs-public/15173812021775106004.jpg",
-    "images": [
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/86224919/881722b6-e727-4641-b7f2-4546f9655809.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/86224926/9c0ea57b-dbb5-4df9-8d3a-b96b61288d07.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/86224931/16905f7a-dfb9-4b44-a07b-d934f164c816.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/86224936/172100dc-451e-411a-b064-0ed3d1c6271e.jpg"
-    ],
-    "agentPhoto": "",
-    "layouts": [
-      {
-        "desc": "1-Bedroom",
-        "type": "A1",
-        "sqft": "463",
-        "units": 30
-      },
-      {
-        "desc": "1-Bedroom + Study",
-        "type": "A2S, A3S",
-        "sqft": "506",
-        "units": 72
-      },
-      {
-        "desc": "2-Bedroom",
-        "type": "B1, B2, B3, B4,",
-        "sqft": "700 - 732",
-        "units": 134
-      },
-      {
-        "desc": "2-Bedroom + Study",
-        "type": "B5S",
-        "sqft": "743",
-        "units": 35
-      },
-      {
-        "desc": "3-Bedroom",
-        "type": "C1",
-        "sqft": "990",
-        "units": 28
-      },
-      {
-        "desc": "3-Bedroom Premium",
-        "type": "C2P",
-        "sqft": "1,066",
-        "units": 29
-      },
-      {
-        "desc": "4-Bedroom Premium – Private Lift",
-        "type": "D1P",
-        "sqft": "1,518",
-        "units": 35
-      },
-      {
-        "desc": "Sky Suite (5-Bedroom) – Private Lift",
-        "type": "-",
-        "sqft": "2,476",
-        "units": 2
-      },
-      {
-        "desc": "Penthouse (5-Bedroom)",
-        "type": "-",
-        "sqft": "4,833",
-        "units": 1
-      }
-    ],
-    "facilities": [
-      "LEVEL",
-      "3 - SOCIAL VISTA ·",
-      "Lap",
-      "Pool ·",
-      "Aqua",
-      "Lounge ·",
-      "Pool",
-      "Deck ·",
-      "Aqua",
-      "Gym ·",
-      "Outdoor",
-      "Showers ·",
-      "Secret",
-      "Garden ·",
-      "Wellness",
-      "Pool ·",
-      "Gourmet",
-      "Pavilion ·",
-      "Wellness",
-      "Pod ·",
-      "Club",
-      "Social ·",
-      "Kids’",
-      "Club ·",
-      "Social",
-      "Lounge ·",
-      "Yoga",
-      "Studio ·",
-      "Co-working",
-      "Studio ·",
-      "Male",
-      "Changing Room ·",
-      "Male",
-      "Steam Room ·",
-      "Female",
-      "Changing Room ·",
-      "Female",
-      "Steam Room ·",
-      "Accessible",
-      "Toilet ·",
-      "Management",
-      "Office  LEVEL",
-      "34 - UNION VISTA ·",
-      "Aqua",
-      "Lounge ·",
-      "Sky",
-      "Pool ·",
-      "Pool",
-      "Deck ·",
-      "Club",
-      "Gourmet ·",
-      "Alfresco",
-      "Dining ·",
-      "Spa",
-      "Alcove ·",
-      "Outdoor",
-      "Showers ·",
-      "Eco",
-      "Wall ·",
-      "Club",
-      "Union ·",
-      "Sky",
-      "Gym ·",
-      "Accessible",
-      "Toilet  7",
-      "RECREATIONAL PODS ·",
-      "Wellness",
-      "Pod (L3) ·",
-      "Fitness",
-      "Pod (L8) ·",
-      "Relaxation",
-      "Pod (L12) ·",
-      "Serenity",
-      "Pod (L16) ·",
-      "Cosy",
-      "Pod (L21) ·",
-      "Leisure",
-      "Pod (L25) ·",
-      "Vista",
-      "Pod (L29)"
-    ],
-    "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -6404,7 +6233,178 @@
       "Fire Engine Access"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
+    "delistedAt": null
+  },
+  {
+    "id": "union-square-residences",
+    "slug": "union-square-residences",
+    "url": "https://www.edgeprop.sg/new-launches/union-square-residences",
+    "title": "Union Square Residences",
+    "address": "D01 Singapore",
+    "district": "D01",
+    "propertyType": "Condo",
+    "beds": null,
+    "baths": null,
+    "floorAreaSqft": "463 - 4833",
+    "price": null,
+    "psf": 2861,
+    "topYear": "2029",
+    "unitsSoldPercent": 56.6,
+    "tenure": "99 years",
+    "totalUnits": 366,
+    "developer": "City Developments Limited",
+    "agentName": "",
+    "agentLicense": "",
+    "phone": "",
+    "image": "https://sg.tepcdn.com/s3fs-public/15173812021775106004.jpg",
+    "images": [
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/86224919/881722b6-e727-4641-b7f2-4546f9655809.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/86224926/9c0ea57b-dbb5-4df9-8d3a-b96b61288d07.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/86224931/16905f7a-dfb9-4b44-a07b-d934f164c816.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/86224936/172100dc-451e-411a-b064-0ed3d1c6271e.jpg"
+    ],
+    "agentPhoto": "",
+    "layouts": [
+      {
+        "desc": "1-Bedroom",
+        "type": "A1",
+        "sqft": "463",
+        "units": 30
+      },
+      {
+        "desc": "1-Bedroom + Study",
+        "type": "A2S, A3S",
+        "sqft": "506",
+        "units": 72
+      },
+      {
+        "desc": "2-Bedroom",
+        "type": "B1, B2, B3, B4,",
+        "sqft": "700 - 732",
+        "units": 134
+      },
+      {
+        "desc": "2-Bedroom + Study",
+        "type": "B5S",
+        "sqft": "743",
+        "units": 35
+      },
+      {
+        "desc": "3-Bedroom",
+        "type": "C1",
+        "sqft": "990",
+        "units": 28
+      },
+      {
+        "desc": "3-Bedroom Premium",
+        "type": "C2P",
+        "sqft": "1,066",
+        "units": 29
+      },
+      {
+        "desc": "4-Bedroom Premium – Private Lift",
+        "type": "D1P",
+        "sqft": "1,518",
+        "units": 35
+      },
+      {
+        "desc": "Sky Suite (5-Bedroom) – Private Lift",
+        "type": "-",
+        "sqft": "2,476",
+        "units": 2
+      },
+      {
+        "desc": "Penthouse (5-Bedroom)",
+        "type": "-",
+        "sqft": "4,833",
+        "units": 1
+      }
+    ],
+    "facilities": [
+      "LEVEL",
+      "3 - SOCIAL VISTA ·",
+      "Lap",
+      "Pool ·",
+      "Aqua",
+      "Lounge ·",
+      "Pool",
+      "Deck ·",
+      "Aqua",
+      "Gym ·",
+      "Outdoor",
+      "Showers ·",
+      "Secret",
+      "Garden ·",
+      "Wellness",
+      "Pool ·",
+      "Gourmet",
+      "Pavilion ·",
+      "Wellness",
+      "Pod ·",
+      "Club",
+      "Social ·",
+      "Kids’",
+      "Club ·",
+      "Social",
+      "Lounge ·",
+      "Yoga",
+      "Studio ·",
+      "Co-working",
+      "Studio ·",
+      "Male",
+      "Changing Room ·",
+      "Male",
+      "Steam Room ·",
+      "Female",
+      "Changing Room ·",
+      "Female",
+      "Steam Room ·",
+      "Accessible",
+      "Toilet ·",
+      "Management",
+      "Office  LEVEL",
+      "34 - UNION VISTA ·",
+      "Aqua",
+      "Lounge ·",
+      "Sky",
+      "Pool ·",
+      "Pool",
+      "Deck ·",
+      "Club",
+      "Gourmet ·",
+      "Alfresco",
+      "Dining ·",
+      "Spa",
+      "Alcove ·",
+      "Outdoor",
+      "Showers ·",
+      "Eco",
+      "Wall ·",
+      "Club",
+      "Union ·",
+      "Sky",
+      "Gym ·",
+      "Accessible",
+      "Toilet  7",
+      "RECREATIONAL PODS ·",
+      "Wellness",
+      "Pod (L3) ·",
+      "Fitness",
+      "Pod (L8) ·",
+      "Relaxation",
+      "Pod (L12) ·",
+      "Serenity",
+      "Pod (L16) ·",
+      "Cosy",
+      "Pod (L21) ·",
+      "Leisure",
+      "Pod (L25) ·",
+      "Vista",
+      "Pod (L29)"
+    ],
+    "status": "active",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -6479,7 +6479,7 @@
       "(1st & 2nd Storey)"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -6494,9 +6494,9 @@
     "baths": null,
     "floorAreaSqft": "517 - 1356",
     "price": null,
-    "psf": 2686,
+    "psf": 2699,
     "topYear": "2027",
-    "unitsSoldPercent": 71.5,
+    "unitsSoldPercent": 73.4,
     "tenure": "99 years",
     "totalUnits": 158,
     "developer": "Bukit Sembawang Estates Limited",
@@ -6613,7 +6613,7 @@
       "Range Nature Park"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -6761,7 +6761,7 @@
       "Alcove (1st Storey)"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -6795,7 +6795,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -6810,9 +6810,9 @@
     "baths": null,
     "floorAreaSqft": null,
     "price": null,
-    "psf": 5816,
+    "psf": 5832,
     "topYear": "2026",
-    "unitsSoldPercent": 3.4,
+    "unitsSoldPercent": 4.1,
     "tenure": "99 years",
     "totalUnits": 146,
     "developer": "Perennial Shenton Property Pte Ltd",
@@ -6827,7 +6827,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -6900,7 +6900,7 @@
       "Powder rooms"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -6934,7 +6934,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -7075,7 +7075,7 @@
       "Sky Lounge"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -7107,7 +7107,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -7227,7 +7227,7 @@
       "Tea Pavilion"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -7303,7 +7303,7 @@
       "Relaxtaion Deck (Level 2)"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -7320,7 +7320,7 @@
     "price": null,
     "psf": 2652,
     "topYear": "2027",
-    "unitsSoldPercent": 58.7,
+    "unitsSoldPercent": 60.5,
     "tenure": "Freehold",
     "totalUnits": 172,
     "developer": "KSH Ultra Unity Pte Ltd - A joint venture by KSH Holdings Ltd, SLB Development Ltd & H10 Holdings Pte Ltd (Ho Lee Group)",
@@ -7492,7 +7492,7 @@
       "Star Gazing Lawn"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -7602,7 +7602,7 @@
       "Reading Corner"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -7634,7 +7634,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -7718,7 +7718,7 @@
       "BBQ Pavilions"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -7733,9 +7733,9 @@
     "baths": null,
     "floorAreaSqft": "527 - 1485",
     "price": null,
-    "psf": 2385,
+    "psf": 2401,
     "topYear": "2028",
-    "unitsSoldPercent": 97.3,
+    "unitsSoldPercent": 97.6,
     "tenure": "99 years",
     "totalUnits": 368,
     "developer": "CapitaLand Development (Singapore)",
@@ -7825,7 +7825,7 @@
       "Social Lounge"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -7857,7 +7857,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -8058,7 +8058,7 @@
       "Rooftop1. Spa Pool2. Changing Room3. Social Lounge4. Outdoor Fitness5. Alfresco BBQ6. Social Lawn7. Rooftop Bar8. Rooftop Dining9. Reading LoungeLevel 110. Lap Pool11. Pool Deck12. Side Gate13. Guard HouseBasement 114. Lobby 115. Lobby 2"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -8170,7 +8170,7 @@
       "Sky Gym"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -8288,7 +8288,7 @@
       "Kid's Play Lawn"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -8395,7 +8395,7 @@
       "Floating Pavilion"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -8410,9 +8410,9 @@
     "baths": null,
     "floorAreaSqft": null,
     "price": null,
-    "psf": 2480,
+    "psf": 2477,
     "topYear": "2028",
-    "unitsSoldPercent": 90.6,
+    "unitsSoldPercent": 90.7,
     "tenure": "99 years",
     "totalUnits": 1008,
     "developer": "SingHaiyi Group Pte Ltd & CSC Land Group (Singapore) Pte Ltd",
@@ -8613,7 +8613,7 @@
       "Consumer Switch Room (Basement 1)"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -8750,7 +8750,7 @@
       "Alfresco seating alcove"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -8765,7 +8765,7 @@
     "baths": null,
     "floorAreaSqft": "441 - 1894",
     "price": null,
-    "psf": 2594,
+    "psf": 2626,
     "topYear": "2028",
     "unitsSoldPercent": 98.6,
     "tenure": "99 years",
@@ -8868,7 +8868,7 @@
       "1.\tFoliage Garden (Thematic)2.\tPalm Grove (Thematic) 3.\tHammock Garden4.\t600m Jogging Trail5.\tOutdoor Fitness 16.\tThe Perch Living Room7.\tPetunia Pavilion 8.\tPaloma Pavilion 9.\tAngelica Dining Pavilion with BBQ10.\tAnise Dining Pavilion with BBQ11.\tGrand Lawn12.\tDog Run13.\tPlay Lawn14.\tWater Cascade15.\tGarden Decks 1 (3 nos.)16.\tTerrace Deck17.\tTerrace Steps18.\tCommune Deck19.\t50m Lap Pool 20.\tAqua Gym with Spa21.\tChanging Room with Sauna22.\tOutdoor Fitness 223.\tAqua Cove 24.\tFamily Pool25.\tKids’ Pool 26.\tPlay Pool 27.\tSpa Pool 28.\tAdventure Playground29.\tThe Perch Reading Room30.\tThe Raintree Function Room 31.\tThe Alstonia Function Room 32.\tCasuarina Entertainment Rooms (2 nos)33.\tThe Willow Function Room34.\tPool Cabanas (4 nos.)35.\tShorea Cabanas (4 nos)36.\tLovage Dining Pavilion37.\tLemongrass Dining Pavilion38.\tLinden Dining Pavilion39.\tZen Decks 1 (2 nos)40.\tGarden Deck 241.\tTennis Court42.\tRecreational Court43.\tOutdoor Fitness 344.\tKids’ Play Corner45.\tSwing Garden46.\tRetreat Cabanas (2 nos.)47.\tCommunity Garden 148.\tSucculent Garden (Thematic)49.\tCreekside Cabanas (4 nos.)50.\tTarragon Dining Pavilion51.\tThyme Dining Pavilion52.\tTansy Dining Pavilion53.\tCommunity Garden 254.\tMeadow Garden (Thematic)55.\tVista Glades (2 nos.)56.\tZen Decks 2 (2 nos)57.\tVista Gym58.\tThe Tembusu Living Room59.\tThe Nest Work Pods (12 nos. in 3 clusters)60.\tCinnamon Dining Pavilion61.\tCayenne Dining Pavilion 62.\tCumin Dining Pavilion 63.\tChicory Dining Pavilion 64.\tCassia Dining Pavilion65.\tCanopy Deck66.\tSky Lawns (3 nos)67.\tSky Decks (2 nos) 68.\tSage Dining Pavilion69.\tSaffron Dining Pavilion70.\tSavory Dining Pavilion71.\tSorrel Dining Pavilion72.\tSafflower Dining Pavilion"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -8885,7 +8885,7 @@
     "price": null,
     "psf": 2760,
     "topYear": "2026",
-    "unitsSoldPercent": 96,
+    "unitsSoldPercent": 96.2,
     "tenure": "Freehold",
     "totalUnits": 816,
     "developer": "Hoi Hup Sunway Katong Pte Ltd",
@@ -9033,7 +9033,7 @@
       "NORTH CONTINUUM A. Arrival Zone NorthA1. Waterwall Drop-Off PlazaA2. WaterwallA3. Bicycle ParkingB. Play Zone NorthB1. Playground NorthB2. Playground DeckC. Wellness ZoneC1. Lap Pool (33.3m lap length x 7m lap width, 1.2m water depth) (approx. 270m2 incl. Jacuzzi Cove)C2. Jacuzzi CoveC3. Pool DeckC4. BBQ PavilionC5. Resting PavilionC6. Changing RoomC7. Accessible ToiletC8. Outdoor ShowerD. Heritage ZoneD1 Thiam Siew HouseD1.1 LibraryD1.2 Club RoomD1.3 FoyerD2. Thiam Siew House Front CourtD3. Front Court LawnD4. Water BowlD5. Roof Tiles Feature WallD6. BBQ PavilionD7. Accessible ToiletE. Fitness ZoneE1. Multipurpose LawnE2. Leisure Pool DeckE3. Leisure Pool (approx. 244m2 incl. Aqua Gym Pool & Jacuzzi Cove)E4. Aqua Gym PoolE5. Jacuzzi CoveE6. Aqua Gym Pool DeckE7. Outdoor ShowerE8. Outdoor GymE9. Yoga LawnF. Garden Zone NorthF1. Lobby GardenF2. Patterned GardenF3. Reflexology GardenG. Continuum BridgeG1. Resting PodG2. BridgeSOUTH CONTINUUMH. Arrival Zone SouthH1. Droplet Drop-Off PlazaH2. Droplet PoolH3. Bicycle ParkingJ. \"River Pool ZoneJ1. Cascading Children's & Toddler's Pool (0.5m & 0.3m water depth) (approx. 98m2)J2. Children's Pool DeckJ3. Outdoor ShowerJ4. Resting PavilionJ5. Lawn DeckJ6. Family Pool (0.9m water depth) (approx. 149m2 incl. Wellness Pool)J7. Wellness Pool (0.9m water depth)J7.1. Swan Neck CoveJ7.2. Hydrotherapy PocketJ7.3. Vichy Shower BedsJ8. Lounge DeckJ9. Resting PavilionJ10. Changing RoomJ11. Accessible ToiletK. \"Lake\" Pool ZoneK1. 50m Lap Pool (50m lap length x 5.5m lap width with approx. 276m2 area, 25m lap length x 3.0m lap width with approx. 95m2 area)K2. Pool DeckK3. Clubhouse DeckK4. Outdoor ShowerK5. South Side SocialK5.1. Glass House (1st Storey)K5.2. Sound Room (2nd Storey)K5.3. Social Room (2nd Storey)L. Play Zone SouthL1. Playground SouthL2. Water PlayL3. Outdoor ShowerL4. Lawn StepsL5. BBQ PavilionL6. Multipurpose Recreational CourtM. Garden Zone SouthM1. Sensory GardenM2. Lawn GardenM3. Reflexology GardenN. Other FacilitiesN1 GuardhouseN2 Pedestrian GateN3 Management OfficeN4 Generator SetN5 Bin Centre (Basement)N6 Electrical Substation (Basement)N7 MDF Room (Basement)N8 Consumer Switch Room (Basement)N9 Streetside Seating PodsNORTH CONTINUUMP. Sky Garden North (Blk 1 & 3)P1. Sky JacuzziP2. Outdoor LoungeP3. Grill DeckP3.1 Resting LoungeP4. Community GardenP5. Bridge DeckP6. Hot TubP7. Yoga LawnP8. Outdoor Fitness DeckP9. Reading DeckP10. Sky BarP11. Sky FitnessP12. Accessible ToiletP13. Outdoor ShowerQ. Sky Garden South (Blk 6 & 8)Q1. Grill DeckQ1.1 Resting LoungeQ2. Dining DeckQ3. Hammock DeckQ4. Swing DeckQ5. Bridge DeckQ6. Sky JacuzziQ7. Hot TubQ8. Yoga LawnQ9. Fitness DeckQ10. Garden DeckQ11. Sky ClubQ12. Sky GymQ13. Accessible ToiletQ14. Outdoor Shower"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -9177,7 +9177,7 @@
       "Yoga Deck"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -9194,7 +9194,7 @@
     "price": null,
     "psf": 2636,
     "topYear": "",
-    "unitsSoldPercent": 76.7,
+    "unitsSoldPercent": 77,
     "tenure": "Freehold",
     "totalUnits": 270,
     "developer": "Hoi Hup Sunway Kent Ridge Pte Ltd",
@@ -9374,7 +9374,7 @@
       "A. The Arrival\t\t\t\t\tA1. Arrival Plaza\t\t\t\t\t\tA2. Guard House with Green Roof\t\t\t\t\tA3. Drop Off Water FeatureB. The ValleyB1. Water Courtyard\t\t\t\t\t\tB2. Valley Pavilion\t\t\t\t\t\tB3. Reflecting Pool With Water Candles\t\t\t\t\tB4. Picnic Pasture\t\t\t\t\t\tB5. Reading Nook\t\t\t\t\t\tB6. Valley Lawn\t\t\t\t\t\tB7. Flower Garden Trail\t\t\t\t\t\tB8. Chill-Out Deck\t\t\t\t\t\tB9. Mini Putt\t\t\t\t\t\tB10. Wooded Trail\t\t\tC. The Sanctuary\t\t\t\t\t\tC1. Eco Pond\t\t\t\t\t\tC2. BBQ Pavilion\t\t\t\t\t\tC3. Teppanyaki Pavilion\t\t\t\t\t\tC4. Party Lawn\t\t\t\t\t\tC5. Exercise Lawn\t\t\t\t\t\tC6. Basketball Hoop\t\t\t\t\t\tC7. Outdoor Shower\t\t\t\t\t\tC8. Lounge Deck\t\t\t\t\t\tC9. Aqua Gym\t\t\t\t\t\tC10. Tranquility Pavilion\t\t\t\t\t\tC11. Jacuzzi Seats\t\t\t\t\t\tC12. Hot Tub\t\t\t\t\t\tC13. Jacuzzi Loungers\t\t\t\t\t\tC14. Yoga DeckD. The Alcove\t\t\t\t\t\tD1. Tea Pavilion\t\t\t\t\t\tD2. Embankment Slide\t\t\t\t\t\tD3. The Creek\t\t\t\t\t\tD4. Cascading Falls\t\t\t\t\t\tD5. The Play Cove\t\t\t\t\t\tD6. Function Room 2 (The Creek Room)\t\t\t\t\t\tD7. Social Terrace\tE. The Enclave\t\t\t\t\t\tE1. Terra House \t\t\t\t\t\tE1.1\tTerra Hub (2nd storey)\t\t\t\t\t\tE1.2\tGym (Fitness Studio) (2nd storey)\t\t\t\t\t\tE1.3\tFunction Room 1 (The Club Room)\t\t\t\t\t\tE1.4\tFunction Room 3 (Media Screening Room)\t\t\t\t\t\tE1.5\tToilet \t\t\t\t\t\tE1.6\tChanging Room \t\t\t\t\t\tE1.7\tManagement Office \t\t\t\t\t\tE1.8\tOutdoor Shower\t\t\t\t\t\tE2. Falling Water\t\t\t\t\t\tE3. Kids Pool\t\t\t\t\t\tE4. Splash Pad\t\t\t\t\t\tE5. Pool Deck\t\t\t\t\t\tE6. Poolside Cove\t\t\t\t\t\tE7. Aqua Lounge\t\t\t\t\t\tE8. 50M Lap Pool\t\t\t\t\t\tE9. Poolside Pavilion\t\t\t\t\t\tE10. Outdoor Shower\t\t\t\t\t\tE11. Sunning Lawn\t\t\t\t\t\tE12. Jacuzzi Pod\t\t\t\t\t\tE13. Coast Cabana\t\t\t\t\t\tE14. Pool Deck\t\t\t\t\t\tE15. Misting Poles\t\t\t\t\t\tE16. Lounge Pool\t\t\t\t\t\tE17. Outdoor Shower\t\t\t\t\t\tE18. Sitting Terrace\t\t\t\t\t\tE19. Serene-Scent Garden\t\t\t\t\t\t\t\t\t\t\t\t\tF. The Hillside\t\t\t\t\t\tF1. Family BBQ Pavilion\t\t\t\t\t\tF2. Side Gate (To Pepys Road)\t\t\t\t\t\tF3. Herbs Garden\t\t\t\t\t\tF4. Meditation Lawn\t\t\t\t\t\tF5. Fitness Terrace\t\t\t\t\t\tF6. Hillside Canopy"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -9389,9 +9389,9 @@
     "baths": null,
     "floorAreaSqft": "517 - 2034",
     "price": null,
-    "psf": 2047,
+    "psf": 2052,
     "topYear": "2029",
-    "unitsSoldPercent": 95.6,
+    "unitsSoldPercent": 96.3,
     "tenure": "99 years",
     "totalUnits": 408,
     "developer": "City Developments Limited",
@@ -9485,7 +9485,7 @@
       "Tennis courts"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -9571,7 +9571,7 @@
       "6 Sky Gardens"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -9605,7 +9605,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -9683,7 +9683,7 @@
       "15 mins walk to Stevens MRT Station"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -9813,7 +9813,7 @@
       "(NSE)\nBus Stop (72021) along Ang Mo Kio Avenue 5"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -9898,7 +9898,7 @@
       "Sky Retreat"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -10039,7 +10039,7 @@
       "plans)"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -10132,7 +10132,7 @@
       "The Hideaway – Chillout Deck, Social Lounge, Yoga Room, Hammock Garden, Steam Room"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -10147,9 +10147,9 @@
     "baths": null,
     "floorAreaSqft": "452 - 1453",
     "price": null,
-    "psf": 2345,
+    "psf": 2348,
     "topYear": "2029",
-    "unitsSoldPercent": 38.9,
+    "unitsSoldPercent": 39.8,
     "tenure": "99 years",
     "totalUnits": 347,
     "developer": "SL Capital (8) Pte Ltd",
@@ -10259,7 +10259,7 @@
       "Accessible ToiletSen Roof – 3\nDistinctive Themes:Wellness\n(Block 222) - Pilates Pavilion, Meditation Deck, Yoga Lawn, Floral Garden,\nSensory Garden3G Zone (Block 228) - Hammock Alcove, Maze Garden, Chess Garden, Community GardenFamily (Block 230) - Sky Bar Pavilion, Sky Lounge, Hangout Lounge, Sky Deck"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -10274,7 +10274,7 @@
     "baths": null,
     "floorAreaSqft": null,
     "price": null,
-    "psf": 2518,
+    "psf": 2509,
     "topYear": "2029",
     "unitsSoldPercent": 100,
     "tenure": "99 years",
@@ -10362,7 +10362,7 @@
       "Bicycle Parking"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -10478,7 +10478,7 @@
       "Horizon Co-Work Lounge"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -10618,7 +10618,7 @@
       "Sky\nBBQ Pavillion"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -10730,7 +10730,7 @@
       "Club Lounge"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -10770,7 +10770,7 @@
       "Refer to https://www.scenecaresidence.com.sg/location/"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -10802,7 +10802,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -10834,7 +10834,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -10869,7 +10869,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -10884,7 +10884,7 @@
     "baths": null,
     "floorAreaSqft": "474 - 1496",
     "price": null,
-    "psf": 2247,
+    "psf": 2244,
     "topYear": "",
     "unitsSoldPercent": 100,
     "tenure": "99 years",
@@ -10976,7 +10976,7 @@
       "recreation.More details https://www.avenuesouthresidencepeak.sg/Pls note that actual unit may differ from the virtual walkthrough videos shown above.For enquiries, pls email marketing.residential@uol.com.sg"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   },
   {
@@ -11021,7 +11021,7 @@
       "Ocean PoolSerenity poolJacuzzi podsChildren’s wading poolReflective pondsEco pondsKoi oasisGrill PavilionRelaxation alcoveYoga deckFunction RoomGym"
     ],
     "status": "active",
-    "lastSeen": "2026-07-24T15:46:12.355Z",
+    "lastSeen": "2026-07-25T05:35:37.598Z",
     "delistedAt": null
   }
 ]
