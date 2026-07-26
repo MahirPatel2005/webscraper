@@ -135,7 +135,7 @@ export default function App() {
   return (
     <div className="app-wrapper">
       {/* Header Bar */}
-      <header>
+      {/* <header>
         <div className="container header-content">
           <div className="logo" onClick={() => setSelectedId(null)}>
             <i className="fa-solid fa-building-user"></i> EdgeProp<span>.sg</span>
@@ -155,7 +155,7 @@ export default function App() {
             <li><a href="#news">News</a></li>
           </ul>
         </div>
-      </header>
+      </header> */}
 
       {/* Main Body content */}
       <main className="container">
@@ -170,7 +170,7 @@ export default function App() {
           /* Listings Grid View */
           <>
             <div className="breadcrumbs">
-              <span>Home</span> <span className="separator">&gt;</span> <span>New Launches</span>
+              <span>New Launches</span>
             </div>
 
             <div className="listings-header">
@@ -193,7 +193,7 @@ export default function App() {
                 {sortedListings.length} new launches found
               </div>
               <div className="meta-controls">
-                <label className="meta-checkbox-label">
+                {/* <label className="meta-checkbox-label">
                   <input
                     type="checkbox"
                     id="tour-checkbox"
@@ -202,7 +202,7 @@ export default function App() {
                     onChange={(e) => setVirtualTour(e.target.checked)}
                   />
                   Virtual Tour
-                </label>
+                </label> */}
                 
                 <div className="sort-select-wrapper">
                   <span className="sort-label">Sort by</span>
