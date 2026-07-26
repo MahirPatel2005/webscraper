@@ -1,7 +1,8 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import FilterBar from './components/FilterBar';
 import ListingsGrid, { getLaunchStatus } from './components/ListingsGrid';
 import DetailView from './components/DetailView';
+import Pagination from './components/Pagination';
 import listingsData from '../../data/listings.json';
 
 export default function App() {
@@ -22,6 +23,15 @@ export default function App() {
   // Sorting & Virtual Tour states
   const [sortBy, setSortBy] = useState('recommended');
   const [virtualTour, setVirtualTour] = useState(false);
+
+  // Pagination state
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 9;
+
+  // Reset pagination to first page when search query, filters, sort, or virtual tour changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchQuery, filters, sortBy, virtualTour]);
 
   // Dynamic lists of unique dropdown options directly derived from the dataset
   const uniqueOptions = useMemo(() => {
@@ -132,6 +142,14 @@ export default function App() {
     });
   }, [filteredListings, sortBy]);
 
+  // Get listings for current page
+  const paginatedListings = useMemo(() => {
+    const totalPages = Math.ceil(sortedListings.length / itemsPerPage);
+    const activePage = currentPage > totalPages ? 1 : currentPage;
+    const startIndex = (activePage - 1) * itemsPerPage;
+    return sortedListings.slice(startIndex, startIndex + itemsPerPage);
+  }, [sortedListings, currentPage]);
+
   return (
     <div className="app-wrapper">
       {/* Header Bar */}
@@ -224,8 +242,16 @@ export default function App() {
 
             {/* Grid display */}
             <ListingsGrid
-              listings={sortedListings}
+              listings={paginatedListings}
               onViewDetails={setSelectedId}
+            />
+
+            {/* Pagination Controls */}
+            <Pagination
+              currentPage={currentPage}
+              totalItems={sortedListings.length}
+              itemsPerPage={itemsPerPage}
+              onPageChange={setCurrentPage}
             />
           </>
         )}
