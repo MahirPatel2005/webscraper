@@ -33,6 +33,13 @@ const getFacilityIcon = (facilityName) => {
 };
 
 export default function DetailView({ id, listings, onBack }) {
+  // Tabs state (Details, Unit Distribution, Facilities, Amenities)
+  // News, Calculator, and Available Units are intentionally excluded!
+  const [activeTab, setActiveTab] = useState('details');
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [showMobile, setShowMobile] = useState(false);
+  const [isInquiryOpen, setIsInquiryOpen] = useState(false);
+
   const item = listings.find(l => l.id === id);
 
   if (!item) {
@@ -47,13 +54,6 @@ export default function DetailView({ id, listings, onBack }) {
       </div>
     );
   }
-
-  // Tabs state (Details, Unit Distribution, Facilities, Amenities)
-  // News, Calculator, and Available Units are intentionally excluded!
-  const [activeTab, setActiveTab] = useState('details');
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [showMobile, setShowMobile] = useState(false);
-  const [isInquiryOpen, setIsInquiryOpen] = useState(false);
 
   const imagesList = item.images && item.images.length > 0 ? item.images : [item.image || 'https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg'];
 
@@ -318,7 +318,7 @@ export default function DetailView({ id, listings, onBack }) {
         </div>
 
         {/* Right Column: Sticky Contact Sidebar Widget */}
-        <div>
+        {/* <div>
           <aside className="sidebar-widget">
             <div className="sidebar-developer-logo">
               <div className="dev-text-logo">
@@ -346,7 +346,7 @@ export default function DetailView({ id, listings, onBack }) {
               </button>
             </div>
           </aside>
-        </div>
+        </div> */}
       </div>
 
       {/* Inquiry Lead Capture Modal */}
