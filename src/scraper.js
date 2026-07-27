@@ -197,7 +197,14 @@ async function fetchDetails(browser, url) {
                             $(imgEl).parent().hasClass('newlaunches-gallery-slide-image') || 
                             $(imgEl).hasClass('newlaunches-gallery-slide-image');
           if (isGallery && !detailImages.includes(src)) {
-            detailImages.push(src);
+            const lowerSrc = src.toLowerCase();
+            const isAd = (lowerSrc.includes('s3fs-public') && (lowerSrc.includes('.png') || lowerSrc.includes('?v='))) ||
+                         lowerSrc.includes('contact-card') || 
+                         lowerSrc.includes('advertisement') || 
+                         lowerSrc.includes('banner');
+            if (!isAd) {
+              detailImages.push(src);
+            }
           }
         }
       });

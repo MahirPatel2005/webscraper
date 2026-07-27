@@ -1,5 +1,5 @@
 /* Import Premium Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
 
 :root {
   --primary: #ff5222;
@@ -1033,4 +1033,83 @@ header {
     align-items: center;
     text-align: center;
   }
+}
+
+/* Premium Typography for Dream Home Header */
+.dream-home-title {
+  font-family: 'Cormorant Garamond', serif !important;
+  font-weight: 600 !important;
+  font-size: 50px !important;
+  line-height: 1.2;
+  color: var(--navy-dark);
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .dream-home-title {
+    font-size: 38px !important;
+  }
+}
+
+/* Extended Search Group Grid Spans */
+.search-group {
+  grid-column: span 2;
+}
+
+@media (max-width: 1024px) {
+  .search-group {
+    grid-column: span 1;
+  }
+}
+
+/* Back Button Styles */
+.btn-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 24px;
+  transition: var(--transition);
+  color: var(--text-main);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-back:hover {
+  background-color: #f1f5f9;
+  border-color: var(--text-muted);
+  transform: translateX(-2px);
+}
+
+/* Metro Badge Layout */
+.metro-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}
+
+/* Similar Properties Section styling */
+.similar-properties-section {
+  margin-top: 60px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+
+.similar-properties-title {
+  font-size: 24px;
+  margin-bottom: 24px;
+  font-family: 'Poppins', sans-serif;
+  color: var(--navy-dark);
 }

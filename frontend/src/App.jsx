@@ -1,9 +1,79 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import FilterBar from './components/FilterBar';
-import ListingsGrid, { getLaunchStatus } from './components/ListingsGrid';
+import ListingsGrid, { getLaunchStatus, formatDistrict } from './components/ListingsGrid';
 import DetailView from './components/DetailView';
 import Pagination from './components/Pagination';
 import listingsData from '../../data/listings.json';
+
+export const districtToMetroLines = {
+  'D01': ['East West Line', 'Downtown Line'],
+  'D02': ['East West Line', 'North East Line'],
+  'D03': ['East West Line', 'Circle Line'],
+  'D04': ['Circle Line', 'North East Line'],
+  'D05': ['East West Line', 'Circle Line'],
+  'D06': ['East West Line', 'North South Line', 'Downtown Line'],
+  'D07': ['East West Line', 'Downtown Line', 'Circle Line'],
+  'D08': ['North East Line', 'Downtown Line'],
+  'D09': ['North South Line', 'Downtown Line', 'Thomson-East Coast Line'],
+  'D10': ['Downtown Line', 'Circle Line'],
+  'D11': ['North South Line', 'Downtown Line'],
+  'D12': ['North South Line', 'North East Line'],
+  'D13': ['Circle Line', 'Downtown Line'],
+  'D14': ['East West Line', 'Circle Line'],
+  'D15': ['Thomson-East Coast Line', 'East West Line'],
+  'D16': ['East West Line', 'Downtown Line'],
+  'D17': ['East West Line'],
+  'D18': ['East West Line', 'Downtown Line'],
+  'D19': ['North East Line', 'Circle Line'],
+  'D20': ['North South Line', 'Circle Line'],
+  'D21': ['Downtown Line'],
+  'D22': ['East West Line'],
+  'D23': ['Downtown Line', 'North South Line'],
+  'D24': ['North South Line'],
+  'D25': ['North South Line'],
+  'D26': ['Thomson-East Coast Line'],
+  'D27': ['North South Line'],
+  'D28': ['North South Line']
+};
+
+export function getCleanImages(item) {
+  if (!item) return [];
+  let list = [];
+  if (Array.isArray(item.images)) {
+    list = [...item.images];
+  }
+  
+  // Filter the list of images first
+  let cleanList = list.filter(img => {
+    if (!img) return false;
+    const lower = img.toLowerCase();
+    // Exclude s3fs-public files that are png or have ?v= query params (typical of agent flyers or layout diagrams)
+    if (lower.includes('s3fs-public') && (lower.includes('.png') || lower.includes('?v='))) {
+      return false;
+    }
+    if (lower.includes('contact-card') || lower.includes('advertisement') || lower.includes('banner')) {
+      return false;
+    }
+    return true;
+  });
+
+  // Handle main cover image
+  if (item.image) {
+    const mainLower = item.image.toLowerCase();
+    
+    // We categorize the main cover image as an ad/flyer if it is in s3fs-public and we have other clean gallery images from tepcdn
+    const isMainAd = mainLower.includes('s3fs-public') && 
+                     (mainLower.includes('.png') || 
+                      mainLower.includes('?v=') || 
+                      cleanList.some(img => img.toLowerCase().includes('img.tepcdn.com')));
+
+    if (!isMainAd && !cleanList.includes(item.image)) {
+      cleanList = [item.image, ...cleanList];
+    }
+  }
+
+  return cleanList;
+}
 
 export default function App() {
   // Navigation State: selected property ID (slug)
@@ -14,8 +84,7 @@ export default function App() {
   const [filters, setFilters] = useState({
     type: '',
     district: '',
-    tenure: '',
-    topYear: '',
+    metroLine: '',
     status: '',
     developer: ''
   });
@@ -37,29 +106,23 @@ export default function App() {
   const uniqueOptions = useMemo(() => {
     const types = new Set();
     const districts = new Set();
-    const tenures = new Set();
-    const topYears = new Set();
     const developers = new Set();
+    const metroLines = new Set();
 
     listingsData.forEach(item => {
       if (item.propertyType) types.add(item.propertyType);
-      if (item.district) districts.add(item.district);
-      
-      // Clean tenure representation (e.g. Freehold or 99 years)
-      if (item.tenure) {
-        const cleanTenure = item.tenure.toLowerCase().includes('freehold') ? 'Freehold' : 'Leasehold';
-        tenures.add(cleanTenure);
+      if (item.district) {
+        districts.add(item.district);
+        const lines = districtToMetroLines[item.district] || [];
+        lines.forEach(line => metroLines.add(line));
       }
-      
-      if (item.topYear) topYears.add(item.topYear);
       if (item.developer) developers.add(item.developer);
     });
 
     return {
       types: Array.from(types).sort(),
       districts: Array.from(districts).sort(),
-      tenures: Array.from(tenures).sort(),
-      topYears: Array.from(topYears).sort((a, b) => parseInt(a, 10) - parseInt(b, 10)),
+      metroLines: Array.from(metroLines).sort(),
       developers: Array.from(developers).sort()
     };
   }, []);
@@ -67,12 +130,15 @@ export default function App() {
   // Filter listings based on multi-select parameters
   const filteredListings = useMemo(() => {
     return listingsData.filter(item => {
-      // 1. Text Search matching title or developer name
+      // 1. Text Search matching title, developer name, property type, or district
       if (searchQuery) {
         const q = searchQuery.toLowerCase();
         const matchesTitle = item.title?.toLowerCase().includes(q);
         const matchesDeveloper = item.developer?.toLowerCase().includes(q);
-        if (!matchesTitle && !matchesDeveloper) return false;
+        const matchesDistrictCode = item.district?.toLowerCase().includes(q);
+        const matchesDistrictName = formatDistrict(item.district).toLowerCase().includes(q);
+        const matchesType = item.propertyType?.toLowerCase().includes(q);
+        if (!matchesTitle && !matchesDeveloper && !matchesDistrictCode && !matchesDistrictName && !matchesType) return false;
       }
 
       // 2. Property Type filter
@@ -81,25 +147,22 @@ export default function App() {
       // 3. District filter
       if (filters.district && item.district !== filters.district) return false;
 
-      // 4. Tenure filter
-      if (filters.tenure) {
-        const cleanTenure = item.tenure?.toLowerCase().includes('freehold') ? 'Freehold' : 'Leasehold';
-        if (cleanTenure !== filters.tenure) return false;
+      // 4. Metro Line filter
+      if (filters.metroLine) {
+        const lines = districtToMetroLines[item.district] || [];
+        if (!lines.includes(filters.metroLine)) return false;
       }
 
-      // 5. TOP Year filter
-      if (filters.topYear && item.topYear !== filters.topYear) return false;
-
-      // 6. Launch status filter
+      // 5. Launch status filter
       if (filters.status) {
         const itemStatus = getLaunchStatus(item);
         if (itemStatus !== filters.status) return false;
       }
 
-      // 7. Developer filter
+      // 6. Developer filter
       if (filters.developer && item.developer !== filters.developer) return false;
 
-      // 8. Virtual Tour filter (Mocking: allow some properties to show virtual tours)
+      // 7. Virtual Tour filter (Mocking: allow some properties to show virtual tours)
       if (virtualTour) {
         // Just show items ending in even characters as mock tour-enabled
         const isTourEnabled = item.id.charCodeAt(item.id.length - 1) % 2 === 0;
@@ -183,6 +246,10 @@ export default function App() {
             id={selectedId}
             listings={listingsData}
             onBack={() => setSelectedId(null)}
+            onSelectProperty={(id) => {
+              setSelectedId(id);
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
           />
         ) : (
           /* Listings Grid View */
@@ -192,7 +259,7 @@ export default function App() {
             </div>
 
             <div className="listings-header">
-              <h1>All New Property Launches</h1>
+              <h1 className="dream-home-title">Find your dream home</h1>
               <p>Start finding new property with EdgeProp. See our recommended property below</p>
             </div>
 

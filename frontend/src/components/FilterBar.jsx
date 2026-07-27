@@ -19,8 +19,7 @@ export default function FilterBar({
     setFilters({
       type: '',
       district: '',
-      tenure: '',
-      topYear: '',
+      metroLine: '',
       status: '',
       developer: ''
     });
@@ -29,13 +28,13 @@ export default function FilterBar({
   return (
     <section className="filter-bar">
       <div className="filter-grid">
-        <div className="filter-group">
-          <label htmlFor="search-input">Project Name</label>
+        <div className="filter-group search-group">
+          <label htmlFor="search-input">Search Properties</label>
           <input
             type="text"
             id="search-input"
             className="filter-input"
-            placeholder="Enter Project Name..."
+            placeholder="Enter project name, district, developer, etc..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
@@ -72,31 +71,16 @@ export default function FilterBar({
         </div>
 
         <div className="filter-group">
-          <label htmlFor="tenure-select">Tenure</label>
+          <label htmlFor="metro-select">Metro Line</label>
           <select
-            id="tenure-select"
+            id="metro-select"
             className="filter-input"
-            value={filters.tenure}
-            onChange={(e) => handleFilterChange('tenure', e.target.value)}
+            value={filters.metroLine}
+            onChange={(e) => handleFilterChange('metroLine', e.target.value)}
           >
-            <option value="">Any Tenure</option>
-            {uniqueOptions.tenures.map(ten => (
-              <option key={ten} value={ten}>{ten}</option>
-            ))}
-          </select>
-        </div>
-
-        <div className="filter-group">
-          <label htmlFor="top-select">TOP Year</label>
-          <select
-            id="top-select"
-            className="filter-input"
-            value={filters.topYear}
-            onChange={(e) => handleFilterChange('topYear', e.target.value)}
-          >
-            <option value="">All TOP Years</option>
-            {uniqueOptions.topYears.map(yr => (
-              <option key={yr} value={yr}>{yr}</option>
+            <option value="">All Metro Lines</option>
+            {uniqueOptions.metroLines.map(line => (
+              <option key={line} value={line}>{line}</option>
             ))}
           </select>
         </div>
@@ -130,13 +114,31 @@ export default function FilterBar({
           </select>
         </div>
 
-        <button
-          onClick={handleClearFilters}
-          className="btn-search"
-          style={{ backgroundColor: '#64748b' }}
-        >
-          Reset
-        </button>
+        <div className="filter-group button-group" style={{ display: 'flex', gap: '8px', flexDirection: 'row', alignItems: 'center' }}>
+          <button
+            onClick={() => {
+              const el = document.getElementById('results-count');
+              if (el) {
+                el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }
+            }}
+            className="btn-search"
+            style={{ flexGrow: 1 }}
+            type="button"
+          >
+            <i className="fa-solid fa-magnifying-glass" style={{ marginRight: '8px' }}></i> Search
+          </button>
+          
+          <button
+            onClick={handleClearFilters}
+            className="btn-search"
+            style={{ backgroundColor: '#e2e8f0', color: '#475569', padding: '11px 16px' }}
+            title="Reset Filters"
+            type="button"
+          >
+            <i className="fa-solid fa-rotate-left"></i>
+          </button>
+        </div>
       </div>
     </section>
   );

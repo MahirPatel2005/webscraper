@@ -1,4 +1,20 @@
 import React from 'react';
+import { districtToMetroLines, getCleanImages } from '../App';
+
+export const getMetroColor = (line) => {
+  const name = line.toLowerCase();
+  if (name.includes('north south')) return '#d02c2f';
+  if (name.includes('east west')) return '#00953a';
+  if (name.includes('north east')) return '#742c8e';
+  if (name.includes('circle')) return '#f99f1b';
+  if (name.includes('downtown')) return '#005ec4';
+  if (name.includes('thomson-east coast') || name.includes('thomson east')) return '#9d5b25';
+  return '#64748b'; // default slate grey
+};
+
+export const getMetroLines = (districtCode) => {
+  return districtToMetroLines[districtCode] || [];
+};
 
 const districtMapping = {
   'D01': 'Raffles Place, Cecil, Marina, People\'s Park',
@@ -59,7 +75,8 @@ export default function ListingsGrid({ listings, onViewDetails }) {
     <section className="listings-grid">
       {listings.map(item => {
         const launchStatus = getLaunchStatus(item);
-        const coverImage = item.image || (item.images && item.images[0]) || 'https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg';
+        const cleanImages = getCleanImages(item);
+        const coverImage = cleanImages[0] || 'https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg';
         
         return (
           <article key={item.id} className="property-card">
@@ -83,6 +100,24 @@ export default function ListingsGrid({ listings, onViewDetails }) {
               <h2 className="card-title">{item.title}</h2>
               <div className="card-district">
                 District: {formatDistrict(item.district)}
+              </div>
+
+              {/* Metro Line Badges */}
+              <div className="card-metro-lines" style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', marginBottom: '12px' }}>
+                {getMetroLines(item.district).map(line => (
+                  <span
+                    key={line}
+                    className="metro-badge"
+                    style={{
+                      backgroundColor: getMetroColor(line) + '15',
+                      color: getMetroColor(line),
+                      border: `1px solid ${getMetroColor(line)}40`
+                    }}
+                  >
+                    <i className="fa-solid fa-train" style={{ fontSize: '9px' }}></i>
+                    {line}
+                  </span>
+                ))}
               </div>
 
               <div className="card-specs">

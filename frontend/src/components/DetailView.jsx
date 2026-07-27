@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import InquiryModal from './InquiryModal';
-import { formatDistrict, getLaunchStatus } from './ListingsGrid';
+import { formatDistrict, getLaunchStatus, getMetroColor, getMetroLines } from './ListingsGrid';
+import { getCleanImages } from '../App';
 
 // Keyword to icon mapping for facilities to look extra premium
 const getFacilityIcon = (facilityName) => {
@@ -32,7 +33,7 @@ const getFacilityIcon = (facilityName) => {
   return 'fa-solid fa-circle-check';
 };
 
-export default function DetailView({ id, listings, onBack }) {
+export default function DetailView({ id, listings, onBack, onSelectProperty }) {
   // Tabs state (Details, Unit Distribution, Facilities, Amenities)
   // News, Calculator, and Available Units are intentionally excluded!
   const [activeTab, setActiveTab] = useState('details');
@@ -55,7 +56,10 @@ export default function DetailView({ id, listings, onBack }) {
     );
   }
 
-  const imagesList = item.images && item.images.length > 0 ? item.images : [item.image || 'https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg'];
+  const imagesList = getCleanImages(item);
+  if (imagesList.length === 0) {
+    imagesList.push(item.image || 'https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg');
+  }
 
   const nextSlide = () => {
     setCurrentSlide(prev => (prev === imagesList.length - 1 ? 0 : prev + 1));
@@ -78,8 +82,27 @@ export default function DetailView({ id, listings, onBack }) {
 
   const amenitiesList = item.amenities && item.amenities.length > 0 ? item.amenities : defaultAmenities;
 
+  // Calculate up to 4 similar properties
+  const similarProperties = listings
+    .filter(l => l.id !== item.id)
+    .map(l => {
+      let score = 0;
+      if (l.district === item.district) score += 5;
+      if (l.propertyType === item.propertyType) score += 3;
+      if (l.developer && item.developer && l.developer.toLowerCase() === item.developer.toLowerCase()) score += 2;
+      return { item: l, score };
+    })
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 4)
+    .map(x => x.item);
+
   return (
     <>
+      {/* Prominent Back Button */}
+      <button onClick={onBack} className="btn-back">
+        <i className="fa-solid fa-arrow-left"></i> Back to Listings
+      </button>
+
       {/* Breadcrumbs */}
       <div className="breadcrumbs">
         <span className="link" onClick={onBack}>Home</span>
@@ -92,10 +115,29 @@ export default function DetailView({ id, listings, onBack }) {
       {/* Main Info Header */}
       <div className="detail-main-info">
         <div className="detail-title-block">
-          <h1 style={{ display: 'inline-block', verticalAlign: 'middle' }}>{item.title}</h1>
-          <span className={`status-badge ${launchStatus.toLowerCase()}`}>
-            {launchStatus}
-          </span>
+          <div>
+            <h1 style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '12px' }}>{item.title}</h1>
+            <span className={`status-badge ${launchStatus.toLowerCase()}`} style={{ verticalAlign: 'middle' }}>
+              {launchStatus}
+            </span>
+          </div>
+          {/* Metro Line Badges */}
+          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginTop: '10px' }}>
+            {getMetroLines(item.district).map(line => (
+              <span
+                key={line}
+                className="metro-badge"
+                style={{
+                  backgroundColor: getMetroColor(line) + '15',
+                  color: getMetroColor(line),
+                  border: `1px solid ${getMetroColor(line)}40`
+                }}
+              >
+                <i className="fa-solid fa-train" style={{ fontSize: '9px' }}></i>
+                {line}
+              </span>
+            ))}
+          </div>
         </div>
         <button className="btn-share" onClick={() => navigator.clipboard.writeText(window.location.href).then(() => alert('Link copied to clipboard!'))}>
           <i className="fa-solid fa-arrow-up-from-bracket"></i> Share
@@ -348,6 +390,65 @@ export default function DetailView({ id, listings, onBack }) {
           </aside>
         </div> */}
       </div>
+
+      {/* Similar Properties Section */}
+      {similarProperties.length > 0 && (
+        <section className="similar-properties-section">
+          <h2 className="similar-properties-title">Similar Properties</h2>
+          <div className="listings-grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '20px', marginBottom: '0' }}>
+            {similarProperties.map(simItem => {
+              const simStatus = getLaunchStatus(simItem);
+              const simCleanImages = getCleanImages(simItem);
+              const simCover = simCleanImages[0] || 'https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg';
+              
+              return (
+                <article
+                  key={simItem.id}
+                  className="property-card"
+                  style={{ cursor: 'pointer' }}
+                  onClick={() => onSelectProperty(simItem.id)}
+                >
+                  <span className={`status-badge ${simStatus.toLowerCase()}`}>
+                    {simStatus}
+                  </span>
+                  <div className="card-img-wrapper" style={{ paddingTop: '65%' }}>
+                    <img src={simCover} alt={simItem.title} className="card-img" />
+                  </div>
+                  <div className="card-content" style={{ padding: '16px' }}>
+                    <h3 className="card-title" style={{ fontSize: '15px', marginBottom: '4px' }}>{simItem.title}</h3>
+                    <div className="card-district" style={{ fontSize: '12px', marginBottom: '8px' }}>
+                      District: {formatDistrict(simItem.district)}
+                    </div>
+                    <div style={{ display: 'flex', gap: '4px', flexWrap: 'wrap', marginBottom: '12px' }}>
+                      {getMetroLines(simItem.district).slice(0, 1).map(line => (
+                        <span
+                          key={line}
+                          className="metro-badge"
+                          style={{
+                            backgroundColor: getMetroColor(line) + '10',
+                            color: getMetroColor(line),
+                            border: `1px solid ${getMetroColor(line)}25`,
+                            fontSize: '10px',
+                            padding: '1px 6px'
+                          }}
+                        >
+                          {line}
+                        </span>
+                      ))}
+                    </div>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px', borderTop: '1px solid var(--border-color)', paddingTop: '8px', color: 'var(--text-muted)' }}>
+                      <span>{simItem.propertyType}</span>
+                      <span style={{ fontWeight: '600', color: 'var(--navy-dark)' }}>
+                        {simItem.psf ? `$${simItem.psf} PSF` : '-'}
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      )}
 
       {/* Inquiry Lead Capture Modal */}
       <InquiryModal
