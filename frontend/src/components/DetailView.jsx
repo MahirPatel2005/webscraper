@@ -33,6 +33,59 @@ const getFacilityIcon = (facilityName) => {
   return 'fa-solid fa-circle-check';
 };
 
+export function cleanFacilities(arr) {
+  if (!Array.isArray(arr)) return [];
+  const cleaned = [];
+  let i = 0;
+  while (i < arr.length) {
+    let item = arr[i].trim();
+    if (!item) {
+      i++;
+      continue;
+    }
+    
+    const isNumber = /^\d+$/.test(item);
+    const isRoman = /^[ivx]+$/i.test(item);
+    const isOrdinal = /^\d+(st|nd|rd|th)$/i.test(item);
+    
+    if (isOrdinal && i + 1 < arr.length && arr[i + 1].trim().toLowerCase() === 'storey:') {
+      cleaned.push(`${item} Storey`);
+      i += 2;
+      continue;
+    }
+
+    if ((isNumber || isRoman) && i + 1 < arr.length) {
+      const nextItem = arr[i + 1].trim();
+      cleaned.push(`${item}. ${nextItem}`);
+      i += 2;
+      continue;
+    }
+
+    const startsWithNum = /^\d+/.test(item);
+    if (startsWithNum && i + 1 < arr.length) {
+      const nextItem = arr[i + 1].trim();
+      const isNextDescriptive = /^(pool|deck|lap pool|lawn|seat|foyer|living|dining|patio|club|lounge|room|pods|servery|toilet|pavilion)/i.test(nextItem);
+      if (isNextDescriptive) {
+        cleaned.push(`${item} ${nextItem}`);
+        i += 2;
+        continue;
+      }
+    }
+
+    cleaned.push(item);
+    i++;
+  }
+
+  return cleaned
+    .map(x => x.replace(/\s+/g, ' ').trim())
+    .filter(x => {
+      if (/^\d+$/.test(x)) return false;
+      if (/^[ivx]$/i.test(x)) return false;
+      if (x.length <= 1) return false;
+      return true;
+    });
+}
+
 export default function DetailView({ id, listings, onBack, onSelectProperty }) {
   // Tabs state (Details, Unit Distribution, Facilities, Amenities)
   // News, Calculator, and Available Units are intentionally excluded!
@@ -180,9 +233,6 @@ export default function DetailView({ id, listings, onBack, onSelectProperty }) {
               <button className="overlay-tab active">
                 <i className="fa-solid fa-image"></i> Images ({imagesList.length})
               </button>
-              <button className="overlay-tab" onClick={() => alert('Virtual 360 tour coming soon!')}>
-                <i className="fa-solid fa-street-view"></i> 360 View
-              </button>
               <button className="overlay-tab" onClick={() => setActiveTab('layouts')}>
                 <i className="fa-solid fa-cubes"></i> Floor Plans ({item.layouts?.length || 0})
               </button>
@@ -327,13 +377,40 @@ export default function DetailView({ id, listings, onBack, onSelectProperty }) {
           {activeTab === 'facilities' && (
             <div className="tab-content active">
               {item.facilities && item.facilities.length > 0 ? (
-                <div className="items-list-grid">
-                  {item.facilities.map((fac, idx) => (
-                    <div key={idx} className="item-list-card">
-                      <i className={getFacilityIcon(fac)}></i>
-                      <span>{fac}</span>
-                    </div>
-                  ))}
+                <div className="facilities-container" style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                  {cleanFacilities(item.facilities).map((fac, idx) => {
+                    const isHeader = fac.toLowerCase().includes('storey') || fac.toLowerCase().includes('level') || fac.toLowerCase().includes('roof') || fac.toLowerCase().includes('basement');
+                    if (isHeader) {
+                      return (
+                        <h3 key={idx} style={{
+                          fontSize: '16px',
+                          fontWeight: '700',
+                          color: 'var(--primary)',
+                          borderBottom: '2px solid var(--border-color)',
+                          paddingBottom: '6px',
+                          marginTop: idx > 0 ? '20px' : '0',
+                          fontFamily: 'Poppins, sans-serif'
+                        }}>
+                          <i className="fa-solid fa-layer-group" style={{ marginRight: '8px' }}></i>
+                          {fac}
+                        </h3>
+                      );
+                    }
+                    return (
+                      <div key={idx} className="facility-item-line" style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '12px',
+                        padding: '10px 14px',
+                        borderBottom: '1px solid #f1f5f9',
+                        fontSize: '14px',
+                        color: 'var(--text-main)'
+                      }}>
+                        <i className={getFacilityIcon(fac)} style={{ color: 'var(--primary)', width: '16px', textAlign: 'center' }}></i>
+                        <span>{fac}</span>
+                      </div>
+                    );
+                  })}
                 </div>
               ) : (
                 <div style={{ textAlign: 'center', padding: '40px', color: 'var(--text-muted)' }}>
@@ -347,10 +424,18 @@ export default function DetailView({ id, listings, onBack, onSelectProperty }) {
           {/* TAB 4: AMENITIES */}
           {activeTab === 'amenities' && (
             <div className="tab-content active">
-              <div className="items-list-grid">
+              <div className="facilities-container" style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                 {amenitiesList.map((amen, idx) => (
-                  <div key={idx} className="item-list-card">
-                    <i className="fa-solid fa-map-pin"></i>
+                  <div key={idx} className="facility-item-line" style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '12px',
+                    padding: '10px 14px',
+                    borderBottom: '1px solid #f1f5f9',
+                    fontSize: '14px',
+                    color: 'var(--text-main)'
+                  }}>
+                    <i className="fa-solid fa-map-pin" style={{ color: 'var(--primary)', width: '16px', textAlign: 'center' }}></i>
                     <span>{amen}</span>
                   </div>
                 ))}
