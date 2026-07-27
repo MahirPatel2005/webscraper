@@ -258,10 +258,10 @@ export default function App() {
               <span>New Launches</span>
             </div>
 
-            <div className="listings-header">
+            {/* <div className="listings-header">
               <h1 className="dream-home-title">Find your dream home</h1>
               <p>Start finding new property with EdgeProp. See our recommended property below</p>
-            </div>
+            </div> */}
 
             {/* Filter section */}
             <FilterBar
@@ -274,9 +274,9 @@ export default function App() {
 
             {/* Result statistics and sorting */}
             <section className="listings-meta">
-              <div className="launches-found" id="results-count">
+              {/* <div className="launches-found" id="results-count">
                 {sortedListings.length} new launches found
-              </div>
+              </div> */}
               <div className="meta-controls">
                 {/* <label className="meta-checkbox-label">
                   <input
@@ -325,7 +325,7 @@ export default function App() {
       </main>
 
       {/* Elegant Footer */}
-      <footer style={{ borderTop: '1px solid var(--border-color)', padding: '30px 20px', marginTop: '60px', backgroundColor: '#ffffff' }}>
+      {/* <footer style={{ borderTop: '1px solid var(--border-color)', padding: '30px 20px', marginTop: '60px', backgroundColor: '#ffffff' }}>
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '13px', color: 'var(--text-muted)' }}>
           <div>&copy; {new Date().getFullYear()} EdgeProp Singapore. All rights reserved.</div>
           <div style={{ display: 'flex', gap: '16px' }}>
@@ -333,7 +333,7 @@ export default function App() {
             <a href="#terms">Terms of Use</a>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 }
