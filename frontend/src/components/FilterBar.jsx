@@ -30,14 +30,17 @@ export default function FilterBar({
       <div className="filter-grid">
         <div className="filter-group search-group">
           <label htmlFor="search-input">Search Properties</label>
-          <input
-            type="text"
-            id="search-input"
-            className="filter-input"
-            placeholder="Enter project name, district, developer, etc..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-          />
+          <div className="input-with-icon">
+            <i className="fa-solid fa-magnifying-glass input-icon"></i>
+            <input
+              type="text"
+              id="search-input"
+              className="filter-input with-icon"
+              placeholder="Enter project name, district, developer, etc..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+            />
+          </div>
         </div>
 
         <div className="filter-group">
@@ -85,59 +88,30 @@ export default function FilterBar({
           </select>
         </div>
 
-        <div className="filter-group">
-          <label htmlFor="status-select">Status</label>
-          <select
-            id="status-select"
-            className="filter-input"
-            value={filters.status}
-            onChange={(e) => handleFilterChange('status', e.target.value)}
-          >
-            <option value="">All Statuses</option>
-            <option value="Launching">Launching</option>
-            <option value="Launched">Launched</option>
-          </select>
-        </div>
-
-        <div className="filter-group">
-          <label htmlFor="developer-select">Developer</label>
-          <select
-            id="developer-select"
-            className="filter-input"
-            value={filters.developer}
-            onChange={(e) => handleFilterChange('developer', e.target.value)}
-          >
-            <option value="">All Developers</option>
-            {uniqueOptions.developers.map(dev => (
-              <option key={dev} value={dev}>{dev}</option>
-            ))}
-          </select>
-        </div>
-
-        <div className="filter-group button-group" style={{ display: 'flex', gap: '8px', flexDirection: 'row', alignItems: 'center' }}>
-          <button
-            onClick={() => {
-              const el = document.getElementById('results-count');
-              if (el) {
-                el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              }
-            }}
-            className="btn-search"
-            style={{ flexGrow: 1 }}
-            type="button"
-          >
-            <i className="fa-solid fa-magnifying-glass" style={{ marginRight: '8px' }}></i> Search
-          </button>
-          
-          <button
-            onClick={handleClearFilters}
-            className="btn-search"
-            style={{ backgroundColor: '#e2e8f0', color: '#475569', padding: '11px 16px' }}
-            title="Reset Filters"
-            type="button"
-          >
-            <i className="fa-solid fa-rotate-left"></i>
-          </button>
+        <div className="filter-group button-group">
+          <div className="filter-actions">
+            <button
+              onClick={() => {
+                const el = document.getElementById('results-count');
+                if (el) {
+                  el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              }}
+              className="btn-search"
+              type="button"
+            >
+              <i className="fa-solid fa-magnifying-glass search-btn-icon"></i> Search
+            </button>
+            
+            <button
+              onClick={handleClearFilters}
+              className="btn-reset"
+              title="Reset Filters"
+              type="button"
+            >
+              <i className="fa-solid fa-rotate-left"></i>
+            </button>
+          </div>
         </div>
       </div>
     </section>
