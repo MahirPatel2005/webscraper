@@ -170,9 +170,11 @@ export default function DetailView({ id, listings, onBack, onSelectProperty }) {
         <div className="detail-title-block">
           <div>
             <h1 style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: '12px' }}>{item.title}</h1>
-            <span className={`status-badge ${launchStatus.toLowerCase()}`} style={{ verticalAlign: 'middle' }}>
-              {launchStatus}
-            </span>
+            {launchStatus !== 'Launched' && (
+              <span className={`status-badge ${launchStatus.toLowerCase()}`} style={{ verticalAlign: 'middle' }}>
+                {launchStatus === 'Launching' ? 'Launching Soon' : launchStatus}
+              </span>
+            )}
           </div>
           {/* Metro Line Badges */}
           <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginTop: '10px' }}>
@@ -493,9 +495,11 @@ export default function DetailView({ id, listings, onBack, onSelectProperty }) {
                   style={{ cursor: 'pointer' }}
                   onClick={() => onSelectProperty(simItem.id)}
                 >
-                  <span className={`status-badge ${simStatus.toLowerCase()}`}>
-                    {simStatus}
-                  </span>
+                  {simStatus !== 'Launched' && (
+                    <span className={`status-badge ${simStatus.toLowerCase()}`}>
+                      {simStatus === 'Launching' ? 'Launching Soon' : simStatus}
+                    </span>
+                  )}
                   <div className="card-img-wrapper" style={{ paddingTop: '65%' }}>
                     <img src={simCover} alt={simItem.title} className="card-img" />
                   </div>

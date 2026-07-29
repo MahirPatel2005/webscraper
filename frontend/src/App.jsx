@@ -86,7 +86,12 @@ export default function App() {
     district: '',
     metroLine: '',
     status: '',
-    developer: ''
+    developer: '',
+    beds: '',
+    minSize: '',
+    maxSize: '',
+    minPrice: '',
+    maxPrice: ''
   });
 
   // Sorting & Virtual Tour states
@@ -169,6 +174,106 @@ export default function App() {
         if (!isTourEnabled) return false;
       }
 
+      // 8. Bedroom Type filter
+      if (filters.beds) {
+        const bedNum = parseInt(filters.beds);
+        let matchesBed = false;
+        
+        // Check beds string, e.g. "2 - 4" or "1"
+        if (item.beds) {
+          const parts = item.beds.split('-').map(x => parseInt(x.trim()));
+          if (parts.length === 1 && !isNaN(parts[0])) {
+            const val = parts[0];
+            if (bedNum === 5) {
+              if (val >= 5) matchesBed = true;
+            } else {
+              if (val === bedNum) matchesBed = true;
+            }
+          } else if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
+            const [min, max] = parts;
+            if (bedNum === 5) {
+              if (max >= 5) matchesBed = true;
+            } else {
+              if (bedNum >= min && bedNum <= max) matchesBed = true;
+            }
+          }
+        }
+        
+        // If not matched yet, check layouts
+        if (!matchesBed && item.layouts && Array.isArray(item.layouts)) {
+          matchesBed = item.layouts.some(l => {
+            const desc = l.desc?.toLowerCase() || '';
+            const match = desc.match(/(\d+)\s*bed/i);
+            if (match) {
+              const val = parseInt(match[1]);
+              if (bedNum === 5) {
+                return val >= 5;
+              } else {
+                return val === bedNum;
+              }
+            }
+            return false;
+          });
+        }
+        
+        if (!matchesBed) return false;
+      }
+
+      // Helper to get size range
+      let propMinSize = null;
+      let propMaxSize = null;
+      if (item.floorAreaSqft) {
+        const parts = item.floorAreaSqft.split('-').map(x => parseInt(x.trim()));
+        if (parts.length === 1 && !isNaN(parts[0])) {
+          propMinSize = parts[0];
+          propMaxSize = parts[0];
+        } else if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
+          propMinSize = parts[0];
+          propMaxSize = parts[1];
+        }
+      }
+      if ((propMinSize === null || propMaxSize === null) && item.layouts && Array.isArray(item.layouts)) {
+        const sqfts = item.layouts.map(l => parseInt(l.sqft)).filter(x => !isNaN(x));
+        if (sqfts.length > 0) {
+          const minL = Math.min(...sqfts);
+          const maxL = Math.max(...sqfts);
+          if (propMinSize === null || minL < propMinSize) propMinSize = minL;
+          if (propMaxSize === null || maxL > propMaxSize) propMaxSize = maxL;
+        }
+      }
+
+      // 9. Size range filter
+      if (filters.minSize) {
+        const minSizeLimit = parseInt(filters.minSize);
+        if (!isNaN(minSizeLimit)) {
+          if (propMaxSize === null || propMaxSize < minSizeLimit) return false;
+        }
+      }
+      if (filters.maxSize) {
+        const maxSizeLimit = parseInt(filters.maxSize);
+        if (!isNaN(maxSizeLimit)) {
+          if (propMinSize === null || propMinSize > maxSizeLimit) return false;
+        }
+      }
+
+      // 10. Price range filter (estimated as psf * size)
+      if (filters.minPrice || filters.maxPrice) {
+        if (!item.psf || propMinSize === null || propMaxSize === null) {
+          return false;
+        }
+        const estMinPrice = item.psf * propMinSize;
+        const estMaxPrice = item.psf * propMaxSize;
+        
+        if (filters.minPrice) {
+          const minPriceLimit = parseFloat(filters.minPrice);
+          if (!isNaN(minPriceLimit) && estMaxPrice < minPriceLimit) return false;
+        }
+        if (filters.maxPrice) {
+          const maxPriceLimit = parseFloat(filters.maxPrice);
+          if (!isNaN(maxPriceLimit) && estMinPrice > maxPriceLimit) return false;
+        }
+      }
+
       return true;
     });
   }, [searchQuery, filters, virtualTour]);
@@ -176,8 +281,37 @@ export default function App() {
   // Sort filtered listings
   const sortedListings = useMemo(() => {
     const list = [...filteredListings];
+
+    // Feature scoring helper to identify launching soon & recently launched
+    const isFeatured = (item) => {
+      // 1. Launching soon (units sold = 0)
+      if (item.unitsSoldPercent === 0 || item.unitsSoldPercent === '0') {
+        return true;
+      }
+      // 2. Recently launched (units sold > 0 and <= 20%)
+      if (item.unitsSoldPercent !== null && item.unitsSoldPercent !== undefined) {
+        const sold = parseFloat(item.unitsSoldPercent);
+        if (!isNaN(sold) && sold > 0 && sold <= 20) {
+          return true;
+        }
+      }
+      // 3. Estimated completion year in the future (say, >= 2028)
+      if (item.topYear) {
+        const year = parseInt(item.topYear);
+        if (!isNaN(year) && year >= 2028) {
+          return true;
+        }
+      }
+      return false;
+    };
+
     if (sortBy === 'recommended') {
-      return list; // Keep original scraped order
+      // Put featured ones first, maintaining their relative order otherwise
+      return list.sort((a, b) => {
+        const featA = isFeatured(a) ? 1 : 0;
+        const featB = isFeatured(b) ? 1 : 0;
+        return featB - featA; // Put true (1) before false (0)
+      });
     }
     
     return list.sort((a, b) => {

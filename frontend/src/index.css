@@ -141,7 +141,6 @@ header {
 }
 
 /* Filter Bar */
-/* Filter Bar */
 .filter-bar {
   background: #ffffff;
   padding: 24px;
@@ -158,11 +157,89 @@ header {
   border-color: #cbd5e1;
 }
 
-.filter-grid {
+.filter-search-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  align-items: flex-end;
+}
+
+.filter-search-row .search-group {
+  flex: 1;
+}
+
+.filter-search-row .search-btn-group {
+  flex-shrink: 0;
+}
+
+.filter-options-grid {
   display: grid;
-  grid-template-columns: 1.8fr 1.2fr 1.2fr 1.2fr auto;
+  grid-template-columns: repeat(12, 1fr);
   gap: 16px;
   align-items: flex-end;
+}
+
+.filter-options-grid > div:nth-child(1),
+.filter-options-grid > div:nth-child(2),
+.filter-options-grid > div:nth-child(3),
+.filter-options-grid > div:nth-child(4) {
+  grid-column: span 3;
+}
+
+.filter-options-grid .size-range-group {
+  grid-column: span 5;
+}
+
+.filter-options-grid .price-range-group {
+  grid-column: span 5;
+}
+
+.filter-options-grid .reset-group {
+  grid-column: span 2;
+}
+
+@media (max-width: 1024px) {
+  .filter-options-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .filter-options-grid > div:nth-child(1),
+  .filter-options-grid > div:nth-child(2),
+  .filter-options-grid > div:nth-child(3),
+  .filter-options-grid > div:nth-child(4) {
+    grid-column: span 3;
+  }
+  .filter-options-grid .size-range-group {
+    grid-column: span 3;
+  }
+  .filter-options-grid .price-range-group {
+    grid-column: span 3;
+  }
+  .filter-options-grid .reset-group {
+    grid-column: span 6;
+  }
+}
+
+@media (max-width: 640px) {
+  .filter-search-row {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+  .filter-search-row .search-btn-group button {
+    width: 100%;
+  }
+  .filter-options-grid {
+    grid-template-columns: 1fr;
+  }
+  .filter-options-grid > div:nth-child(1),
+  .filter-options-grid > div:nth-child(2),
+  .filter-options-grid > div:nth-child(3),
+  .filter-options-grid > div:nth-child(4),
+  .filter-options-grid .size-range-group,
+  .filter-options-grid .price-range-group,
+  .filter-options-grid .reset-group {
+    grid-column: span 1;
+  }
 }
 
 .filter-group {
@@ -242,6 +319,58 @@ select.filter-input {
   height: 44px;
 }
 
+.range-inputs {
+  display: flex;
+  align-items: center;
+  background-color: #f8fafc;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  height: 44px;
+  padding: 0 12px;
+  transition: var(--transition);
+}
+
+.range-inputs:focus-within {
+  border-color: var(--primary);
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(var(--primary-rgb), 0.1);
+}
+
+.range-inputs .filter-input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  padding: 0;
+  height: 100%;
+  box-shadow: none;
+  text-align: center;
+}
+
+.range-inputs .filter-input:focus {
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+/* Hide scroll spinners inside range inputs */
+.range-inputs input[type="number"]::-webkit-outer-spin-button,
+.range-inputs input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.range-inputs input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.range-separator {
+  color: #94a3b8;
+  font-weight: 500;
+  padding: 0 8px;
+  user-select: none;
+}
+
 .btn-search {
   height: 44px;
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
@@ -276,10 +405,9 @@ select.filter-input {
   font-size: 14px;
 }
 
-.btn-reset {
+.btn-reset-wide {
   height: 44px;
-  width: 44px;
-  min-width: 44px;
+  width: 100%;
   background-color: #f1f5f9;
   color: #475569;
   border: 1px solid #cbd5e1;
@@ -287,17 +415,20 @@ select.filter-input {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
-.btn-reset:hover {
+.btn-reset-wide:hover {
   background-color: #e2e8f0;
   color: var(--navy-dark);
   transform: translateY(-1px);
 }
 
-.btn-reset:active {
+.btn-reset-wide:active {
   transform: translateY(0);
 }
 
@@ -388,6 +519,7 @@ select.filter-input {
   width: 100%;
   padding-top: 75%; /* 4:3 Aspect Ratio */
   background: #e2e8f0;
+  overflow: hidden;
 }
 
 .card-img {
@@ -397,6 +529,11 @@ select.filter-input {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card-img-wrapper:hover .card-img {
+  transform: scale(1.05);
 }
 
 .status-badge {

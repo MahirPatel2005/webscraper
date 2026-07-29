@@ -80,13 +80,20 @@ export default function ListingsGrid({ listings, onViewDetails }) {
         
         return (
           <article key={item.id} className="property-card">
-            {/* Launch Status Badge */}
-            <span className={`status-badge ${launchStatus.toLowerCase()}`}>
-              {launchStatus}
-            </span>
+            {/* Launch Status Badge - Omitted "Launched" as too repetitive, show "Launching Soon" */}
+            {launchStatus !== 'Launched' && (
+              <span className={`status-badge ${launchStatus.toLowerCase()}`}>
+                {launchStatus === 'Launching' ? 'Launching Soon' : launchStatus}
+              </span>
+            )}
 
-            {/* Property Image */}
-            <div className="card-img-wrapper">
+            {/* Property Image - Clicking triggers details view */}
+            <div
+              className="card-img-wrapper"
+              onClick={() => onViewDetails(item.id)}
+              style={{ cursor: 'pointer' }}
+              title={`View details for ${item.title}`}
+            >
               <img
                 src={coverImage}
                 alt={item.title}
@@ -151,7 +158,7 @@ export default function ListingsGrid({ listings, onViewDetails }) {
                   className="btn-view"
                   onClick={() => onViewDetails(item.id)}
                 >
-                  View
+                  Details
                 </button>
               </div>
             </div>
