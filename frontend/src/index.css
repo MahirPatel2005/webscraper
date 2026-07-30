@@ -179,42 +179,15 @@ header {
   align-items: flex-end;
 }
 
-.filter-options-grid > div:nth-child(1),
-.filter-options-grid > div:nth-child(2),
-.filter-options-grid > div:nth-child(3),
-.filter-options-grid > div:nth-child(4) {
+.filter-options-grid > div {
   grid-column: span 3;
-}
-
-.filter-options-grid .size-range-group {
-  grid-column: span 5;
-}
-
-.filter-options-grid .price-range-group {
-  grid-column: span 5;
-}
-
-.filter-options-grid .reset-group {
-  grid-column: span 2;
 }
 
 @media (max-width: 1024px) {
   .filter-options-grid {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(12, 1fr);
   }
-  .filter-options-grid > div:nth-child(1),
-  .filter-options-grid > div:nth-child(2),
-  .filter-options-grid > div:nth-child(3),
-  .filter-options-grid > div:nth-child(4) {
-    grid-column: span 3;
-  }
-  .filter-options-grid .size-range-group {
-    grid-column: span 3;
-  }
-  .filter-options-grid .price-range-group {
-    grid-column: span 3;
-  }
-  .filter-options-grid .reset-group {
+  .filter-options-grid > div {
     grid-column: span 6;
   }
 }
@@ -225,20 +198,11 @@ header {
     gap: 12px;
     align-items: stretch;
   }
-  .filter-search-row .search-btn-group button {
-    width: 100%;
-  }
   .filter-options-grid {
     grid-template-columns: 1fr;
   }
-  .filter-options-grid > div:nth-child(1),
-  .filter-options-grid > div:nth-child(2),
-  .filter-options-grid > div:nth-child(3),
-  .filter-options-grid > div:nth-child(4),
-  .filter-options-grid .size-range-group,
-  .filter-options-grid .price-range-group,
-  .filter-options-grid .reset-group {
-    grid-column: span 1;
+  .filter-options-grid > div {
+    grid-column: span 1 !important;
   }
 }
 
@@ -1355,3 +1319,216 @@ select.filter-input {
   font-family: 'Poppins', sans-serif;
   color: var(--navy-dark);
 }
+
+/* Custom Dropdown / Select styling (matching user's screenshot) */
+.custom-select-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.custom-select-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.8px;
+}
+
+.custom-select-trigger-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #f8fafc;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  height: 44px;
+  padding: 0 14px;
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+}
+
+.custom-select-trigger-wrapper:hover {
+  border-color: #cbd5e1;
+}
+
+.custom-select-trigger-wrapper.open {
+  border-color: var(--primary);
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(var(--primary-rgb), 0.1);
+}
+
+.custom-select-badge {
+  background-color: #e2e8f0;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 12px;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+}
+
+.custom-select-input {
+  border: none;
+  background: transparent;
+  padding: 0;
+  height: 100%;
+  flex: 1;
+  min-width: 0;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--text-main);
+  outline: none;
+}
+
+.custom-select-caret {
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-left: 8px;
+  pointer-events: none;
+}
+
+.custom-select-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  max-height: 250px;
+  overflow-y: auto;
+  padding: 6px 0;
+}
+
+.custom-select-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.custom-select-option:hover {
+  background-color: #f1f5f9;
+}
+
+.custom-select-option.selected {
+  background-color: #f8fafc;
+  font-weight: 500;
+}
+
+.custom-select-option-text {
+  font-size: 14px;
+  color: var(--text-main);
+}
+
+.custom-select-radio-circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1.5px solid #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.15s ease;
+}
+
+.custom-select-radio-circle.checked {
+  border-color: var(--primary);
+}
+
+.custom-select-radio-inner {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--primary);
+}
+
+/* Search Actions Flex Row & Reset Button */
+.search-actions-flex {
+  display: flex;
+  gap: 8px;
+  height: 44px;
+}
+
+.btn-reset-top {
+  height: 44px;
+  background-color: #f1f5f9;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-reset-top:hover {
+  background-color: #e2e8f0;
+  color: var(--navy-dark);
+  transform: translateY(-1px);
+}
+
+.btn-reset-top:active {
+  transform: translateY(0);
+}
+
+/* Premium Singapore MRT Badges & Logos */
+.metro-badge-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 3px 8px 3px 4px;
+  border-radius: 16px;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+}
+
+.metro-badge-container:hover {
+  border-color: #cbd5e1;
+  background-color: #f1f5f9;
+  transform: translateY(-1px);
+}
+
+.metro-badge-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff !important;
+  font-size: 9px;
+  font-weight: 800;
+  width: 32px;
+  height: 18px;
+  border-radius: 9px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  line-height: 1;
+  user-select: none;
+}
+
+.metro-badge-text {
+  font-size: 11px;
+  font-weight: 600;
+  color: #475569;
+}
+

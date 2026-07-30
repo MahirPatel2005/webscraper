@@ -12,6 +12,18 @@ export const getMetroColor = (line) => {
   return '#64748b'; // default slate grey
 };
 
+export const getMetroAbbr = (line) => {
+  if (!line) return 'MRT';
+  const name = line.toLowerCase();
+  if (name.includes('north south')) return 'NSL';
+  if (name.includes('east west')) return 'EWL';
+  if (name.includes('north east')) return 'NEL';
+  if (name.includes('circle')) return 'CCL';
+  if (name.includes('downtown')) return 'DTL';
+  if (name.includes('thomson-east coast') || name.includes('thomson east')) return 'TEL';
+  return 'MRT';
+};
+
 export const getMetroLines = (districtCode) => {
   return districtToMetroLines[districtCode] || [];
 };
@@ -112,17 +124,11 @@ export default function ListingsGrid({ listings, onViewDetails }) {
               {/* Metro Line Badges */}
               <div className="card-metro-lines" style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', marginBottom: '12px' }}>
                 {getMetroLines(item.district).map(line => (
-                  <span
-                    key={line}
-                    className="metro-badge"
-                    style={{
-                      backgroundColor: getMetroColor(line) + '15',
-                      color: getMetroColor(line),
-                      border: `1px solid ${getMetroColor(line)}40`
-                    }}
-                  >
-                    <i className="fa-solid fa-train" style={{ fontSize: '9px' }}></i>
-                    {line}
+                  <span key={line} className="metro-badge-container">
+                    <span className="metro-badge-logo" style={{ backgroundColor: getMetroColor(line) }}>
+                      {getMetroAbbr(line)}
+                    </span>
+                    <span className="metro-badge-text">{line}</span>
                   </span>
                 ))}
               </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import InquiryModal from './InquiryModal';
-import { formatDistrict, getLaunchStatus, getMetroColor, getMetroLines } from './ListingsGrid';
+import { formatDistrict, getLaunchStatus, getMetroColor, getMetroLines, getMetroAbbr } from './ListingsGrid';
 import { getCleanImages } from '../App';
 
 // Keyword to icon mapping for facilities to look extra premium
@@ -179,17 +179,11 @@ export default function DetailView({ id, listings, onBack, onSelectProperty }) {
           {/* Metro Line Badges */}
           <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginTop: '10px' }}>
             {getMetroLines(item.district).map(line => (
-              <span
-                key={line}
-                className="metro-badge"
-                style={{
-                  backgroundColor: getMetroColor(line) + '15',
-                  color: getMetroColor(line),
-                  border: `1px solid ${getMetroColor(line)}40`
-                }}
-              >
-                <i className="fa-solid fa-train" style={{ fontSize: '9px' }}></i>
-                {line}
+              <span key={line} className="metro-badge-container">
+                <span className="metro-badge-logo" style={{ backgroundColor: getMetroColor(line) }}>
+                  {getMetroAbbr(line)}
+                </span>
+                <span className="metro-badge-text">{line}</span>
               </span>
             ))}
           </div>
@@ -510,18 +504,11 @@ export default function DetailView({ id, listings, onBack, onSelectProperty }) {
                     </div>
                     <div style={{ display: 'flex', gap: '4px', flexWrap: 'wrap', marginBottom: '12px' }}>
                       {getMetroLines(simItem.district).slice(0, 1).map(line => (
-                        <span
-                          key={line}
-                          className="metro-badge"
-                          style={{
-                            backgroundColor: getMetroColor(line) + '10',
-                            color: getMetroColor(line),
-                            border: `1px solid ${getMetroColor(line)}25`,
-                            fontSize: '10px',
-                            padding: '1px 6px'
-                          }}
-                        >
-                          {line}
+                        <span key={line} className="metro-badge-container" style={{ padding: '2px 6px 2px 3px' }}>
+                          <span className="metro-badge-logo" style={{ backgroundColor: getMetroColor(line), width: '28px', height: '16px', borderRadius: '8px', fontSize: '8px' }}>
+                            {getMetroAbbr(line)}
+                          </span>
+                          <span className="metro-badge-text" style={{ fontSize: '10px' }}>{line}</span>
                         </span>
                       ))}
                     </div>
