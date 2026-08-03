@@ -232,7 +232,39 @@
       "Outdoor Fitness"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
+    "delistedAt": null
+  },
+  {
+    "id": "luxus-hills,-the-estate",
+    "slug": "luxus-hills,-the-estate",
+    "url": "https://www.edgeprop.sg/new-launches/luxus-hills,-the-estate",
+    "title": "Luxus Hills, The Estate",
+    "address": "D28 Singapore",
+    "district": "D28",
+    "propertyType": "Landed",
+    "beds": null,
+    "baths": null,
+    "floorAreaSqft": null,
+    "price": null,
+    "psf": null,
+    "topYear": "2028",
+    "unitsSoldPercent": null,
+    "tenure": "999 years",
+    "totalUnits": 156,
+    "developer": "Bukit Sembawang Estates Limited",
+    "agentName": "",
+    "agentLicense": "",
+    "phone": "",
+    "image": "https://sg.tepcdn.com/s3fs-public/1601760101784881652.jpg",
+    "images": [
+      "https://sg.tepcdn.com/s3fs-public/1601760101784881652.jpg"
+    ],
+    "agentPhoto": "",
+    "layouts": [],
+    "facilities": [],
+    "status": "active",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -435,7 +467,7 @@
       "Tennis Court"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -657,7 +689,7 @@
       "Wifi at common areas"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -979,7 +1011,7 @@
       "Water Feature"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -1092,7 +1124,7 @@
       "Sky Grill"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -1330,7 +1362,7 @@
       "Accessible\n     Changing Room"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -1362,39 +1394,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
-    "delistedAt": null
-  },
-  {
-    "id": "luxus-hills,-the-estate",
-    "slug": "luxus-hills,-the-estate",
-    "url": "https://www.edgeprop.sg/new-launches/luxus-hills,-the-estate",
-    "title": "Luxus Hills, The Estate",
-    "address": "D28 Singapore",
-    "district": "D28",
-    "propertyType": "Landed",
-    "beds": null,
-    "baths": null,
-    "floorAreaSqft": null,
-    "price": null,
-    "psf": null,
-    "topYear": "2028",
-    "unitsSoldPercent": 0,
-    "tenure": "999 years",
-    "totalUnits": 156,
-    "developer": "Bukit Sembawang Estates Limited",
-    "agentName": "",
-    "agentLicense": "",
-    "phone": "",
-    "image": "https://sg.tepcdn.com/s3fs-public/1601760101784881652.jpg",
-    "images": [
-      "https://sg.tepcdn.com/s3fs-public/1601760101784881652.jpg"
-    ],
-    "agentPhoto": "",
-    "layouts": [],
-    "facilities": [],
-    "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -1426,7 +1426,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -1458,7 +1458,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -1490,7 +1490,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -1522,7 +1522,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -1554,7 +1554,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -1704,7 +1704,7 @@
       "Washrooms"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -1836,7 +1836,7 @@
       "Consumer Switchrooms"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -1978,7 +1978,7 @@
       "53. Accessible toilet"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -2185,7 +2185,7 @@
       "Water Tank (Roof)"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -2358,7 +2358,7 @@
       "Riverside Trail"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -2578,7 +2578,7 @@
       "Water Tank (Roof)"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -2610,7 +2610,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -2799,7 +2799,7 @@
       "Yoga Deck"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -2970,7 +2970,7 @@
       "Lookout●       Altitude Swing"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -3080,7 +3080,7 @@
       "40th Floor Facilities at Roof Garden- Outdoor Reading Lounge- Yoga Lawn- Sunset Terrace- Scented Garden- Alfresco Dinning with BBQ- Juniper Lounge- Hammock Deck- Horizon Terrace- Stargazing Deck- Sky Dining Terrace with\n      BBQ"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -3176,7 +3176,7 @@
       "Playground"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -3208,7 +3208,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -3333,7 +3333,7 @@
       "10 Sky\n     Terraces"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -3365,7 +3365,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -3380,7 +3380,7 @@
     "baths": null,
     "floorAreaSqft": "420 - 980",
     "price": null,
-    "psf": 3140,
+    "psf": 3173,
     "topYear": "",
     "unitsSoldPercent": 94.5,
     "tenure": "99 years",
@@ -3460,7 +3460,7 @@
       "Sky Loft with bar facilities"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -3475,7 +3475,7 @@
     "baths": null,
     "floorAreaSqft": "527 - 4144",
     "price": null,
-    "psf": 2985,
+    "psf": 2957,
     "topYear": "2029",
     "unitsSoldPercent": 72,
     "tenure": "99 years",
@@ -3616,7 +3616,7 @@
       "Sky Observatory"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -3631,7 +3631,7 @@
     "baths": null,
     "floorAreaSqft": "431 - 1539",
     "price": null,
-    "psf": 3385,
+    "psf": 3388,
     "topYear": "",
     "unitsSoldPercent": 60.1,
     "tenure": "999 years",
@@ -3708,7 +3708,7 @@
     ],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -3879,7 +3879,7 @@
       "H10 Water Tank (Roof)"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -3894,7 +3894,7 @@
     "baths": null,
     "floorAreaSqft": null,
     "price": null,
-    "psf": 3443,
+    "psf": 3445,
     "topYear": "",
     "unitsSoldPercent": 82.1,
     "tenure": "99 years",
@@ -3911,7 +3911,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -4042,7 +4042,7 @@
       "Room"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -4191,7 +4191,7 @@
       "Sky Viewing Pod"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -4206,7 +4206,7 @@
     "baths": null,
     "floorAreaSqft": "570 - 2131",
     "price": null,
-    "psf": 2565,
+    "psf": 2564,
     "topYear": "2029",
     "unitsSoldPercent": 88,
     "tenure": "99 years",
@@ -4357,7 +4357,7 @@
       "Sky Lawn"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -4581,7 +4581,7 @@
       "Jogging Trail"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -4658,7 +4658,7 @@
       "Yoga lawn"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -4763,7 +4763,7 @@
       "Level 3 Kid’s Splash"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -4926,7 +4926,7 @@
       "Guard House"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -4958,7 +4958,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -4993,7 +4993,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -5133,7 +5133,7 @@
       "Spice Garden"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -5165,7 +5165,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -5249,7 +5249,7 @@
       "●       Water Tank (Roof)"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -5425,7 +5425,7 @@
       "Bicycle Parking"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -5763,7 +5763,7 @@
       "Foyer Lobby"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -5857,7 +5857,7 @@
       "One SOcial"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -6233,7 +6233,7 @@
       "Fire Engine Access"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -6248,7 +6248,7 @@
     "baths": null,
     "floorAreaSqft": "463 - 4833",
     "price": null,
-    "psf": 2861,
+    "psf": 2856,
     "topYear": "2029",
     "unitsSoldPercent": 57.4,
     "tenure": "99 years",
@@ -6404,7 +6404,7 @@
       "Pod (L29)"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -6479,7 +6479,7 @@
       "(1st & 2nd Storey)"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -6613,7 +6613,7 @@
       "Range Nature Park"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -6761,7 +6761,7 @@
       "Alcove (1st Storey)"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -6795,7 +6795,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -6827,7 +6827,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -6900,7 +6900,7 @@
       "Powder rooms"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -6934,7 +6934,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -7075,7 +7075,7 @@
       "Sky Lounge"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -7090,7 +7090,7 @@
     "baths": null,
     "floorAreaSqft": null,
     "price": null,
-    "psf": 2528,
+    "psf": 2531,
     "topYear": "2025",
     "unitsSoldPercent": 91.4,
     "tenure": "Freehold",
@@ -7107,7 +7107,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -7122,7 +7122,7 @@
     "baths": null,
     "floorAreaSqft": "538 - 1346",
     "price": null,
-    "psf": 2394,
+    "psf": 2399,
     "topYear": "2027",
     "unitsSoldPercent": 94,
     "tenure": "99 years",
@@ -7227,7 +7227,7 @@
       "Tea Pavilion"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -7303,7 +7303,7 @@
       "Relaxtaion Deck (Level 2)"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -7492,7 +7492,7 @@
       "Star Gazing Lawn"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -7602,7 +7602,7 @@
       "Reading Corner"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -7634,7 +7634,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -7718,7 +7718,7 @@
       "BBQ Pavilions"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -7825,7 +7825,7 @@
       "Social Lounge"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -7857,7 +7857,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -8058,7 +8058,7 @@
       "Rooftop1. Spa Pool2. Changing Room3. Social Lounge4. Outdoor Fitness5. Alfresco BBQ6. Social Lawn7. Rooftop Bar8. Rooftop Dining9. Reading LoungeLevel 110. Lap Pool11. Pool Deck12. Side Gate13. Guard HouseBasement 114. Lobby 115. Lobby 2"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -8170,7 +8170,7 @@
       "Sky Gym"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -8288,7 +8288,7 @@
       "Kid's Play Lawn"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -8395,7 +8395,7 @@
       "Floating Pavilion"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -8613,7 +8613,7 @@
       "Consumer Switch Room (Basement 1)"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -8750,7 +8750,7 @@
       "Alfresco seating alcove"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -8868,7 +8868,7 @@
       "1.\tFoliage Garden (Thematic)2.\tPalm Grove (Thematic) 3.\tHammock Garden4.\t600m Jogging Trail5.\tOutdoor Fitness 16.\tThe Perch Living Room7.\tPetunia Pavilion 8.\tPaloma Pavilion 9.\tAngelica Dining Pavilion with BBQ10.\tAnise Dining Pavilion with BBQ11.\tGrand Lawn12.\tDog Run13.\tPlay Lawn14.\tWater Cascade15.\tGarden Decks 1 (3 nos.)16.\tTerrace Deck17.\tTerrace Steps18.\tCommune Deck19.\t50m Lap Pool 20.\tAqua Gym with Spa21.\tChanging Room with Sauna22.\tOutdoor Fitness 223.\tAqua Cove 24.\tFamily Pool25.\tKids’ Pool 26.\tPlay Pool 27.\tSpa Pool 28.\tAdventure Playground29.\tThe Perch Reading Room30.\tThe Raintree Function Room 31.\tThe Alstonia Function Room 32.\tCasuarina Entertainment Rooms (2 nos)33.\tThe Willow Function Room34.\tPool Cabanas (4 nos.)35.\tShorea Cabanas (4 nos)36.\tLovage Dining Pavilion37.\tLemongrass Dining Pavilion38.\tLinden Dining Pavilion39.\tZen Decks 1 (2 nos)40.\tGarden Deck 241.\tTennis Court42.\tRecreational Court43.\tOutdoor Fitness 344.\tKids’ Play Corner45.\tSwing Garden46.\tRetreat Cabanas (2 nos.)47.\tCommunity Garden 148.\tSucculent Garden (Thematic)49.\tCreekside Cabanas (4 nos.)50.\tTarragon Dining Pavilion51.\tThyme Dining Pavilion52.\tTansy Dining Pavilion53.\tCommunity Garden 254.\tMeadow Garden (Thematic)55.\tVista Glades (2 nos.)56.\tZen Decks 2 (2 nos)57.\tVista Gym58.\tThe Tembusu Living Room59.\tThe Nest Work Pods (12 nos. in 3 clusters)60.\tCinnamon Dining Pavilion61.\tCayenne Dining Pavilion 62.\tCumin Dining Pavilion 63.\tChicory Dining Pavilion 64.\tCassia Dining Pavilion65.\tCanopy Deck66.\tSky Lawns (3 nos)67.\tSky Decks (2 nos) 68.\tSage Dining Pavilion69.\tSaffron Dining Pavilion70.\tSavory Dining Pavilion71.\tSorrel Dining Pavilion72.\tSafflower Dining Pavilion"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -8883,7 +8883,7 @@
     "baths": null,
     "floorAreaSqft": "560 - 2260",
     "price": null,
-    "psf": 2760,
+    "psf": 2759,
     "topYear": "2026",
     "unitsSoldPercent": 97.1,
     "tenure": "Freehold",
@@ -9033,7 +9033,7 @@
       "NORTH CONTINUUM A. Arrival Zone NorthA1. Waterwall Drop-Off PlazaA2. WaterwallA3. Bicycle ParkingB. Play Zone NorthB1. Playground NorthB2. Playground DeckC. Wellness ZoneC1. Lap Pool (33.3m lap length x 7m lap width, 1.2m water depth) (approx. 270m2 incl. Jacuzzi Cove)C2. Jacuzzi CoveC3. Pool DeckC4. BBQ PavilionC5. Resting PavilionC6. Changing RoomC7. Accessible ToiletC8. Outdoor ShowerD. Heritage ZoneD1 Thiam Siew HouseD1.1 LibraryD1.2 Club RoomD1.3 FoyerD2. Thiam Siew House Front CourtD3. Front Court LawnD4. Water BowlD5. Roof Tiles Feature WallD6. BBQ PavilionD7. Accessible ToiletE. Fitness ZoneE1. Multipurpose LawnE2. Leisure Pool DeckE3. Leisure Pool (approx. 244m2 incl. Aqua Gym Pool & Jacuzzi Cove)E4. Aqua Gym PoolE5. Jacuzzi CoveE6. Aqua Gym Pool DeckE7. Outdoor ShowerE8. Outdoor GymE9. Yoga LawnF. Garden Zone NorthF1. Lobby GardenF2. Patterned GardenF3. Reflexology GardenG. Continuum BridgeG1. Resting PodG2. BridgeSOUTH CONTINUUMH. Arrival Zone SouthH1. Droplet Drop-Off PlazaH2. Droplet PoolH3. Bicycle ParkingJ. \"River Pool ZoneJ1. Cascading Children's & Toddler's Pool (0.5m & 0.3m water depth) (approx. 98m2)J2. Children's Pool DeckJ3. Outdoor ShowerJ4. Resting PavilionJ5. Lawn DeckJ6. Family Pool (0.9m water depth) (approx. 149m2 incl. Wellness Pool)J7. Wellness Pool (0.9m water depth)J7.1. Swan Neck CoveJ7.2. Hydrotherapy PocketJ7.3. Vichy Shower BedsJ8. Lounge DeckJ9. Resting PavilionJ10. Changing RoomJ11. Accessible ToiletK. \"Lake\" Pool ZoneK1. 50m Lap Pool (50m lap length x 5.5m lap width with approx. 276m2 area, 25m lap length x 3.0m lap width with approx. 95m2 area)K2. Pool DeckK3. Clubhouse DeckK4. Outdoor ShowerK5. South Side SocialK5.1. Glass House (1st Storey)K5.2. Sound Room (2nd Storey)K5.3. Social Room (2nd Storey)L. Play Zone SouthL1. Playground SouthL2. Water PlayL3. Outdoor ShowerL4. Lawn StepsL5. BBQ PavilionL6. Multipurpose Recreational CourtM. Garden Zone SouthM1. Sensory GardenM2. Lawn GardenM3. Reflexology GardenN. Other FacilitiesN1 GuardhouseN2 Pedestrian GateN3 Management OfficeN4 Generator SetN5 Bin Centre (Basement)N6 Electrical Substation (Basement)N7 MDF Room (Basement)N8 Consumer Switch Room (Basement)N9 Streetside Seating PodsNORTH CONTINUUMP. Sky Garden North (Blk 1 & 3)P1. Sky JacuzziP2. Outdoor LoungeP3. Grill DeckP3.1 Resting LoungeP4. Community GardenP5. Bridge DeckP6. Hot TubP7. Yoga LawnP8. Outdoor Fitness DeckP9. Reading DeckP10. Sky BarP11. Sky FitnessP12. Accessible ToiletP13. Outdoor ShowerQ. Sky Garden South (Blk 6 & 8)Q1. Grill DeckQ1.1 Resting LoungeQ2. Dining DeckQ3. Hammock DeckQ4. Swing DeckQ5. Bridge DeckQ6. Sky JacuzziQ7. Hot TubQ8. Yoga LawnQ9. Fitness DeckQ10. Garden DeckQ11. Sky ClubQ12. Sky GymQ13. Accessible ToiletQ14. Outdoor Shower"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -9177,7 +9177,7 @@
       "Yoga Deck"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -9374,7 +9374,7 @@
       "A. The Arrival\t\t\t\t\tA1. Arrival Plaza\t\t\t\t\t\tA2. Guard House with Green Roof\t\t\t\t\tA3. Drop Off Water FeatureB. The ValleyB1. Water Courtyard\t\t\t\t\t\tB2. Valley Pavilion\t\t\t\t\t\tB3. Reflecting Pool With Water Candles\t\t\t\t\tB4. Picnic Pasture\t\t\t\t\t\tB5. Reading Nook\t\t\t\t\t\tB6. Valley Lawn\t\t\t\t\t\tB7. Flower Garden Trail\t\t\t\t\t\tB8. Chill-Out Deck\t\t\t\t\t\tB9. Mini Putt\t\t\t\t\t\tB10. Wooded Trail\t\t\tC. The Sanctuary\t\t\t\t\t\tC1. Eco Pond\t\t\t\t\t\tC2. BBQ Pavilion\t\t\t\t\t\tC3. Teppanyaki Pavilion\t\t\t\t\t\tC4. Party Lawn\t\t\t\t\t\tC5. Exercise Lawn\t\t\t\t\t\tC6. Basketball Hoop\t\t\t\t\t\tC7. Outdoor Shower\t\t\t\t\t\tC8. Lounge Deck\t\t\t\t\t\tC9. Aqua Gym\t\t\t\t\t\tC10. Tranquility Pavilion\t\t\t\t\t\tC11. Jacuzzi Seats\t\t\t\t\t\tC12. Hot Tub\t\t\t\t\t\tC13. Jacuzzi Loungers\t\t\t\t\t\tC14. Yoga DeckD. The Alcove\t\t\t\t\t\tD1. Tea Pavilion\t\t\t\t\t\tD2. Embankment Slide\t\t\t\t\t\tD3. The Creek\t\t\t\t\t\tD4. Cascading Falls\t\t\t\t\t\tD5. The Play Cove\t\t\t\t\t\tD6. Function Room 2 (The Creek Room)\t\t\t\t\t\tD7. Social Terrace\tE. The Enclave\t\t\t\t\t\tE1. Terra House \t\t\t\t\t\tE1.1\tTerra Hub (2nd storey)\t\t\t\t\t\tE1.2\tGym (Fitness Studio) (2nd storey)\t\t\t\t\t\tE1.3\tFunction Room 1 (The Club Room)\t\t\t\t\t\tE1.4\tFunction Room 3 (Media Screening Room)\t\t\t\t\t\tE1.5\tToilet \t\t\t\t\t\tE1.6\tChanging Room \t\t\t\t\t\tE1.7\tManagement Office \t\t\t\t\t\tE1.8\tOutdoor Shower\t\t\t\t\t\tE2. Falling Water\t\t\t\t\t\tE3. Kids Pool\t\t\t\t\t\tE4. Splash Pad\t\t\t\t\t\tE5. Pool Deck\t\t\t\t\t\tE6. Poolside Cove\t\t\t\t\t\tE7. Aqua Lounge\t\t\t\t\t\tE8. 50M Lap Pool\t\t\t\t\t\tE9. Poolside Pavilion\t\t\t\t\t\tE10. Outdoor Shower\t\t\t\t\t\tE11. Sunning Lawn\t\t\t\t\t\tE12. Jacuzzi Pod\t\t\t\t\t\tE13. Coast Cabana\t\t\t\t\t\tE14. Pool Deck\t\t\t\t\t\tE15. Misting Poles\t\t\t\t\t\tE16. Lounge Pool\t\t\t\t\t\tE17. Outdoor Shower\t\t\t\t\t\tE18. Sitting Terrace\t\t\t\t\t\tE19. Serene-Scent Garden\t\t\t\t\t\t\t\t\t\t\t\t\tF. The Hillside\t\t\t\t\t\tF1. Family BBQ Pavilion\t\t\t\t\t\tF2. Side Gate (To Pepys Road)\t\t\t\t\t\tF3. Herbs Garden\t\t\t\t\t\tF4. Meditation Lawn\t\t\t\t\t\tF5. Fitness Terrace\t\t\t\t\t\tF6. Hillside Canopy"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -9485,7 +9485,7 @@
       "Tennis courts"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -9571,7 +9571,7 @@
       "6 Sky Gardens"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -9605,7 +9605,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -9683,7 +9683,7 @@
       "15 mins walk to Stevens MRT Station"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -9813,7 +9813,7 @@
       "(NSE)\nBus Stop (72021) along Ang Mo Kio Avenue 5"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -9898,7 +9898,7 @@
       "Sky Retreat"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -10039,7 +10039,7 @@
       "plans)"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -10132,7 +10132,7 @@
       "The Hideaway – Chillout Deck, Social Lounge, Yoga Room, Hammock Garden, Steam Room"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -10248,7 +10248,7 @@
       "Horizon Co-Work Lounge"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -10375,7 +10375,7 @@
       "Accessible ToiletSen Roof – 3\nDistinctive Themes:Wellness\n(Block 222) - Pilates Pavilion, Meditation Deck, Yoga Lawn, Floral Garden,\nSensory Garden3G Zone (Block 228) - Hammock Alcove, Maze Garden, Chess Garden, Community GardenFamily (Block 230) - Sky Bar Pavilion, Sky Lounge, Hangout Lounge, Sky Deck"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -10390,7 +10390,7 @@
     "baths": null,
     "floorAreaSqft": null,
     "price": null,
-    "psf": 2509,
+    "psf": 2513,
     "topYear": "2029",
     "unitsSoldPercent": 100,
     "tenure": "99 years",
@@ -10478,7 +10478,7 @@
       "Bicycle Parking"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -10618,7 +10618,7 @@
       "Sky\nBBQ Pavillion"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -10730,7 +10730,7 @@
       "Club Lounge"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -10770,7 +10770,7 @@
       "Refer to https://www.scenecaresidence.com.sg/location/"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -10805,7 +10805,7 @@
     "layouts": [],
     "facilities": [],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -10912,7 +10912,7 @@
       "recreation.More details https://www.avenuesouthresidencepeak.sg/Pls note that actual unit may differ from the virtual walkthrough videos shown above.For enquiries, pls email marketing.residential@uol.com.sg"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
@@ -10957,7 +10957,7 @@
       "Ocean PoolSerenity poolJacuzzi podsChildren’s wading poolReflective pondsEco pondsKoi oasisGrill PavilionRelaxation alcoveYoga deckFunction RoomGym"
     ],
     "status": "active",
-    "lastSeen": "2026-08-02T05:47:32.228Z",
+    "lastSeen": "2026-08-03T06:10:45.253Z",
     "delistedAt": null
   },
   {
