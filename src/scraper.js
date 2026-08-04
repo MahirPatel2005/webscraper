@@ -511,7 +511,7 @@ async function runOnce() {
                 } catch (e) {}
               }
 
-              if (parsedPrev && parsedPrev.developer && parsedPrev.layouts !== undefined) {
+              if (parsedPrev && parsedPrev.developer && parsedPrev.layouts !== undefined && parsedPrev.priceRanges !== undefined) {
                 record.developer = parsedPrev.developer;
                 record.tenure = parsedPrev.tenure;
                 record.totalUnits = parsedPrev.totalUnits;
