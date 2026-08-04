@@ -209,6 +209,41 @@ async function fetchDetails(browser, url) {
         }
       });
       
+      // Parse pricing tables dynamically
+      const priceRanges = [];
+      $('table').each((_, tableEl) => {
+        const headers = [];
+        $(tableEl).find('thead th').each((_, th) => {
+          headers.push($(th).text().trim().toLowerCase());
+        });
+        
+        const bedIdx = headers.findIndex(h => h.includes('bedroom type') || h === 'type');
+        const sqftIdx = headers.findIndex(h => h.includes('area range') || h.includes('size'));
+        const psfIdx = headers.indexOf('average psf');
+        const priceIdx = headers.findIndex(h => h.includes('price range') || h.includes('asking price'));
+        
+        if (bedIdx !== -1 && priceIdx !== -1) {
+          $(tableEl).find('tbody tr').each((_, tr) => {
+            const tds = $(tr).find('td');
+            if (tds.length === 0) return;
+            
+            const cells = [];
+            tds.each((_, td) => {
+              cells.push($(td).text().trim());
+            });
+            
+            const bedroomType = cells[bedIdx] || '';
+            const sqft = sqftIdx !== -1 ? cells[sqftIdx] : '';
+            const avgPsf = psfIdx !== -1 ? cells[psfIdx] : '';
+            const priceRange = cells[priceIdx] || '';
+            
+            if (bedroomType && priceRange) {
+              priceRanges.push({ bedroomType, sqft, avgPsf, priceRange });
+            }
+          });
+        }
+      });
+      
       await page.close();
       return {
         developer,
@@ -219,7 +254,8 @@ async function fetchDetails(browser, url) {
         baths: null,
         layouts,
         facilities,
-        images: detailImages
+        images: detailImages,
+        priceRanges
       };
     } catch (err) {
       logger.warn(`Attempt ${attempts} failed for details ${url}: ${err.message}`);
@@ -367,6 +403,7 @@ function parseRecords(html) {
       agentPhoto: '',
       layouts: [],
       facilities: [],
+      priceRanges: [],
     });
   });
 
@@ -484,6 +521,7 @@ async function runOnce() {
                 record.layouts = parsedPrev.layouts || [];
                 record.facilities = parsedPrev.facilities || [];
                 record.images = parsedPrev.images || record.images;
+                record.priceRanges = parsedPrev.priceRanges || [];
                 logger.info(`Reused details from cache for: ${record.title}`);
               } else {
                 if (!browser.isConnected()) {
@@ -502,6 +540,7 @@ async function runOnce() {
                 record.baths = details.baths;
                 record.layouts = details.layouts || [];
                 record.facilities = details.facilities || [];
+                record.priceRanges = details.priceRanges || [];
                 if (details.images && details.images.length > 0) {
                   record.images = details.images;
                 }

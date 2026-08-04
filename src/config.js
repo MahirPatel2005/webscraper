@@ -21,7 +21,7 @@ module.exports = {
     maxPages: Number(process.env.SOURCE_MAX_PAGES || 20),
   },
 
-  cronSchedule: process.env.CRON_SCHEDULE || '0 3 * * *', // daily at 3am
+  cronSchedule: process.env.CRON_SCHEDULE || '0 3 * * 0', // weekly on Sunday at 3am
 
   wix: {
     enabled: wixEnabled,

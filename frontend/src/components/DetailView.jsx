@@ -337,6 +337,44 @@ export default function DetailView({ id, listings, onBack, onSelectProperty }) {
           {/* TAB 2: UNIT DISTRIBUTION / LAYOUTS */}
           {activeTab === 'layouts' && (
             <div className="tab-content active">
+              {/* Prices by Unit Type Section */}
+              {item.priceRanges && item.priceRanges.length > 0 && (
+                <div className="prices-by-type-section" style={{ marginBottom: '30px' }}>
+                  <h3 style={{ fontSize: '18px', fontWeight: '700', color: 'var(--navy-dark)', marginBottom: '14px', fontFamily: 'Poppins, sans-serif' }}>
+                    <i className="fa-solid fa-tags" style={{ marginRight: '8px', color: 'var(--primary)' }}></i>
+                    Prices by Unit Type (avail)
+                  </h3>
+                  <div className="distribution-table-container">
+                    <table className="distribution-table">
+                      <thead>
+                        <tr>
+                          <th>Bedroom Type</th>
+                          <th>Area Range (Sqft)</th>
+                          <th>Average PSF</th>
+                          <th>Price Range</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {item.priceRanges.map((pr, idx) => (
+                          <tr key={idx}>
+                            <td style={{ fontWeight: '600' }}>{pr.bedroomType || '-'}</td>
+                            <td>{pr.sqft || '-'}</td>
+                            <td>{pr.avgPsf || '-'}</td>
+                            <td style={{ fontWeight: '600', color: 'var(--primary)' }}>{pr.priceRange || '-'}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              )}
+
+              {/* Layout Distribution Details Section */}
+              <h3 style={{ fontSize: '18px', fontWeight: '700', color: 'var(--navy-dark)', marginBottom: '14px', fontFamily: 'Poppins, sans-serif', marginTop: item.priceRanges?.length > 0 ? '30px' : '0' }}>
+                <i className="fa-solid fa-cubes" style={{ marginRight: '8px', color: 'var(--primary)' }}></i>
+                Unit Distribution Details
+              </h3>
+
               {item.layouts && item.layouts.length > 0 ? (
                 <div className="distribution-table-container">
                   <table className="distribution-table">

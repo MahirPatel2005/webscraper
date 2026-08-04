@@ -1,9 +1,9 @@
-name: Daily Property Scraper
+name: Weekly Property Scraper
 
 on:
   schedule:
-    # Run daily at 3:00 AM UTC (11:00 AM Singapore Time)
-    - cron: '0 3 * * *'
+    # Run weekly on Sunday at 3:00 AM UTC (11:00 AM Singapore Time)
+    - cron: '0 3 * * 0'
   workflow_dispatch:
     # Allows manual trigger via the GitHub Actions tab
 
@@ -40,7 +40,7 @@ jobs:
           # Only commit if there are actual data changes
           git add -f data/listings.json data/processed.json
           if ! git diff --cached --quiet; then
-            git commit -m "chore: automated daily listing scrape update"
+            git commit -m "chore: automated weekly listing scrape update"
             git push origin main
             echo "Listing files updated and pushed successfully."
           else

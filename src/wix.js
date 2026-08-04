@@ -80,6 +80,9 @@ function toWixItem(record) {
     // 'facilities' field type in Wix CMS must be: Array (Javascript/Velo section)
     facilities: record.facilities || [],
 
+    // 'priceRanges' field type in Wix CMS must be: Array (Javascript/Velo section)
+    priceRanges: record.priceRanges || [],
+
     status: 'active',
     sourceSite: '99.co',
     lastSyncedAt: new Date().toISOString(),
