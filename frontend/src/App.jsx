@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import FilterBar from './components/FilterBar';
 import ListingsGrid, { getLaunchStatus, formatDistrict } from './components/ListingsGrid';
 import DetailView from './components/DetailView';
@@ -98,14 +98,30 @@ export default function App() {
   const [sortBy, setSortBy] = useState('recommended');
   const [virtualTour, setVirtualTour] = useState(false);
 
-  // Pagination state
+  // Pagination & Grid layout state
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 9;
+  const [itemsPerPage, setItemsPerPage] = useState(9);
+  const [gridColumns, setGridColumns] = useState(3);
+  const [isLayoutOpen, setIsLayoutOpen] = useState(false);
+  const layoutRef = useRef(null);
 
-  // Reset pagination to first page when search query, filters, sort, or virtual tour changes
+  // Reset pagination to first page when search query, filters, sort, virtual tour, or itemsPerPage changes
   useEffect(() => {
     setCurrentPage(1);
-  }, [searchQuery, filters, sortBy, virtualTour]);
+  }, [searchQuery, filters, sortBy, virtualTour, itemsPerPage]);
+
+  // Click outside to close layout config dropdown
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (layoutRef.current && !layoutRef.current.contains(event.target)) {
+        setIsLayoutOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   // Dynamic lists of unique dropdown options directly derived from the dataset
   const uniqueOptions = useMemo(() => {
@@ -176,44 +192,57 @@ export default function App() {
 
       // 8. Bedroom Type filter
       if (filters.beds) {
-        const bedNum = parseInt(filters.beds);
         let matchesBed = false;
-        
-        // Check beds string, e.g. "2 - 4" or "1"
-        if (item.beds) {
-          const parts = item.beds.split('-').map(x => parseInt(x.trim()));
-          if (parts.length === 1 && !isNaN(parts[0])) {
-            const val = parts[0];
-            if (bedNum === 5) {
-              if (val >= 5) matchesBed = true;
-            } else {
-              if (val === bedNum) matchesBed = true;
-            }
-          } else if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
-            const [min, max] = parts;
-            if (bedNum === 5) {
-              if (max >= 5) matchesBed = true;
-            } else {
-              if (bedNum >= min && bedNum <= max) matchesBed = true;
-            }
+
+        if (filters.beds === 'penthouse') {
+          if (item.layouts && Array.isArray(item.layouts)) {
+            matchesBed = item.layouts.some(l => {
+              const desc = l.desc?.toLowerCase() || '';
+              return desc.includes('penthouse');
+            });
           }
-        }
-        
-        // If not matched yet, check layouts
-        if (!matchesBed && item.layouts && Array.isArray(item.layouts)) {
-          matchesBed = item.layouts.some(l => {
-            const desc = l.desc?.toLowerCase() || '';
-            const match = desc.match(/(\d+)\s*bed/i);
-            if (match) {
-              const val = parseInt(match[1]);
+        } else {
+          const bedNum = parseInt(filters.beds);
+          // Check beds string, e.g. "2 - 4" or "1"
+          if (item.beds) {
+            const parts = item.beds.split('-').map(x => parseInt(x.trim()));
+            if (parts.length === 1 && !isNaN(parts[0])) {
+              const val = parts[0];
               if (bedNum === 5) {
-                return val >= 5;
+                if (val >= 5) matchesBed = true;
               } else {
-                return val === bedNum;
+                if (val === bedNum) matchesBed = true;
+              }
+            } else if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
+              const [min, max] = parts;
+              if (bedNum === 5) {
+                if (max >= 5) matchesBed = true;
+              } else {
+                if (bedNum >= min && bedNum <= max) matchesBed = true;
               }
             }
-            return false;
-          });
+          }
+          
+          // If not matched yet, check layouts
+          if (!matchesBed && item.layouts && Array.isArray(item.layouts)) {
+            matchesBed = item.layouts.some(l => {
+              const desc = l.desc?.toLowerCase() || '';
+              const match = desc.match(/(\d+)\s*bed/i);
+              
+              // Also check for studio if bedNum === 1
+              const isStudio = bedNum === 1 && desc.includes('studio');
+
+              if (match) {
+                const val = parseInt(match[1]);
+                if (bedNum === 5) {
+                  return val >= 5;
+                } else {
+                  return val === bedNum;
+                }
+              }
+              return isStudio;
+            });
+          }
         }
         
         if (!matchesBed) return false;
@@ -345,7 +374,7 @@ export default function App() {
     const activePage = currentPage > totalPages ? 1 : currentPage;
     const startIndex = (activePage - 1) * itemsPerPage;
     return sortedListings.slice(startIndex, startIndex + itemsPerPage);
-  }, [sortedListings, currentPage]);
+  }, [sortedListings, currentPage, itemsPerPage]);
 
   return (
     <div className="app-wrapper">
@@ -388,8 +417,8 @@ export default function App() {
         ) : (
           /* Listings Grid View */
           <>
-            <div className="breadcrumbs">
-              <span>New Launches</span>
+            <div className="page-title-container">
+              <h1 className="page-title">New Launches</h1>
             </div>
 
             {/* <div className="listings-header">
@@ -411,7 +440,7 @@ export default function App() {
               {/* <div className="launches-found" id="results-count">
                 {sortedListings.length} new launches found
               </div> */}
-              <div className="meta-controls">
+              <div className="meta-controls" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                 {/* <label className="meta-checkbox-label">
                   <input
                     type="checkbox"
@@ -438,6 +467,59 @@ export default function App() {
                     <option value="units-desc">Total Units: High to Low</option>
                   </select>
                 </div>
+
+                <div className="layout-config-container" ref={layoutRef}>
+                  <button 
+                    className={`layout-config-btn ${isLayoutOpen ? 'active' : ''}`}
+                    onClick={() => setIsLayoutOpen(!isLayoutOpen)}
+                    title="Adjust Grid & Page Size"
+                    type="button"
+                  >
+                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="layout-icon">
+                      <rect x="1.5" y="1.5" width="17" height="15" rx="3" />
+                      <line x1="6.5" y1="1.5" x2="6.5" y2="16.5" />
+                    </svg>
+                  </button>
+
+                  {isLayoutOpen && (
+                    <div className="layout-config-dropdown">
+                      <div className="layout-config-section">
+                        <div className="layout-config-section-title">Grid Layout</div>
+                        <div className="layout-config-options">
+                          {[2, 3, 4].map(cols => (
+                            <button
+                              key={cols}
+                              className={`layout-config-opt-btn ${gridColumns === cols ? 'selected' : ''}`}
+                              onClick={() => setGridColumns(cols)}
+                              type="button"
+                            >
+                              {cols} Cols
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                      
+                      <div className="layout-config-section">
+                        <div className="layout-config-section-title">Listings Per Page</div>
+                        <div className="layout-config-options grid-opts">
+                          {[6, 9, 12, 15, 18, 24, 30, 999].map(num => (
+                            <button
+                              key={num}
+                              className={`layout-config-opt-btn ${itemsPerPage === num ? 'selected' : ''}`}
+                              onClick={() => {
+                                setItemsPerPage(num);
+                                setCurrentPage(1);
+                              }}
+                              type="button"
+                            >
+                              {num === 999 ? 'All' : num}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             </section>
 
@@ -445,6 +527,7 @@ export default function App() {
             <ListingsGrid
               listings={paginatedListings}
               onViewDetails={setSelectedId}
+              columns={gridColumns}
             />
 
             {/* Pagination Controls */}

@@ -227,16 +227,15 @@ export default function FilterBar({
 
   const priceMinOptions = [
     { label: 'No Min', value: '' },
-    { label: '200,000', value: '200000' },
-    { label: '300,000', value: '300000' },
-    { label: '400,000', value: '400000' },
     { label: '500,000', value: '500000' },
-    { label: '700,000', value: '700000' },
     { label: '1,000,000', value: '1000000' },
-    { label: '1,200,000', value: '1200000' },
     { label: '1,500,000', value: '1500000' },
     { label: '2,000,000', value: '2000000' },
+    { label: '2,500,000', value: '2500000' },
     { label: '3,000,000', value: '3000000' },
+    { label: '3,500,000', value: '3500000' },
+    { label: '4,000,000', value: '4000000' },
+    { label: '4,500,000', value: '4500000' },
     { label: '5,000,000', value: '5000000' }
   ];
 
@@ -257,7 +256,8 @@ export default function FilterBar({
     { label: '12,000,000', value: '12000000' },
     { label: '15,000,000', value: '15000000' },
     { label: '18,000,000', value: '18000000' },
-    { label: '20,000,000', value: '20000000' }
+    { label: '20,000,000', value: '20000000' },
+    { label: '25,000,000', value: '25000000' }
   ];
 
   const sizeMinOptions = [
@@ -267,7 +267,8 @@ export default function FilterBar({
     { label: '1,000', value: '1000' },
     { label: '1,200', value: '1200' },
     { label: '1,500', value: '1500' },
-    { label: '2,000', value: '2000' }
+    { label: '2,000', value: '2000' },
+    { label: '2,500', value: '2500' }
   ];
 
   const sizeMaxOptions = [
@@ -380,11 +381,12 @@ export default function FilterBar({
             onChange={(e) => handleFilterChange('beds', e.target.value)}
           >
             <option value="">Any Bedrooms</option>
-            <option value="1">1 Bed</option>
+            <option value="1">Studio / 1 Bed</option>
             <option value="2">2 Beds</option>
             <option value="3">3 Beds</option>
             <option value="4">4 Beds</option>
             <option value="5">5+ Beds</option>
+            <option value="penthouse">Penthouses</option>
           </select>
         </div>
 

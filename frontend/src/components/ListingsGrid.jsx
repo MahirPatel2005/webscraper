@@ -73,7 +73,7 @@ export const getLaunchStatus = (item) => {
   return 'Launched';
 };
 
-export default function ListingsGrid({ listings, onViewDetails }) {
+export default function ListingsGrid({ listings, onViewDetails, columns = 3 }) {
   if (listings.length === 0) {
     return (
       <div style={{ gridColumn: '1/-1', textAlign: 'center', padding: '60px 20px', color: 'var(--text-muted)' }}>
@@ -84,7 +84,7 @@ export default function ListingsGrid({ listings, onViewDetails }) {
   }
 
   return (
-    <section className="listings-grid">
+    <section className={`listings-grid cols-${columns}`}>
       {listings.map(item => {
         const launchStatus = getLaunchStatus(item);
         const cleanImages = getCleanImages(item);
