@@ -331,6 +331,35 @@ export default function DetailView({ id, listings, onBack, onSelectProperty }) {
                   </div>
                 </div>
               </div>
+
+              {/* Prices by Unit Type Section */}
+              {item.priceRanges && item.priceRanges.length > 0 && (
+                <div className="prices-by-type-section" style={{ marginTop: '30px' }}>
+                  <h2 style={{ marginBottom: '14px' }}>Prices by Unit Type (avail)</h2>
+                  <div className="distribution-table-container">
+                    <table className="distribution-table">
+                      <thead>
+                        <tr>
+                          <th>Bedroom Type</th>
+                          <th>Area Range (Sqft)</th>
+                          <th>Average PSF</th>
+                          <th>Price Range</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {item.priceRanges.map((pr, idx) => (
+                          <tr key={idx}>
+                            <td style={{ fontWeight: '600' }}>{pr.bedroomType || '-'}</td>
+                            <td>{pr.sqft || '-'}</td>
+                            <td>{pr.avgPsf || '-'}</td>
+                            <td style={{ fontWeight: '600', color: 'var(--primary)' }}>{pr.priceRange || '-'}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              )}
             </div>
           )}
 
