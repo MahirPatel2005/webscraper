@@ -29,16 +29,7 @@
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90588271/f93ed04b-4e33-4729-b018-ea7e237c8b11.jpg",
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90588272/78f3ed4e-4cf5-49fa-9da9-ee65495710b2.jpg",
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90588273/85d088a9-7546-4251-b99e-8115ec0dbd54.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90588274/6b7e7577-cae6-432a-b12b-b0f32b13b1ba.jpg",
-      "https://sg.tepcdn.com/s3fs-public/12571028931783660878.png?v=0.9709107156000256",
-      "https://sg.tepcdn.com/s3fs-public/5263228121783660896.png?v=0.6332447678084066",
-      "https://sg.tepcdn.com/s3fs-public/17080721231783660933.png?v=0.3555794961696528",
-      "https://sg.tepcdn.com/s3fs-public/7444795191783660956.png?v=0.2898178934900366",
-      "https://sg.tepcdn.com/s3fs-public/8145133901783660972.png?v=0.2850920380096891",
-      "https://sg.tepcdn.com/s3fs-public/2403684421783660991.png?v=0.822638608664839",
-      "https://sg.tepcdn.com/s3fs-public/14688327081783661037.png?v=0.4122586194029192",
-      "https://sg.tepcdn.com/s3fs-public/20046974561783661053.png?v=0.9162166498659263",
-      "https://sg.tepcdn.com/s3fs-public/6338427271783661075.png?v=0.9685863801022099"
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90588274/6b7e7577-cae6-432a-b12b-b0f32b13b1ba.jpg"
     ],
     "agentPhoto": "",
     "layouts": [
@@ -231,29 +222,10 @@
       "39",
       "Outdoor Fitness"
     ],
+    "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-08-04T05:39:47.884Z",
-    "delistedAt": null,
-    "priceRanges": [
-      {
-        "bedroomType": "2 Bedroom",
-        "sqft": "527 - 678",
-        "avgPsf": "$2,972",
-        "priceRange": "$1,475,000 - $2,057,000"
-      },
-      {
-        "bedroomType": "3 Bedroom",
-        "sqft": "872 - 1,001",
-        "avgPsf": "$3,184",
-        "priceRange": "$2,597,000 - $3,385,000"
-      },
-      {
-        "bedroomType": "4 Bedroom",
-        "sqft": "1,184 - 1,378",
-        "avgPsf": "$3,121",
-        "priceRange": "$3,588,000 - $4,403,000"
-      }
-    ]
+    "lastSeen": "2026-08-04T16:02:01.257Z",
+    "delistedAt": null
   },
   {
     "id": "luxus-hills,-the-estate",
@@ -278,13 +250,15 @@
     "phone": "",
     "image": "https://sg.tepcdn.com/s3fs-public/1601760101784881652.jpg",
     "images": [
-      "https://sg.tepcdn.com/s3fs-public/1601760101784881652.jpg"
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90702707/48b74855-e3c7-4e7d-aa5f-763f89d24555.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90702708/daaeb7fb-b1c6-43a1-966c-dd169d9faf6c.jpg"
     ],
     "agentPhoto": "",
     "layouts": [],
     "facilities": [],
+    "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-08-04T05:39:47.884Z",
+    "lastSeen": "2026-08-04T16:02:01.257Z",
     "delistedAt": null
   },
   {
@@ -486,8 +460,28 @@
       "Skyview Deck",
       "Tennis Court"
     ],
+    "priceRanges": [
+      {
+        "bedroomType": "2 Bedroom",
+        "sqft": "646 - 732",
+        "avgPsf": "$2,383",
+        "priceRange": "$1,412,300 - $1,822,600"
+      },
+      {
+        "bedroomType": "3 Bedroom",
+        "sqft": "872 - 1012",
+        "avgPsf": "$2,331",
+        "priceRange": "$1,896,400 - $2,422,600"
+      },
+      {
+        "bedroomType": "4 Bedroom",
+        "sqft": "1184 - 1346",
+        "avgPsf": "$2,359",
+        "priceRange": "$2,696,100 - $3,283,100"
+      }
+    ],
     "status": "active",
-    "lastSeen": "2026-08-04T05:39:47.884Z",
+    "lastSeen": "2026-08-04T16:02:01.257Z",
     "delistedAt": null
   },
   {
@@ -531,26 +525,7 @@
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/89372214/0c8b2010-5031-49c0-99a9-57bd8b6b55f1.jpg",
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/89372215/7428dcd9-7e17-41b7-91ea-6c7f1f7e05c7.jpg",
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/89372216/84ec51da-d680-4a93-89f6-1f9beee7be54.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/89372217/befcd628-7377-4226-9362-db4f87a80daa.jpg",
-      "https://sg.tepcdn.com/s3fs-public/8976302961765956607.jpg?v=0.9175442044940301",
-      "https://sg.tepcdn.com/s3fs-public/1882401231765956635.jpg?v=0.24438473313878606",
-      "https://sg.tepcdn.com/s3fs-public/21384661541765956664.jpg?v=0.4493189637672208",
-      "https://sg.tepcdn.com/s3fs-public/10123611691765956691.jpg?v=0.23400932102458705",
-      "https://sg.tepcdn.com/s3fs-public/6122686491765956724.jpg?v=0.9858495837799999",
-      "https://sg.tepcdn.com/s3fs-public/1768816011765956824.jpg?v=0.2668321746311155",
-      "https://sg.tepcdn.com/s3fs-public/5319774481765956847.jpg?v=0.7168817593091208",
-      "https://sg.tepcdn.com/s3fs-public/18511777681765956869.jpg?v=0.08233009597712093",
-      "https://sg.tepcdn.com/s3fs-public/1824648541765957249.jpg?v=0.5798808591885556",
-      "https://sg.tepcdn.com/s3fs-public/14594487781765957278.jpg?v=0.4200067421866782",
-      "https://sg.tepcdn.com/s3fs-public/17144199981765957309.jpg?v=0.0808074378167698",
-      "https://sg.tepcdn.com/s3fs-public/2666791941765957325.jpg?v=0.8198055843617793",
-      "https://sg.tepcdn.com/s3fs-public/1781550021765957366.jpg?v=0.8779889520711512",
-      "https://sg.tepcdn.com/s3fs-public/3486960061765957389.jpg?v=0.50317152674487",
-      "https://sg.tepcdn.com/s3fs-public/10159138401765957411.jpg?v=0.9068238177161454",
-      "https://sg.tepcdn.com/s3fs-public/11122330731765957434.jpg?v=0.19357673516111995",
-      "https://sg.tepcdn.com/s3fs-public/9514179951765957466.jpg?v=0.6437612163831652",
-      "https://sg.tepcdn.com/s3fs-public/16111655871765957488.jpg?v=0.891719155487011",
-      "https://sg.tepcdn.com/s3fs-public/9358347991765961730.jpg?v=0.4617649571667217"
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/89372217/befcd628-7377-4226-9362-db4f87a80daa.jpg"
     ],
     "agentPhoto": "",
     "layouts": [
@@ -708,8 +683,9 @@
       "Fibre optic ready",
       "Wifi at common areas"
     ],
+    "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-08-04T05:39:47.884Z",
+    "lastSeen": "2026-08-04T16:02:01.257Z",
     "delistedAt": null
   },
   {
@@ -748,31 +724,7 @@
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/84674927/2a527539-8547-4c84-a8da-881a685cfce6.jpg",
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/84674933/1b4672f3-7348-43dc-b1d0-d5b90ccdbf33.jpg",
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/84674953/7af389f4-7805-4784-8c8f-aa29aad24859.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/84674959/a0252fc1-effc-43e8-a413-b07fd83ca618.jpg",
-      "https://sg.tepcdn.com/s3fs-public/7785063831717140053.jpg?v=0.7877812185747115",
-      "https://sg.tepcdn.com/s3fs-public/3930466351717140080.jpg?v=0.6460717066774353",
-      "https://sg.tepcdn.com/s3fs-public/17577748491717140111.jpg?v=0.4270558364720318",
-      "https://sg.tepcdn.com/s3fs-public/7751071111717140178.jpg?v=0.6180948419722527",
-      "https://sg.tepcdn.com/s3fs-public/4869514851717140210.jpg?v=0.24345049878003966",
-      "https://sg.tepcdn.com/s3fs-public/5373766141717140230.jpg?v=0.575455927859305",
-      "https://sg.tepcdn.com/s3fs-public/4833594471717140257.jpg?v=0.5128482795726157",
-      "https://sg.tepcdn.com/s3fs-public/14250319471717140276.jpg?v=0.7455583432601094",
-      "https://sg.tepcdn.com/s3fs-public/9839232621717140326.jpg?v=0.7777657483481311",
-      "https://sg.tepcdn.com/s3fs-public/17868558741717140349.jpg?v=0.7961119050352117",
-      "https://sg.tepcdn.com/s3fs-public/18537068151717140372.jpg?v=0.13940861048118736",
-      "https://sg.tepcdn.com/s3fs-public/7723270031717140392.jpg?v=0.7079935508132968",
-      "https://sg.tepcdn.com/s3fs-public/5556009041717140423.jpg?v=0.1082586707666775",
-      "https://sg.tepcdn.com/s3fs-public/13379780651717140474.jpg?v=0.3961891885359665",
-      "https://sg.tepcdn.com/s3fs-public/17909092151717140490.jpg?v=0.1994756822434267",
-      "https://sg.tepcdn.com/s3fs-public/12438143921717140510.jpg?v=0.9920063817562224",
-      "https://sg.tepcdn.com/s3fs-public/9882655361717140530.jpg?v=0.6587995766959003",
-      "https://sg.tepcdn.com/s3fs-public/14766406821717140555.jpg?v=0.13229017916974284",
-      "https://sg.tepcdn.com/s3fs-public/19379343401717140575.jpg?v=0.2710813042340521",
-      "https://sg.tepcdn.com/s3fs-public/21198689621717140783.jpg?v=0.33857753224838905",
-      "https://sg.tepcdn.com/s3fs-public/1791986031717140806.jpg?v=0.7714633749383752",
-      "https://sg.tepcdn.com/s3fs-public/15923523561717140845.jpg?v=0.1389144288190738",
-      "https://sg.tepcdn.com/s3fs-public/15896359361717140873.jpg?v=0.6899439498395386",
-      "https://sg.tepcdn.com/s3fs-public/9564683211717140907.jpg?v=0.7971579279929755"
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/84674959/a0252fc1-effc-43e8-a413-b07fd83ca618.jpg"
     ],
     "agentPhoto": "",
     "layouts": [
@@ -1030,8 +982,9 @@
       "Tennis Court",
       "Water Feature"
     ],
+    "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-08-04T05:39:47.884Z",
+    "lastSeen": "2026-08-04T16:02:01.257Z",
     "delistedAt": null
   },
   {
@@ -1143,8 +1096,82 @@
       "Play Clove",
       "Sky Grill"
     ],
+    "priceRanges": [
+      {
+        "bedroomType": "2 Bedroom",
+        "sqft": "743",
+        "avgPsf": "",
+        "priceRange": "$1,920,000 - $2,050,000"
+      },
+      {
+        "bedroomType": "2 Bedroom Penthouse",
+        "sqft": "904 - 915",
+        "avgPsf": "",
+        "priceRange": "$2,165,000 - $2,205,000"
+      },
+      {
+        "bedroomType": "2 Bedroom Premium",
+        "sqft": "818 - 850",
+        "avgPsf": "",
+        "priceRange": "$2,060,000 - $2,345,000"
+      },
+      {
+        "bedroomType": "2 Bedroom Premium Penthouse",
+        "sqft": "1,012 - 1,033",
+        "avgPsf": "",
+        "priceRange": "$2,405,000 - $2,505,000"
+      },
+      {
+        "bedroomType": "3 Bedroom",
+        "sqft": "1,055 - 1,109",
+        "avgPsf": "",
+        "priceRange": "$2,670,000 - $3,060,000"
+      },
+      {
+        "bedroomType": "3 Bedroom Premium",
+        "sqft": "1,087",
+        "avgPsf": "",
+        "priceRange": "$2,770,000 - $2,860,000"
+      },
+      {
+        "bedroomType": "3 Bedroom Premium Penthouse",
+        "sqft": "1,442",
+        "avgPsf": "",
+        "priceRange": "$3,358,000"
+      },
+      {
+        "bedroomType": "4 Bedroom (dual Key)",
+        "sqft": "1,475",
+        "avgPsf": "",
+        "priceRange": "$3,880,000 - $4,050,000"
+      },
+      {
+        "bedroomType": "4 Bedroom Penthouse",
+        "sqft": "1,668 - 1,776",
+        "avgPsf": "",
+        "priceRange": "$3,968,000 - $4,288,000"
+      },
+      {
+        "bedroomType": "4 Bedroom Premium Penthouse(dual Key)",
+        "sqft": "2,185",
+        "avgPsf": "",
+        "priceRange": "$5,188,000"
+      },
+      {
+        "bedroomType": "2 Bedroom",
+        "sqft": "743 - 990",
+        "avgPsf": "$2,329",
+        "priceRange": "$1,600,000 - $2,188,888"
+      },
+      {
+        "bedroomType": "3 Bedroom",
+        "sqft": "1055 - 1184",
+        "avgPsf": "$2,540",
+        "priceRange": "$2,588,000 - $3,161,280"
+      }
+    ],
     "status": "active",
-    "lastSeen": "2026-08-04T05:39:47.884Z",
+    "lastSeen": "2026-08-04T16:02:01.257Z",
     "delistedAt": null
   },
   {
@@ -1179,18 +1206,7 @@
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88343840/cc896572-0006-4d6d-bf30-e68e9a9d2c04.jpg",
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88343841/02f4135e-f867-4352-9f8f-7e360853b113.jpg",
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88343845/6d73bd4b-cbdc-41a1-8dc1-e9f3795eb193.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88343847/aa40e96d-8311-4aa9-9097-a675887237f0.jpg",
-      "https://sg.tepcdn.com/s3fs-public/3771096211752462284.jpg?v=0.3966222054534523",
-      "https://sg.tepcdn.com/s3fs-public/20132435091752462335.jpg?v=0.47438963300909354",
-      "https://sg.tepcdn.com/s3fs-public/3894435811752462359.jpg?v=0.5851187152780446",
-      "https://sg.tepcdn.com/s3fs-public/10396305831752462438.jpg?v=0.7810595237101297",
-      "https://sg.tepcdn.com/s3fs-public/18453367111752462521.jpg?v=0.061018272141373675",
-      "https://sg.tepcdn.com/s3fs-public/7913381851752462544.jpg?v=0.6413009670819179",
-      "https://sg.tepcdn.com/s3fs-public/18259158271752462560.jpg?v=0.6934970739457329",
-      "https://sg.tepcdn.com/s3fs-public/15253674991752462585.jpg?v=0.9175963398353695",
-      "https://sg.tepcdn.com/s3fs-public/18012546251752462657.jpg?v=0.7500297554930699",
-      "https://sg.tepcdn.com/s3fs-public/17036031781752462687.jpg?v=0.9959672484870064",
-      "https://sg.tepcdn.com/s3fs-public/20585714921752462802.jpg?v=0.4278117806885253"
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88343847/aa40e96d-8311-4aa9-9097-a675887237f0.jpg"
     ],
     "agentPhoto": "",
     "layouts": [
@@ -1381,8 +1397,28 @@
       "Female\n     Changing Room",
       "Accessible\n     Changing Room"
     ],
+    "priceRanges": [
+      {
+        "bedroomType": "2 Bedroom",
+        "sqft": "710 - 850",
+        "avgPsf": "$2,925",
+        "priceRange": "$1,880,000 - $3,482,000"
+      },
+      {
+        "bedroomType": "3 Bedroom",
+        "sqft": "1195",
+        "avgPsf": "$2,811",
+        "priceRange": "$3,358,000"
+      },
+      {
+        "bedroomType": "5 Bedroom",
+        "sqft": "2809",
+        "avgPsf": "$3,880",
+        "priceRange": "$10,899,350"
+      }
+    ],
     "status": "active",
-    "lastSeen": "2026-08-04T05:39:47.884Z",
+    "lastSeen": "2026-08-04T16:02:01.257Z",
     "delistedAt": null
   },
   {
@@ -1413,8 +1449,9 @@
     "agentPhoto": "",
     "layouts": [],
     "facilities": [],
+    "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-08-04T05:39:47.884Z",
+    "lastSeen": "2026-08-04T16:02:01.257Z",
     "delistedAt": null
   },
   {
@@ -1445,8 +1482,9 @@
     "agentPhoto": "",
     "layouts": [],
     "facilities": [],
+    "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-08-04T05:39:47.884Z",
+    "lastSeen": "2026-08-04T16:02:01.257Z",
     "delistedAt": null
   },
   {
@@ -1477,8 +1515,9 @@
     "agentPhoto": "",
     "layouts": [],
     "facilities": [],
+    "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-08-04T05:39:47.884Z",
+    "lastSeen": "2026-08-04T16:02:01.257Z",
     "delistedAt": null
   },
   {
