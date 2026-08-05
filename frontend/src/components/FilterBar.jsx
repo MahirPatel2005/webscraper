@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { getMetroColor, getMetroAbbr } from './ListingsGrid';
+import { getMetroColor, getMetroAbbr, formatDistrict } from './ListingsGrid';
 
 function CustomRangeSelect({ label, prefix, value, onChange, options, placeholder }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -86,10 +86,22 @@ function CustomRangeSelect({ label, prefix, value, onChange, options, placeholde
   );
 }
 
-function CustomMetroSelect({ label, value, onChange, options, placeholder }) {
+function MultiSelectDropdown({
+  label,
+  selectedValues = [],
+  onChange,
+  options = [],
+  placeholder,
+  isMetro = false,
+  isDistrict = false,
+  enableSearch = false,
+  searchPlaceholder = "Search..."
+}) {
   const [isOpen, setIsOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
   const containerRef = useRef(null);
 
+  // Close when clicking outside
   useEffect(() => {
     function handleClickOutside(event) {
       if (containerRef.current && !containerRef.current.contains(event.target)) {
@@ -102,27 +114,63 @@ function CustomMetroSelect({ label, value, onChange, options, placeholder }) {
     };
   }, []);
 
-  const handleSelect = (val) => {
-    onChange(val);
-    setIsOpen(false);
+  // Reset search query when dropdown closes
+  useEffect(() => {
+    if (!isOpen) {
+      setSearchQuery('');
+    }
+  }, [isOpen]);
+
+  const handleToggleOption = (val) => {
+    let next;
+    if (selectedValues.includes(val)) {
+      next = selectedValues.filter(x => x !== val);
+    } else {
+      next = [...selectedValues, val];
+    }
+    onChange(next);
   };
 
-  const selectedOption = options.find(opt => opt.value === value);
+  const handleSelectAll = () => {
+    const filteredVals = filteredOptions.map(opt => opt.value).filter(Boolean);
+    const uniqueCombined = Array.from(new Set([...selectedValues, ...filteredVals]));
+    onChange(uniqueCombined);
+  };
 
-  return (
-    <div className="custom-select-group" ref={containerRef}>
-      <label className="custom-select-label">{label}</label>
-      <div 
-        className={`custom-select-trigger-wrapper ${isOpen ? 'open' : ''}`}
-        onClick={() => setIsOpen(!isOpen)}
-        style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}
-      >
-        {selectedOption && selectedOption.value ? (
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+  const handleClearAll = () => {
+    if (searchQuery) {
+      const filteredVals = filteredOptions.map(opt => opt.value);
+      onChange(selectedValues.filter(x => !filteredVals.includes(x)));
+    } else {
+      onChange([]);
+    }
+  };
+
+  const filteredOptions = options.filter(opt => {
+    if (!opt.value) return false; // skip the 'all' option
+    if (!searchQuery) return true;
+    const term = searchQuery.toLowerCase();
+    const labelLower = opt.label.toLowerCase();
+    const valLower = opt.value.toLowerCase();
+    return labelLower.includes(term) || valLower.includes(term);
+  });
+
+  const renderTriggerContent = () => {
+    if (selectedValues.length === 0) {
+      return <span style={{ color: '#94a3b8', fontSize: '14px' }}>{placeholder}</span>;
+    }
+
+    if (isMetro) {
+      const displayed = selectedValues.slice(0, 2);
+      const remainingCount = selectedValues.length - displayed.length;
+      return (
+        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'nowrap' }}>
+          {displayed.map(val => (
             <span 
+              key={val}
               className="metro-badge-logo" 
               style={{ 
-                backgroundColor: getMetroColor(selectedOption.value), 
+                backgroundColor: getMetroColor(val), 
                 display: 'inline-flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -135,60 +183,147 @@ function CustomMetroSelect({ label, value, onChange, options, placeholder }) {
                 lineHeight: 1
               }}
             >
-              {getMetroAbbr(selectedOption.value)}
+              {getMetroAbbr(val)}
             </span>
-            <span style={{ fontSize: '14px', fontWeight: '500', color: 'var(--text-main)' }}>
-              {selectedOption.label}
+          ))}
+          {remainingCount > 0 && (
+            <span style={{ fontSize: '12px', fontWeight: '600', color: 'var(--text-muted)' }}>
+              +{remainingCount}
             </span>
-          </div>
-        ) : (
-          <span style={{ color: '#94a3b8', fontSize: '14px' }}>{placeholder}</span>
-        )}
+          )}
+        </div>
+      );
+    }
+
+    if (isDistrict) {
+      const displayed = selectedValues.slice(0, 2);
+      const remainingCount = selectedValues.length - displayed.length;
+      let text = displayed.join(', ');
+      if (remainingCount > 0) {
+        text += ` (+${remainingCount})`;
+      }
+      return <span style={{ fontSize: '14px', fontWeight: '500', color: 'var(--text-main)' }}>{text}</span>;
+    }
+
+    const selectedLabels = selectedValues.map(val => {
+      const opt = options.find(o => o.value === val);
+      return opt ? opt.label : val;
+    });
+
+    const displayed = selectedLabels.slice(0, 2);
+    const remainingCount = selectedLabels.length - displayed.length;
+    let text = displayed.join(', ');
+    if (remainingCount > 0) {
+      text += ` (+${remainingCount})`;
+    }
+    return <span style={{ fontSize: '14px', fontWeight: '500', color: 'var(--text-main)' }}>{text}</span>;
+  };
+
+  return (
+    <div className="custom-select-group" ref={containerRef}>
+      <label className="custom-select-label">{label}</label>
+      <div 
+        className={`custom-select-trigger-wrapper ${isOpen ? 'open' : ''}`}
+        onClick={() => setIsOpen(!isOpen)}
+        style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}
+      >
+        {renderTriggerContent()}
         <i className="fa-solid fa-sort custom-select-caret" style={{ marginLeft: 'auto' }}></i>
       </div>
 
       {isOpen && (
-        <div className="custom-select-dropdown">
-          {options.map((opt) => {
-            const isSelected = opt.value === value;
-            return (
-              <div 
-                key={opt.value} 
-                className={`custom-select-option ${isSelected ? 'selected' : ''}`}
-                onClick={() => handleSelect(opt.value)}
-                style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}
-              >
-                <div className={`custom-select-radio-circle ${isSelected ? 'checked' : ''}`}>
-                  {isSelected && <div className="custom-select-radio-inner" />}
-                </div>
-                {opt.value ? (
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <span 
-                      className="metro-badge-logo" 
-                      style={{ 
-                        backgroundColor: getMetroColor(opt.value), 
-                        display: 'inline-flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        color: '#fff', 
-                        borderRadius: '8px', 
-                        fontSize: '9px', 
-                        fontWeight: '800',
-                        width: '32px',
-                        height: '18px',
-                        lineHeight: 1
-                      }}
-                    >
-                      {getMetroAbbr(opt.value)}
-                    </span>
-                    <span className="custom-select-option-text">{opt.label}</span>
-                  </div>
-                ) : (
-                  <span className="custom-select-option-text">{opt.label}</span>
-                )}
+        <div className="custom-select-dropdown" style={{ display: 'flex', flexDirection: 'column' }}>
+          {enableSearch && (
+            <div className="custom-dropdown-search-wrapper">
+              <div className="custom-dropdown-search-icon-wrapper">
+                <i className="fa-solid fa-magnifying-glass custom-dropdown-search-icon"></i>
+                <input
+                  type="text"
+                  className="custom-dropdown-search-input"
+                  placeholder={searchPlaceholder}
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onClick={(e) => e.stopPropagation()}
+                />
               </div>
-            );
-          })}
+            </div>
+          )}
+
+          <div className="custom-dropdown-actions-bar">
+            <button 
+              type="button" 
+              className="custom-dropdown-action-btn"
+              onClick={(e) => {
+                e.stopPropagation();
+                handleSelectAll();
+              }}
+            >
+              Select All
+            </button>
+            <button 
+              type="button" 
+              className={`custom-dropdown-action-btn ${selectedValues.length === 0 ? 'disabled' : ''}`}
+              disabled={selectedValues.length === 0}
+              onClick={(e) => {
+                e.stopPropagation();
+                handleClearAll();
+              }}
+            >
+              Clear
+            </button>
+          </div>
+
+          <div style={{ overflowY: 'auto', flex: 1 }}>
+            {filteredOptions.length === 0 ? (
+              <div style={{ padding: '12px 14px', fontSize: '13px', color: '#94a3b8', textAlign: 'center' }}>
+                No options found
+              </div>
+            ) : (
+              filteredOptions.map((opt) => {
+                const isSelected = selectedValues.includes(opt.value);
+                return (
+                  <div 
+                    key={opt.value} 
+                    className={`custom-select-option ${isSelected ? 'selected' : ''}`}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleToggleOption(opt.value);
+                    }}
+                    style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}
+                  >
+                    <div className={`custom-select-checkbox ${isSelected ? 'checked' : ''}`}>
+                      {isSelected && <i className="fa-solid fa-check" style={{ fontSize: '9px' }}></i>}
+                    </div>
+                    {isMetro ? (
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        <span 
+                          className="metro-badge-logo" 
+                          style={{ 
+                            backgroundColor: getMetroColor(opt.value), 
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            color: '#fff', 
+                            borderRadius: '8px', 
+                            fontSize: '9px', 
+                            fontWeight: '800',
+                            width: '32px',
+                            height: '18px',
+                            lineHeight: 1
+                          }}
+                        >
+                          {getMetroAbbr(opt.value)}
+                        </span>
+                        <span className="custom-select-option-text">{opt.label}</span>
+                      </div>
+                    ) : (
+                      <span className="custom-select-option-text" style={{ fontSize: '13px' }}>{opt.label}</span>
+                    )}
+                  </div>
+                );
+              })
+            )}
+          </div>
         </div>
       )}
     </div>
@@ -212,12 +347,12 @@ export default function FilterBar({
   const handleClearFilters = () => {
     setSearchQuery('');
     setFilters({
-      type: '',
-      district: '',
-      metroLine: '',
+      type: [],
+      district: [],
+      metroLine: [],
       status: '',
       developer: '',
-      beds: '',
+      beds: [],
       minSize: '',
       maxSize: '',
       minPrice: '',
@@ -282,9 +417,22 @@ export default function FilterBar({
     { label: '5,000', value: '5000' }
   ];
 
-  const metroOptions = [
-    { label: 'All Metro Lines', value: '' },
-    ...uniqueOptions.metroLines.map(line => ({ label: line, value: line }))
+  const propertyTypeOptions = uniqueOptions.types.map(t => ({ label: t, value: t }));
+
+  const districtOptions = uniqueOptions.districts.map(d => ({
+    label: formatDistrict(d),
+    value: d
+  }));
+
+  const metroOptions = uniqueOptions.metroLines.map(line => ({ label: line, value: line }));
+
+  const bedsOptions = [
+    { label: 'Studio / 1 Bed', value: '1' },
+    { label: '2 Beds', value: '2' },
+    { label: '3 Beds', value: '3' },
+    { label: '4 Beds', value: '4' },
+    { label: '5+ Beds', value: '5' },
+    { label: 'Penthouses', value: 'penthouse' }
   ];
 
   return (
@@ -334,61 +482,41 @@ export default function FilterBar({
 
       {/* Filters Options Grid */}
       <div className="filter-options-grid">
-        <div className="filter-group">
-          <label htmlFor="type-select">Property Type</label>
-          <select
-            id="type-select"
-            className="filter-input"
-            value={filters.type}
-            onChange={(e) => handleFilterChange('type', e.target.value)}
-          >
-            <option value="">All Property Types</option>
-            {uniqueOptions.types.map(t => (
-              <option key={t} value={t}>{t}</option>
-            ))}
-          </select>
-        </div>
-
-        <div className="filter-group">
-          <label htmlFor="district-select">District</label>
-          <select
-            id="district-select"
-            className="filter-input"
-            value={filters.district}
-            onChange={(e) => handleFilterChange('district', e.target.value)}
-          >
-            <option value="">All Districts</option>
-            {uniqueOptions.districts.map(d => (
-              <option key={d} value={d}>{d}</option>
-            ))}
-          </select>
-        </div>
-
-        <CustomMetroSelect
-          label="Metro Line"
-          placeholder="All Metro Lines"
-          value={filters.metroLine}
-          onChange={(val) => handleFilterChange('metroLine', val)}
-          options={metroOptions}
+        <MultiSelectDropdown
+          label="Property Type"
+          placeholder="All Property Types"
+          selectedValues={filters.type || []}
+          onChange={(val) => handleFilterChange('type', val)}
+          options={propertyTypeOptions}
         />
 
-        <div className="filter-group">
-          <label htmlFor="beds-select">Bedrooms</label>
-          <select
-            id="beds-select"
-            className="filter-input"
-            value={filters.beds}
-            onChange={(e) => handleFilterChange('beds', e.target.value)}
-          >
-            <option value="">Any Bedrooms</option>
-            <option value="1">Studio / 1 Bed</option>
-            <option value="2">2 Beds</option>
-            <option value="3">3 Beds</option>
-            <option value="4">4 Beds</option>
-            <option value="5">5+ Beds</option>
-            <option value="penthouse">Penthouses</option>
-          </select>
-        </div>
+        <MultiSelectDropdown
+          label="District"
+          placeholder="All Districts"
+          selectedValues={filters.district || []}
+          onChange={(val) => handleFilterChange('district', val)}
+          options={districtOptions}
+          isDistrict={true}
+          enableSearch={true}
+          searchPlaceholder="Search districts..."
+        />
+
+        <MultiSelectDropdown
+          label="Metro Line"
+          placeholder="All Metro Lines"
+          selectedValues={filters.metroLine || []}
+          onChange={(val) => handleFilterChange('metroLine', val)}
+          options={metroOptions}
+          isMetro={true}
+        />
+
+        <MultiSelectDropdown
+          label="Bedrooms"
+          placeholder="Any Bedrooms"
+          selectedValues={filters.beds || []}
+          onChange={(val) => handleFilterChange('beds', val)}
+          options={bedsOptions}
+        />
 
         {/* Minimum Size */}
         <CustomRangeSelect

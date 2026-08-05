@@ -29,41 +29,40 @@ export const getMetroLines = (districtCode) => {
 };
 
 const districtMapping = {
-  'D01': 'Raffles Place, Cecil, Marina, People\'s Park',
-  'D02': 'Anson, Tanjong Pagar, Chinatown',
-  'D03': 'Queenstown, Tiong Bahru, Alexandria',
-  'D04': 'Telok Blangah, Harbourfront, Sentosa',
-  'D05': 'Pasir Panjang, Hong Leong Garden, Clementi New Town',
-  'D06': 'High Street, Beach Road (part)',
-  'D07': 'Middle Road, Golden Mile',
+  'D01': 'Raffles Place, Cecil, Marina, People’s Park',
+  'D02': 'Anson, Tanjong Pagar',
+  'D03': 'Queenstown, Tiong Bahru',
+  'D04': 'Telok Blangah, HarbourFront',
+  'D05': 'Pasir Panjang, Hong Leong Garden, Clementi',
+  'D06': 'High Street, City Hall, Beach Road (part)',
+  'D07': 'Middle Road, Bugis, Golden Mile',
   'D08': 'Little India, Farrer Park',
   'D09': 'Orchard, Cairnhill, River Valley',
   'D10': 'Ardmore, Bukit Timah, Holland Road, Tanglin',
-  'D11': 'Watten Estate, Novena, Thomson',
+  'D11': 'Watten Estate, Novena, Thomson, Newton',
   'D12': 'Balestier, Toa Payoh, Serangoon',
-  'D13': 'Macpherson, Braddell',
-  'D14': 'Geylang, Eunos, Paya Lebar, Sims',
-  'D15': 'Katong, Joo Chiat, Amber Road, Meyer Road, Marine Parade',
-  'D16': 'Bedok, Upper East Coast, Eastwood, Kew Drive',
+  'D13': 'MacPherson, Braddell, Potong Pasir',
+  'D14': 'Geylang, Eunos, Paya Lebar',
+  'D15': 'Katong, Joo Chiat, Amber Road, Marine Parade',
+  'D16': 'Bedok, Upper East Coast, Siglap, Bayshore',
   'D17': 'Loyang, Changi',
-  'D18': 'Tampines, Pasir Ris',
-  'D19': 'Serangoon Garden, Hougang, Ponggol',
+  'D18': 'Tampines, Pasir Ris, Simei',
+  'D19': 'Serangoon Garden, Hougang, Sengkang, Punggol',
   'D20': 'Bishan, Ang Mo Kio',
   'D21': 'Upper Bukit Timah, Clementi Park, Ulu Pandan',
-  'D22': 'Jurong',
-  'D23': 'Hillview, Dairy Farm, Bukit Panjang, Choa Chu Kang',
+  'D22': 'Jurong, Boon Lay, Lakeside',
+  'D23': 'Hillview, Dairy Farm, Bukit Panjang, Bukit Batok, Choa Chu Kang',
   'D24': 'Lim Chu Kang, Tengah',
-  'D25': 'Kranji, Woodgrove, Woodlands',
+  'D25': 'Kranji, Woodlands, Woodgrove',
   'D26': 'Upper Thomson, Springleaf',
   'D27': 'Yishun, Sembawang',
-  'D28': 'Seletar, Yio Chu Kang'
+  'D28': 'Seletar, Jalan Kayu, Yio Chu Kang'
 };
 
 export const formatDistrict = (districtCode) => {
   if (!districtCode) return 'Singapore';
   const name = districtMapping[districtCode] || 'Singapore';
-  const num = districtCode.replace(/^D0?/, '');
-  return `${num} - ${name}`;
+  return `${districtCode} – ${name}`;
 };
 
 export const getLaunchStatus = (item) => {

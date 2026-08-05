@@ -82,12 +82,12 @@ export default function App() {
   // Search & Filter State
   const [searchQuery, setSearchQuery] = useState('');
   const [filters, setFilters] = useState({
-    type: '',
-    district: '',
-    metroLine: '',
+    type: [],
+    district: [],
+    metroLine: [],
     status: '',
     developer: '',
-    beds: '',
+    beds: [],
     minSize: '',
     maxSize: '',
     minPrice: '',
@@ -163,15 +163,20 @@ export default function App() {
       }
 
       // 2. Property Type filter
-      if (filters.type && item.propertyType !== filters.type) return false;
+      if (filters.type && filters.type.length > 0) {
+        if (!item.propertyType || !filters.type.includes(item.propertyType)) return false;
+      }
 
       // 3. District filter
-      if (filters.district && item.district !== filters.district) return false;
+      if (filters.district && filters.district.length > 0) {
+        if (!item.district || !filters.district.includes(item.district)) return false;
+      }
 
       // 4. Metro Line filter
-      if (filters.metroLine) {
+      if (filters.metroLine && filters.metroLine.length > 0) {
         const lines = districtToMetroLines[item.district] || [];
-        if (!lines.includes(filters.metroLine)) return false;
+        const hasMatch = filters.metroLine.some(line => lines.includes(line));
+        if (!hasMatch) return false;
       }
 
       // 5. Launch status filter
@@ -191,45 +196,47 @@ export default function App() {
       }
 
       // 8. Bedroom Type filter
-      if (filters.beds) {
-        let matchesBed = false;
-
-        if (filters.beds === 'penthouse') {
-          if (item.layouts && Array.isArray(item.layouts)) {
-            matchesBed = item.layouts.some(l => {
-              const desc = l.desc?.toLowerCase() || '';
-              return desc.includes('penthouse');
-            });
+      if (filters.beds && filters.beds.length > 0) {
+        const matchesAnyBedOption = filters.beds.some(bedOption => {
+          if (bedOption === 'penthouse') {
+            if (item.layouts && Array.isArray(item.layouts)) {
+              return item.layouts.some(l => {
+                const desc = l.desc?.toLowerCase() || '';
+                return desc.includes('penthouse');
+              });
+            }
+            return false;
           }
-        } else {
-          const bedNum = parseInt(filters.beds);
+
+          const bedNum = parseInt(bedOption);
+          if (isNaN(bedNum)) return false;
+
           // Check beds string, e.g. "2 - 4" or "1"
           if (item.beds) {
             const parts = item.beds.split('-').map(x => parseInt(x.trim()));
             if (parts.length === 1 && !isNaN(parts[0])) {
               const val = parts[0];
               if (bedNum === 5) {
-                if (val >= 5) matchesBed = true;
+                if (val >= 5) return true;
               } else {
-                if (val === bedNum) matchesBed = true;
+                if (val === bedNum) return true;
               }
             } else if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
               const [min, max] = parts;
               if (bedNum === 5) {
-                if (max >= 5) matchesBed = true;
+                if (max >= 5) return true;
               } else {
-                if (bedNum >= min && bedNum <= max) matchesBed = true;
+                if (bedNum >= min && bedNum <= max) return true;
               }
             }
           }
           
           // If not matched yet, check layouts
-          if (!matchesBed && item.layouts && Array.isArray(item.layouts)) {
-            matchesBed = item.layouts.some(l => {
+          if (item.layouts && Array.isArray(item.layouts)) {
+            return item.layouts.some(l => {
               const desc = l.desc?.toLowerCase() || '';
               const match = desc.match(/(\d+)\s*bed/i);
               
-              // Also check for studio if bedNum === 1
               const isStudio = bedNum === 1 && desc.includes('studio');
 
               if (match) {
@@ -243,9 +250,10 @@ export default function App() {
               return isStudio;
             });
           }
-        }
-        
-        if (!matchesBed) return false;
+          return false;
+        });
+
+        if (!matchesAnyBedOption) return false;
       }
 
       // Helper to get size range
