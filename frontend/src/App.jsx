@@ -3,7 +3,8 @@ import FilterBar from './components/FilterBar';
 import ListingsGrid, { getLaunchStatus, formatDistrict } from './components/ListingsGrid';
 import DetailView from './components/DetailView';
 import Pagination from './components/Pagination';
-import listingsData from '../../data/listings.json';
+import AdminDashboard from './components/AdminDashboard';
+import staticListings from '../../data/listings.json';
 
 export const districtToMetroLines = {
   'D01': ['East West Line', 'Downtown Line'],
@@ -78,6 +79,9 @@ export function getCleanImages(item) {
 export default function App() {
   // Navigation State: selected property ID (slug)
   const [selectedId, setSelectedId] = useState(null);
+  const [isAdminView, setIsAdminView] = useState(false);
+  const [adminToken, setAdminToken] = useState(localStorage.getItem('adminToken') || null);
+  const [listingsData, setListingsData] = useState(staticListings);
 
   // Search & Filter State
   const [searchQuery, setSearchQuery] = useState('');
@@ -93,6 +97,43 @@ export default function App() {
     minPrice: '',
     maxPrice: ''
   });
+
+  // Dynamic API Fetch
+  const fetchListings = async () => {
+    try {
+      const headers = {};
+      if (adminToken) {
+        headers['Authorization'] = `Bearer ${adminToken}`;
+      }
+      const res = await fetch('/api/listings', { headers });
+      if (!res.ok) throw new Error('API failed');
+      const data = await res.json();
+      setListingsData(data);
+    } catch (e) {
+      console.warn("Failed to fetch listings from API, falling back to static cache.", e);
+    }
+  };
+
+  useEffect(() => {
+    fetchListings();
+  }, [adminToken, isAdminView]);
+
+  // Hidden admin panel URL parameter toggler
+  useEffect(() => {
+    const handleHashOrSearch = () => {
+      const isParamAdmin = window.location.search.includes('admin=true') || window.location.hash === '#admin';
+      setIsAdminView(isParamAdmin);
+    };
+
+    handleHashOrSearch();
+    window.addEventListener('popstate', handleHashOrSearch);
+    window.addEventListener('hashchange', handleHashOrSearch);
+    
+    return () => {
+      window.removeEventListener('popstate', handleHashOrSearch);
+      window.removeEventListener('hashchange', handleHashOrSearch);
+    };
+  }, []);
 
   // Sorting & Virtual Tour states
   const [sortBy, setSortBy] = useState('recommended');
@@ -321,6 +362,8 @@ export default function App() {
 
     // Feature scoring helper to identify launching soon & recently launched
     const isFeatured = (item) => {
+      if (item.featured) return true; // explicitly featured by admin!
+      
       // 1. Launching soon (units sold = 0)
       if (item.unitsSoldPercent === 0 || item.unitsSoldPercent === '0') {
         return true;
@@ -386,32 +429,25 @@ export default function App() {
 
   return (
     <div className="app-wrapper">
-      {/* Header Bar */}
-      {/* <header>
-        <div className="container header-content">
-          <div className="logo" onClick={() => setSelectedId(null)}>
-            <i className="fa-solid fa-building-user"></i> EdgeProp<span>.sg</span>
-          </div>
-          <ul className="nav-links">
-            <li>
-              <span
-                onClick={() => setSelectedId(null)}
-                className={`link ${!selectedId ? 'active' : ''}`}
-                style={{ cursor: 'pointer', fontWeight: '500', fontSize: '14px' }}
-              >
-                New Launches
-              </span>
-            </li>
-            <li><a href="#buy">Buy</a></li>
-            <li><a href="#rent">Rent</a></li>
-            <li><a href="#news">News</a></li>
-          </ul>
-        </div>
-      </header> */}
-
       {/* Main Body content */}
-      <main className="container">
-        {selectedId ? (
+      <main className="container" style={{ paddingTop: '30px' }}>
+        {isAdminView ? (
+          <AdminDashboard
+            token={adminToken}
+            setToken={setAdminToken}
+            onBackToSite={() => {
+              if (window.location.hash === '#admin') {
+                window.location.hash = '';
+              }
+              if (window.location.search.includes('admin=true')) {
+                const url = new URL(window.location.href);
+                url.searchParams.delete('admin');
+                window.history.pushState({}, '', url.toString().replace(/\?$/, ''));
+              }
+              setIsAdminView(false);
+            }}
+          />
+        ) : selectedId ? (
           /* Detail Page View */
           <DetailView
             id={selectedId}

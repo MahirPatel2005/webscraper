@@ -36,16 +36,20 @@ function saveListingsJson(next) {
   const listingsArray = Object.entries(next).map(([id, entry]) => {
     let parsedData = {};
     try {
-      parsedData = JSON.parse(entry.data);
+      parsedData = typeof entry.data === 'string' ? JSON.parse(entry.data) : (entry.data || {});
     } catch (e) {
       // fallback
     }
     return {
       ...parsedData,
+      ...(entry.overrides || {}),
       id,
       status: entry.status,
       lastSeen: entry.lastSeen,
       delistedAt: entry.delistedAt || null,
+      disabled: entry.disabled || false,
+      featured: entry.featured || false,
+      custom: entry.custom || false,
     };
   });
 
@@ -84,7 +88,7 @@ function diff(currentRecordsById, anyPageFailed = false) {
 
   const missingIds = [];
   for (const [id, entry] of Object.entries(previous)) {
-    if (!(id in currentRecordsById) && entry.status !== 'delisted') {
+    if (!(id in currentRecordsById) && entry.status !== 'delisted' && !entry.custom) {
       if (!anyPageFailed) {
         missingIds.push(id);
       }
@@ -117,10 +121,20 @@ function save(currentRecordsById, failedIds, anyPageFailed = false) {
       // If it was a brand new item and failed, we don't write it to 'next' at all
     } else {
       // Successfully synced (or unchanged)
+      // Carry forward existing flags/overrides if it was scraped again
+      const disabled = prevEntry ? (prevEntry.disabled || false) : false;
+      const featured = prevEntry ? (prevEntry.featured || false) : false;
+      const custom = prevEntry ? (prevEntry.custom || false) : false;
+      const overrides = prevEntry ? (prevEntry.overrides || {}) : {};
+
       next[id] = {
         data: serialized,
         status: 'active',
         lastSeen: now,
+        disabled,
+        featured,
+        custom,
+        overrides,
       };
     }
   }
@@ -131,6 +145,9 @@ function save(currentRecordsById, failedIds, anyPageFailed = false) {
       if (failedIds.has(id)) {
         // Failed to mark as delisted, keep as active (retry next time)
         next[id] = entry;
+      } else if (entry.custom) {
+        // Custom items added by admin should ALWAYS remain active and not be delisted
+        next[id] = { ...entry, status: 'active', lastSeen: now };
       } else if (entry.status !== 'delisted') {
         if (anyPageFailed) {
           next[id] = entry; // Keep active because scrape was incomplete

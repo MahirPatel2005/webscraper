@@ -508,35 +508,136 @@ export default function DetailView({ id, listings, onBack, onSelectProperty }) {
         </div>
 
         {/* Right Column: Sticky Contact Sidebar Widget */}
-        {/* <div>
-          <aside className="sidebar-widget">
-            <div className="sidebar-developer-logo">
-              <div className="dev-text-logo">
-                <i className="fa-solid fa-hard-hat" style={{ color: 'var(--primary)' }}></i> Dev<span>Launch</span>
+        <div>
+          <aside className="sidebar-widget she-sidebar" style={{ textAlign: 'center' }}>
+            <div className="sidebar-agent-profile" style={{ marginBottom: '24px', borderBottom: '1px solid var(--border-color)', paddingBottom: '20px' }}>
+              <div className="agent-avatar-container" style={{ position: 'relative', width: '80px', height: '80px', margin: '0 auto 16px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <div className="agent-avatar-gradient" style={{
+                  width: '100%',
+                  height: '100%',
+                  borderRadius: '50%',
+                  background: 'linear-gradient(135deg, var(--primary) 0%, #1e293b 100%)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  color: '#ffffff',
+                  fontSize: '36px',
+                  fontWeight: '700',
+                  fontFamily: 'Poppins, sans-serif',
+                  boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)'
+                }}>
+                  E
+                </div>
+                <span className="online-badge" style={{
+                  position: 'absolute',
+                  bottom: '4px',
+                  right: '4px',
+                  width: '14px',
+                  height: '14px',
+                  backgroundColor: '#22c55e',
+                  border: '2px solid #ffffff',
+                  borderRadius: '50%'
+                }}></span>
               </div>
-              <div className="dev-subtext">Developer</div>
-              <div className="sidebar-dev-name" title={item.developer || 'Phoenix Dunearn Pte Ltd'}>
-                {item.developer || 'Independent Joint Developers'}
+              <h3 className="agent-name" style={{ fontSize: '20px', fontWeight: '700', color: 'var(--navy-dark)', margin: '0 0 4px', fontFamily: 'Poppins, sans-serif' }}>Elaine</h3>
+              <div className="agent-agency" style={{ fontSize: '13px', fontWeight: '600', color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>SHE Real Estate</div>
+              <div className="agent-tagline" style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '4px' }}>Founder & Property Expert</div>
+              
+              <div className="agent-badge" style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                backgroundColor: '#f1f5f9',
+                color: '#334155',
+                fontSize: '11px',
+                fontWeight: '600',
+                padding: '4px 10px',
+                borderRadius: '99px',
+                marginTop: '12px'
+              }}>
+                <i className="fa-solid fa-shield-halved" style={{ color: 'var(--primary)', marginRight: '6px' }}></i>
+                Direct Developer Pricing
               </div>
             </div>
 
-            <div className="sidebar-actions">
-              <button
-                className="btn-sidebar solid"
-                onClick={() => setIsInquiryOpen(true)}
+            <div className="sidebar-actions" style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+              <a
+                href={`https://wa.me/6598382818?text=${encodeURIComponent(`Hi Elaine, I'm interested in ${item.title}`)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-sidebar btn-wa"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '8px',
+                  backgroundColor: '#25D366',
+                  color: '#ffffff',
+                  fontWeight: '600',
+                  fontSize: '14px',
+                  padding: '12px 16px',
+                  borderRadius: '8px',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease',
+                  border: 'none',
+                  cursor: 'pointer',
+                  boxShadow: '0 2px 4px rgba(37, 211, 102, 0.2)'
+                }}
               >
-                Enquire Now
-              </button>
-              
-              <button
-                className="btn-sidebar outline"
-                onClick={() => setShowMobile(!showMobile)}
+                <i className="fa-brands fa-whatsapp" style={{ fontSize: '18px' }}></i>
+                WhatsApp Elaine
+              </a>
+
+              <a
+                href={`mailto:elaine@sherealestate.com.sg?subject=${encodeURIComponent(`Inquiry on ${item.title}`)}&body=${encodeURIComponent(`Hi Elaine, I'm interested in ${item.title}. Please send me more details. Thanks!`)}`}
+                className="btn-sidebar btn-email"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '8px',
+                  backgroundColor: '#0f172a',
+                  color: '#ffffff',
+                  fontWeight: '600',
+                  fontSize: '14px',
+                  padding: '12px 16px',
+                  borderRadius: '8px',
+                  textDecoration: 'none',
+                  transition: 'all 0.2s ease',
+                  border: 'none',
+                  cursor: 'pointer',
+                  boxShadow: '0 2px 4px rgba(15, 23, 42, 0.1)'
+                }}
               >
-                {showMobile ? '+65 9838 2818' : 'Show Mobile'}
-              </button>
+                <i className="fa-regular fa-envelope" style={{ fontSize: '16px' }}></i>
+                Email Elaine
+              </a>
+
+              <a
+                href="tel:+6598382818"
+                className="btn-sidebar btn-call"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '8px',
+                  backgroundColor: '#ffffff',
+                  color: '#0f172a',
+                  fontWeight: '600',
+                  fontSize: '14px',
+                  padding: '12px 16px',
+                  borderRadius: '8px',
+                  textDecoration: 'none',
+                  border: '1px solid #cbd5e1',
+                  transition: 'all 0.2s ease',
+                  cursor: 'pointer'
+                }}
+              >
+                <i className="fa-solid fa-phone" style={{ fontSize: '14px' }}></i>
+                Call Elaine
+              </a>
             </div>
           </aside>
-        </div> */}
+        </div>
       </div>
 
       {/* Similar Properties Section */}
