@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { formatDistrict } from './ListingsGrid';
 
+const API_BASE = import.meta.env.VITE_API_BASE_URL || '';
+
 const PROPERTY_TYPES = ['Condo', 'Apartment', 'Landed', 'Executive Condo', 'Semi-Detached', 'Terrace', 'Bungalow'];
 const DISTRICTS = [
   'D01', 'D02', 'D03', 'D04', 'D05', 'D06', 'D07', 'D08', 'D09', 'D10', 
@@ -64,7 +66,7 @@ export default function AdminDashboard({ token, setToken, onBackToSite }) {
       if (token) {
         headers['Authorization'] = `Bearer ${token}`;
       }
-      const res = await fetch('/api/listings', { headers });
+      const res = await fetch(`${API_BASE}/api/listings`, { headers });
       if (!res.ok) {
         throw new Error('Failed to fetch listings');
       }
@@ -81,7 +83,7 @@ export default function AdminDashboard({ token, setToken, onBackToSite }) {
     e.preventDefault();
     setError('');
     try {
-      const res = await fetch('/api/auth/login', {
+      const res = await fetch(`${API_BASE}/api/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password })
@@ -111,7 +113,7 @@ export default function AdminDashboard({ token, setToken, onBackToSite }) {
   const handleToggleFeature = async (item) => {
     try {
       const updatedValue = !item.featured;
-      const res = await fetch(`/api/listings/${item.id}`, {
+      const res = await fetch(`${API_BASE}/api/listings/${item.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -132,7 +134,7 @@ export default function AdminDashboard({ token, setToken, onBackToSite }) {
   const handleToggleDisabled = async (item) => {
     try {
       const updatedValue = !item.disabled;
-      const res = await fetch(`/api/listings/${item.id}`, {
+      const res = await fetch(`${API_BASE}/api/listings/${item.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -157,7 +159,7 @@ export default function AdminDashboard({ token, setToken, onBackToSite }) {
     setError('');
     setSuccess('');
     try {
-      const res = await fetch(`/api/listings/${id}`, {
+      const res = await fetch(`${API_BASE}/api/listings/${id}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${token}`
@@ -295,7 +297,7 @@ export default function AdminDashboard({ token, setToken, onBackToSite }) {
     const method = isEdit ? 'PUT' : 'POST';
 
     try {
-      const res = await fetch(url, {
+      const res = await fetch(`${API_BASE}${url}`, {
         method,
         headers: {
           'Content-Type': 'application/json',

@@ -6,6 +6,8 @@ import Pagination from './components/Pagination';
 import AdminDashboard from './components/AdminDashboard';
 import staticListings from '../../data/listings.json';
 
+const API_BASE = import.meta.env.VITE_API_BASE_URL || '';
+
 export const districtToMetroLines = {
   'D01': ['East West Line', 'Downtown Line'],
   'D02': ['East West Line', 'North East Line'],
@@ -105,7 +107,7 @@ export default function App() {
       if (adminToken) {
         headers['Authorization'] = `Bearer ${adminToken}`;
       }
-      const res = await fetch('/api/listings', { headers });
+      const res = await fetch(`${API_BASE}/api/listings`, { headers });
       if (!res.ok) throw new Error('API failed');
       const data = await res.json();
       setListingsData(data);

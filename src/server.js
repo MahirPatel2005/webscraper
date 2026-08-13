@@ -4,8 +4,63 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const fs = require('fs');
 const path = require('path');
+const axios = require('axios');
 const config = require('./config');
 const { loadProcessed, saveProcessed, saveListingsJson } = require('./dedupe');
+
+// Git-based persistence: pushes file updates back to GitHub so Vercel redeploys automatically
+async function pushToGithub(localPath, repoPath) {
+  const token = process.env.GITHUB_PAT;
+  const repo = process.env.GITHUB_REPO; // e.g. "username/repository"
+  if (!token || !repo) {
+    console.log("Git-based persistence not configured (GITHUB_PAT or GITHUB_REPO missing). Skipping GitHub push.");
+    return;
+  }
+
+  try {
+    const url = `https://api.github.com/repos/${repo}/contents/${repoPath}`;
+    const content = fs.readFileSync(localPath, 'utf-8');
+    const base64Content = Buffer.from(content).toString('base64');
+
+    const headers = {
+      Authorization: `Bearer ${token}`,
+      Accept: 'application/vnd.github.v3+json',
+      'User-Agent': 'NodeJS-Backend'
+    };
+
+    // Get current file SHA to overwrite
+    let sha;
+    try {
+      const getRes = await axios.get(url, { headers });
+      sha = getRes.data?.sha;
+    } catch (err) {
+      // File doesn't exist on remote repository yet
+    }
+
+    await axios.put(url, {
+      message: `Admin update: ${path.basename(repoPath)}`,
+      content: base64Content,
+      ...(sha ? { sha } : {})
+    }, { headers });
+
+    console.log(`Successfully committed and pushed ${repoPath} to GitHub repository ${repo}!`);
+  } catch (err) {
+    console.error(`Failed to push ${repoPath} to GitHub:`, err.response?.data || err.message);
+  }
+}
+
+// Wrapper to save files locally and push changes back to GitHub
+function syncAndPersist(processed) {
+  saveProcessed(processed);
+  saveListingsJson(processed);
+  
+  // Asynchronously push to GitHub (don't block API response)
+  const listingsPath = config.paths.listingsFile;
+  const processedPath = config.paths.processedFile;
+  
+  pushToGithub(listingsPath, 'data/listings.json');
+  pushToGithub(processedPath, 'data/processed.json');
+}
 
 const app = express();
 app.use(cors());
@@ -164,8 +219,7 @@ app.post('/api/listings', authenticateToken, (req, res) => {
       custom: true
     };
 
-    saveProcessed(processed);
-    saveListingsJson(processed);
+    syncAndPersist(processed);
 
     // Return the formatted object
     res.status(201).json({
@@ -244,8 +298,7 @@ app.put('/api/listings/:id', authenticateToken, (req, res) => {
       };
     }
 
-    saveProcessed(processed);
-    saveListingsJson(processed);
+    syncAndPersist(processed);
 
     // Build merged return response
     const entry = processed[id];
@@ -280,8 +333,7 @@ app.delete('/api/listings/:id', authenticateToken, (req, res) => {
 
     delete processed[id];
 
-    saveProcessed(processed);
-    saveListingsJson(processed);
+    syncAndPersist(processed);
 
     res.json({ success: true, message: `Listing ${id} deleted successfully.` });
   } catch (err) {
