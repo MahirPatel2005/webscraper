@@ -650,7 +650,7 @@ select.filter-input {
 
 .carousel-viewport {
   width: 100%;
-  padding-top: 50%; /* 2:1 aspect ratio for detail cover */
+  padding-top: 75%; /* 4:3 aspect ratio matching homepage cards */
   position: relative;
   overflow: hidden;
 }
@@ -1124,7 +1124,7 @@ select.filter-input {
     grid-template-columns: 1fr;
   }
   .carousel-viewport {
-    padding-top: 60%;
+    padding-top: 75%;
   }
   .detail-main-info {
     flex-direction: column;
@@ -1778,5 +1778,244 @@ select.filter-input {
   border-color: var(--navy);
   color: #ffffff;
   font-weight: 600;
+}
+
+/* ==========================================================================
+   Featured Project Launches Widget Styles
+   ========================================================================== */
+.featured-launches-widget {
+  margin-bottom: 50px;
+  position: relative;
+  text-align: left;
+}
+
+/* Standalone widget mode for iframe integration */
+.featured-launches-widget.standalone {
+  margin-bottom: 0;
+  padding: 10px;
+  background: transparent;
+}
+
+.widget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.widget-tag-line {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #475569;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.widget-play-icon {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid var(--navy-dark);
+  display: inline-block;
+}
+
+.widget-main-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 38px;
+  font-weight: 600;
+  color: var(--navy-dark);
+  margin: 6px 0 0;
+  line-height: 1.15;
+  flex: 1;
+  min-width: 280px;
+}
+
+.widget-navigation-actions {
+  display: flex;
+  align-items: center;
+}
+
+.more-projects-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--navy-dark);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.arrow-square-box {
+  width: 38px;
+  height: 38px;
+  background-color: #1a2210; /* Dark premium header match */
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+.more-projects-link:hover .arrow-square-box {
+  background-color: var(--primary);
+  transform: scale(1.05);
+}
+
+.more-projects-link:hover span {
+  color: var(--primary);
+}
+
+/* Slider Controls & Carousel Row */
+.widget-slider-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.widget-slider-container {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 8px 0;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE & Edge */
+}
+
+.widget-slider-container::-webkit-scrollbar {
+  display: none; /* Safari & Chrome */
+}
+
+.widget-slider-card {
+  flex: 0 0 320px;
+  cursor: pointer;
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.widget-slider-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: #cbd5e1;
+}
+
+.widget-card-image-box {
+  width: 100%;
+  padding-top: 75%; /* 4:3 aspect ratio matching homepage cards */
+  overflow: hidden;
+  position: relative;
+}
+
+.widget-card-image-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.widget-slider-card:hover .widget-card-image-box img {
+  transform: scale(1.06);
+}
+
+.widget-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0) 60%, rgba(15, 23, 42, 0.1) 100%);
+}
+
+.widget-card-details {
+  padding: 16px;
+}
+
+.widget-card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--navy-dark);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.widget-card-subtitle {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 4px 0 0;
+  font-weight: 500;
+}
+
+/* Navigation long arrows positioned absolutely */
+.slider-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--border-color);
+  color: var(--navy-dark);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+}
+
+.slider-nav-btn:hover {
+  background-color: var(--navy-dark);
+  color: #ffffff;
+  border-color: var(--navy-dark);
+}
+
+.slider-nav-btn.left {
+  left: -22px;
+}
+
+.slider-nav-btn.right {
+  right: -22px;
+}
+
+/* Hide navigation arrows on touch/mobile screens to keep native swipe */
+@media (max-width: 768px) {
+  .slider-nav-btn {
+    display: none !important;
+  }
+  .widget-main-title {
+    font-size: 28px;
+  }
+  .widget-slider-card {
+    flex: 0 0 280px;
+  }
+  .widget-card-image-box {
+    height: 180px;
+  }
 }
 

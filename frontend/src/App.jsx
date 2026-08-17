@@ -4,6 +4,7 @@ import ListingsGrid, { getLaunchStatus, formatDistrict } from './components/List
 import DetailView from './components/DetailView';
 import Pagination from './components/Pagination';
 import AdminDashboard from './components/AdminDashboard';
+import FeaturedWidget from './components/FeaturedWidget';
 import staticListings from '../../data/listings.json';
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL || '';
@@ -82,6 +83,7 @@ export default function App() {
   // Navigation State: selected property ID (slug)
   const [selectedId, setSelectedId] = useState(null);
   const [isAdminView, setIsAdminView] = useState(false);
+  const [isWidgetView, setIsWidgetView] = useState(false);
   const [adminToken, setAdminToken] = useState(localStorage.getItem('adminToken') || null);
   const [listingsData, setListingsData] = useState(staticListings);
 
@@ -118,13 +120,15 @@ export default function App() {
 
   useEffect(() => {
     fetchListings();
-  }, [adminToken, isAdminView]);
+  }, [adminToken, isAdminView, isWidgetView]);
 
-  // Hidden admin panel URL parameter toggler
+  // Hidden admin panel & standalone widget URL parameter toggler
   useEffect(() => {
     const handleHashOrSearch = () => {
       const isParamAdmin = window.location.search.includes('admin=true') || window.location.hash === '#admin';
+      const isParamWidget = window.location.search.includes('widget=true') || window.location.pathname === '/widget' || window.location.hash === '#widget';
       setIsAdminView(isParamAdmin);
+      setIsWidgetView(isParamWidget);
     };
 
     handleHashOrSearch();
@@ -134,6 +138,36 @@ export default function App() {
     return () => {
       window.removeEventListener('popstate', handleHashOrSearch);
       window.removeEventListener('hashchange', handleHashOrSearch);
+    };
+  }, []);
+
+  // URL Deep Link Navigation Handler (opens property details view if ?id=slug or #detail/slug is present)
+  useEffect(() => {
+    const handleDeepLinking = () => {
+      // Don't intercept deep links if we are inside the standalone widget view
+      const isWidget = window.location.search.includes('widget=true') || window.location.pathname === '/widget' || window.location.hash === '#widget';
+      if (isWidget) return;
+
+      const params = new URLSearchParams(window.location.search);
+      const idParam = params.get('id') || params.get('propertyId');
+      
+      let hashParam = null;
+      if (window.location.hash.startsWith('#detail/')) {
+        hashParam = window.location.hash.replace('#detail/', '');
+      }
+      
+      const finalId = idParam || hashParam;
+      if (finalId) {
+        setSelectedId(finalId);
+      }
+    };
+
+    handleDeepLinking();
+    window.addEventListener('popstate', handleDeepLinking);
+    window.addEventListener('hashchange', handleDeepLinking);
+    return () => {
+      window.removeEventListener('popstate', handleDeepLinking);
+      window.removeEventListener('hashchange', handleDeepLinking);
     };
   }, []);
 
@@ -433,7 +467,13 @@ export default function App() {
     <div className="app-wrapper">
       {/* Main Body content */}
       <main className="container" style={{ paddingTop: '30px' }}>
-        {isAdminView ? (
+        {isWidgetView ? (
+          <FeaturedWidget
+            listings={listingsData}
+            onSelectProperty={setSelectedId}
+            isStandalone={true}
+          />
+        ) : isAdminView ? (
           <AdminDashboard
             token={adminToken}
             setToken={setAdminToken}
