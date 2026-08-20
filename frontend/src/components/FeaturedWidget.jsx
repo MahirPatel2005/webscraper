@@ -103,26 +103,7 @@ export default function FeaturedWidget({ listings, onSelectProperty, isStandalon
       onMouseLeave={() => setPaused(false)}
     >
       {/* Widget Header Layout */}
-      <div className="widget-header">
-        <div className="widget-tag-line">
-          <span className="widget-play-icon"></span>
-          RECENT PROJECTS
-        </div>
-        <h2 className="widget-main-title">Discover Our Featured Projects</h2>
-        
-        <div className="widget-navigation-actions">
-          <a 
-            href="https://sherealestate.sg/properties-for-sale/newdevelopments" 
-            target="_top" 
-            className="more-projects-link"
-          >
-            <div className="arrow-square-box">
-              <i className="fa-solid fa-arrow-right"></i>
-            </div>
-            <span>MORE PROJECTS</span>
-          </a>
-        </div>
-      </div>
+      
 
       {/* Slider Carousel Container */}
       <div className="widget-slider-wrapper">
