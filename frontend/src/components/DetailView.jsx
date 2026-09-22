@@ -188,9 +188,16 @@ export default function DetailView({ id, listings, onBack, onSelectProperty }) {
             ))}
           </div>
         </div>
-        <button className="btn-share" onClick={() => navigator.clipboard.writeText(window.location.href).then(() => alert('Link copied to clipboard!'))}>
-          <i className="fa-solid fa-arrow-up-from-bracket"></i> Share
-        </button>
+        <button
+  className="btn-share"
+  onClick={() =>
+    navigator.clipboard
+      .writeText("https://www.sherealestate.sg/newdevelopments")
+      .then(() => alert("Link copied to clipboard!"))
+  }
+>
+  <i className="fa-solid fa-arrow-up-from-bracket"></i> Share
+</button>
       </div>
 
       {/* Layout details structure (Left Content, Right Widget) */}
