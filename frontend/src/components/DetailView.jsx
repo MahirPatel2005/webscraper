@@ -94,15 +94,30 @@ export default function DetailView({ id, listings, onBack, onSelectProperty }) {
   const [showMobile, setShowMobile] = useState(false);
   const [isInquiryOpen, setIsInquiryOpen] = useState(false);
 
-  const item = listings.find(l => l.id === id);
+  const item = listings.find(l => l.id === id || l.slug === id);
 
   if (!item) {
+    if (listings.length === 0) {
+      return (
+        <div style={{ textAlign: 'center', padding: '100px 20px' }}>
+          <i className="fa-solid fa-spinner fa-spin" style={{ fontSize: '36px', color: 'var(--primary)', marginBottom: '16px' }}></i>
+          <h2>Loading Property Details...</h2>
+          <p style={{ color: 'var(--text-muted)', marginTop: '8px' }}>Please wait while we load the listing information.</p>
+        </div>
+      );
+    }
     return (
       <div style={{ textAlign: 'center', padding: '100px 20px' }}>
         <i className="fa-solid fa-triangle-exclamation" style={{ fontSize: '48px', color: '#ef4444', marginBottom: '16px' }}></i>
         <h2>Property Not Found</h2>
         <p style={{ color: 'var(--text-muted)', marginTop: '8px' }}>The selected property launch could not be found.</p>
-        <button onClick={onBack} className="btn-view" style={{ marginTop: '24px' }}>
+        <button
+          onClick={() => {
+            window.location.href = "https://www.sherealestate.sg/newdevelopments";
+          }}
+          className="btn-view"
+          style={{ marginTop: '24px' }}
+        >
           Back to Listings
         </button>
       </div>
@@ -152,7 +167,12 @@ export default function DetailView({ id, listings, onBack, onSelectProperty }) {
   return (
     <>
       {/* Prominent Back Button */}
-      <button onClick={onBack} className="btn-back">
+      <button
+        onClick={() => {
+          window.location.href = "https://www.sherealestate.sg/newdevelopments";
+        }}
+        className="btn-back"
+      >
         <i className="fa-solid fa-arrow-left"></i> Back to Listings
       </button>
 
@@ -189,15 +209,15 @@ export default function DetailView({ id, listings, onBack, onSelectProperty }) {
           </div>
         </div>
         <button
-  className="btn-share"
-  onClick={() =>
-    navigator.clipboard
-      .writeText("https://www.sherealestate.sg/newdevelopments")
-      .then(() => alert("Link copied to clipboard!"))
-  }
->
-  <i className="fa-solid fa-arrow-up-from-bracket"></i> Share
-</button>
+          className="btn-share"
+          onClick={() =>
+            navigator.clipboard
+              .writeText(window.location.href)
+              .then(() => alert("Link copied to clipboard!"))
+          }
+        >
+          <i className="fa-solid fa-arrow-up-from-bracket"></i> Share
+        </button>
       </div>
 
       {/* Layout details structure (Left Content, Right Widget) */}

@@ -81,7 +81,19 @@ export function getCleanImages(item) {
 
 export default function App() {
   // Navigation State: selected property ID (slug)
-  const [selectedId, setSelectedId] = useState(null);
+  const [selectedId, setSelectedId] = useState(() => {
+    if (typeof window === 'undefined') return null;
+    const isWidget = window.location.search.includes('widget=true') || window.location.pathname === '/widget' || window.location.hash === '#widget';
+    if (isWidget) return null;
+    const params = new URLSearchParams(window.location.search);
+    const idParam = params.get('id') || params.get('propertyId');
+    if (idParam) return idParam;
+    if (window.location.hash.startsWith('#detail/')) {
+      return window.location.hash.replace('#detail/', '');
+    }
+    return null;
+  });
+  const isFirstRender = useRef(true);
   const [isAdminView, setIsAdminView] = useState(false);
   const [isWidgetView, setIsWidgetView] = useState(false);
   const [adminToken, setAdminToken] = useState(localStorage.getItem('adminToken') || null);
@@ -159,6 +171,8 @@ export default function App() {
       const finalId = idParam || hashParam;
       if (finalId) {
         setSelectedId(finalId);
+      } else {
+        setSelectedId(null);
       }
     };
 
@@ -170,6 +184,29 @@ export default function App() {
       window.removeEventListener('hashchange', handleDeepLinking);
     };
   }, []);
+
+  // Keep browser URL query param in sync with selected property (so browser back/forward, refresh, and share work)
+  useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+    if (isWidgetView || isAdminView) return;
+
+    const url = new URL(window.location.href);
+    if (selectedId) {
+      if (url.searchParams.get('id') !== selectedId) {
+        url.searchParams.set('id', selectedId);
+        window.history.pushState({ id: selectedId }, '', url.toString());
+      }
+    } else {
+      if (url.searchParams.has('id') || url.searchParams.has('propertyId')) {
+        url.searchParams.delete('id');
+        url.searchParams.delete('propertyId');
+        window.history.pushState({}, '', url.pathname + (url.search ? url.search : ''));
+      }
+    }
+  }, [selectedId, isWidgetView, isAdminView]);
 
   // Sorting & Virtual Tour states
   const [sortBy, setSortBy] = useState('recommended');
