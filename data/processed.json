@@ -3,7 +3,7 @@
     "data": "{\"id\":\"amberwood-at-holland\",\"slug\":\"amberwood-at-holland\",\"url\":\"https://www.edgeprop.sg/new-launches/amberwood-at-holland\",\"title\":\"Amberwood At Holland\",\"address\":\"D10 Singapore\",\"district\":\"D10\",\"propertyType\":\"Condo\",\"beds\":null,\"baths\":null,\"floorAreaSqft\":null,\"price\":null,\"psf\":null,\"topYear\":\"\",\"unitsSoldPercent\":0,\"tenure\":\"99 years\",\"totalUnits\":null,\"developer\":\"Sim Lian JV (Holland) Pte. Ltd.\",\"agentName\":\"\",\"agentLicense\":\"\",\"phone\":\"\",\"image\":\"https://sg.tepcdn.com/s3fs-public/371418951788311268.jpg\",\"images\":[\"https://sg.tepcdn.com/s3fs-public/371418951788311268.jpg\"],\"agentPhoto\":\"\",\"layouts\":[],\"facilities\":[],\"priceRanges\":[]}",
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
-    "disabled": false,
+    "disabled": true,
     "featured": false,
     "custom": false,
     "overrides": {}

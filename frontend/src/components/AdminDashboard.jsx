@@ -10,7 +10,7 @@ const DISTRICTS = [
   'D21', 'D22', 'D23', 'D24', 'D25', 'D26', 'D27', 'D28'
 ];
 
-export default function AdminDashboard({ token, setToken, onBackToSite }) {
+export default function AdminDashboard({ token, setToken, onBackToSite, onListingsChange }) {
   const [listings, setListings] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -66,12 +66,18 @@ export default function AdminDashboard({ token, setToken, onBackToSite }) {
       if (token) {
         headers['Authorization'] = `Bearer ${token}`;
       }
-      const res = await fetch(`${API_BASE}/api/listings`, { headers });
+      const res = await fetch(`${API_BASE}/api/listings?all=true&t=${Date.now()}`, {
+        headers,
+        cache: 'no-store'
+      });
       if (!res.ok) {
         throw new Error('Failed to fetch listings');
       }
       const data = await res.json();
       setListings(data);
+      if (onListingsChange) {
+        onListingsChange(data);
+      }
     } catch (err) {
       setError(err.message || 'Error fetching listings');
     } finally {
@@ -124,7 +130,11 @@ export default function AdminDashboard({ token, setToken, onBackToSite }) {
       if (!res.ok) {
         throw new Error('Failed to update listing');
       }
-      setListings(prev => prev.map(p => p.id === item.id ? { ...p, featured: updatedValue } : p));
+      setListings(prev => {
+        const next = prev.map(p => p.id === item.id ? { ...p, featured: updatedValue } : p);
+        if (onListingsChange) onListingsChange(next);
+        return next;
+      });
     } catch (err) {
       setError(err.message);
     }
@@ -145,7 +155,11 @@ export default function AdminDashboard({ token, setToken, onBackToSite }) {
       if (!res.ok) {
         throw new Error('Failed to update listing');
       }
-      setListings(prev => prev.map(p => p.id === item.id ? { ...p, disabled: updatedValue } : p));
+      setListings(prev => {
+        const next = prev.map(p => p.id === item.id ? { ...p, disabled: updatedValue } : p);
+        if (onListingsChange) onListingsChange(next);
+        return next;
+      });
     } catch (err) {
       setError(err.message);
     }
@@ -171,7 +185,11 @@ export default function AdminDashboard({ token, setToken, onBackToSite }) {
       }
       setSuccess(`Listing "${title}" deleted successfully.`);
       setTimeout(() => setSuccess(''), 3000);
-      setListings(prev => prev.filter(p => p.id !== id));
+      setListings(prev => {
+        const next = prev.filter(p => p.id !== id);
+        if (onListingsChange) onListingsChange(next);
+        return next;
+      });
     } catch (err) {
       setError(err.message);
     }

@@ -145,11 +145,15 @@ app.get('/api/listings', optionalAuthenticateToken, (req, res) => {
       return res.json([]);
     }
 
+    res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+    res.setHeader('Pragma', 'no-cache');
+    res.setHeader('Expires', '0');
+
     const raw = fs.readFileSync(listingsPath, 'utf-8');
     const listings = JSON.parse(raw || '[]');
 
-    // If authenticated admin, return all listings.
-    // Otherwise, return only active listings that are NOT disabled.
+    // If authenticated admin, return all listings (whether disabled or not).
+    // Otherwise, for public visitors, return only active listings that are NOT disabled.
     if (req.user) {
       return res.json(listings);
     } else {

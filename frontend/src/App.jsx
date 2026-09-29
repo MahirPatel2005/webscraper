@@ -114,14 +114,12 @@ export default function App() {
     maxPrice: ''
   });
 
-  // Dynamic API Fetch
+  // Dynamic API Fetch (public active listings)
   const fetchListings = async () => {
     try {
-      const headers = {};
-      if (adminToken) {
-        headers['Authorization'] = `Bearer ${adminToken}`;
-      }
-      const res = await fetch(`${API_BASE}/api/listings`, { headers });
+      const res = await fetch(`${API_BASE}/api/listings?t=${Date.now()}`, {
+        cache: 'no-store'
+      });
       if (!res.ok) throw new Error('API failed');
       const data = await res.json();
       setListingsData(data);
@@ -132,7 +130,10 @@ export default function App() {
 
   useEffect(() => {
     fetchListings();
-  }, [adminToken, isAdminView, isWidgetView]);
+    const handleFocus = () => fetchListings();
+    window.addEventListener('focus', handleFocus);
+    return () => window.removeEventListener('focus', handleFocus);
+  }, [isAdminView, isWidgetView]);
 
   // Hidden admin panel & standalone widget URL parameter toggler
   useEffect(() => {
@@ -245,6 +246,7 @@ export default function App() {
     const metroLines = new Set();
 
     listingsData.forEach(item => {
+      if (item.disabled || item.status === 'delisted') return;
       if (item.propertyType) types.add(item.propertyType);
       if (item.district) {
         districts.add(item.district);
@@ -265,6 +267,9 @@ export default function App() {
   // Filter listings based on multi-select parameters
   const filteredListings = useMemo(() => {
     return listingsData.filter(item => {
+      // 0. Exclude disabled or delisted listings from the public view
+      if (item.disabled || item.status === 'delisted') return false;
+
       // 1. Text Search matching title, developer name, property type, or district
       if (searchQuery) {
         const q = searchQuery.toLowerCase();
@@ -514,6 +519,7 @@ export default function App() {
           <AdminDashboard
             token={adminToken}
             setToken={setAdminToken}
+            onListingsChange={setListingsData}
             onBackToSite={() => {
               if (window.location.hash === '#admin') {
                 window.location.hash = '';
@@ -524,6 +530,7 @@ export default function App() {
                 window.history.pushState({}, '', url.toString().replace(/\?$/, ''));
               }
               setIsAdminView(false);
+              fetchListings();
             }}
           />
         ) : selectedId ? (
