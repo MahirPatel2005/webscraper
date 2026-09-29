@@ -6,16 +6,14 @@ const fs = require('fs');
 const path = require('path');
 const axios = require('axios');
 const config = require('./config');
+const { connectDB, Listing, mongoose } = require('./db');
 const { loadProcessed, saveProcessed, saveListingsJson } = require('./dedupe');
 
-// Git-based persistence: pushes file updates back to GitHub so Vercel redeploys automatically
+// Helper to update local JSON backup files and GitHub in background
 async function pushToGithub(localPath, repoPath) {
   const token = process.env.GITHUB_PAT;
-  const repo = process.env.GITHUB_REPO; // e.g. "username/repository"
-  if (!token || !repo) {
-    console.log("Git-based persistence not configured (GITHUB_PAT or GITHUB_REPO missing). Skipping GitHub push.");
-    return;
-  }
+  const repo = process.env.GITHUB_REPO;
+  if (!token || !repo) return;
 
   try {
     const url = `https://api.github.com/repos/${repo}/contents/${repoPath}`;
@@ -28,14 +26,11 @@ async function pushToGithub(localPath, repoPath) {
       'User-Agent': 'NodeJS-Backend'
     };
 
-    // Get current file SHA to overwrite
     let sha;
     try {
       const getRes = await axios.get(url, { headers });
       sha = getRes.data?.sha;
-    } catch (err) {
-      // File doesn't exist on remote repository yet
-    }
+    } catch (err) {}
 
     await axios.put(url, {
       message: `Admin update: ${path.basename(repoPath)}`,
@@ -43,39 +38,49 @@ async function pushToGithub(localPath, repoPath) {
       ...(sha ? { sha } : {})
     }, { headers });
 
-    console.log(`Successfully committed and pushed ${repoPath} to GitHub repository ${repo}!`);
+    console.log(`Successfully synced ${repoPath} to GitHub repository ${repo}!`);
   } catch (err) {
     console.error(`Failed to push ${repoPath} to GitHub:`, err.response?.data || err.message);
   }
 }
 
-// Wrapper to save files locally and push changes back to GitHub
-function syncAndPersist(processed) {
-  saveProcessed(processed);
-  saveListingsJson(processed);
-  
-  // Asynchronously push to GitHub (don't block API response)
-  const listingsPath = config.paths.listingsFile;
-  const processedPath = config.paths.processedFile;
-  
-  pushToGithub(listingsPath, 'data/listings.json');
-  pushToGithub(processedPath, 'data/processed.json');
+// Background sync to disk files
+async function syncLocalBackups() {
+  try {
+    const allDocs = await Listing.find({}).lean();
+    const listingsPath = config.paths.listingsFile;
+    const dir = path.dirname(listingsPath);
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+
+    const formatted = allDocs.map(doc => ({
+      ...doc,
+      id: doc.slug || (doc._id ? doc._id.toString() : '')
+    }));
+
+    fs.writeFileSync(listingsPath, JSON.stringify(formatted, null, 2));
+    pushToGithub(listingsPath, 'data/listings.json');
+  } catch (e) {
+    console.warn('[Sync] Warning writing local backup:', e.message);
+  }
 }
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Load port and authentication credentials from environment variables
+// Load credentials
 const PORT = process.env.PORT || 5001;
 const JWT_SECRET = process.env.JWT_SECRET || 'she-real-estate-secret-key-12345';
 const ADMIN_USERNAME = process.env.ADMIN_USERNAME || 'admin';
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'admin123';
-
-// Generate a hashed version of the default password if needed (for comparisons)
 const ADMIN_PASSWORD_HASH = bcrypt.hashSync(ADMIN_PASSWORD, 10);
 
-// Helper to verify JWT token
+// Connect to MongoDB
+connectDB().catch(err => {
+  console.error('[Server] Critical: Failed to connect to MongoDB at startup:', err.message);
+});
+
+// Auth middleware
 function authenticateToken(req, res, next) {
   const authHeader = req.headers['authorization'];
   const token = authHeader && authHeader.split(' ')[1];
@@ -89,26 +94,35 @@ function authenticateToken(req, res, next) {
   });
 }
 
-// Optional Auth (doesn't fail if no token, just populates req.user)
 function optionalAuthenticateToken(req, res, next) {
   const authHeader = req.headers['authorization'];
   const token = authHeader && authHeader.split(' ')[1];
 
-  if (!token) {
-    return next();
-  }
+  if (!token) return next();
 
   jwt.verify(token, JWT_SECRET, (err, user) => {
-    if (err) {
-      // Just ignore token if invalid and proceed as guest
-      return next();
-    }
-    req.user = user;
+    if (!err) req.user = user;
     next();
   });
 }
 
-// Auth: Login Endpoint
+// Health check
+app.get('/api/health', async (req, res) => {
+  const isConnected = mongoose.connection.readyState === 1;
+  const count = isConnected ? await Listing.countDocuments() : 0;
+  res.json({
+    status: isConnected ? 'healthy' : 'degraded',
+    database: {
+      type: 'MongoDB',
+      connected: isConnected,
+      name: mongoose.connection.name,
+      totalListings: count
+    },
+    timestamp: new Date().toISOString()
+  });
+});
+
+// Auth: Login
 app.post('/api/auth/login', (req, res) => {
   const { username, password } = req.body;
 
@@ -116,84 +130,128 @@ app.post('/api/auth/login', (req, res) => {
     return res.status(400).json({ error: 'Username and password are required' });
   }
 
-  // Check username
   if (username !== ADMIN_USERNAME) {
     return res.status(401).json({ error: 'Invalid username or password' });
   }
 
-  // Check password: match against plaintext OR bcrypt hash
   const isMatch = password === ADMIN_PASSWORD || bcrypt.compareSync(password, ADMIN_PASSWORD_HASH);
   if (!isMatch) {
     return res.status(401).json({ error: 'Invalid username or password' });
   }
 
-  // Sign Token
-  const token = jwt.sign({ username }, JWT_SECRET, { expiresIn: '24h' });
+  const token = jwt.sign({ username }, JWT_SECRET, { expiresIn: '7d' });
   res.json({ token, user: { username } });
 });
 
-// Auth: Verify Session Endpoint
+// Auth: Me
 app.get('/api/auth/me', authenticateToken, (req, res) => {
   res.json({ username: req.user.username });
 });
 
-// GET Listings (supports optional auth to see disabled items)
-app.get('/api/listings', optionalAuthenticateToken, (req, res) => {
-  try {
-    const listingsPath = config.paths.listingsFile;
-    if (!fs.existsSync(listingsPath)) {
-      return res.json([]);
-    }
-
-    res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
-    res.setHeader('Pragma', 'no-cache');
-    res.setHeader('Expires', '0');
-
-    const raw = fs.readFileSync(listingsPath, 'utf-8');
-    const listings = JSON.parse(raw || '[]');
-
-    // If authenticated admin, return all listings (whether disabled or not).
-    // Otherwise, for public visitors, return only active listings that are NOT disabled.
-    if (req.user) {
-      return res.json(listings);
-    } else {
-      const activeListings = listings.filter(item => !item.disabled && item.status !== 'delisted');
-      return res.json(activeListings);
-    }
-  } catch (err) {
-    res.status(500).json({ error: 'Failed to read listings data' });
-  }
-});
-
-// Helper to generate a URL-friendly slug/id
+// Helper for slug generation
 function slugify(text) {
   return text
     .toString()
     .toLowerCase()
     .trim()
-    .replace(/\s+/g, '-')       // Replace spaces with -
-    .replace(/[^\w\-]+/g, '')   // Remove all non-word chars
-    .replace(/\-\-+/g, '-');    // Replace multiple - with single -
+    .replace(/\s+/g, '-')
+    .replace(/[^\w\-]+/g, '')
+    .replace(/\-\-+/g, '-');
 }
 
-// POST: Create custom listing (Auth required)
-app.post('/api/listings', authenticateToken, (req, res) => {
+// GET Listings (Direct from MongoDB)
+app.get('/api/listings', optionalAuthenticateToken, async (req, res) => {
   try {
+    await connectDB();
+
+    res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+    res.setHeader('Pragma', 'no-cache');
+    res.setHeader('Expires', '0');
+
+    let query = {};
+    // If admin is authenticated, or ?all=true is requested by admin
+    if (req.user) {
+      query = {}; // return all listings (disabled, active, delisted)
+    } else {
+      // Public visitors: only return active listings that are NOT disabled
+      query = {
+        disabled: { $ne: true },
+        status: { $ne: 'delisted' }
+      };
+    }
+
+    const docs = await Listing.find(query)
+      .sort({ featured: -1, updatedAt: -1, createdAt: -1 })
+      .lean();
+
+    const listings = docs.map(doc => ({
+      ...doc,
+      id: doc.slug || (doc._id ? doc._id.toString() : '')
+    }));
+
+    return res.json(listings);
+  } catch (err) {
+    console.error('[API] Error in GET /api/listings:', err);
+    res.status(500).json({ error: `Failed to fetch listings from MongoDB: ${err.message}` });
+  }
+});
+
+// GET Single Listing by Slug or ID
+app.get('/api/listings/:id', optionalAuthenticateToken, async (req, res) => {
+  try {
+    await connectDB();
+    const id = req.params.id;
+
+    const query = {
+      $or: [
+        { slug: id },
+        ...(mongoose.Types.ObjectId.isValid(id) ? [{ _id: id }] : [])
+      ]
+    };
+
+    const doc = await Listing.findOne(query).lean();
+    if (!doc) {
+      return res.status(404).json({ error: 'Property not found' });
+    }
+
+    // Public cannot view disabled or delisted unless admin
+    if (!req.user && (doc.disabled || doc.status === 'delisted')) {
+      return res.status(404).json({ error: 'Property not available' });
+    }
+
+    const formatted = {
+      ...doc,
+      id: doc.slug || (doc._id ? doc._id.toString() : '')
+    };
+
+    res.json(formatted);
+  } catch (err) {
+    res.status(500).json({ error: `Failed to fetch listing: ${err.message}` });
+  }
+});
+
+// POST: Create custom listing in MongoDB
+app.post('/api/listings', authenticateToken, async (req, res) => {
+  try {
+    await connectDB();
     const record = req.body;
     if (!record.title) {
       return res.status(400).json({ error: 'Property title is required' });
     }
 
-    const id = record.id || slugify(record.title);
-    const processed = loadProcessed();
+    const slug = record.slug || slugify(record.id || record.title);
 
-    if (processed[id]) {
-      return res.status(400).json({ error: `A property with ID/slug "${id}" already exists.` });
+    // Check if slug exists
+    const existing = await Listing.findOne({ slug });
+    if (existing) {
+      return res.status(400).json({ error: `A property with slug "${slug}" already exists.` });
     }
 
     const now = new Date().toISOString();
-    const dataObj = {
+    const newDoc = await Listing.create({
+      slug,
       title: record.title,
+      url: record.url || '',
       address: record.address || 'Singapore',
       district: record.district || 'D11',
       propertyType: record.propertyType || 'Condo',
@@ -203,144 +261,109 @@ app.post('/api/listings', authenticateToken, (req, res) => {
       price: record.price ? Number(record.price) : null,
       psf: record.psf ? Number(record.psf) : null,
       topYear: record.topYear || '',
-      unitsSoldPercent: record.unitsSoldPercent !== undefined ? Number(record.unitsSoldPercent) : null,
+      unitsSoldPercent: record.unitsSoldPercent !== undefined && record.unitsSoldPercent !== null ? Number(record.unitsSoldPercent) : null,
       tenure: record.tenure || '99 years',
       totalUnits: record.totalUnits ? Number(record.totalUnits) : null,
       developer: record.developer || 'Independent Developer',
+      agentName: record.agentName || '',
+      agentLicense: record.agentLicense || '',
+      phone: record.phone || '',
       image: record.image || '',
       images: Array.isArray(record.images) ? record.images : [],
+      agentPhoto: record.agentPhoto || '',
       layouts: Array.isArray(record.layouts) ? record.layouts : [],
       facilities: Array.isArray(record.facilities) ? record.facilities : [],
       priceRanges: Array.isArray(record.priceRanges) ? record.priceRanges : [],
-    };
-
-    processed[id] = {
-      data: JSON.stringify(dataObj),
+      history: Array.isArray(record.history) ? record.history : [],
       status: 'active',
       lastSeen: now,
-      disabled: record.disabled || false,
-      featured: record.featured || false,
-      custom: true
-    };
-
-    syncAndPersist(processed);
-
-    // Return the formatted object
-    res.status(201).json({
-      ...dataObj,
-      id,
-      status: 'active',
-      lastSeen: now,
-      disabled: record.disabled || false,
-      featured: record.featured || false,
+      disabled: record.disabled === true,
+      featured: record.featured === true,
       custom: true
     });
+
+    const responseObj = {
+      ...newDoc.toObject(),
+      id: newDoc.slug
+    };
+
+    syncLocalBackups();
+
+    res.status(201).json(responseObj);
   } catch (err) {
+    console.error('[API] Error creating listing in MongoDB:', err);
     res.status(500).json({ error: `Failed to create listing: ${err.message}` });
   }
 });
 
-// PUT: Update a listing (scraped or custom) (Auth required)
-app.put('/api/listings/:id', authenticateToken, (req, res) => {
+// PUT: Update a listing in MongoDB
+app.put('/api/listings/:id', authenticateToken, async (req, res) => {
   try {
+    await connectDB();
     const id = req.params.id;
-    const updateFields = req.body;
-    const processed = loadProcessed();
+    const updateFields = { ...req.body };
 
-    const prevEntry = processed[id];
-    if (!prevEntry) {
-      return res.status(404).json({ error: `Listing with ID "${id}" not found.` });
-    }
+    // Don't overwrite immutable identifiers
+    delete updateFields._id;
+    delete updateFields.id;
 
-    let parsedData = {};
-    try {
-      parsedData = typeof prevEntry.data === 'string' ? JSON.parse(prevEntry.data) : (prevEntry.data || {});
-    } catch (e) {}
-
-    const isCustom = !!prevEntry.custom;
-    const now = new Date().toISOString();
-
-    if (isCustom) {
-      // Direct update for custom listings
-      const updatedData = {
-        ...parsedData,
-        ...updateFields
-      };
-      
-      // Filter out meta parameters from the stored data JSON
-      delete updatedData.id;
-      delete updatedData.status;
-      delete updatedData.lastSeen;
-      delete updatedData.disabled;
-      delete updatedData.featured;
-      delete updatedData.custom;
-
-      processed[id] = {
-        ...prevEntry,
-        data: JSON.stringify(updatedData),
-        disabled: updateFields.disabled !== undefined ? !!updateFields.disabled : !!prevEntry.disabled,
-        featured: updateFields.featured !== undefined ? !!updateFields.featured : !!prevEntry.featured,
-        lastSeen: now,
-      };
-    } else {
-      // Scraped listings: store changes in overrides
-      const overrides = { ...(prevEntry.overrides || {}), ...updateFields };
-      
-      // Remove metadata keys from overrides object
-      delete overrides.id;
-      delete overrides.status;
-      delete overrides.lastSeen;
-      delete overrides.disabled;
-      delete overrides.featured;
-      delete overrides.custom;
-
-      processed[id] = {
-        ...prevEntry,
-        overrides,
-        disabled: updateFields.disabled !== undefined ? !!updateFields.disabled : !!prevEntry.disabled,
-        featured: updateFields.featured !== undefined ? !!updateFields.featured : !!prevEntry.featured,
-      };
-    }
-
-    syncAndPersist(processed);
-
-    // Build merged return response
-    const entry = processed[id];
-    const latestData = isCustom ? JSON.parse(entry.data) : parsedData;
-    const merged = {
-      ...latestData,
-      ...(entry.overrides || {}),
-      id,
-      status: entry.status,
-      lastSeen: entry.lastSeen,
-      delistedAt: entry.delistedAt || null,
-      disabled: entry.disabled || false,
-      featured: entry.featured || false,
-      custom: entry.custom || false,
+    const query = {
+      $or: [
+        { slug: id },
+        ...(mongoose.Types.ObjectId.isValid(id) ? [{ _id: id }] : [])
+      ]
     };
 
-    res.json(merged);
+    const doc = await Listing.findOne(query);
+    if (!doc) {
+      return res.status(404).json({ error: `Listing with ID/slug "${id}" not found.` });
+    }
+
+    // Apply updates
+    Object.keys(updateFields).forEach(key => {
+      doc[key] = updateFields[key];
+    });
+
+    doc.lastSeen = new Date().toISOString();
+    await doc.save();
+
+    const formatted = {
+      ...doc.toObject(),
+      id: doc.slug || doc._id.toString()
+    };
+
+    syncLocalBackups();
+
+    res.json(formatted);
   } catch (err) {
+    console.error('[API] Error updating listing in MongoDB:', err);
     res.status(500).json({ error: `Failed to update listing: ${err.message}` });
   }
 });
 
-// DELETE: Delete a listing (Auth required)
-app.delete('/api/listings/:id', authenticateToken, (req, res) => {
+// DELETE: Delete a listing from MongoDB
+app.delete('/api/listings/:id', authenticateToken, async (req, res) => {
   try {
+    await connectDB();
     const id = req.params.id;
-    const processed = loadProcessed();
 
-    if (!processed[id]) {
+    const query = {
+      $or: [
+        { slug: id },
+        ...(mongoose.Types.ObjectId.isValid(id) ? [{ _id: id }] : [])
+      ]
+    };
+
+    const deleted = await Listing.findOneAndDelete(query);
+    if (!deleted) {
       return res.status(404).json({ error: `Listing with ID "${id}" not found.` });
     }
 
-    delete processed[id];
+    syncLocalBackups();
 
-    syncAndPersist(processed);
-
-    res.json({ success: true, message: `Listing ${id} deleted successfully.` });
+    res.json({ success: true, message: `Listing "${id}" deleted successfully from MongoDB.` });
   } catch (err) {
+    console.error('[API] Error deleting listing from MongoDB:', err);
     res.status(500).json({ error: `Failed to delete listing: ${err.message}` });
   }
 });
@@ -349,16 +372,20 @@ app.delete('/api/listings/:id', authenticateToken, (req, res) => {
 const frontendDist = path.join(__dirname, '..', 'frontend', 'dist');
 if (fs.existsSync(frontendDist)) {
   app.use(express.static(frontendDist));
-  // Fallback to React index.html for routing
   app.get(/.*/, (req, res) => {
     res.sendFile(path.join(frontendDist, 'index.html'));
   });
 } else {
   app.get('/', (req, res) => {
-    res.send('API Server Running. Please start frontend dev server or build frontend to serve UI.');
+    res.send('API Server Running with MongoDB. Please start frontend dev server or build frontend to serve UI.');
   });
 }
 
-app.listen(PORT, () => {
-  console.log(`Backend API Server running at http://localhost:${PORT}`);
-});
+if (process.env.NODE_ENV !== 'production' || !process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`[Server] Backend API Server running at http://localhost:${PORT}`);
+    console.log(`[Server] Connected to MongoDB database: test`);
+  });
+}
+
+module.exports = app;

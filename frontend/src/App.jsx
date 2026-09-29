@@ -5,7 +5,6 @@ import DetailView from './components/DetailView';
 import Pagination from './components/Pagination';
 import AdminDashboard from './components/AdminDashboard';
 import FeaturedWidget from './components/FeaturedWidget';
-import staticListings from '../../data/listings.json';
 
 const API_BASE = import.meta.env.VITE_API_BASE_URL || '';
 
@@ -97,7 +96,9 @@ export default function App() {
   const [isAdminView, setIsAdminView] = useState(false);
   const [isWidgetView, setIsWidgetView] = useState(false);
   const [adminToken, setAdminToken] = useState(localStorage.getItem('adminToken') || null);
-  const [listingsData, setListingsData] = useState(staticListings);
+  const [listingsData, setListingsData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [fetchError, setFetchError] = useState(null);
 
   // Search & Filter State
   const [searchQuery, setSearchQuery] = useState('');
@@ -114,17 +115,26 @@ export default function App() {
     maxPrice: ''
   });
 
-  // Dynamic API Fetch (public active listings)
+  // Dynamic API Fetch (retrieves live data directly from MongoDB)
   const fetchListings = async () => {
     try {
+      setFetchError(null);
+      const headers = {};
+      if (adminToken) {
+        headers['Authorization'] = `Bearer ${adminToken}`;
+      }
       const res = await fetch(`${API_BASE}/api/listings?t=${Date.now()}`, {
+        headers,
         cache: 'no-store'
       });
-      if (!res.ok) throw new Error('API failed');
+      if (!res.ok) throw new Error(`API returned status ${res.status}`);
       const data = await res.json();
-      setListingsData(data);
+      setListingsData(Array.isArray(data) ? data : []);
+      setIsLoading(false);
     } catch (e) {
-      console.warn("Failed to fetch listings from API, falling back to static cache.", e);
+      console.warn("Failed to fetch listings from MongoDB API:", e);
+      setFetchError(e.message || 'Failed to load properties from MongoDB');
+      setIsLoading(false);
     }
   };
 
@@ -262,7 +272,7 @@ export default function App() {
       metroLines: Array.from(metroLines).sort(),
       developers: Array.from(developers).sort()
     };
-  }, []);
+  }, [listingsData]);
 
   // Filter listings based on multi-select parameters
   const filteredListings = useMemo(() => {
@@ -432,7 +442,7 @@ export default function App() {
 
       return true;
     });
-  }, [searchQuery, filters, virtualTour]);
+  }, [listingsData, searchQuery, filters, virtualTour]);
 
   // Sort filtered listings
   const sortedListings = useMemo(() => {
@@ -653,20 +663,38 @@ export default function App() {
               </div>
             </section>
 
-            {/* Grid display */}
-            <ListingsGrid
-              listings={paginatedListings}
-              onViewDetails={setSelectedId}
-              columns={gridColumns}
-            />
+            {/* Grid display or Loading/Error States */}
+            {isLoading && listingsData.length === 0 ? (
+              <div style={{ textAlign: 'center', padding: '80px 20px' }}>
+                <i className="fa-solid fa-circle-notch fa-spin" style={{ fontSize: '40px', color: '#0f172a', marginBottom: '16px' }}></i>
+                <h2 style={{ fontSize: '20px', fontWeight: '600', color: '#1e293b' }}>Loading Properties from MongoDB...</h2>
+                <p style={{ color: '#64748b', fontSize: '14px', marginTop: '6px' }}>Connecting to database and retrieving latest property launches</p>
+              </div>
+            ) : fetchError && listingsData.length === 0 ? (
+              <div style={{ textAlign: 'center', padding: '50px 20px', backgroundColor: '#fef2f2', borderRadius: '12px', border: '1px solid #fee2e2', margin: '30px auto', maxWidth: '500px' }}>
+                <i className="fa-solid fa-triangle-exclamation" style={{ fontSize: '36px', color: '#ef4444', marginBottom: '12px' }}></i>
+                <h3 style={{ fontSize: '18px', fontWeight: '600', color: '#991b1b' }}>Failed to Load from MongoDB</h3>
+                <p style={{ color: '#b91c1c', fontSize: '14px', margin: '8px 0 16px' }}>{fetchError}</p>
+                <button onClick={fetchListings} className="btn-view" style={{ padding: '8px 20px' }}>
+                  <i className="fa-solid fa-rotate-right" style={{ marginRight: '8px' }}></i> Retry Connection
+                </button>
+              </div>
+            ) : (
+              <>
+                <ListingsGrid
+                  listings={paginatedListings}
+                  onViewDetails={setSelectedId}
+                  columns={gridColumns}
+                />
 
-            {/* Pagination Controls */}
-            <Pagination
-              currentPage={currentPage}
-              totalItems={sortedListings.length}
-              itemsPerPage={itemsPerPage}
-              onPageChange={setCurrentPage}
-            />
+                <Pagination
+                  currentPage={currentPage}
+                  totalItems={sortedListings.length}
+                  itemsPerPage={itemsPerPage}
+                  onPageChange={setCurrentPage}
+                />
+              </>
+            )}
           </>
         )}
       </main>

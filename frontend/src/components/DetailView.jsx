@@ -112,14 +112,19 @@ export default function DetailView({ id, listings, onBack, onSelectProperty }) {
         <h2>Property Not Found</h2>
         <p style={{ color: 'var(--text-muted)', marginTop: '8px' }}>The selected property launch could not be found.</p>
         <button
-          onClick={() => {
-            window.location.href = "https://www.sherealestate.sg/newdevelopments";
-          }}
-          className="btn-view"
-          style={{ marginTop: '24px' }}
-        >
-          Back to Listings
-        </button>
+  onClick={() => {
+    if (window.history.length > 1) {
+      window.history.back();
+    } else {
+      window.location.href =
+        "https://www.sherealestate.sg/newdevelopments";
+    }
+  }}
+  className="btn-view"
+  style={{ marginTop: "24px" }}
+>
+  Back to Listings
+</button>
       </div>
     );
   }

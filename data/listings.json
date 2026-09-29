@@ -1,9 +1,184 @@
 [
   {
-    "id": "amberwood-at-holland",
+    "_id": "6a884615946ae695b291fd0d",
+    "slug": "1-moulmein-rise",
+    "title": "1 Moulmein Rise",
+    "url": "https://www.propertyguru.com.sg/listing/for-sale-1-moulmein-rise-500059046",
+    "address": "1 Moulmein Rise, Singapore",
+    "district": "D11",
+    "propertyType": "Condo",
+    "beds": "3 - 4",
+    "baths": 4,
+    "floorAreaSqft": "1238 - 3886",
+    "price": 6900000,
+    "psf": 1776,
+    "topYear": "2003",
+    "unitsSoldPercent": 100,
+    "tenure": "Freehold",
+    "totalUnits": 50,
+    "developer": "UOL Development Pte. Ltd.",
+    "image": "https://res.cloudinary.com/zb8qnprt/image/upload/v1787325387/properties/rf4g9w1ywxuxy6ubuwol.jpg",
+    "images": [
+      "https://res.cloudinary.com/zb8qnprt/image/upload/v1787325397/properties/nunth36cxvawyzg3qdln.jpg",
+      "https://res.cloudinary.com/zb8qnprt/image/upload/v1787325398/properties/pl7jpbmialdoeaifhzth.jpg",
+      "https://res.cloudinary.com/zb8qnprt/image/upload/v1787325399/properties/ey9jlzttqihttfvl1l0u.jpg"
+    ],
+    "layouts": [
+      {
+        "desc": "3 Bedroom Apartment",
+        "type": "Type C1",
+        "sqft": "1238",
+        "units": 20
+      },
+      {
+        "desc": "4 Bedroom Apartment",
+        "type": "Type D1",
+        "sqft": "1582",
+        "units": 20
+      },
+      {
+        "desc": "4 Bedroom Triplex Penthouse",
+        "type": "Type PH",
+        "sqft": "3886",
+        "units": 10
+      }
+    ],
+    "facilities": [
+      "Private Swimming Pool",
+      "Lapis Pool",
+      "Gymnasium",
+      "24-Hour Security Service",
+      "Shaded Cover Carpark",
+      "Clubhouse",
+      "Children Playground",
+      "Barbecue Area"
+    ],
+    "history": [
+      {
+        "date": "Aug 2026",
+        "unit": "#24-01",
+        "beds": "4 Beds",
+        "sizeSqft": 1582,
+        "price": 3850000,
+        "psf": 2433
+      },
+      {
+        "date": "Jul 2026",
+        "unit": "#15-02",
+        "beds": "3 Beds",
+        "sizeSqft": 1238,
+        "price": 2980000,
+        "psf": 2407
+      },
+      {
+        "date": "May 2026",
+        "unit": "#28-02",
+        "beds": "Penthouse",
+        "sizeSqft": 3886,
+        "price": 6900000,
+        "psf": 1776
+      },
+      {
+        "date": "Feb 2026",
+        "unit": "#08-03",
+        "beds": "3 Beds",
+        "sizeSqft": 1238,
+        "price": 2850000,
+        "psf": 2302
+      }
+    ],
+    "status": "active",
+    "disabled": false,
+    "featured": false,
+    "custom": true,
+    "createdAt": "2026-08-21T12:35:33.013Z",
+    "updatedAt": "2026-08-21T15:16:42.295Z",
+    "__v": 1,
+    "id": "1-moulmein-rise"
+  },
+  {
+    "_id": "6a884615946ae695b291fd10",
+    "slug": "sembawang-hills-estate",
+    "title": "Upper Thomson Terrace",
+    "url": "https://www.propertyguru.com.sg/listing/for-sale-sembawang-hills-estate-25525369",
+    "address": "Jalan Leban, Sembawang Hills Estate, Singapore",
+    "district": "D20",
+    "propertyType": "Landed",
+    "beds": "3",
+    "baths": 3,
+    "floorAreaSqft": "1500",
+    "price": 4280000,
+    "psf": 2853,
+    "topYear": "1980",
+    "unitsSoldPercent": 100,
+    "tenure": "Freehold",
+    "totalUnits": 1,
+    "developer": "Sembawang Hills Estate Developer",
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+    "images": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1560185007-c5ca9d2c014d?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "layouts": [
+      {
+        "desc": "3 Bedroom Inter-Terrace House",
+        "type": "Landed Terrace",
+        "sqft": "1500",
+        "units": 1
+      }
+    ],
+    "facilities": [
+      "Private Open-Air Courtyard",
+      "Roof Terrace",
+      "Car Porch",
+      "Private Garden",
+      "Renovated Dry & Wet Kitchens",
+      "Double-Volume Living Hall"
+    ],
+    "history": [
+      {
+        "date": "Jul 2026",
+        "unit": "Jalan Leban",
+        "beds": "3 Beds",
+        "sizeSqft": 1500,
+        "price": 4280000,
+        "psf": 2853
+      },
+      {
+        "date": "Apr 2026",
+        "unit": "Jalan Leban",
+        "beds": "3 Beds",
+        "sizeSqft": 1500,
+        "price": 4150000,
+        "psf": 2766
+      },
+      {
+        "date": "Dec 2025",
+        "unit": "Jalan Leban",
+        "beds": "3 Beds",
+        "sizeSqft": 1500,
+        "price": 4000000,
+        "psf": 2667
+      }
+    ],
+    "status": "sold",
+    "disabled": false,
+    "featured": false,
+    "custom": true,
+    "createdAt": "2026-08-21T12:35:33.144Z",
+    "updatedAt": "2026-09-29T04:33:53.612Z",
+    "__v": 0,
+    "id": "sembawang-hills-estate"
+  },
+  {
+    "_id": "6abb86342184f3bee8fa8760",
     "slug": "amberwood-at-holland",
-    "url": "https://www.edgeprop.sg/new-launches/amberwood-at-holland",
     "title": "Amberwood At Holland",
+    "url": "https://www.edgeprop.sg/new-launches/amberwood-at-holland",
     "address": "D10 Singapore",
     "district": "D10",
     "propertyType": "Condo",
@@ -28,18 +203,23 @@
     "layouts": [],
     "facilities": [],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": true,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:44.005Z",
+    "updatedAt": "2026-09-29T09:34:44.005Z",
+    "__v": 0,
+    "id": "amberwood-at-holland"
   },
   {
-    "id": "lucerne-grand",
+    "_id": "6abb86342184f3bee8fa8761",
     "slug": "lucerne-grand",
-    "url": "https://www.edgeprop.sg/new-launches/lucerne-grand",
     "title": "Lucerne Grand",
+    "url": "https://www.edgeprop.sg/new-launches/lucerne-grand",
     "address": "D22 Singapore",
     "district": "D22",
     "propertyType": "Condo",
@@ -64,18 +244,23 @@
     "layouts": [],
     "facilities": [],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:44.171Z",
+    "updatedAt": "2026-09-29T09:34:44.171Z",
+    "__v": 0,
+    "id": "lucerne-grand"
   },
   {
-    "id": "narra-residences",
+    "_id": "6abb86342184f3bee8fa8762",
     "slug": "narra-residences",
-    "url": "https://www.edgeprop.sg/new-launches/narra-residences",
     "title": "Narra Residences",
+    "url": "https://www.edgeprop.sg/new-launches/narra-residences",
     "address": "D23 Singapore",
     "district": "D23",
     "propertyType": "Condo",
@@ -271,18 +456,23 @@
       "Wifi at common areas"
     ],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:44.270Z",
+    "updatedAt": "2026-09-29T09:34:44.270Z",
+    "__v": 0,
+    "id": "narra-residences"
   },
   {
-    "id": "the-hillshore",
+    "_id": "6abb86342184f3bee8fa8763",
     "slug": "the-hillshore",
-    "url": "https://www.edgeprop.sg/new-launches/the-hillshore",
     "title": "The Hillshore",
+    "url": "https://www.edgeprop.sg/new-launches/the-hillshore",
     "address": "D05 Singapore",
     "district": "D05",
     "propertyType": "Condo",
@@ -461,18 +651,23 @@
         "priceRange": "$2,588,000 - $3,161,280"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:44.378Z",
+    "updatedAt": "2026-09-29T09:34:44.378Z",
+    "__v": 0,
+    "id": "the-hillshore"
   },
   {
-    "id": "w-residences-marina-view---singapore",
+    "_id": "6abb86342184f3bee8fa8764",
     "slug": "w-residences-marina-view---singapore",
-    "url": "https://www.edgeprop.sg/new-launches/w-residences-marina-view---singapore",
     "title": "W Residences Marina View - Singapore",
+    "url": "https://www.edgeprop.sg/new-launches/w-residences-marina-view---singapore",
     "address": "D01 Singapore",
     "district": "D01",
     "propertyType": "Condo",
@@ -711,18 +906,23 @@
         "priceRange": "$10,899,350"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:44.500Z",
+    "updatedAt": "2026-09-29T09:34:44.500Z",
+    "__v": 0,
+    "id": "w-residences-marina-view---singapore"
   },
   {
-    "id": "87-marshall",
+    "_id": "6abb86342184f3bee8fa8765",
     "slug": "87-marshall",
-    "url": "https://www.edgeprop.sg/new-launches/87-marshall",
     "title": "87 Marshall",
+    "url": "https://www.edgeprop.sg/new-launches/87-marshall",
     "address": "D15 Singapore",
     "district": "D15",
     "propertyType": "Apartment",
@@ -733,7 +933,7 @@
     "psf": null,
     "topYear": "",
     "unitsSoldPercent": 0,
-    "tenure": "",
+    "tenure": "99 years",
     "totalUnits": 23,
     "developer": "Lim Kong Wee",
     "agentName": "",
@@ -747,18 +947,23 @@
     "layouts": [],
     "facilities": [],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:44.610Z",
+    "updatedAt": "2026-09-29T09:34:44.610Z",
+    "__v": 0,
+    "id": "87-marshall"
   },
   {
-    "id": "luxus-hills,-the-estate",
+    "_id": "6abb86342184f3bee8fa8766",
     "slug": "luxus-hills,-the-estate",
-    "url": "https://www.edgeprop.sg/new-launches/luxus-hills,-the-estate",
     "title": "Luxus Hills, The Estate",
+    "url": "https://www.edgeprop.sg/new-launches/luxus-hills,-the-estate",
     "address": "D28 Singapore",
     "district": "D28",
     "propertyType": "Landed",
@@ -784,18 +989,23 @@
     "layouts": [],
     "facilities": [],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:44.731Z",
+    "updatedAt": "2026-09-29T09:34:44.731Z",
+    "__v": 0,
+    "id": "luxus-hills,-the-estate"
   },
   {
-    "id": "penridge",
+    "_id": "6abb86342184f3bee8fa8767",
     "slug": "penridge",
-    "url": "https://www.edgeprop.sg/new-launches/penridge",
     "title": "Penridge",
+    "url": "https://www.edgeprop.sg/new-launches/penridge",
     "address": "D24 Singapore",
     "district": "D24",
     "propertyType": "Condo",
@@ -820,18 +1030,23 @@
     "layouts": [],
     "facilities": [],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:44.852Z",
+    "updatedAt": "2026-09-29T09:34:44.852Z",
+    "__v": 0,
+    "id": "penridge"
   },
   {
-    "id": "solano-grand",
+    "_id": "6abb86342184f3bee8fa8768",
     "slug": "solano-grand",
-    "url": "https://www.edgeprop.sg/new-launches/solano-grand",
     "title": "Solano Grand",
+    "url": "https://www.edgeprop.sg/new-launches/solano-grand",
     "address": "D23 Singapore",
     "district": "D23",
     "propertyType": "Condo",
@@ -842,7 +1057,7 @@
     "psf": null,
     "topYear": "2030",
     "unitsSoldPercent": 0,
-    "tenure": "",
+    "tenure": "99 years",
     "totalUnits": 302,
     "developer": "CDL Selesta Pte Ltd",
     "agentName": "",
@@ -856,18 +1071,23 @@
     "layouts": [],
     "facilities": [],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:44.985Z",
+    "updatedAt": "2026-09-29T09:34:44.985Z",
+    "__v": 0,
+    "id": "solano-grand"
   },
   {
-    "id": "sophia-meadow",
+    "_id": "6abb86352184f3bee8fa8769",
     "slug": "sophia-meadow",
-    "url": "https://www.edgeprop.sg/new-launches/sophia-meadow",
     "title": "Sophia Meadow",
+    "url": "https://www.edgeprop.sg/new-launches/sophia-meadow",
     "address": "D09 Singapore",
     "district": "D09",
     "propertyType": "Apartment",
@@ -878,7 +1098,7 @@
     "psf": null,
     "topYear": "2027",
     "unitsSoldPercent": 0,
-    "tenure": "",
+    "tenure": "99 years",
     "totalUnits": 41,
     "developer": "Sin Thai Hin Development Pte Ltd",
     "agentName": "",
@@ -892,18 +1112,23 @@
     "layouts": [],
     "facilities": [],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:45.095Z",
+    "updatedAt": "2026-09-29T09:34:45.095Z",
+    "__v": 0,
+    "id": "sophia-meadow"
   },
   {
-    "id": "stamford-place",
+    "_id": "6abb86352184f3bee8fa876a",
     "slug": "stamford-place",
-    "url": "https://www.edgeprop.sg/new-launches/stamford-place",
     "title": "Stamford Place",
+    "url": "https://www.edgeprop.sg/new-launches/stamford-place",
     "address": "D06 Singapore",
     "district": "D06",
     "propertyType": "Apartment",
@@ -914,7 +1139,7 @@
     "psf": null,
     "topYear": "",
     "unitsSoldPercent": 0,
-    "tenure": "",
+    "tenure": "99 years",
     "totalUnits": 44,
     "developer": "Hillstreet Pte Ltd",
     "agentName": "",
@@ -928,18 +1153,23 @@
     "layouts": [],
     "facilities": [],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:45.276Z",
+    "updatedAt": "2026-09-29T09:34:45.276Z",
+    "__v": 0,
+    "id": "stamford-place"
   },
   {
-    "id": "the-island-residence",
+    "_id": "6abb86352184f3bee8fa876b",
     "slug": "the-island-residence",
-    "url": "https://www.edgeprop.sg/new-launches/the-island-residence",
     "title": "The Island Residence",
+    "url": "https://www.edgeprop.sg/new-launches/the-island-residence",
     "address": "D04 Singapore",
     "district": "D04",
     "propertyType": "Condo",
@@ -950,7 +1180,7 @@
     "psf": null,
     "topYear": "2030",
     "unitsSoldPercent": 0,
-    "tenure": "",
+    "tenure": "99 years",
     "totalUnits": 84,
     "developer": "Keppel Bay Pte Ltd",
     "agentName": "",
@@ -964,18 +1194,23 @@
     "layouts": [],
     "facilities": [],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:45.404Z",
+    "updatedAt": "2026-09-29T09:34:45.404Z",
+    "__v": 0,
+    "id": "the-island-residence"
   },
   {
-    "id": "the-serra-residences",
+    "_id": "6abb86352184f3bee8fa876c",
     "slug": "the-serra-residences",
-    "url": "https://www.edgeprop.sg/new-launches/the-serra-residences",
     "title": "The Serra Residences",
+    "url": "https://www.edgeprop.sg/new-launches/the-serra-residences",
     "address": "D11 Singapore",
     "district": "D11",
     "propertyType": "Apartment",
@@ -986,7 +1221,7 @@
     "psf": null,
     "topYear": "2030",
     "unitsSoldPercent": 0,
-    "tenure": "",
+    "tenure": "99 years",
     "totalUnits": 133,
     "developer": "Transurban Properties Pte Ltd",
     "agentName": "",
@@ -1000,18 +1235,23 @@
     "layouts": [],
     "facilities": [],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:45.527Z",
+    "updatedAt": "2026-09-29T09:34:45.527Z",
+    "__v": 0,
+    "id": "the-serra-residences"
   },
   {
-    "id": "usr-junction",
+    "_id": "6abb86352184f3bee8fa876d",
     "slug": "usr-junction",
-    "url": "https://www.edgeprop.sg/new-launches/usr-junction",
     "title": "USR Junction",
+    "url": "https://www.edgeprop.sg/new-launches/usr-junction",
     "address": "D19 Singapore",
     "district": "D19",
     "propertyType": "Apartment",
@@ -1022,7 +1262,7 @@
     "psf": null,
     "topYear": "",
     "unitsSoldPercent": 0,
-    "tenure": "",
+    "tenure": "99 years",
     "totalUnits": 28,
     "developer": "Fort Gemini Pte Ltd",
     "agentName": "",
@@ -1036,18 +1276,23 @@
     "layouts": [],
     "facilities": [],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:45.633Z",
+    "updatedAt": "2026-09-29T09:34:45.633Z",
+    "__v": 0,
+    "id": "usr-junction"
   },
   {
-    "id": "wynwood-grand",
+    "_id": "6abb86352184f3bee8fa876e",
     "slug": "wynwood-grand",
-    "url": "https://www.edgeprop.sg/new-launches/wynwood-grand",
     "title": "Wynwood Grand",
+    "url": "https://www.edgeprop.sg/new-launches/wynwood-grand",
     "address": "D25 Singapore",
     "district": "D25",
     "propertyType": "Condo",
@@ -1058,7 +1303,7 @@
     "psf": null,
     "topYear": "2030",
     "unitsSoldPercent": 0,
-    "tenure": "",
+    "tenure": "99 years",
     "totalUnits": 430,
     "developer": "CDL Divine Pte Ltd",
     "agentName": "",
@@ -1072,18 +1317,23 @@
     "layouts": [],
     "facilities": [],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:45.775Z",
+    "updatedAt": "2026-09-29T09:34:45.775Z",
+    "__v": 0,
+    "id": "wynwood-grand"
   },
   {
-    "id": "dunearn-house",
+    "_id": "6abb86352184f3bee8fa876f",
     "slug": "dunearn-house",
-    "url": "https://www.edgeprop.sg/new-launches/dunearn-house",
     "title": "Dunearn House",
+    "url": "https://www.edgeprop.sg/new-launches/dunearn-house",
     "address": "D11 Singapore",
     "district": "D11",
     "propertyType": "Apartment",
@@ -1303,18 +1553,23 @@
       "Outdoor Fitness"
     ],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:45.987Z",
+    "updatedAt": "2026-09-29T09:34:45.987Z",
+    "__v": 0,
+    "id": "dunearn-house"
   },
   {
-    "id": "lentor-gardens-residences",
+    "_id": "6abb86362184f3bee8fa8770",
     "slug": "lentor-gardens-residences",
-    "url": "https://www.edgeprop.sg/new-launches/lentor-gardens-residences",
     "title": "Lentor Gardens Residences",
+    "url": "https://www.edgeprop.sg/new-launches/lentor-gardens-residences",
     "address": "D26 Singapore",
     "district": "D26",
     "propertyType": "Condo",
@@ -1529,18 +1784,23 @@
         "priceRange": "$2,696,100 - $3,283,100"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:46.284Z",
+    "updatedAt": "2026-09-29T09:34:46.284Z",
+    "__v": 0,
+    "id": "lentor-gardens-residences"
   },
   {
-    "id": "duet-@-emily",
+    "_id": "6abb86372184f3bee8fa8771",
     "slug": "duet-@-emily",
-    "url": "https://www.edgeprop.sg/new-launches/duet-@-emily",
     "title": "Duet @ Emily",
+    "url": "https://www.edgeprop.sg/new-launches/duet-@-emily",
     "address": "D09 Singapore",
     "district": "D09",
     "propertyType": "Apartment",
@@ -1565,18 +1825,23 @@
     "layouts": [],
     "facilities": [],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:47.022Z",
+    "updatedAt": "2026-09-29T09:34:47.022Z",
+    "__v": 0,
+    "id": "duet-@-emily"
   },
   {
-    "id": "the-bronze",
+    "_id": "6abb86382184f3bee8fa8772",
     "slug": "the-bronze",
-    "url": "https://www.edgeprop.sg/new-launches/the-bronze",
     "title": "The Bronze",
+    "url": "https://www.edgeprop.sg/new-launches/the-bronze",
     "address": "D12 Singapore",
     "district": "D12",
     "propertyType": "Apartment",
@@ -1587,7 +1852,7 @@
     "psf": null,
     "topYear": "2027",
     "unitsSoldPercent": 0,
-    "tenure": "",
+    "tenure": "99 years",
     "totalUnits": 27,
     "developer": "Amerald Land Pte Ltd",
     "agentName": "",
@@ -1601,18 +1866,23 @@
     "layouts": [],
     "facilities": [],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:48.150Z",
+    "updatedAt": "2026-09-29T09:34:48.150Z",
+    "__v": 0,
+    "id": "the-bronze"
   },
   {
-    "id": "hudson-place-residences",
+    "_id": "6abb86382184f3bee8fa8773",
     "slug": "hudson-place-residences",
-    "url": "https://www.edgeprop.sg/new-launches/hudson-place-residences",
     "title": "Hudson Place Residences",
+    "url": "https://www.edgeprop.sg/new-launches/hudson-place-residences",
     "address": "D05 Singapore",
     "district": "D05",
     "propertyType": "Apartment",
@@ -1760,18 +2030,23 @@
         "priceRange": "$2,715,000 - $3,807,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:48.261Z",
+    "updatedAt": "2026-09-29T09:34:48.261Z",
+    "__v": 0,
+    "id": "hudson-place-residences"
   },
   {
-    "id": "tengah-garden-residences",
+    "_id": "6abb86382184f3bee8fa8774",
     "slug": "tengah-garden-residences",
-    "url": "https://www.edgeprop.sg/new-launches/tengah-garden-residences",
     "title": "Tengah Garden Residences",
+    "url": "https://www.edgeprop.sg/new-launches/tengah-garden-residences",
     "address": "D24 Singapore",
     "district": "D24",
     "propertyType": "Condo",
@@ -1931,18 +2206,23 @@
         "priceRange": "$2,288,000 - $2,921,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:48.427Z",
+    "updatedAt": "2026-09-29T09:34:48.427Z",
+    "__v": 0,
+    "id": "tengah-garden-residences"
   },
   {
-    "id": "vela-bay",
+    "_id": "6abb86382184f3bee8fa8775",
     "slug": "vela-bay",
-    "url": "https://www.edgeprop.sg/new-launches/vela-bay",
     "title": "Vela Bay",
+    "url": "https://www.edgeprop.sg/new-launches/vela-bay",
     "address": "D16 Singapore",
     "district": "D16",
     "propertyType": "Condo",
@@ -2098,18 +2378,23 @@
         "priceRange": "$4,836,150 - $5,829,120"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:48.539Z",
+    "updatedAt": "2026-09-29T09:34:48.539Z",
+    "__v": 0,
+    "id": "vela-bay"
   },
   {
-    "id": "pinery-residences",
+    "_id": "6abb86382184f3bee8fa8776",
     "slug": "pinery-residences",
-    "url": "https://www.edgeprop.sg/new-launches/pinery-residences",
     "title": "Pinery Residences",
+    "url": "https://www.edgeprop.sg/new-launches/pinery-residences",
     "address": "D18 Singapore",
     "district": "D18",
     "propertyType": "Condo",
@@ -2334,18 +2619,23 @@
         "priceRange": "$3,592,000 - $3,798,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:48.650Z",
+    "updatedAt": "2026-09-29T09:34:48.650Z",
+    "__v": 0,
+    "id": "pinery-residences"
   },
   {
-    "id": "rivelle-tampines",
+    "_id": "6abb86382184f3bee8fa8777",
     "slug": "rivelle-tampines",
-    "url": "https://www.edgeprop.sg/new-launches/rivelle-tampines",
     "title": "Rivelle Tampines",
+    "url": "https://www.edgeprop.sg/new-launches/rivelle-tampines",
     "address": "D18 Singapore",
     "district": "D18",
     "propertyType": "Condo",
@@ -2577,18 +2867,23 @@
         "priceRange": "$2,559,000 - $2,811,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:48.757Z",
+    "updatedAt": "2026-09-29T09:34:48.757Z",
+    "__v": 0,
+    "id": "rivelle-tampines"
   },
   {
-    "id": "pollen-collection-ii",
+    "_id": "6abb86382184f3bee8fa8778",
     "slug": "pollen-collection-ii",
-    "url": "https://www.edgeprop.sg/new-launches/pollen-collection-ii",
     "title": "POLLEN COLLECTION II",
+    "url": "https://www.edgeprop.sg/new-launches/pollen-collection-ii",
     "address": "D28 Singapore",
     "district": "D28",
     "propertyType": "Landed",
@@ -2613,18 +2908,23 @@
     "layouts": [],
     "facilities": [],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:48.890Z",
+    "updatedAt": "2026-09-29T09:34:48.890Z",
+    "__v": 0,
+    "id": "pollen-collection-ii"
   },
   {
-    "id": "coastal-cabana",
+    "_id": "6abb86382184f3bee8fa8779",
     "slug": "coastal-cabana",
-    "url": "https://www.edgeprop.sg/new-launches/coastal-cabana",
     "title": "Coastal Cabana",
+    "url": "https://www.edgeprop.sg/new-launches/coastal-cabana",
     "address": "D17 Singapore",
     "district": "D17",
     "propertyType": "Condo",
@@ -2813,18 +3113,23 @@
         "priceRange": "$2,309,000 - $2,682,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:48.988Z",
+    "updatedAt": "2026-09-29T09:34:48.988Z",
+    "__v": 0,
+    "id": "coastal-cabana"
   },
   {
-    "id": "zyon-grand",
+    "_id": "6abb86392184f3bee8fa877a",
     "slug": "zyon-grand",
-    "url": "https://www.edgeprop.sg/new-launches/zyon-grand",
     "title": "ZYON GRAND",
+    "url": "https://www.edgeprop.sg/new-launches/zyon-grand",
     "address": "D03 Singapore",
     "district": "D03",
     "propertyType": "Condo",
@@ -3019,18 +3324,23 @@
         "priceRange": "$10,388,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:49.099Z",
+    "updatedAt": "2026-09-29T09:34:49.099Z",
+    "__v": 0,
+    "id": "zyon-grand"
   },
   {
-    "id": "penrith",
+    "_id": "6abb86392184f3bee8fa877b",
     "slug": "penrith",
-    "url": "https://www.edgeprop.sg/new-launches/penrith",
     "title": "PENRITH",
+    "url": "https://www.edgeprop.sg/new-launches/penrith",
     "address": "D03 Singapore",
     "district": "D03",
     "propertyType": "Apartment",
@@ -3152,18 +3462,23 @@
         "priceRange": "$3,078,000 - $3,935,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:49.276Z",
+    "updatedAt": "2026-09-29T09:34:49.276Z",
+    "__v": 0,
+    "id": "penrith"
   },
   {
-    "id": "faber-residence",
+    "_id": "6abb86392184f3bee8fa877c",
     "slug": "faber-residence",
-    "url": "https://www.edgeprop.sg/new-launches/faber-residence",
     "title": "Faber Residence",
+    "url": "https://www.edgeprop.sg/new-launches/faber-residence",
     "address": "D05 Singapore",
     "district": "D05",
     "propertyType": "Condo",
@@ -3277,18 +3592,23 @@
         "priceRange": "$3,236,000 - $3,492,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:49.397Z",
+    "updatedAt": "2026-09-29T09:34:49.397Z",
+    "__v": 0,
+    "id": "faber-residence"
   },
   {
-    "id": "artisan-8",
+    "_id": "6abb86392184f3bee8fa877d",
     "slug": "artisan-8",
-    "url": "https://www.edgeprop.sg/new-launches/artisan-8",
     "title": "Artisan 8",
+    "url": "https://www.edgeprop.sg/new-launches/artisan-8",
     "address": "D20 Singapore",
     "district": "D20",
     "propertyType": "Apartment",
@@ -3313,18 +3633,23 @@
     "layouts": [],
     "facilities": [],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:49.507Z",
+    "updatedAt": "2026-09-29T09:34:49.507Z",
+    "__v": 0,
+    "id": "artisan-8"
   },
   {
-    "id": "springleaf-residence",
+    "_id": "6abb86392184f3bee8fa877e",
     "slug": "springleaf-residence",
-    "url": "https://www.edgeprop.sg/new-launches/springleaf-residence",
     "title": "Springleaf Residence",
+    "url": "https://www.edgeprop.sg/new-launches/springleaf-residence",
     "address": "D26 Singapore",
     "district": "D26",
     "propertyType": "Condo",
@@ -3473,18 +3798,23 @@
         "priceRange": "$3,019,000 - $3,489,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:49.610Z",
+    "updatedAt": "2026-09-29T09:34:49.610Z",
+    "__v": 0,
+    "id": "springleaf-residence"
   },
   {
-    "id": "canberra-crescent-residences",
+    "_id": "6abb86392184f3bee8fa877f",
     "slug": "canberra-crescent-residences",
-    "url": "https://www.edgeprop.sg/new-launches/canberra-crescent-residences",
     "title": "CANBERRA CRESCENT RESIDENCES",
+    "url": "https://www.edgeprop.sg/new-launches/canberra-crescent-residences",
     "address": "D27 Singapore",
     "district": "D27",
     "propertyType": "Apartment",
@@ -3509,18 +3839,23 @@
     "layouts": [],
     "facilities": [],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:49.724Z",
+    "updatedAt": "2026-09-29T09:34:49.724Z",
+    "__v": 0,
+    "id": "canberra-crescent-residences"
   },
   {
-    "id": "river-green",
+    "_id": "6abb86392184f3bee8fa8780",
     "slug": "river-green",
-    "url": "https://www.edgeprop.sg/new-launches/river-green",
     "title": "River Green",
+    "url": "https://www.edgeprop.sg/new-launches/river-green",
     "address": "D09 Singapore",
     "district": "D09",
     "propertyType": "Condo",
@@ -3633,18 +3968,23 @@
         "priceRange": "$2,716,000 - $3,516,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:49.936Z",
+    "updatedAt": "2026-09-29T09:34:49.936Z",
+    "__v": 0,
+    "id": "river-green"
   },
   {
-    "id": "promenade-peak",
+    "_id": "6abb863a2184f3bee8fa8781",
     "slug": "promenade-peak",
-    "url": "https://www.edgeprop.sg/new-launches/promenade-peak",
     "title": "Promenade Peak",
+    "url": "https://www.edgeprop.sg/new-launches/promenade-peak",
     "address": "D03 Singapore",
     "district": "D03",
     "propertyType": "Condo",
@@ -3815,18 +4155,23 @@
         "priceRange": "$6,335,400 - $6,658,100"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:50.064Z",
+    "updatedAt": "2026-09-29T09:34:50.064Z",
+    "__v": 0,
+    "id": "promenade-peak"
   },
   {
-    "id": "the-robertson-opus",
+    "_id": "6abb863a2184f3bee8fa8782",
     "slug": "the-robertson-opus",
-    "url": "https://www.edgeprop.sg/new-launches/the-robertson-opus",
     "title": "The Robertson Opus",
+    "url": "https://www.edgeprop.sg/new-launches/the-robertson-opus",
     "address": "D09 Singapore",
     "district": "D09",
     "propertyType": "Apartment",
@@ -3932,18 +4277,23 @@
         "priceRange": "$5,120,000 - $5,390,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:50.204Z",
+    "updatedAt": "2026-09-29T09:34:50.204Z",
+    "__v": 0,
+    "id": "the-robertson-opus"
   },
   {
-    "id": "otto-place",
+    "_id": "6abb863a2184f3bee8fa8783",
     "slug": "otto-place",
-    "url": "https://www.edgeprop.sg/new-launches/otto-place",
     "title": "Otto Place",
+    "url": "https://www.edgeprop.sg/new-launches/otto-place",
     "address": "D24 Singapore",
     "district": "D24",
     "propertyType": "Condo",
@@ -4108,18 +4458,23 @@
         "priceRange": "$1,675,000 - $2,252,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:50.308Z",
+    "updatedAt": "2026-09-29T09:34:50.308Z",
+    "__v": 0,
+    "id": "otto-place"
   },
   {
-    "id": "upperhouse-at-orchard-boulevard",
+    "_id": "6abb863a2184f3bee8fa8784",
     "slug": "upperhouse-at-orchard-boulevard",
-    "url": "https://www.edgeprop.sg/new-launches/upperhouse-at-orchard-boulevard",
     "title": "Upperhouse at Orchard Boulevard",
+    "url": "https://www.edgeprop.sg/new-launches/upperhouse-at-orchard-boulevard",
     "address": "D10 Singapore",
     "district": "D10",
     "propertyType": "Apartment",
@@ -4144,18 +4499,23 @@
     "layouts": [],
     "facilities": [],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:50.415Z",
+    "updatedAt": "2026-09-29T09:34:50.415Z",
+    "__v": 0,
+    "id": "upperhouse-at-orchard-boulevard"
   },
   {
-    "id": "amber-house",
+    "_id": "6abb863a2184f3bee8fa8785",
     "slug": "amber-house",
-    "url": "https://www.edgeprop.sg/new-launches/amber-house",
     "title": "Amber House",
+    "url": "https://www.edgeprop.sg/new-launches/amber-house",
     "address": "D15 Singapore",
     "district": "D15",
     "propertyType": "Apartment",
@@ -4293,18 +4653,23 @@
         "priceRange": "$5,305,608 - $5,449,928"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:50.519Z",
+    "updatedAt": "2026-09-29T09:34:50.519Z",
+    "__v": 0,
+    "id": "amber-house"
   },
   {
-    "id": "one-marina-gardens",
+    "_id": "6abb863a2184f3bee8fa8786",
     "slug": "one-marina-gardens",
-    "url": "https://www.edgeprop.sg/new-launches/one-marina-gardens",
     "title": "One Marina Gardens",
+    "url": "https://www.edgeprop.sg/new-launches/one-marina-gardens",
     "address": "D01 Singapore",
     "district": "D01",
     "propertyType": "Apartment",
@@ -4471,18 +4836,23 @@
         "priceRange": "$4,726,580 - $5,418,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:50.643Z",
+    "updatedAt": "2026-09-29T09:34:50.643Z",
+    "__v": 0,
+    "id": "one-marina-gardens"
   },
   {
-    "id": "bloomsbury-residences",
+    "_id": "6abb863a2184f3bee8fa8787",
     "slug": "bloomsbury-residences",
-    "url": "https://www.edgeprop.sg/new-launches/bloomsbury-residences",
     "title": "Bloomsbury Residences",
+    "url": "https://www.edgeprop.sg/new-launches/bloomsbury-residences",
     "address": "D05 Singapore",
     "district": "D05",
     "propertyType": "Apartment",
@@ -4666,18 +5036,23 @@
         "priceRange": "$5,753,700"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:50.767Z",
+    "updatedAt": "2026-09-29T09:34:50.767Z",
+    "__v": 0,
+    "id": "bloomsbury-residences"
   },
   {
-    "id": "aurelle-of-tampines",
+    "_id": "6abb863a2184f3bee8fa8788",
     "slug": "aurelle-of-tampines",
-    "url": "https://www.edgeprop.sg/new-launches/aurelle-of-tampines",
     "title": "Aurelle Of Tampines",
+    "url": "https://www.edgeprop.sg/new-launches/aurelle-of-tampines",
     "address": "D18 Singapore",
     "district": "D18",
     "propertyType": "Condo",
@@ -4913,18 +5288,23 @@
         "priceRange": "$2,258,000 - $2,529,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:50.893Z",
+    "updatedAt": "2026-09-29T09:34:50.893Z",
+    "__v": 0,
+    "id": "aurelle-of-tampines"
   },
   {
-    "id": "lentor-central-residences",
+    "_id": "6abb863a2184f3bee8fa8789",
     "slug": "lentor-central-residences",
-    "url": "https://www.edgeprop.sg/new-launches/lentor-central-residences",
     "title": "Lentor Central Residences",
+    "url": "https://www.edgeprop.sg/new-launches/lentor-central-residences",
     "address": "D26 Singapore",
     "district": "D26",
     "propertyType": "Condo",
@@ -5019,18 +5399,23 @@
         "priceRange": "$2,368,000 - $3,230,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:50.983Z",
+    "updatedAt": "2026-09-29T09:34:50.983Z",
+    "__v": 0,
+    "id": "lentor-central-residences"
   },
   {
-    "id": "aurea",
+    "_id": "6abb863b2184f3bee8fa878a",
     "slug": "aurea",
-    "url": "https://www.edgeprop.sg/new-launches/aurea",
     "title": "Aurea",
+    "url": "https://www.edgeprop.sg/new-launches/aurea",
     "address": "D07 Singapore",
     "district": "D07",
     "propertyType": "Condo",
@@ -5153,18 +5538,23 @@
         "priceRange": "$12,000,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:51.078Z",
+    "updatedAt": "2026-09-29T09:34:51.078Z",
+    "__v": 0,
+    "id": "aurea"
   },
   {
-    "id": "parktown-residence",
+    "_id": "6abb863b2184f3bee8fa878b",
     "slug": "parktown-residence",
-    "url": "https://www.edgeprop.sg/new-launches/parktown-residence",
     "title": "PARKTOWN Residence",
+    "url": "https://www.edgeprop.sg/new-launches/parktown-residence",
     "address": "D18 Singapore",
     "district": "D18",
     "propertyType": "Condo",
@@ -5351,18 +5741,23 @@
         "priceRange": "$3,781,000 - $4,048,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:51.196Z",
+    "updatedAt": "2026-09-29T09:34:51.196Z",
+    "__v": 0,
+    "id": "parktown-residence"
   },
   {
-    "id": "elta",
+    "_id": "6abb863b2184f3bee8fa878c",
     "slug": "elta",
-    "url": "https://www.edgeprop.sg/new-launches/elta",
     "title": "ELTA",
+    "url": "https://www.edgeprop.sg/new-launches/elta",
     "address": "D05 Singapore",
     "district": "D05",
     "propertyType": "Apartment",
@@ -5387,18 +5782,23 @@
     "layouts": [],
     "facilities": [],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:51.325Z",
+    "updatedAt": "2026-09-29T09:34:51.325Z",
+    "__v": 0,
+    "id": "elta"
   },
   {
-    "id": "bagnall-haus",
+    "_id": "6abb863b2184f3bee8fa878d",
     "slug": "bagnall-haus",
-    "url": "https://www.edgeprop.sg/new-launches/bagnall-haus",
     "title": "Bagnall Haus",
+    "url": "https://www.edgeprop.sg/new-launches/bagnall-haus",
     "address": "D16 Singapore",
     "district": "D16",
     "propertyType": "Apartment",
@@ -5481,18 +5881,23 @@
         "priceRange": "$3,615,000 - $3,807,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:51.427Z",
+    "updatedAt": "2026-09-29T09:34:51.427Z",
+    "__v": 0,
+    "id": "bagnall-haus"
   },
   {
-    "id": "the-orie",
+    "_id": "6abb863b2184f3bee8fa878e",
     "slug": "the-orie",
-    "url": "https://www.edgeprop.sg/new-launches/the-orie",
     "title": "The Orie",
+    "url": "https://www.edgeprop.sg/new-launches/the-orie",
     "address": "D12 Singapore",
     "district": "D12",
     "propertyType": "Condo",
@@ -5668,18 +6073,23 @@
         "priceRange": "$3,480,000 - $4,050,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:51.540Z",
+    "updatedAt": "2026-09-29T09:34:51.540Z",
+    "__v": 0,
+    "id": "the-orie"
   },
   {
-    "id": "ocho",
+    "_id": "6abb863b2184f3bee8fa878f",
     "slug": "ocho",
-    "url": "https://www.edgeprop.sg/new-launches/ocho",
     "title": "Ocho",
+    "url": "https://www.edgeprop.sg/new-launches/ocho",
     "address": "D14 Singapore",
     "district": "D14",
     "propertyType": "Apartment",
@@ -5711,18 +6121,23 @@
         "priceRange": "$1,893,443"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:51.636Z",
+    "updatedAt": "2026-09-29T09:34:51.636Z",
+    "__v": 0,
+    "id": "ocho"
   },
   {
-    "id": "novo-place",
+    "_id": "6abb863b2184f3bee8fa8790",
     "slug": "novo-place",
-    "url": "https://www.edgeprop.sg/new-launches/novo-place",
     "title": "Novo Place",
+    "url": "https://www.edgeprop.sg/new-launches/novo-place",
     "address": "D24 Singapore",
     "district": "D24",
     "propertyType": "Condo",
@@ -5812,18 +6227,23 @@
         "priceRange": "$1,604,000 - $2,039,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:51.725Z",
+    "updatedAt": "2026-09-29T09:34:51.725Z",
+    "__v": 0,
+    "id": "novo-place"
   },
   {
-    "id": "nava-grove",
+    "_id": "6abb863b2184f3bee8fa8791",
     "slug": "nava-grove",
-    "url": "https://www.edgeprop.sg/new-launches/nava-grove",
     "title": "Nava Grove",
+    "url": "https://www.edgeprop.sg/new-launches/nava-grove",
     "address": "D21 Singapore",
     "district": "D21",
     "propertyType": "Condo",
@@ -6000,18 +6420,23 @@
         "priceRange": "$4,002,500 - $4,629,800"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:51.837Z",
+    "updatedAt": "2026-09-29T09:34:51.837Z",
+    "__v": 0,
+    "id": "nava-grove"
   },
   {
-    "id": "chuan-park",
+    "_id": "6abb863b2184f3bee8fa8792",
     "slug": "chuan-park",
-    "url": "https://www.edgeprop.sg/new-launches/chuan-park",
     "title": "Chuan Park",
+    "url": "https://www.edgeprop.sg/new-launches/chuan-park",
     "address": "D19 Singapore",
     "district": "D19",
     "propertyType": "Apartment",
@@ -6385,18 +6810,23 @@
         "priceRange": "$3,873,500 - $4,309,005"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:51.965Z",
+    "updatedAt": "2026-09-29T09:34:51.965Z",
+    "__v": 0,
+    "id": "chuan-park"
   },
   {
-    "id": "the-collective-at-one-sophia",
+    "_id": "6abb863c2184f3bee8fa8793",
     "slug": "the-collective-at-one-sophia",
-    "url": "https://www.edgeprop.sg/new-launches/the-collective-at-one-sophia",
     "title": "The Collective At One Sophia",
+    "url": "https://www.edgeprop.sg/new-launches/the-collective-at-one-sophia",
     "address": "D09 Singapore",
     "district": "D09",
     "propertyType": "Mixed-Use",
@@ -6502,18 +6932,23 @@
         "priceRange": "$2,892,000 - $2,914,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:52.121Z",
+    "updatedAt": "2026-09-29T09:34:52.121Z",
+    "__v": 0,
+    "id": "the-collective-at-one-sophia"
   },
   {
-    "id": "emerald-of-katong",
+    "_id": "6abb863c2184f3bee8fa8794",
     "slug": "emerald-of-katong",
-    "url": "https://www.edgeprop.sg/new-launches/emerald-of-katong",
     "title": "Emerald Of Katong",
+    "url": "https://www.edgeprop.sg/new-launches/emerald-of-katong",
     "address": "D15 Singapore",
     "district": "D15",
     "propertyType": "Condo",
@@ -6913,18 +7348,23 @@
         "priceRange": "$3,590,000 - $4,142,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:52.235Z",
+    "updatedAt": "2026-09-29T09:34:52.235Z",
+    "__v": 0,
+    "id": "emerald-of-katong"
   },
   {
-    "id": "union-square-residences",
+    "_id": "6abb863c2184f3bee8fa8795",
     "slug": "union-square-residences",
-    "url": "https://www.edgeprop.sg/new-launches/union-square-residences",
     "title": "Union Square Residences",
+    "url": "https://www.edgeprop.sg/new-launches/union-square-residences",
     "address": "D01 Singapore",
     "district": "D01",
     "propertyType": "Condo",
@@ -7155,18 +7595,23 @@
         "priceRange": "$9,288,000 - $18,500,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:52.447Z",
+    "updatedAt": "2026-09-29T09:34:52.447Z",
+    "__v": 0,
+    "id": "union-square-residences"
   },
   {
-    "id": "norwood-grand",
+    "_id": "6abb863c2184f3bee8fa8796",
     "slug": "norwood-grand",
-    "url": "https://www.edgeprop.sg/new-launches/norwood-grand",
     "title": "Norwood Grand",
+    "url": "https://www.edgeprop.sg/new-launches/norwood-grand",
     "address": "D25 Singapore",
     "district": "D25",
     "propertyType": "Apartment",
@@ -7253,18 +7698,23 @@
         "priceRange": "$2,238,000 - $2,786,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:52.543Z",
+    "updatedAt": "2026-09-29T09:34:52.543Z",
+    "__v": 0,
+    "id": "norwood-grand"
   },
   {
-    "id": "8@bt",
+    "_id": "6abb863c2184f3bee8fa8797",
     "slug": "8@bt",
-    "url": "https://www.edgeprop.sg/new-launches/8@bt",
     "title": "8@BT",
+    "url": "https://www.edgeprop.sg/new-launches/8@bt",
     "address": "D21 Singapore",
     "district": "D21",
     "propertyType": "Condo",
@@ -7446,18 +7896,23 @@
         "priceRange": "$3,540,000 - $4,180,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:52.633Z",
+    "updatedAt": "2026-09-29T09:34:52.633Z",
+    "__v": 0,
+    "id": "8@bt"
   },
   {
-    "id": "kassia",
+    "_id": "6abb863c2184f3bee8fa8798",
     "slug": "kassia",
-    "url": "https://www.edgeprop.sg/new-launches/kassia",
     "title": "Kassia",
+    "url": "https://www.edgeprop.sg/new-launches/kassia",
     "address": "D17 Singapore",
     "district": "D17",
     "propertyType": "Condo",
@@ -7641,18 +8096,23 @@
         "priceRange": "$2,490,000 - $2,751,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:52.725Z",
+    "updatedAt": "2026-09-29T09:34:52.725Z",
+    "__v": 0,
+    "id": "kassia"
   },
   {
-    "id": "sora",
+    "_id": "6abb863c2184f3bee8fa8799",
     "slug": "sora",
-    "url": "https://www.edgeprop.sg/new-launches/sora",
     "title": "Sora",
+    "url": "https://www.edgeprop.sg/new-launches/sora",
     "address": "D22 Singapore",
     "district": "D22",
     "propertyType": "Condo",
@@ -7943,18 +8403,23 @@
       "Water Feature"
     ],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:52.831Z",
+    "updatedAt": "2026-09-29T09:34:52.831Z",
+    "__v": 0,
+    "id": "sora"
   },
   {
-    "id": "straits-at-joo-chiat",
+    "_id": "6abb863c2184f3bee8fa879a",
     "slug": "straits-at-joo-chiat",
-    "url": "https://www.edgeprop.sg/new-launches/straits-at-joo-chiat",
     "title": "Straits At Joo Chiat",
+    "url": "https://www.edgeprop.sg/new-launches/straits-at-joo-chiat",
     "address": "D15 Singapore",
     "district": "D15",
     "propertyType": "Apartment",
@@ -8000,18 +8465,23 @@
         "priceRange": "$2,850,000 - $3,051,300"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:52.936Z",
+    "updatedAt": "2026-09-29T09:34:52.936Z",
+    "__v": 0,
+    "id": "straits-at-joo-chiat"
   },
   {
-    "id": "skywaters-residences",
+    "_id": "6abb863d2184f3bee8fa879b",
     "slug": "skywaters-residences",
-    "url": "https://www.edgeprop.sg/new-launches/skywaters-residences",
     "title": "Skywaters Residences",
+    "url": "https://www.edgeprop.sg/new-launches/skywaters-residences",
     "address": "D01 Singapore",
     "district": "D01",
     "propertyType": "Apartment",
@@ -8043,18 +8513,23 @@
         "priceRange": "$14,480,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:53.046Z",
+    "updatedAt": "2026-09-29T09:34:53.046Z",
+    "__v": 0,
+    "id": "skywaters-residences"
   },
   {
-    "id": "the-courtyards",
+    "_id": "6abb863d2184f3bee8fa879c",
     "slug": "the-courtyards",
-    "url": "https://www.edgeprop.sg/new-launches/the-courtyards",
     "title": "The Courtyards",
+    "url": "https://www.edgeprop.sg/new-launches/the-courtyards",
     "address": "D15 Singapore",
     "district": "D15",
     "propertyType": "Landed",
@@ -8118,18 +8593,23 @@
       "Powder rooms"
     ],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:53.150Z",
+    "updatedAt": "2026-09-29T09:34:53.150Z",
+    "__v": 0,
+    "id": "the-courtyards"
   },
   {
-    "id": "the-hill-@-one-north",
+    "_id": "6abb863d2184f3bee8fa879d",
     "slug": "the-hill-@-one-north",
-    "url": "https://www.edgeprop.sg/new-launches/the-hill-@-one-north",
     "title": "The Hill @ One-North",
+    "url": "https://www.edgeprop.sg/new-launches/the-hill-@-one-north",
     "address": "D05 Singapore",
     "district": "D05",
     "propertyType": "Apartment",
@@ -8181,18 +8661,23 @@
         "priceRange": "$3,076,000 - $3,245,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:53.254Z",
+    "updatedAt": "2026-09-29T09:34:53.254Z",
+    "__v": 0,
+    "id": "the-hill-@-one-north"
   },
   {
-    "id": "lentor-mansion",
+    "_id": "6abb863d2184f3bee8fa879e",
     "slug": "lentor-mansion",
-    "url": "https://www.edgeprop.sg/new-launches/lentor-mansion",
     "title": "Lentor Mansion",
+    "url": "https://www.edgeprop.sg/new-launches/lentor-mansion",
     "address": "D26 Singapore",
     "district": "D26",
     "propertyType": "Condo",
@@ -8346,18 +8831,23 @@
         "priceRange": "$3,170,000 - $3,544,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:53.372Z",
+    "updatedAt": "2026-09-29T09:34:53.372Z",
+    "__v": 0,
+    "id": "lentor-mansion"
   },
   {
-    "id": "lentoria",
+    "_id": "6abb863d2184f3bee8fa879f",
     "slug": "lentoria",
-    "url": "https://www.edgeprop.sg/new-launches/lentoria",
     "title": "Lentoria",
+    "url": "https://www.edgeprop.sg/new-launches/lentoria",
     "address": "D26 Singapore",
     "district": "D26",
     "propertyType": "Condo",
@@ -8525,18 +9015,23 @@
         "priceRange": "$2,540,000 - $3,360,400"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:53.469Z",
+    "updatedAt": "2026-09-29T09:34:53.469Z",
+    "__v": 0,
+    "id": "lentoria"
   },
   {
-    "id": "hillhaven",
+    "_id": "6abb863d2184f3bee8fa87a0",
     "slug": "hillhaven",
-    "url": "https://www.edgeprop.sg/new-launches/hillhaven",
     "title": "Hillhaven",
+    "url": "https://www.edgeprop.sg/new-launches/hillhaven",
     "address": "D23 Singapore",
     "district": "D23",
     "propertyType": "Condo",
@@ -8632,18 +9127,23 @@
         "priceRange": "$2,450,805 - $3,353,800"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:53.556Z",
+    "updatedAt": "2026-09-29T09:34:53.556Z",
+    "__v": 0,
+    "id": "hillhaven"
   },
   {
-    "id": "the-arcady-at-boon-keng",
+    "_id": "6abb863d2184f3bee8fa87a1",
     "slug": "the-arcady-at-boon-keng",
-    "url": "https://www.edgeprop.sg/new-launches/the-arcady-at-boon-keng",
     "title": "The Arcady at Boon Keng",
+    "url": "https://www.edgeprop.sg/new-launches/the-arcady-at-boon-keng",
     "address": "D12 Singapore",
     "district": "D12",
     "propertyType": "Condo",
@@ -8886,18 +9386,23 @@
         "priceRange": "$3,733,000 - $3,926,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:53.637Z",
+    "updatedAt": "2026-09-29T09:34:53.637Z",
+    "__v": 0,
+    "id": "the-arcady-at-boon-keng"
   },
   {
-    "id": "watten-house",
+    "_id": "6abb863d2184f3bee8fa87a2",
     "slug": "watten-house",
-    "url": "https://www.edgeprop.sg/new-launches/watten-house",
     "title": "Watten House",
+    "url": "https://www.edgeprop.sg/new-launches/watten-house",
     "address": "D11 Singapore",
     "district": "D11",
     "propertyType": "Condo",
@@ -8922,18 +9427,23 @@
     "layouts": [],
     "facilities": [],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:53.718Z",
+    "updatedAt": "2026-09-29T09:34:53.718Z",
+    "__v": 0,
+    "id": "watten-house"
   },
   {
-    "id": "hillock-green",
+    "_id": "6abb863d2184f3bee8fa87a3",
     "slug": "hillock-green",
-    "url": "https://www.edgeprop.sg/new-launches/hillock-green",
     "title": "Hillock Green",
+    "url": "https://www.edgeprop.sg/new-launches/hillock-green",
     "address": "D26 Singapore",
     "district": "D26",
     "propertyType": "Condo",
@@ -9071,18 +9581,23 @@
         "priceRange": "$2,360,000 - $3,356,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:53.843Z",
+    "updatedAt": "2026-09-29T09:34:53.843Z",
+    "__v": 0,
+    "id": "hillock-green"
   },
   {
-    "id": "jden",
+    "_id": "6abb863d2184f3bee8fa87a4",
     "slug": "jden",
-    "url": "https://www.edgeprop.sg/new-launches/jden",
     "title": "J'den",
+    "url": "https://www.edgeprop.sg/new-launches/jden",
     "address": "D22 Singapore",
     "district": "D22",
     "propertyType": "Condo",
@@ -9219,18 +9734,23 @@
         "priceRange": "$3,346,000 - $3,920,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:53.940Z",
+    "updatedAt": "2026-09-29T09:34:53.940Z",
+    "__v": 0,
+    "id": "jden"
   },
   {
-    "id": "the-shorefront",
+    "_id": "6abb863e2184f3bee8fa87a5",
     "slug": "the-shorefront",
-    "url": "https://www.edgeprop.sg/new-launches/the-shorefront",
     "title": "The Shorefront",
+    "url": "https://www.edgeprop.sg/new-launches/the-shorefront",
     "address": "D17 Singapore",
     "district": "D17",
     "propertyType": "Apartment",
@@ -9255,18 +9775,23 @@
     "layouts": [],
     "facilities": [],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:54.068Z",
+    "updatedAt": "2026-09-29T09:34:54.068Z",
+    "__v": 0,
+    "id": "the-shorefront"
   },
   {
-    "id": "tmw-maxwell",
+    "_id": "6abb863e2184f3bee8fa87a6",
     "slug": "tmw-maxwell",
-    "url": "https://www.edgeprop.sg/new-launches/tmw-maxwell",
     "title": "TMW MAXWELL",
+    "url": "https://www.edgeprop.sg/new-launches/tmw-maxwell",
     "address": "D02 Singapore",
     "district": "D02",
     "propertyType": "Condo",
@@ -9371,18 +9896,23 @@
       "Sky Gym"
     ],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:54.178Z",
+    "updatedAt": "2026-09-29T09:34:54.178Z",
+    "__v": 0,
+    "id": "tmw-maxwell"
   },
   {
-    "id": "the-lakegarden-residences",
+    "_id": "6abb863e2184f3bee8fa87a7",
     "slug": "the-lakegarden-residences",
-    "url": "https://www.edgeprop.sg/new-launches/the-lakegarden-residences",
     "title": "The LakeGarden Residences",
+    "url": "https://www.edgeprop.sg/new-launches/the-lakegarden-residences",
     "address": "D22 Singapore",
     "district": "D22",
     "propertyType": "Condo",
@@ -9542,18 +10072,23 @@
         "priceRange": "$3,100,000 - $4,380,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:54.283Z",
+    "updatedAt": "2026-09-29T09:34:54.283Z",
+    "__v": 0,
+    "id": "the-lakegarden-residences"
   },
   {
-    "id": "grand-dunman",
+    "_id": "6abb863e2184f3bee8fa87a8",
     "slug": "grand-dunman",
-    "url": "https://www.edgeprop.sg/new-launches/grand-dunman",
     "title": "Grand Dunman",
+    "url": "https://www.edgeprop.sg/new-launches/grand-dunman",
     "address": "D15 Singapore",
     "district": "D15",
     "propertyType": "Condo",
@@ -9861,18 +10396,23 @@
         "priceRange": "$7,150,000 - $7,800,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:54.434Z",
+    "updatedAt": "2026-09-29T09:34:54.434Z",
+    "__v": 0,
+    "id": "grand-dunman"
   },
   {
-    "id": "pinetree-hill",
+    "_id": "6abb863e2184f3bee8fa87a9",
     "slug": "pinetree-hill",
-    "url": "https://www.edgeprop.sg/new-launches/pinetree-hill",
     "title": "Pinetree Hill",
+    "url": "https://www.edgeprop.sg/new-launches/pinetree-hill",
     "address": "D21 Singapore",
     "district": "D21",
     "propertyType": "Condo",
@@ -10009,18 +10549,23 @@
         "priceRange": "$4,364,000 - $4,788,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:54.550Z",
+    "updatedAt": "2026-09-29T09:34:54.550Z",
+    "__v": 0,
+    "id": "pinetree-hill"
   },
   {
-    "id": "lentor-hills-residences",
+    "_id": "6abb863e2184f3bee8fa87aa",
     "slug": "lentor-hills-residences",
-    "url": "https://www.edgeprop.sg/new-launches/lentor-hills-residences",
     "title": "Lentor Hills Residences",
+    "url": "https://www.edgeprop.sg/new-launches/lentor-hills-residences",
     "address": "D26 Singapore",
     "district": "D26",
     "propertyType": "Apartment",
@@ -10175,18 +10720,23 @@
         "priceRange": "$2,545,000 - $3,013,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:54.679Z",
+    "updatedAt": "2026-09-29T09:34:54.679Z",
+    "__v": 0,
+    "id": "lentor-hills-residences"
   },
   {
-    "id": "the-reserve-residences",
+    "_id": "6abb863e2184f3bee8fa87ab",
     "slug": "the-reserve-residences",
-    "url": "https://www.edgeprop.sg/new-launches/the-reserve-residences",
     "title": "The Reserve Residences",
+    "url": "https://www.edgeprop.sg/new-launches/the-reserve-residences",
     "address": "D21 Singapore",
     "district": "D21",
     "propertyType": "Condo",
@@ -10346,18 +10896,23 @@
         "priceRange": "$4,854,563 - $8,098,520"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:54.776Z",
+    "updatedAt": "2026-09-29T09:34:54.776Z",
+    "__v": 0,
+    "id": "the-reserve-residences"
   },
   {
-    "id": "the-continuum",
+    "_id": "6abb863e2184f3bee8fa87ac",
     "slug": "the-continuum",
-    "url": "https://www.edgeprop.sg/new-launches/the-continuum",
     "title": "The Continuum",
+    "url": "https://www.edgeprop.sg/new-launches/the-continuum",
     "address": "D15 Singapore",
     "district": "D15",
     "propertyType": "Apartment",
@@ -10558,18 +11113,23 @@
         "priceRange": "$5,105,000 - $6,406,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:54.904Z",
+    "updatedAt": "2026-09-29T09:34:54.904Z",
+    "__v": 0,
+    "id": "the-continuum"
   },
   {
-    "id": "blossoms-by-the-park",
+    "_id": "6abb863f2184f3bee8fa87ad",
     "slug": "blossoms-by-the-park",
-    "url": "https://www.edgeprop.sg/new-launches/blossoms-by-the-park",
     "title": "Blossoms by the Park",
+    "url": "https://www.edgeprop.sg/new-launches/blossoms-by-the-park",
     "address": "D05 Singapore",
     "district": "D05",
     "propertyType": "Condo",
@@ -10731,18 +11291,23 @@
         "priceRange": "$2,921,000 - $3,800,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:55.037Z",
+    "updatedAt": "2026-09-29T09:34:55.037Z",
+    "__v": 0,
+    "id": "blossoms-by-the-park"
   },
   {
-    "id": "terra-hill",
+    "_id": "6abb863f2184f3bee8fa87ae",
     "slug": "terra-hill",
-    "url": "https://www.edgeprop.sg/new-launches/terra-hill",
     "title": "Terra Hill",
+    "url": "https://www.edgeprop.sg/new-launches/terra-hill",
     "address": "D05 Singapore",
     "district": "D05",
     "propertyType": "Condo",
@@ -10975,18 +11540,23 @@
         "priceRange": "$5,200,000 - $8,200,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:55.118Z",
+    "updatedAt": "2026-09-29T09:34:55.118Z",
+    "__v": 0,
+    "id": "terra-hill"
   },
   {
-    "id": "the-myst",
+    "_id": "6abb863f2184f3bee8fa87af",
     "slug": "the-myst",
-    "url": "https://www.edgeprop.sg/new-launches/the-myst",
     "title": "The Myst",
+    "url": "https://www.edgeprop.sg/new-launches/the-myst",
     "address": "D23 Singapore",
     "district": "D23",
     "propertyType": "Condo",
@@ -11133,18 +11703,23 @@
         "priceRange": "$3,196,000 - $3,606,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:55.381Z",
+    "updatedAt": "2026-09-29T09:34:55.381Z",
+    "__v": 0,
+    "id": "the-myst"
   },
   {
-    "id": "mount-rosie-signature-collection",
+    "_id": "6abb863f2184f3bee8fa87b0",
     "slug": "mount-rosie-signature-collection",
-    "url": "https://www.edgeprop.sg/new-launches/mount-rosie-signature-collection",
     "title": "Mount Rosie Signature Collection",
+    "url": "https://www.edgeprop.sg/new-launches/mount-rosie-signature-collection",
     "address": "D11 Singapore",
     "district": "D11",
     "propertyType": "Landed",
@@ -11215,18 +11790,23 @@
       "15 mins walk to Stevens MRT Station"
     ],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:55.475Z",
+    "updatedAt": "2026-09-29T09:34:55.475Z",
+    "__v": 0,
+    "id": "mount-rosie-signature-collection"
   },
   {
-    "id": "canninghill-piers",
+    "_id": "6abb863f2184f3bee8fa87b1",
     "slug": "canninghill-piers",
-    "url": "https://www.edgeprop.sg/new-launches/canninghill-piers",
     "title": "Canninghill Piers",
+    "url": "https://www.edgeprop.sg/new-launches/canninghill-piers",
     "address": "D06 Singapore",
     "district": "D06",
     "propertyType": "Apartment",
@@ -11335,18 +11915,23 @@
         "priceRange": "$7,302,000 - $48,000,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:55.575Z",
+    "updatedAt": "2026-09-29T09:34:55.575Z",
+    "__v": 0,
+    "id": "canninghill-piers"
   },
   {
-    "id": "skye-at-holland",
+    "_id": "6abb863f2184f3bee8fa87b2",
     "slug": "skye-at-holland",
-    "url": "https://www.edgeprop.sg/new-launches/skye-at-holland",
     "title": "Skye at Holland",
+    "url": "https://www.edgeprop.sg/new-launches/skye-at-holland",
     "address": "D10 Singapore",
     "district": "D10",
     "propertyType": "Condo",
@@ -11457,18 +12042,23 @@
         "priceRange": "$4,889,000 - $5,943,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:55.659Z",
+    "updatedAt": "2026-09-29T09:34:55.659Z",
+    "__v": 0,
+    "id": "skye-at-holland"
   },
   {
-    "id": "the-sen",
+    "_id": "6abb863f2184f3bee8fa87b3",
     "slug": "the-sen",
-    "url": "https://www.edgeprop.sg/new-launches/the-sen",
     "title": "The Sen",
+    "url": "https://www.edgeprop.sg/new-launches/the-sen",
     "address": "D21 Singapore",
     "district": "D21",
     "propertyType": "Condo",
@@ -11603,18 +12193,23 @@
         "priceRange": "$3,453,700 - $3,664,100"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:55.748Z",
+    "updatedAt": "2026-09-29T09:34:55.748Z",
+    "__v": 0,
+    "id": "the-sen"
   },
   {
-    "id": "lyndenwoods",
+    "_id": "6abb863f2184f3bee8fa87b4",
     "slug": "lyndenwoods",
-    "url": "https://www.edgeprop.sg/new-launches/lyndenwoods",
     "title": "LyndenWoods",
+    "url": "https://www.edgeprop.sg/new-launches/lyndenwoods",
     "address": "D05 Singapore",
     "district": "D05",
     "propertyType": "Apartment",
@@ -11729,18 +12324,23 @@
         "priceRange": "$3,610,000 - $4,280,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:55.840Z",
+    "updatedAt": "2026-09-29T09:34:55.840Z",
+    "__v": 0,
+    "id": "lyndenwoods"
   },
   {
-    "id": "arina-east-residences",
+    "_id": "6abb863f2184f3bee8fa87b5",
     "slug": "arina-east-residences",
-    "url": "https://www.edgeprop.sg/new-launches/arina-east-residences",
     "title": "Arina East Residences",
+    "url": "https://www.edgeprop.sg/new-launches/arina-east-residences",
     "address": "D15 Singapore",
     "district": "D15",
     "propertyType": "Condo",
@@ -11886,18 +12486,23 @@
         "priceRange": "$3,850,000 - $4,500,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:55.939Z",
+    "updatedAt": "2026-09-29T09:34:55.939Z",
+    "__v": 0,
+    "id": "arina-east-residences"
   },
   {
-    "id": "meyer-blue",
+    "_id": "6abb86402184f3bee8fa87b6",
     "slug": "meyer-blue",
-    "url": "https://www.edgeprop.sg/new-launches/meyer-blue",
     "title": "MEYER BLUE",
+    "url": "https://www.edgeprop.sg/new-launches/meyer-blue",
     "address": "D15 Singapore",
     "district": "D15",
     "propertyType": "Condo",
@@ -12057,18 +12662,23 @@
         "priceRange": "$10,280,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:56.031Z",
+    "updatedAt": "2026-09-29T09:34:56.031Z",
+    "__v": 0,
+    "id": "meyer-blue"
   },
   {
-    "id": "newport-residences",
+    "_id": "6abb86402184f3bee8fa87b7",
     "slug": "newport-residences",
-    "url": "https://www.edgeprop.sg/new-launches/newport-residences",
     "title": "Newport Residences",
+    "url": "https://www.edgeprop.sg/new-launches/newport-residences",
     "address": "D02 Singapore",
     "district": "D02",
     "propertyType": "Mixed-Use",
@@ -12202,18 +12812,23 @@
         "priceRange": "$8,650,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:56.145Z",
+    "updatedAt": "2026-09-29T09:34:56.145Z",
+    "__v": 0,
+    "id": "newport-residences"
   },
   {
-    "id": "lumina-grand",
+    "_id": "6abb86402184f3bee8fa87b8",
     "slug": "lumina-grand",
-    "url": "https://www.edgeprop.sg/new-launches/lumina-grand",
     "title": "Lumina Grand",
+    "url": "https://www.edgeprop.sg/new-launches/lumina-grand",
     "address": "D23 Singapore",
     "district": "D23",
     "propertyType": "Condo",
@@ -12301,18 +12916,23 @@
         "priceRange": "$2,141,000 - $2,409,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:56.238Z",
+    "updatedAt": "2026-09-29T09:34:56.238Z",
+    "__v": 0,
+    "id": "lumina-grand"
   },
   {
-    "id": "ardor-residence",
+    "_id": "6abb86402184f3bee8fa87b9",
     "slug": "ardor-residence",
-    "url": "https://www.edgeprop.sg/new-launches/ardor-residence",
     "title": "Ardor Residence",
+    "url": "https://www.edgeprop.sg/new-launches/ardor-residence",
     "address": "D15 Singapore",
     "district": "D15",
     "propertyType": "Apartment",
@@ -12356,18 +12976,23 @@
         "priceRange": "$3,267,000 - $3,868,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:56.349Z",
+    "updatedAt": "2026-09-29T09:34:56.349Z",
+    "__v": 0,
+    "id": "ardor-residence"
   },
   {
-    "id": "bartley-vue",
+    "_id": "6abb86402184f3bee8fa87ba",
     "slug": "bartley-vue",
-    "url": "https://www.edgeprop.sg/new-launches/bartley-vue",
     "title": "Bartley Vue",
+    "url": "https://www.edgeprop.sg/new-launches/bartley-vue",
     "address": "D19 Singapore",
     "district": "D19",
     "propertyType": "Condo",
@@ -12520,18 +13145,23 @@
         "priceRange": "$2,339,000 - $2,797,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:56.438Z",
+    "updatedAt": "2026-09-29T09:34:56.438Z",
+    "__v": 0,
+    "id": "bartley-vue"
   },
   {
-    "id": "belgravia-ace",
+    "_id": "6abb86402184f3bee8fa87bb",
     "slug": "belgravia-ace",
-    "url": "https://www.edgeprop.sg/new-launches/belgravia-ace",
     "title": "Belgravia Ace",
+    "url": "https://www.edgeprop.sg/new-launches/belgravia-ace",
     "address": "D28 Singapore",
     "district": "D28",
     "propertyType": "Landed",
@@ -12654,18 +13284,23 @@
       "(NSE)\nBus Stop (72021) along Ang Mo Kio Avenue 5"
     ],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:56.535Z",
+    "updatedAt": "2026-09-29T09:34:56.535Z",
+    "__v": 0,
+    "id": "belgravia-ace"
   },
   {
-    "id": "enchante",
+    "_id": "6abb86402184f3bee8fa87bc",
     "slug": "enchante",
-    "url": "https://www.edgeprop.sg/new-launches/enchante",
     "title": "Enchanté",
+    "url": "https://www.edgeprop.sg/new-launches/enchante",
     "address": "D11 Singapore",
     "district": "D11",
     "propertyType": "Apartment",
@@ -12763,18 +13398,23 @@
         "priceRange": "$5,520,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:56.641Z",
+    "updatedAt": "2026-09-29T09:34:56.641Z",
+    "__v": 0,
+    "id": "enchante"
   },
   {
-    "id": "orchard-sophia",
+    "_id": "6abb86402184f3bee8fa87bd",
     "slug": "orchard-sophia",
-    "url": "https://www.edgeprop.sg/new-launches/orchard-sophia",
     "title": "Orchard Sophia",
+    "url": "https://www.edgeprop.sg/new-launches/orchard-sophia",
     "address": "D09 Singapore",
     "district": "D09",
     "propertyType": "Apartment",
@@ -12987,18 +13627,23 @@
         "priceRange": "$2,113,000 - $2,356,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:56.729Z",
+    "updatedAt": "2026-09-29T09:34:56.729Z",
+    "__v": 0,
+    "id": "orchard-sophia"
   },
   {
-    "id": "pollen-collection",
+    "_id": "6abb86402184f3bee8fa87be",
     "slug": "pollen-collection",
-    "url": "https://www.edgeprop.sg/new-launches/pollen-collection",
     "title": "Pollen Collection",
+    "url": "https://www.edgeprop.sg/new-launches/pollen-collection",
     "address": "D28 Singapore",
     "district": "D28",
     "propertyType": "Landed",
@@ -13025,18 +13670,23 @@
     "layouts": [],
     "facilities": [],
     "priceRanges": [],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:56.836Z",
+    "updatedAt": "2026-09-29T09:34:56.836Z",
+    "__v": 0,
+    "id": "pollen-collection"
   },
   {
-    "id": "avenue-south-residence",
+    "_id": "6abb86402184f3bee8fa87bf",
     "slug": "avenue-south-residence",
-    "url": "https://www.edgeprop.sg/new-launches/avenue-south-residence",
     "title": "Avenue South Residence",
+    "url": "https://www.edgeprop.sg/new-launches/avenue-south-residence",
     "address": "D03 Singapore",
     "district": "D03",
     "propertyType": "Apartment",
@@ -13141,18 +13791,23 @@
         "priceRange": "$2,694,000 - $3,519,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:56.956Z",
+    "updatedAt": "2026-09-29T09:34:56.956Z",
+    "__v": 0,
+    "id": "avenue-south-residence"
   },
   {
-    "id": "cape-royale",
+    "_id": "6abb86412184f3bee8fa87c0",
     "slug": "cape-royale",
-    "url": "https://www.edgeprop.sg/new-launches/cape-royale",
     "title": "Cape Royale",
+    "url": "https://www.edgeprop.sg/new-launches/cape-royale",
     "address": "D04 Singapore",
     "district": "D04",
     "propertyType": "Apartment",
@@ -13201,18 +13856,23 @@
         "priceRange": "$2,305,000 - $6,022,000"
       }
     ],
+    "history": [],
     "status": "active",
     "lastSeen": "2026-09-27T09:07:58.131Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:57.036Z",
+    "updatedAt": "2026-09-29T09:34:57.036Z",
+    "__v": 0,
+    "id": "cape-royale"
   },
   {
-    "id": "river-modern",
+    "_id": "6abb86412184f3bee8fa87c1",
     "slug": "river-modern",
-    "url": "https://www.edgeprop.sg/new-launches/river-modern",
     "title": "River Modern",
+    "url": "https://www.edgeprop.sg/new-launches/river-modern",
     "address": "D09 Singapore",
     "district": "D09",
     "propertyType": "Condo",
@@ -13385,18 +14045,23 @@
         "priceRange": "$3,368,000 - $6,897,000"
       }
     ],
+    "history": [],
     "status": "delisted",
     "lastSeen": "2026-09-20T08:28:47.992Z",
     "delistedAt": "2026-09-27T09:07:58.131Z",
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:57.130Z",
+    "updatedAt": "2026-09-29T09:34:57.130Z",
+    "__v": 0,
+    "id": "river-modern"
   },
   {
-    "id": "sceneca-residence",
+    "_id": "6abb86412184f3bee8fa87c2",
     "slug": "sceneca-residence",
-    "url": "https://www.edgeprop.sg/new-launches/sceneca-residence",
     "title": "Sceneca Residence",
+    "url": "https://www.edgeprop.sg/new-launches/sceneca-residence",
     "address": "D16 Singapore",
     "district": "D16",
     "propertyType": "Condo",
@@ -13454,18 +14119,23 @@
         "priceRange": "$2,900,000 - $5,720,000"
       }
     ],
+    "history": [],
     "status": "delisted",
     "lastSeen": "2026-08-30T09:07:45.974Z",
     "delistedAt": "2026-09-06T07:48:35.466Z",
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:57.240Z",
+    "updatedAt": "2026-09-29T09:34:57.240Z",
+    "__v": 0,
+    "id": "sceneca-residence"
   },
   {
-    "id": "jansen-house",
+    "_id": "6abb86412184f3bee8fa87c3",
     "slug": "jansen-house",
-    "url": "https://www.edgeprop.sg/new-launches/jansen-house",
     "title": "Jansen House",
+    "url": "https://www.edgeprop.sg/new-launches/jansen-house",
     "address": "D19 Singapore",
     "district": "D19",
     "propertyType": "Apartment",
@@ -13518,18 +14188,23 @@
         "priceRange": "$2,430,000 - $2,800,000"
       }
     ],
+    "history": [],
     "status": "delisted",
     "lastSeen": "2026-08-30T09:07:45.974Z",
     "delistedAt": "2026-09-06T07:48:35.466Z",
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:57.338Z",
+    "updatedAt": "2026-09-29T09:34:57.338Z",
+    "__v": 0,
+    "id": "jansen-house"
   },
   {
-    "id": "altura",
+    "_id": "6abb86412184f3bee8fa87c4",
     "slug": "altura",
-    "url": "https://www.edgeprop.sg/new-launches/altura",
     "title": "Altura",
+    "url": "https://www.edgeprop.sg/new-launches/altura",
     "address": "D23 Singapore",
     "district": "D23",
     "propertyType": "Condo",
@@ -13553,18 +14228,24 @@
     "agentPhoto": "",
     "layouts": [],
     "facilities": [],
+    "priceRanges": [],
+    "history": [],
     "status": "delisted",
     "lastSeen": "2026-07-31T05:56:59.694Z",
     "delistedAt": "2026-08-01T05:46:49.448Z",
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:57.437Z",
+    "updatedAt": "2026-09-29T09:34:57.437Z",
+    "__v": 0,
+    "id": "altura"
   },
   {
-    "id": "hill-house",
+    "_id": "6abb86412184f3bee8fa87c5",
     "slug": "hill-house",
-    "url": "https://www.edgeprop.sg/new-launches/hill-house",
     "title": "Hill House",
+    "url": "https://www.edgeprop.sg/new-launches/hill-house",
     "address": "D09 Singapore",
     "district": "D09",
     "propertyType": "Apartment",
@@ -13588,11 +14269,56 @@
     "agentPhoto": "",
     "layouts": [],
     "facilities": [],
+    "priceRanges": [],
+    "history": [],
     "status": "delisted",
     "lastSeen": "2026-07-31T05:56:59.694Z",
     "delistedAt": "2026-08-01T05:46:49.448Z",
     "disabled": false,
     "featured": false,
-    "custom": false
+    "custom": false,
+    "createdAt": "2026-09-29T09:34:57.531Z",
+    "updatedAt": "2026-09-29T09:34:57.531Z",
+    "__v": 0,
+    "id": "hill-house"
+  },
+  {
+    "_id": "6abb9e11c77746a04da00759",
+    "slug": "mongo-test-property-1790680593031",
+    "title": "MongoDB Test Luxury Villa",
+    "url": "",
+    "address": "Singapore",
+    "district": "D10",
+    "propertyType": "Landed",
+    "beds": null,
+    "baths": null,
+    "floorAreaSqft": null,
+    "price": 8888888,
+    "psf": null,
+    "topYear": "",
+    "unitsSoldPercent": null,
+    "tenure": "99 years",
+    "totalUnits": null,
+    "developer": "Independent Developer",
+    "agentName": "",
+    "agentLicense": "",
+    "phone": "",
+    "image": "",
+    "images": [],
+    "agentPhoto": "",
+    "layouts": [],
+    "facilities": [],
+    "priceRanges": [],
+    "history": [],
+    "status": "active",
+    "lastSeen": "2026-09-29T11:16:33.115Z",
+    "delistedAt": null,
+    "disabled": false,
+    "featured": true,
+    "custom": true,
+    "createdAt": "2026-09-29T11:16:33.122Z",
+    "updatedAt": "2026-09-29T11:16:33.122Z",
+    "__v": 0,
+    "id": "mongo-test-property-1790680593031"
   }
 ]

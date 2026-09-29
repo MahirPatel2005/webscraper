@@ -163,6 +163,87 @@ function save(currentRecordsById, failedIds, anyPageFailed = false) {
 
   saveProcessed(next);
   saveListingsJson(next);
+  saveToMongo(next).catch(err => {
+    console.error('[MongoDB Dedupe Sync] Failed to sync to MongoDB:', err.message);
+  });
 }
 
-module.exports = { diff, save, loadProcessed, saveProcessed, saveListingsJson };
+/**
+ * Syncs the current processed map directly into MongoDB
+ */
+async function saveToMongo(next) {
+  try {
+    const { connectDB, Listing } = require('./db');
+    await connectDB();
+
+    for (const [id, entry] of Object.entries(next)) {
+      let parsedData = {};
+      try {
+        parsedData = typeof entry.data === 'string' ? JSON.parse(entry.data) : (entry.data || {});
+      } catch (e) {}
+
+      const slug = id;
+      const existing = await Listing.findOne({ slug });
+
+      const docData = {
+        slug,
+        title: parsedData.title || id,
+        url: parsedData.url || '',
+        address: parsedData.address || '',
+        district: parsedData.district || '',
+        propertyType: parsedData.propertyType || 'Condo',
+        beds: parsedData.beds !== undefined ? parsedData.beds : null,
+        baths: parsedData.baths !== undefined ? parsedData.baths : null,
+        floorAreaSqft: parsedData.floorAreaSqft !== undefined ? parsedData.floorAreaSqft : null,
+        price: parsedData.price !== undefined ? parsedData.price : null,
+        psf: parsedData.psf !== undefined ? parsedData.psf : null,
+        topYear: parsedData.topYear !== undefined ? parsedData.topYear : '',
+        unitsSoldPercent: parsedData.unitsSoldPercent !== undefined ? parsedData.unitsSoldPercent : null,
+        tenure: parsedData.tenure || '99 years',
+        totalUnits: parsedData.totalUnits !== undefined ? parsedData.totalUnits : null,
+        developer: parsedData.developer || '',
+        agentName: parsedData.agentName || '',
+        agentLicense: parsedData.agentLicense || '',
+        phone: parsedData.phone || '',
+        image: parsedData.image || '',
+        images: Array.isArray(parsedData.images) ? parsedData.images : [],
+        agentPhoto: parsedData.agentPhoto || '',
+        layouts: Array.isArray(parsedData.layouts) ? parsedData.layouts : [],
+        facilities: Array.isArray(parsedData.facilities) ? parsedData.facilities : [],
+        priceRanges: Array.isArray(parsedData.priceRanges) ? parsedData.priceRanges : [],
+        history: Array.isArray(parsedData.history) ? parsedData.history : [],
+        status: entry.status || 'active',
+        lastSeen: entry.lastSeen || new Date().toISOString(),
+        delistedAt: entry.delistedAt || null,
+        overrides: entry.overrides || {}
+      };
+
+      if (existing) {
+        // Keep existing custom/disabled/featured admin settings
+        await Listing.updateOne(
+          { _id: existing._id },
+          {
+            $set: {
+              ...docData,
+              disabled: existing.disabled !== undefined ? existing.disabled : (entry.disabled || false),
+              featured: existing.featured !== undefined ? existing.featured : (entry.featured || false),
+              custom: existing.custom !== undefined ? existing.custom : (entry.custom || false),
+            }
+          }
+        );
+      } else {
+        await Listing.create({
+          ...docData,
+          disabled: entry.disabled || false,
+          featured: entry.featured || false,
+          custom: entry.custom || false,
+        });
+      }
+    }
+  } catch (err) {
+    console.error('[MongoDB Dedupe Sync] Error saving to MongoDB:', err.message);
+  }
+}
+
+module.exports = { diff, save, loadProcessed, saveProcessed, saveListingsJson, saveToMongo };
+

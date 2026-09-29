@@ -11,7 +11,10 @@ function requiredForWix(name) {
   return value || '';
 }
 
+const DEFAULT_MONGO_URI = 'mongodb+srv://admin:admin123@cluster0.zvw7k22.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0';
+
 module.exports = {
+  mongoUri: process.env.MONGODB_URI || DEFAULT_MONGO_URI,
   source: {
     baseUrls: (() => {
       const rawUrl = process.env.SOURCE_BASE_URL || 'https://www.edgeprop.sg/new-launches/all-new-property-launches';
