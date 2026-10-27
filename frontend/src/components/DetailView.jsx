@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import InquiryModal from './InquiryModal';
 import { formatDistrict, getLaunchStatus, getMetroColor, getMetroLines, getMetroAbbr } from './ListingsGrid';
 import { getCleanImages } from '../App';
+import elainePhoto from '../assets/elaine.png';
 
 // Keyword to icon mapping for facilities to look extra premium
 const getFacilityIcon = (facilityName) => {
@@ -544,22 +545,19 @@ export default function DetailView({ id, listings, onBack, onSelectProperty }) {
           <aside className="sidebar-widget she-sidebar" style={{ textAlign: 'center' }}>
             <div className="sidebar-agent-profile" style={{ marginBottom: '24px', borderBottom: '1px solid var(--border-color)', paddingBottom: '20px' }}>
               <div className="agent-avatar-container" style={{ position: 'relative', width: '80px', height: '80px', margin: '0 auto 16px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                <div className="agent-avatar-gradient" style={{
-                  width: '100%',
-                  height: '100%',
-                  borderRadius: '50%',
-                  background: 'linear-gradient(135deg, var(--primary) 0%, #1e293b 100%)',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  color: '#ffffff',
-                  fontSize: '36px',
-                  fontWeight: '700',
-                  fontFamily: 'Poppins, sans-serif',
-                  boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)'
-                }}>
-                  E
-                </div>
+                <img
+                  src={elainePhoto}
+                  alt="Elaine"
+                  className="agent-avatar-photo"
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    borderRadius: '50%',
+                    objectFit: 'cover',
+                    objectPosition: '51% 12%',
+                    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.12)'
+                  }}
+                />
                 <span className="online-badge" style={{
                   position: 'absolute',
                   bottom: '4px',
