@@ -41,6 +41,13 @@ export default async function handler(req, res) {
 
   if (req.method === 'GET') {
     try {
+      if (user) {
+        res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+      } else {
+        // Public visitors: edge cached on Vercel CDN with stale-while-revalidate
+        res.setHeader('Cache-Control', 'public, max-age=120, s-maxage=300, stale-while-revalidate=600');
+      }
+
       const doc = await Listing.findOne(query).lean();
       if (!doc) {
         return res.status(404).json({ error: 'Listing not found' });

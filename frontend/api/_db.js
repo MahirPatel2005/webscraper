@@ -9,14 +9,17 @@ if (!cached) {
 }
 
 export async function connectDB() {
-  if (cached.conn) {
+  if (cached.conn && mongoose.connection.readyState === 1) {
     return cached.conn;
   }
 
   if (!cached.promise) {
     cached.promise = mongoose.connect(MONGODB_URI, {
-      serverSelectionTimeoutMS: 10000,
-      socketTimeoutMS: 45000,
+      serverSelectionTimeoutMS: 5000,
+      socketTimeoutMS: 30000,
+      maxPoolSize: 10,
+      minPoolSize: 1,
+      bufferCommands: false
     }).then(mongoose => {
       console.log(`[Vercel Serverless MongoDB] Connected to ${mongoose.connection.name}`);
       return mongoose;
@@ -28,6 +31,7 @@ export async function connectDB() {
     return cached.conn;
   } catch (e) {
     cached.promise = null;
+    cached.conn = null;
     throw e;
   }
 }
@@ -93,5 +97,7 @@ const ListingSchema = new mongoose.Schema(
 ListingSchema.virtual('id').get(function () {
   return this.slug || (this._id ? this._id.toString() : '');
 });
+
+ListingSchema.index({ disabled: 1, status: 1, featured: -1, updatedAt: -1 });
 
 export const Listing = mongoose.models.Listing || mongoose.model('Listing', ListingSchema);

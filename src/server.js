@@ -164,9 +164,13 @@ app.get('/api/listings', optionalAuthenticateToken, async (req, res) => {
   try {
     await connectDB();
 
-    res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
-    res.setHeader('Pragma', 'no-cache');
-    res.setHeader('Expires', '0');
+    if (req.user) {
+      res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+      res.setHeader('Pragma', 'no-cache');
+      res.setHeader('Expires', '0');
+    } else {
+      res.setHeader('Cache-Control', 'public, max-age=60, s-maxage=120, stale-while-revalidate=600');
+    }
 
     let query = {};
     // If admin is authenticated, or ?all=true is requested by admin
@@ -201,6 +205,12 @@ app.get('/api/listings/:id', optionalAuthenticateToken, async (req, res) => {
   try {
     await connectDB();
     const id = req.params.id;
+
+    if (req.user) {
+      res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+    } else {
+      res.setHeader('Cache-Control', 'public, max-age=120, s-maxage=300, stale-while-revalidate=600');
+    }
 
     const query = {
       $or: [

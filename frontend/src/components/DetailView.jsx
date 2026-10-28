@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import InquiryModal from './InquiryModal';
 import { formatDistrict, getLaunchStatus, getMetroColor, getMetroLines, getMetroAbbr } from './ListingsGrid';
 import { getCleanImages } from '../App';
 import elainePhoto from '../assets/elaine.png';
+
+const API_BASE = import.meta.env.VITE_API_BASE_URL || '';
 
 // Keyword to icon mapping for facilities to look extra premium
 const getFacilityIcon = (facilityName) => {
@@ -87,7 +89,7 @@ export function cleanFacilities(arr) {
     });
 }
 
-export default function DetailView({ id, listings, onBack, onSelectProperty }) {
+export default function DetailView({ id, listings, onBack, onSelectProperty, onListingLoaded }) {
   // Tabs state (Details, Unit Distribution, Facilities, Amenities)
   // News, Calculator, and Available Units are intentionally excluded!
   const [activeTab, setActiveTab] = useState('details');
@@ -95,10 +97,57 @@ export default function DetailView({ id, listings, onBack, onSelectProperty }) {
   const [showMobile, setShowMobile] = useState(false);
   const [isInquiryOpen, setIsInquiryOpen] = useState(false);
 
-  const item = listings.find(l => l.id === id || l.slug === id);
+  const [directItem, setDirectItem] = useState(null);
+  const [isDirectLoading, setIsDirectLoading] = useState(false);
+  const [directFetchError, setDirectFetchError] = useState(false);
+
+  const matched = (listings || []).find(l => l.id === id || l.slug === id);
+  const item = matched || directItem;
+
+  useEffect(() => {
+    setDirectItem(null);
+    setDirectFetchError(false);
+    setCurrentSlide(0);
+    setActiveTab('details');
+  }, [id]);
+
+  useEffect(() => {
+    // If listing is not yet available in the listings prop, immediately fetch it directly
+    if (!matched && id) {
+      let isMounted = true;
+      setIsDirectLoading(true);
+      setDirectFetchError(false);
+
+      fetch(`${API_BASE}/api/listings/${encodeURIComponent(id)}`)
+        .then(res => {
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
+          return res.json();
+        })
+        .then(data => {
+          if (isMounted && data) {
+            setDirectItem(data);
+            setIsDirectLoading(false);
+            if (onListingLoaded) {
+              onListingLoaded(data);
+            }
+          }
+        })
+        .catch(err => {
+          if (isMounted) {
+            console.warn('[DetailView] Direct single listing fetch failed:', err);
+            setDirectFetchError(true);
+            setIsDirectLoading(false);
+          }
+        });
+
+      return () => {
+        isMounted = false;
+      };
+    }
+  }, [id, matched, onListingLoaded]);
 
   if (!item) {
-    if (listings.length === 0) {
+    if (isDirectLoading || (listings.length === 0 && !directFetchError)) {
       return (
         <div style={{ textAlign: 'center', padding: '100px 20px' }}>
           <i className="fa-solid fa-spinner fa-spin" style={{ fontSize: '36px', color: 'var(--primary)', marginBottom: '16px' }}></i>
@@ -113,19 +162,21 @@ export default function DetailView({ id, listings, onBack, onSelectProperty }) {
         <h2>Property Not Found</h2>
         <p style={{ color: 'var(--text-muted)', marginTop: '8px' }}>The selected property launch could not be found.</p>
         <button
-  onClick={() => {
-    if (window.history.length > 1) {
-      window.history.back();
-    } else {
-      window.location.href =
-        "https://www.sherealestate.sg/newdevelopments";
-    }
-  }}
-  className="btn-view"
-  style={{ marginTop: "24px" }}
->
-  Back to Listings
-</button>
+          onClick={() => {
+            if (onBack) {
+              onBack();
+            } else if (window.history.length > 1) {
+              window.history.back();
+            } else {
+              window.location.href =
+                "https://www.sherealestate.sg/newdevelopments";
+            }
+          }}
+          className="btn-view"
+          style={{ marginTop: "24px" }}
+        >
+          Back to Listings
+        </button>
       </div>
     );
   }

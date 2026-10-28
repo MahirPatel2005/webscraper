@@ -95,9 +95,30 @@ export default function App() {
   const isFirstRender = useRef(true);
   const [isAdminView, setIsAdminView] = useState(false);
   const [isWidgetView, setIsWidgetView] = useState(false);
-  const [adminToken, setAdminToken] = useState(localStorage.getItem('adminToken') || null);
-  const [listingsData, setListingsData] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const CACHE_KEY = 'she_real_estate_listings_v1';
+  const lastFetchTimeRef = useRef(0);
+
+  // Initialize state from sessionStorage for INSTANT (0ms) render on return or detail navigation
+  const [listingsData, setListingsData] = useState(() => {
+    try {
+      const cached = sessionStorage.getItem(CACHE_KEY);
+      if (cached) {
+        const parsed = JSON.parse(cached);
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      }
+    } catch {}
+    return [];
+  });
+  const [isLoading, setIsLoading] = useState(() => {
+    try {
+      const cached = sessionStorage.getItem(CACHE_KEY);
+      if (cached) {
+        const parsed = JSON.parse(cached);
+        if (Array.isArray(parsed) && parsed.length > 0) return false;
+      }
+    } catch {}
+    return true;
+  });
   const [fetchError, setFetchError] = useState(null);
 
   // Search & Filter State
@@ -115,22 +136,31 @@ export default function App() {
     maxPrice: ''
   });
 
-  // Dynamic API Fetch (retrieves live data directly from MongoDB)
+  // Dynamic API Fetch (with edge caching and stale-while-revalidate)
   const fetchListings = async () => {
     try {
       setFetchError(null);
       const headers = {};
+      let fetchUrl = `${API_BASE}/api/listings`;
+      const fetchOptions = { headers };
+
       if (adminToken) {
         headers['Authorization'] = `Bearer ${adminToken}`;
+        fetchUrl += `?all=true&t=${Date.now()}`;
+        fetchOptions.cache = 'no-store';
       }
-      const res = await fetch(`${API_BASE}/api/listings?t=${Date.now()}`, {
-        headers,
-        cache: 'no-store'
-      });
+
+      const res = await fetch(fetchUrl, fetchOptions);
       if (!res.ok) throw new Error(`API returned status ${res.status}`);
       const data = await res.json();
-      setListingsData(Array.isArray(data) ? data : []);
+      if (Array.isArray(data)) {
+        setListingsData(data);
+        try {
+          sessionStorage.setItem(CACHE_KEY, JSON.stringify(data));
+        } catch {}
+      }
       setIsLoading(false);
+      lastFetchTimeRef.current = Date.now();
     } catch (e) {
       console.warn("Failed to fetch listings from MongoDB API:", e);
       setFetchError(e.message || 'Failed to load properties from MongoDB');
@@ -140,10 +170,15 @@ export default function App() {
 
   useEffect(() => {
     fetchListings();
-    const handleFocus = () => fetchListings();
+    const handleFocus = () => {
+      // Throttle window focus refetch: only refresh if 5 minutes have elapsed since last fetch
+      if (Date.now() - lastFetchTimeRef.current > 5 * 60 * 1000) {
+        fetchListings();
+      }
+    };
     window.addEventListener('focus', handleFocus);
     return () => window.removeEventListener('focus', handleFocus);
-  }, [isAdminView, isWidgetView]);
+  }, [isAdminView, isWidgetView, adminToken]);
 
   // Hidden admin panel & standalone widget URL parameter toggler
   useEffect(() => {
@@ -549,6 +584,18 @@ export default function App() {
             id={selectedId}
             listings={listingsData}
             onBack={() => setSelectedId(null)}
+            onListingLoaded={(singleItem) => {
+              if (!singleItem) return;
+              setListingsData(prev => {
+                const exists = prev.some(l => l.id === singleItem.id || l.slug === singleItem.slug);
+                if (exists) return prev;
+                const updated = [singleItem, ...prev];
+                try {
+                  sessionStorage.setItem(CACHE_KEY, JSON.stringify(updated));
+                } catch {}
+                return updated;
+              });
+            }}
             onSelectProperty={(id) => {
               setSelectedId(id);
               window.scrollTo({ top: 0, behavior: 'smooth' });
