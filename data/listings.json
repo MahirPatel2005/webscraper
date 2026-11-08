@@ -1,11 +1,11 @@
 [
   {
-    "id": "thomson-reserve",
-    "slug": "thomson-reserve",
-    "url": "https://www.edgeprop.sg/new-launches/thomson-reserve",
-    "title": "Thomson Reserve",
-    "address": "D20 Singapore",
-    "district": "D20",
+    "id": "lucerne-grand",
+    "slug": "lucerne-grand",
+    "url": "https://www.edgeprop.sg/new-launches/lucerne-grand",
+    "title": "Lucerne Grand",
+    "address": "D22 Singapore",
+    "district": "D22",
     "propertyType": "Condo",
     "beds": null,
     "baths": null,
@@ -15,21 +15,21 @@
     "topYear": "",
     "unitsSoldPercent": null,
     "tenure": "99 years",
-    "totalUnits": 1268,
-    "developer": "Tamarind Development Pte Ltd  (Joint Venture by CapitaLand Development Pte. Ltd.,  UOL Group Limited & Singapore Land Group Limited)",
+    "totalUnits": 570,
+    "developer": "CDL Polaris Properties Pte Ltd/CDL Polaris Commercial Pte Ltd",
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://img.youtube.com/vi/O1ABUZGNfhM/hqdefault.jpg",
+    "image": "https://sg.tepcdn.com/s3fs-public/4626326071789393231.jpg",
     "images": [
-      "https://sg.tepcdn.com/s3fs-public/7528795861790571781.JPG"
+      "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg"
     ],
     "agentPhoto": "",
     "layouts": [],
     "facilities": [],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -56,7 +56,7 @@
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://sg.tepcdn.com/s3fs-public/8976302961765956607.jpg?v=0.33806979701283324",
+    "image": "https://sg.tepcdn.com/s3fs-public/8976302961765956607.jpg",
     "images": [
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/89372199/e7b44e64-8716-440d-8954-d9c796ccb7d3.jpg",
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/89372200/ac22610c-9c3a-4bd8-af76-c1ee15e8bef6.jpg",
@@ -236,7 +236,197 @@
     ],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
+    "delistedAt": null,
+    "disabled": false,
+    "featured": false,
+    "custom": false
+  },
+  {
+    "id": "the-hillshore",
+    "slug": "the-hillshore",
+    "url": "https://www.edgeprop.sg/new-launches/the-hillshore",
+    "title": "The Hillshore",
+    "address": "D05 Singapore",
+    "district": "D05",
+    "propertyType": "Condo",
+    "beds": "2 - 4",
+    "baths": null,
+    "floorAreaSqft": "1 - 2161",
+    "price": null,
+    "psf": 2309,
+    "topYear": "2026",
+    "unitsSoldPercent": 20.3,
+    "tenure": "Freehold",
+    "totalUnits": 59,
+    "developer": "Hillside View Development Pte Ltd",
+    "agentName": "",
+    "agentLicense": "",
+    "phone": "",
+    "image": "https://img.youtube.com/vi/sLJqseNbQRE/hqdefault.jpg",
+    "images": [
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/83672717/06547d97-4be1-44e8-9f07-51d16bfc440b.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/83672718/de37f347-0f31-4c59-a1a3-5d9019f0c52b.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/83672719/2008c192-7b3b-4c66-b8bc-983cf75e1221.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/83672720/86283521-5cec-469c-a9e4-a8444181c083.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/83672722/16058fa9-e1d8-4e39-8eb7-788e78b1a615.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/83672723/89b6d8b5-7581-4bb4-8c7a-e6ad8cda2888.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/83672724/f286be95-f888-4012-b776-042c4f2cf894.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/83672725/38d0c2b9-ce4d-4e7e-a777-af8d4cb719dd.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/83672726/bd8193c4-1e8f-48ce-b680-b76fdd2c8520.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/83672727/fb4ff32e-787d-4401-aaae-de7f9167b25e.jpg"
+    ],
+    "agentPhoto": "",
+    "layouts": [
+      {
+        "desc": "2 Bedroom",
+        "type": "A1, A3",
+        "sqft": "732.8 - 740.3",
+        "units": 7
+      },
+      {
+        "desc": "2 Bedroom + Study",
+        "type": "A2, A4, A5, A6",
+        "sqft": "797.1 - 852.1",
+        "units": 10
+      },
+      {
+        "desc": "2 Bedroom (Penthouse)",
+        "type": "A1 (PH), A3 (PH)",
+        "sqft": "895.1 - 899.2",
+        "units": 2
+      },
+      {
+        "desc": "2 Bedroom + Study (Penthouse)",
+        "type": "A2 (PH), A4 (PH), A5 (PH)",
+        "sqft": "713.2 - 767.9",
+        "units": 3
+      },
+      {
+        "desc": "3 Bedroom",
+        "type": "B1, B3, B4, B5, B6, B8",
+        "sqft": "1050.2 - 1087.3",
+        "units": 21
+      },
+      {
+        "desc": "3 Bedroom + Study",
+        "type": "B2, B7",
+        "sqft": "1083.9 - 1179.9",
+        "units": 5
+      },
+      {
+        "desc": "3 Bedroom + Study (Penthouse)",
+        "type": "B7 (PH)",
+        "sqft": "1435.9",
+        "units": 1
+      },
+      {
+        "desc": "4 Bedroom (Penthouse)",
+        "type": "B1 (PH), B2 (PH), B3 (PH), B4 (PH), B5 (PH), B6 (PH)",
+        "sqft": "1648.4 - 1723.5",
+        "units": 6
+      },
+      {
+        "desc": "4 Bedroom - Dual Key",
+        "type": "C1",
+        "sqft": "1467.3",
+        "units": 3
+      },
+      {
+        "desc": "4 Bedroom - Dual Key (Penthouse)",
+        "type": "C1 (PH)",
+        "sqft": "2161.0",
+        "units": 1
+      }
+    ],
+    "facilities": [
+      "25m lap pool",
+      "Jacuzzi",
+      "Playground",
+      "Gymnasium",
+      "Clubhouse",
+      "Badminton Court",
+      "Playpool",
+      "BBQ Pavillion",
+      "Play Clove",
+      "Sky Grill"
+    ],
+    "priceRanges": [
+      {
+        "bedroomType": "2 Bedroom",
+        "sqft": "743",
+        "avgPsf": "",
+        "priceRange": "$1,920,000 - $2,050,000"
+      },
+      {
+        "bedroomType": "2 Bedroom Penthouse",
+        "sqft": "904 - 915",
+        "avgPsf": "",
+        "priceRange": "$2,165,000 - $2,205,000"
+      },
+      {
+        "bedroomType": "2 Bedroom Premium",
+        "sqft": "818 - 850",
+        "avgPsf": "",
+        "priceRange": "$2,060,000 - $2,345,000"
+      },
+      {
+        "bedroomType": "2 Bedroom Premium Penthouse",
+        "sqft": "1,012 - 1,033",
+        "avgPsf": "",
+        "priceRange": "$2,405,000 - $2,505,000"
+      },
+      {
+        "bedroomType": "3 Bedroom",
+        "sqft": "1,055 - 1,109",
+        "avgPsf": "",
+        "priceRange": "$2,670,000 - $3,060,000"
+      },
+      {
+        "bedroomType": "3 Bedroom Premium",
+        "sqft": "1,087",
+        "avgPsf": "",
+        "priceRange": "$2,770,000 - $2,860,000"
+      },
+      {
+        "bedroomType": "3 Bedroom Premium Penthouse",
+        "sqft": "1,442",
+        "avgPsf": "",
+        "priceRange": "$3,358,000"
+      },
+      {
+        "bedroomType": "4 Bedroom (dual Key)",
+        "sqft": "1,475",
+        "avgPsf": "",
+        "priceRange": "$3,880,000 - $4,050,000"
+      },
+      {
+        "bedroomType": "4 Bedroom Penthouse",
+        "sqft": "1,668 - 1,776",
+        "avgPsf": "",
+        "priceRange": "$3,968,000 - $4,288,000"
+      },
+      {
+        "bedroomType": "4 Bedroom Premium Penthouse(dual Key)",
+        "sqft": "2,185",
+        "avgPsf": "",
+        "priceRange": "$5,188,000"
+      },
+      {
+        "bedroomType": "2 Bedroom",
+        "sqft": "743 - 990",
+        "avgPsf": "$2,329",
+        "priceRange": "$1,600,000 - $2,188,888"
+      },
+      {
+        "bedroomType": "3 Bedroom",
+        "sqft": "1055 - 1184",
+        "avgPsf": "$2,540",
+        "priceRange": "$2,588,000 - $3,161,280"
+      }
+    ],
+    "status": "active",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -254,7 +444,7 @@
     "baths": null,
     "floorAreaSqft": null,
     "price": null,
-    "psf": 2806,
+    "psf": 2717,
     "topYear": "2029",
     "unitsSoldPercent": 2.2,
     "tenure": "99 years",
@@ -486,7 +676,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -513,7 +703,7 @@
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg",
+    "image": "https://sg.tepcdn.com/newlaunches/placeholder-newlaunches-detail2-1600.jpg",
     "images": [
       "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg"
     ],
@@ -522,7 +712,7 @@
     "facilities": [],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -559,7 +749,7 @@
     "facilities": [],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -586,7 +776,7 @@
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg",
+    "image": "https://sg.tepcdn.com/newlaunches/placeholder-newlaunches-detail2-1600.jpg",
     "images": [
       "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg"
     ],
@@ -595,7 +785,7 @@
     "facilities": [],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -622,7 +812,7 @@
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg",
+    "image": "https://sg.tepcdn.com/newlaunches/placeholder-newlaunches-detail2-1600.jpg",
     "images": [
       "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg"
     ],
@@ -631,7 +821,7 @@
     "facilities": [],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -658,7 +848,7 @@
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg",
+    "image": "https://sg.tepcdn.com/newlaunches/placeholder-newlaunches-detail2-1600.jpg",
     "images": [
       "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg"
     ],
@@ -667,7 +857,7 @@
     "facilities": [],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -694,7 +884,7 @@
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg",
+    "image": "https://sg.tepcdn.com/newlaunches/placeholder-newlaunches-detail2-1600.jpg",
     "images": [
       "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg"
     ],
@@ -703,7 +893,7 @@
     "facilities": [],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -730,7 +920,7 @@
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg",
+    "image": "https://sg.tepcdn.com/newlaunches/placeholder-newlaunches-detail2-1600.jpg",
     "images": [
       "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg"
     ],
@@ -739,7 +929,7 @@
     "facilities": [],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -766,7 +956,7 @@
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg",
+    "image": "https://sg.tepcdn.com/newlaunches/placeholder-newlaunches-detail2-1600.jpg",
     "images": [
       "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg"
     ],
@@ -775,7 +965,7 @@
     "facilities": [],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -802,7 +992,7 @@
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg",
+    "image": "https://sg.tepcdn.com/newlaunches/placeholder-newlaunches-detail2-1600.jpg",
     "images": [
       "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg"
     ],
@@ -811,7 +1001,43 @@
     "facilities": [],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
+    "delistedAt": null,
+    "disabled": false,
+    "featured": false,
+    "custom": false
+  },
+  {
+    "id": "thomson-reserve",
+    "slug": "thomson-reserve",
+    "url": "https://www.edgeprop.sg/new-launches/thomson-reserve",
+    "title": "Thomson Reserve",
+    "address": "D20 Singapore",
+    "district": "D20",
+    "propertyType": "Condo",
+    "beds": null,
+    "baths": null,
+    "floorAreaSqft": null,
+    "price": null,
+    "psf": 2882,
+    "topYear": "2031",
+    "unitsSoldPercent": 88.5,
+    "tenure": "99 years",
+    "totalUnits": 1268,
+    "developer": "Tamarind Development Pte Ltd  (Joint Venture by CapitaLand Development Pte. Ltd.,  UOL Group Limited & Singapore Land Group Limited)",
+    "agentName": "",
+    "agentLicense": "",
+    "phone": "",
+    "image": "https://img.youtube.com/vi/O1ABUZGNfhM/hqdefault.jpg",
+    "images": [
+      "https://sg.tepcdn.com/s3fs-public/7528795861790571781.JPG"
+    ],
+    "agentPhoto": "",
+    "layouts": [],
+    "facilities": [],
+    "priceRanges": [],
+    "status": "active",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -829,16 +1055,16 @@
     "baths": null,
     "floorAreaSqft": null,
     "price": null,
-    "psf": 3379,
+    "psf": 3373,
     "topYear": "2030",
-    "unitsSoldPercent": 18,
+    "unitsSoldPercent": 18.8,
     "tenure": "",
     "totalUnits": 133,
     "developer": "Transurban Properties Pte Ltd",
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg",
+    "image": "https://sg.tepcdn.com/newlaunches/placeholder-newlaunches-detail2-1600.jpg",
     "images": [
       "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg"
     ],
@@ -847,7 +1073,7 @@
     "facilities": [],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -865,9 +1091,9 @@
     "baths": null,
     "floorAreaSqft": null,
     "price": null,
-    "psf": 3013,
+    "psf": 3018,
     "topYear": "",
-    "unitsSoldPercent": 11.8,
+    "unitsSoldPercent": 14.6,
     "tenure": "99 years",
     "totalUnits": null,
     "developer": "Sim Lian JV (Holland) Pte. Ltd.",
@@ -883,45 +1109,9 @@
     "facilities": [],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": true,
-    "featured": false,
-    "custom": false
-  },
-  {
-    "id": "lucerne-grand",
-    "slug": "lucerne-grand",
-    "url": "https://www.edgeprop.sg/new-launches/lucerne-grand",
-    "title": "Lucerne Grand",
-    "address": "D22 Singapore",
-    "district": "D22",
-    "propertyType": "Condo",
-    "beds": null,
-    "baths": null,
-    "floorAreaSqft": null,
-    "price": null,
-    "psf": 2496,
-    "topYear": "",
-    "unitsSoldPercent": 66.3,
-    "tenure": "99 years",
-    "totalUnits": 570,
-    "developer": "CDL Polaris Properties Pte Ltd/CDL Polaris Commercial Pte Ltd",
-    "agentName": "",
-    "agentLicense": "",
-    "phone": "",
-    "image": "https://sg.tepcdn.com/s3fs-public/4626326071789393231.jpg?v=0.5874770165988994",
-    "images": [
-      "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg"
-    ],
-    "agentPhoto": "",
-    "layouts": [],
-    "facilities": [],
-    "priceRanges": [],
-    "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
-    "delistedAt": null,
-    "disabled": false,
     "featured": false,
     "custom": false
   },
@@ -939,14 +1129,14 @@
     "price": null,
     "psf": 3110,
     "topYear": "",
-    "unitsSoldPercent": 64.7,
+    "unitsSoldPercent": 70.8,
     "tenure": "99 years",
     "totalUnits": 380,
     "developer": "Phoenix Dunearn Pte Ltd",
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://sg.tepcdn.com/s3fs-public/12571028931783660878.png?v=0.5787157839464341",
+    "image": "https://sg.tepcdn.com/s3fs-public/12571028931783660878.png",
     "images": [
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90588267/8c10e01b-a58e-4172-af14-bd9732c83eda.jpg",
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90588268/e7d7c362-b9c1-465b-99f1-acdedb4f4ec1.jpg",
@@ -1150,7 +1340,7 @@
     ],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -1170,7 +1360,7 @@
     "price": null,
     "psf": 2360,
     "topYear": "2029",
-    "unitsSoldPercent": 63.1,
+    "unitsSoldPercent": 63.3,
     "tenure": "99 years",
     "totalUnits": 499,
     "developer": "Kingsford Lentor Project Pte Ltd",
@@ -1376,7 +1566,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -1403,7 +1593,7 @@
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg",
+    "image": "https://sg.tepcdn.com/newlaunches/placeholder-newlaunches-detail2-1600.jpg",
     "images": [
       "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg"
     ],
@@ -1412,7 +1602,7 @@
     "facilities": [],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -1439,7 +1629,7 @@
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg",
+    "image": "https://sg.tepcdn.com/newlaunches/placeholder-newlaunches-detail2-1600.jpg",
     "images": [
       "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg"
     ],
@@ -1448,7 +1638,7 @@
     "facilities": [],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -1466,16 +1656,16 @@
     "baths": null,
     "floorAreaSqft": "646 - 2916",
     "price": null,
-    "psf": 2489,
+    "psf": 2492,
     "topYear": "2029",
-    "unitsSoldPercent": 71.6,
+    "unitsSoldPercent": 73.1,
     "tenure": "99 years",
     "totalUnits": 327,
     "developer": "Media Circle Alpha Development Pte Ltd Jointly developed by Qingjian Realty (South Pacific) Group Pte Ltd, Forsea Holdings, CYZ Land Pte. Ltd., Jianan Capital.",
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://sg.tepcdn.com/s3fs-public/7278021801776907040.jpg?v=0.029533627351770786",
+    "image": "https://sg.tepcdn.com/s3fs-public/7278021801776907040.jpg",
     "images": [
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90048352/b6e9c7be-86aa-4ac4-9a73-dad62177e18a.jpg",
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90048350/a871fdd3-f567-48e6-b3e8-01859749ac2e.jpg",
@@ -1607,174 +1797,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
-    "delistedAt": null,
-    "disabled": false,
-    "featured": false,
-    "custom": false
-  },
-  {
-    "id": "vela-bay",
-    "slug": "vela-bay",
-    "url": "https://www.edgeprop.sg/new-launches/vela-bay",
-    "title": "Vela Bay",
-    "address": "D16 Singapore",
-    "district": "D16",
-    "propertyType": "Condo",
-    "beds": "1 - 5",
-    "baths": null,
-    "floorAreaSqft": "484 - 1765",
-    "price": null,
-    "psf": 2871,
-    "topYear": "",
-    "unitsSoldPercent": 75.3,
-    "tenure": "99 years",
-    "totalUnits": 515,
-    "developer": "SingHaiyi Group Pte Ltd, Chuan Capital Pte Ltd",
-    "agentName": "",
-    "agentLicense": "",
-    "phone": "",
-    "image": "https://img.youtube.com/vi/EL2vivMPn5E/hqdefault.jpg",
-    "images": [
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90048553/8f81ab52-a9cb-4cf4-b0ed-e0751e292347.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90048554/d31afd51-5c55-4abf-b1cf-9dfd98b4e1bb.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90048556/33e87e44-5351-4f51-b772-b07f49c71b5a.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90048557/911d27b5-a128-456c-810f-7984c98e6129.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90048558/d15f31ef-f3fb-4aeb-a2d7-31f772e1e9bf.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90048559/af5f0e77-f238-4fa8-a1b7-38672498e53b.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90048560/549bb83d-4ed9-4e29-a095-9d7617e615d3.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90048570/e2e26936-c6fa-453b-8dd8-3449ca741be5.jpg"
-    ],
-    "agentPhoto": "",
-    "layouts": [
-      {
-        "desc": "1 Bedroom + Study",
-        "type": "",
-        "sqft": "484",
-        "units": 27
-      },
-      {
-        "desc": "2 Bedroom",
-        "type": "",
-        "sqft": "592",
-        "units": 84
-      },
-      {
-        "desc": "2 Bedroom Premium",
-        "type": "",
-        "sqft": "678 / 689",
-        "units": 113
-      },
-      {
-        "desc": "3 Bedroom",
-        "type": "",
-        "sqft": "883 / 893",
-        "units": 87
-      },
-      {
-        "desc": "3 Bedroom Premium",
-        "type": "",
-        "sqft": "1,033",
-        "units": 88
-      },
-      {
-        "desc": "4 Bedroom",
-        "type": "",
-        "sqft": "1,173",
-        "units": 62
-      },
-      {
-        "desc": "4 Bedroom PL",
-        "type": "",
-        "sqft": "1,378",
-        "units": 26
-      },
-      {
-        "desc": "5 Bedroom PL",
-        "type": "",
-        "sqft": "1,582",
-        "units": 26
-      },
-      {
-        "desc": "Penthouse",
-        "type": "",
-        "sqft": "1,765",
-        "units": 2
-      }
-    ],
-    "facilities": [
-      "Vela Bay Lounge (Clubhouse) Toilet/Changing Room Accessible\nToilet",
-      "The Vela Pool Aqua Bed",
-      "Aqua Spa Seat (Jacuzzi) Kid's Pool",
-      "Parent's Deck Poolside Coast Cabana Pool Deck",
-      "Swing Garden",
-      "Calisthenics Corner Coral Terrace",
-      "Coral Pods Coral Garden",
-      "The Vela Pavilion (BBQ) The Stern Pavilion",
-      "The Bow Pavilion Mist Garden",
-      "Link Bridge",
-      "Outdoor Shower Point",
-      "Gymnasium",
-      "Toilet/Changing Room/Steam Room",
-      "Accessible Toilet",
-      "Wellness Deck",
-      "The Starboard Pavilion",
-      "Kid's Playground",
-      "Outdoor Fitness Corner",
-      "The Port Lounge",
-      "Vela Bay Clubhouse (1st Storey)",
-      "Recreational Tennis Court",
-      "Arrival Lobby",
-      "Guard House",
-      "Service Ramp",
-      "Side Gate 1 (to Bayshore Walk)",
-      "Side Gate 2 (to MRT)",
-      "Side Gate 3 (to Bayshore Drive)",
-      "Lift 1 (Arrival Lobby)",
-      "Lift 2 (Vela Bay Clubhouse)",
-      "Management Office",
-      "Substation",
-      "Main Distribution Frame Room",
-      "Genset",
-      "Water Bulk Meter",
-      "Telecommunication Equipment Room",
-      "Bin centre",
-      "Consumer Switchrooms"
-    ],
-    "priceRanges": [
-      {
-        "bedroomType": "1 Bedroom",
-        "sqft": "484",
-        "avgPsf": "$2,827",
-        "priceRange": "$1,254,000 - $1,520,000"
-      },
-      {
-        "bedroomType": "2 Bedroom",
-        "sqft": "592 - 689",
-        "avgPsf": "$2,854",
-        "priceRange": "$1,498,860 - $2,178,000"
-      },
-      {
-        "bedroomType": "3 Bedroom",
-        "sqft": "883 - 1033",
-        "avgPsf": "$2,852",
-        "priceRange": "$2,287,000 - $3,298,000"
-      },
-      {
-        "bedroomType": "4 Bedroom",
-        "sqft": "1173 - 1378",
-        "avgPsf": "$2,976",
-        "priceRange": "$3,227,000 - $4,311,000"
-      },
-      {
-        "bedroomType": "5 Bedroom",
-        "sqft": "1582 - 1765",
-        "avgPsf": "$3,152",
-        "priceRange": "$4,836,150 - $5,829,120"
-      }
-    ],
-    "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -1945,7 +1968,174 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
+    "delistedAt": null,
+    "disabled": false,
+    "featured": false,
+    "custom": false
+  },
+  {
+    "id": "vela-bay",
+    "slug": "vela-bay",
+    "url": "https://www.edgeprop.sg/new-launches/vela-bay",
+    "title": "Vela Bay",
+    "address": "D16 Singapore",
+    "district": "D16",
+    "propertyType": "Condo",
+    "beds": "1 - 5",
+    "baths": null,
+    "floorAreaSqft": "484 - 1765",
+    "price": null,
+    "psf": 2870,
+    "topYear": "",
+    "unitsSoldPercent": 76.1,
+    "tenure": "99 years",
+    "totalUnits": 515,
+    "developer": "SingHaiyi Group Pte Ltd, Chuan Capital Pte Ltd",
+    "agentName": "",
+    "agentLicense": "",
+    "phone": "",
+    "image": "https://img.youtube.com/vi/EL2vivMPn5E/hqdefault.jpg",
+    "images": [
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90048553/8f81ab52-a9cb-4cf4-b0ed-e0751e292347.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90048554/d31afd51-5c55-4abf-b1cf-9dfd98b4e1bb.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90048556/33e87e44-5351-4f51-b772-b07f49c71b5a.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90048557/911d27b5-a128-456c-810f-7984c98e6129.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90048558/d15f31ef-f3fb-4aeb-a2d7-31f772e1e9bf.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90048559/af5f0e77-f238-4fa8-a1b7-38672498e53b.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90048560/549bb83d-4ed9-4e29-a095-9d7617e615d3.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/90048570/e2e26936-c6fa-453b-8dd8-3449ca741be5.jpg"
+    ],
+    "agentPhoto": "",
+    "layouts": [
+      {
+        "desc": "1 Bedroom + Study",
+        "type": "",
+        "sqft": "484",
+        "units": 27
+      },
+      {
+        "desc": "2 Bedroom",
+        "type": "",
+        "sqft": "592",
+        "units": 84
+      },
+      {
+        "desc": "2 Bedroom Premium",
+        "type": "",
+        "sqft": "678 / 689",
+        "units": 113
+      },
+      {
+        "desc": "3 Bedroom",
+        "type": "",
+        "sqft": "883 / 893",
+        "units": 87
+      },
+      {
+        "desc": "3 Bedroom Premium",
+        "type": "",
+        "sqft": "1,033",
+        "units": 88
+      },
+      {
+        "desc": "4 Bedroom",
+        "type": "",
+        "sqft": "1,173",
+        "units": 62
+      },
+      {
+        "desc": "4 Bedroom PL",
+        "type": "",
+        "sqft": "1,378",
+        "units": 26
+      },
+      {
+        "desc": "5 Bedroom PL",
+        "type": "",
+        "sqft": "1,582",
+        "units": 26
+      },
+      {
+        "desc": "Penthouse",
+        "type": "",
+        "sqft": "1,765",
+        "units": 2
+      }
+    ],
+    "facilities": [
+      "Vela Bay Lounge (Clubhouse) Toilet/Changing Room Accessible\nToilet",
+      "The Vela Pool Aqua Bed",
+      "Aqua Spa Seat (Jacuzzi) Kid's Pool",
+      "Parent's Deck Poolside Coast Cabana Pool Deck",
+      "Swing Garden",
+      "Calisthenics Corner Coral Terrace",
+      "Coral Pods Coral Garden",
+      "The Vela Pavilion (BBQ) The Stern Pavilion",
+      "The Bow Pavilion Mist Garden",
+      "Link Bridge",
+      "Outdoor Shower Point",
+      "Gymnasium",
+      "Toilet/Changing Room/Steam Room",
+      "Accessible Toilet",
+      "Wellness Deck",
+      "The Starboard Pavilion",
+      "Kid's Playground",
+      "Outdoor Fitness Corner",
+      "The Port Lounge",
+      "Vela Bay Clubhouse (1st Storey)",
+      "Recreational Tennis Court",
+      "Arrival Lobby",
+      "Guard House",
+      "Service Ramp",
+      "Side Gate 1 (to Bayshore Walk)",
+      "Side Gate 2 (to MRT)",
+      "Side Gate 3 (to Bayshore Drive)",
+      "Lift 1 (Arrival Lobby)",
+      "Lift 2 (Vela Bay Clubhouse)",
+      "Management Office",
+      "Substation",
+      "Main Distribution Frame Room",
+      "Genset",
+      "Water Bulk Meter",
+      "Telecommunication Equipment Room",
+      "Bin centre",
+      "Consumer Switchrooms"
+    ],
+    "priceRanges": [
+      {
+        "bedroomType": "1 Bedroom",
+        "sqft": "484",
+        "avgPsf": "$2,827",
+        "priceRange": "$1,254,000 - $1,520,000"
+      },
+      {
+        "bedroomType": "2 Bedroom",
+        "sqft": "592 - 689",
+        "avgPsf": "$2,854",
+        "priceRange": "$1,498,860 - $2,178,000"
+      },
+      {
+        "bedroomType": "3 Bedroom",
+        "sqft": "883 - 1033",
+        "avgPsf": "$2,852",
+        "priceRange": "$2,287,000 - $3,298,000"
+      },
+      {
+        "bedroomType": "4 Bedroom",
+        "sqft": "1173 - 1378",
+        "avgPsf": "$2,976",
+        "priceRange": "$3,227,000 - $4,311,000"
+      },
+      {
+        "bedroomType": "5 Bedroom",
+        "sqft": "1582 - 1765",
+        "avgPsf": "$3,152",
+        "priceRange": "$4,836,150 - $5,829,120"
+      }
+    ],
+    "status": "active",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -2181,7 +2371,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -2365,7 +2555,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -2608,7 +2798,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -2635,7 +2825,7 @@
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg",
+    "image": "https://sg.tepcdn.com/newlaunches/placeholder-newlaunches-detail2-1600.jpg",
     "images": [
       "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg"
     ],
@@ -2644,7 +2834,7 @@
     "facilities": [],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -2664,14 +2854,14 @@
     "price": null,
     "psf": 1796,
     "topYear": "2029",
-    "unitsSoldPercent": 84.9,
+    "unitsSoldPercent": 85,
     "tenure": "99 years",
     "totalUnits": 748,
     "developer": "Pasir Ris Development Pte Ltd",
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://sg.tepcdn.com/s3fs-public/18991916441763548071.jpg?v=0.5599286600253066",
+    "image": "https://sg.tepcdn.com/s3fs-public/18991916441763548071.jpg",
     "images": [
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/89275305/2471c9ee-fa17-48ae-874c-7c70e164319c.jpg",
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/89275306/e1b2f4e5-8cf0-48ed-bb9c-a959343a7b86.jpg",
@@ -2844,7 +3034,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -2862,7 +3052,7 @@
     "baths": null,
     "floorAreaSqft": "474 - 2659",
     "price": null,
-    "psf": 3245,
+    "psf": 3249,
     "topYear": "2030",
     "unitsSoldPercent": 90.4,
     "tenure": "99 years",
@@ -3050,7 +3240,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -3183,7 +3373,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -3201,9 +3391,9 @@
     "baths": null,
     "floorAreaSqft": "646 - 1485",
     "price": null,
-    "psf": 2215,
+    "psf": 2223,
     "topYear": "",
-    "unitsSoldPercent": 96.5,
+    "unitsSoldPercent": 96.7,
     "tenure": "99 years",
     "totalUnits": 399,
     "developer": "GuocoLand (Singapore) Pte. Ltd. (“GLS”), together with TID Residential Pte. Ltd. (“TIDR”) and Intrepid Investments Pte. Ltd. (“Intrepid”)",
@@ -3308,7 +3498,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -3335,7 +3525,7 @@
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg",
+    "image": "https://sg.tepcdn.com/newlaunches/placeholder-newlaunches-detail2-1600.jpg",
     "images": [
       "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg"
     ],
@@ -3344,7 +3534,7 @@
     "facilities": [],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -3362,9 +3552,9 @@
     "baths": null,
     "floorAreaSqft": "388 - 1453",
     "price": null,
-    "psf": 2225,
+    "psf": 2232,
     "topYear": "2031",
-    "unitsSoldPercent": 98.7,
+    "unitsSoldPercent": 98.8,
     "tenure": "99 years",
     "totalUnits": 941,
     "developer": "GuocoLand",
@@ -3504,7 +3694,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -3522,16 +3712,16 @@
     "baths": null,
     "floorAreaSqft": null,
     "price": null,
-    "psf": 2009,
+    "psf": 2012,
     "topYear": "2029",
-    "unitsSoldPercent": 93.9,
+    "unitsSoldPercent": 94.1,
     "tenure": "99 years",
     "totalUnits": 376,
     "developer": "Peak Crescent Pte Ltd",
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg",
+    "image": "https://sg.tepcdn.com/newlaunches/placeholder-newlaunches-detail2-1600.jpg",
     "images": [
       "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg"
     ],
@@ -3540,7 +3730,7 @@
     "facilities": [],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -3558,7 +3748,7 @@
     "baths": null,
     "floorAreaSqft": "420 - 980",
     "price": null,
-    "psf": 3451,
+    "psf": 3457,
     "topYear": "",
     "unitsSoldPercent": 95,
     "tenure": "99 years",
@@ -3664,7 +3854,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -3682,7 +3872,7 @@
     "baths": null,
     "floorAreaSqft": "527 - 4144",
     "price": null,
-    "psf": 3093,
+    "psf": 3105,
     "topYear": "2029",
     "unitsSoldPercent": 73,
     "tenure": "99 years",
@@ -3691,7 +3881,7 @@
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://sg.tepcdn.com/s3fs-public/18666355961766368441.jpg?v=0.3047117766096963",
+    "image": "https://sg.tepcdn.com/s3fs-public/18666355961766368441.jpg",
     "images": [
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/89381690/4cbf838f-0308-4b8e-8654-7dec47ee8393.jpg",
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/89381691/808c04b9-a814-48dc-bf6c-7d49af0bc188.jpg",
@@ -3846,7 +4036,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -3864,16 +4054,16 @@
     "baths": null,
     "floorAreaSqft": "431 - 1539",
     "price": null,
-    "psf": 3387,
+    "psf": 3362,
     "topYear": "",
-    "unitsSoldPercent": 61.5,
+    "unitsSoldPercent": 61.8,
     "tenure": "999 years",
     "totalUnits": 348,
     "developer": "Frasers Property Singapore",
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://sg.tepcdn.com/s3fs-public/12535344891751251797.jpg?v=0.36454374902716924",
+    "image": "https://sg.tepcdn.com/s3fs-public/12535344891751251797.jpg",
     "images": [
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88259029/5abb84c8-e16d-4306-b163-aab750c5d43e.jpg",
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88259022/78d52736-1415-4ae3-b7f0-4d809179f29b.jpg",
@@ -3963,7 +4153,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -3981,7 +4171,7 @@
     "baths": null,
     "floorAreaSqft": "872 - 1195",
     "price": null,
-    "psf": 1763,
+    "psf": 1764,
     "topYear": "2028",
     "unitsSoldPercent": 99.3,
     "tenure": "99 years",
@@ -3990,7 +4180,7 @@
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://sg.tepcdn.com/s3fs-public/17798392711750920296.png?v=0.9250255723791803",
+    "image": "https://sg.tepcdn.com/s3fs-public/17798392711750920296.png",
     "images": [
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88224019/10fc87df-1e4d-40a4-92ce-8c1ce7600c7f.jpg",
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88224477/6aa2c67e-7366-47cd-881d-c673a2b494a1.jpg",
@@ -4139,7 +4329,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -4175,7 +4365,7 @@
     "facilities": [],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -4193,7 +4383,7 @@
     "baths": null,
     "floorAreaSqft": "635 - 1744",
     "price": null,
-    "psf": 3131,
+    "psf": 3138,
     "topYear": "2029",
     "unitsSoldPercent": 84.8,
     "tenure": "Freehold",
@@ -4324,7 +4514,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -4342,9 +4532,9 @@
     "baths": null,
     "floorAreaSqft": "436 - 1647",
     "price": null,
-    "psf": 3011,
+    "psf": 3012,
     "topYear": "2029",
-    "unitsSoldPercent": 72.7,
+    "unitsSoldPercent": 72.8,
     "tenure": "99 years",
     "totalUnits": 937,
     "developer": "Kingsford Marina Development Pte Ltd",
@@ -4502,7 +4692,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -4520,7 +4710,7 @@
     "baths": null,
     "floorAreaSqft": "570 - 2131",
     "price": null,
-    "psf": 2573,
+    "psf": 2575,
     "topYear": "2029",
     "unitsSoldPercent": 91.6,
     "tenure": "99 years",
@@ -4697,7 +4887,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -4944,7 +5134,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -5050,7 +5240,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -5068,9 +5258,9 @@
     "baths": null,
     "floorAreaSqft": "635 - 8816",
     "price": null,
-    "psf": 2844,
+    "psf": 2845,
     "topYear": "2029",
-    "unitsSoldPercent": 38.8,
+    "unitsSoldPercent": 39.4,
     "tenure": "99 years",
     "totalUnits": 188,
     "developer": "GMC Property Pte. Ltd.",
@@ -5184,7 +5374,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -5202,9 +5392,9 @@
     "baths": null,
     "floorAreaSqft": "463 - 1679",
     "price": null,
-    "psf": 2324,
+    "psf": 2325,
     "topYear": "",
-    "unitsSoldPercent": 98.2,
+    "unitsSoldPercent": 98.4,
     "tenure": "99 years",
     "totalUnits": 1193,
     "developer": "CapitaLand Development, UOL Group Limited, Singapore Land Group Limited",
@@ -5382,7 +5572,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -5400,9 +5590,9 @@
     "baths": null,
     "floorAreaSqft": null,
     "price": null,
-    "psf": 2570,
+    "psf": 2575,
     "topYear": "2028",
-    "unitsSoldPercent": 85.4,
+    "unitsSoldPercent": 86.4,
     "tenure": "99 years",
     "totalUnits": 501,
     "developer": "HC Land (Clementi) Pte Ltd  A joint venture between MCL Land and CSC Land Group",
@@ -5418,7 +5608,7 @@
     "facilities": [],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -5436,7 +5626,7 @@
     "baths": null,
     "floorAreaSqft": null,
     "price": null,
-    "psf": 2607,
+    "psf": 2605,
     "topYear": "",
     "unitsSoldPercent": 97.3,
     "tenure": "Freehold",
@@ -5512,7 +5702,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -5530,9 +5720,9 @@
     "baths": null,
     "floorAreaSqft": "517 - 1453",
     "price": null,
-    "psf": 2715,
+    "psf": 2710,
     "topYear": "2033",
-    "unitsSoldPercent": 95.8,
+    "unitsSoldPercent": 96.3,
     "tenure": "99 years",
     "totalUnits": 777,
     "developer": "City Developments Ltd, Frasers Property, Sekisui House",
@@ -5699,7 +5889,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -5726,7 +5916,7 @@
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg",
+    "image": "https://sg.tepcdn.com/newlaunches/placeholder-newlaunches-detail2-1600.jpg",
     "images": [
       "https://sg.tepcdn.com/public/usr/8b7q6c/026af5-shutterstock-178043579.jpg"
     ],
@@ -5742,7 +5932,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -5843,7 +6033,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -5861,7 +6051,7 @@
     "baths": null,
     "floorAreaSqft": "624 - 1722",
     "price": null,
-    "psf": 2645,
+    "psf": 2643,
     "topYear": "",
     "unitsSoldPercent": 99.8,
     "tenure": "99 years",
@@ -6031,7 +6221,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -6416,7 +6606,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -6434,7 +6624,7 @@
     "baths": null,
     "floorAreaSqft": "431 - 1249",
     "price": null,
-    "psf": 2818,
+    "psf": 2825,
     "topYear": "2028",
     "unitsSoldPercent": 26.7,
     "tenure": "99 years",
@@ -6533,7 +6723,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -6551,9 +6741,9 @@
     "baths": null,
     "floorAreaSqft": "463 - 4833",
     "price": null,
-    "psf": 2850,
+    "psf": 2855,
     "topYear": "2029",
-    "unitsSoldPercent": 72.4,
+    "unitsSoldPercent": 79,
     "tenure": "99 years",
     "totalUnits": 366,
     "developer": "City Developments Limited",
@@ -6775,7 +6965,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -7186,7 +7376,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -7204,16 +7394,16 @@
     "baths": null,
     "floorAreaSqft": "495 - 1173",
     "price": null,
-    "psf": 2068,
+    "psf": 2067,
     "topYear": "2030",
-    "unitsSoldPercent": 95.1,
+    "unitsSoldPercent": 95.4,
     "tenure": "99 years",
     "totalUnits": 348,
     "developer": "City Developments Limited",
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://sg.tepcdn.com/s3fs-public/7967372811727747415.jpg?v=0.7399610187049332",
+    "image": "https://sg.tepcdn.com/s3fs-public/7967372811727747415.jpg",
     "images": [
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/85997350/b1e70a4b-9dca-470e-a3b9-013190c52e4e.jpg",
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/85997351/fe39f606-8d4c-4ecb-ac54-6aa732ec64e1.jpg",
@@ -7284,7 +7474,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -7477,7 +7667,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -7495,7 +7685,7 @@
     "baths": null,
     "floorAreaSqft": null,
     "price": null,
-    "psf": 2063,
+    "psf": 2061,
     "topYear": "2029",
     "unitsSoldPercent": 85.5,
     "tenure": "Freehold",
@@ -7672,7 +7862,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -7974,7 +8164,7 @@
     ],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -8017,7 +8207,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -8044,7 +8234,7 @@
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://sg.tepcdn.com/s3fs-public/39366001719213289.jpg?v=0.6669394360752692",
+    "image": "https://sg.tepcdn.com/s3fs-public/39366001719213289.jpg",
     "images": [
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/85234372/a086d6f8-a2cc-4962-a04c-04f6792e5179.jpg",
       "https://img.tepcdn.com/img-sf/new-launches/m-max_1000/3522511/217/0bdb34a2-450c-4a93-a8a1-c4498c6e0436.jpg",
@@ -8092,7 +8282,7 @@
     ],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -8155,197 +8345,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
-    "delistedAt": null,
-    "disabled": false,
-    "featured": false,
-    "custom": false
-  },
-  {
-    "id": "the-hillshore",
-    "slug": "the-hillshore",
-    "url": "https://www.edgeprop.sg/new-launches/the-hillshore",
-    "title": "The Hillshore",
-    "address": "D05 Singapore",
-    "district": "D05",
-    "propertyType": "Condo",
-    "beds": "2 - 4",
-    "baths": null,
-    "floorAreaSqft": "1 - 2161",
-    "price": null,
-    "psf": 2309,
-    "topYear": "2026",
-    "unitsSoldPercent": 20.3,
-    "tenure": "Freehold",
-    "totalUnits": 59,
-    "developer": "Hillside View Development Pte Ltd",
-    "agentName": "",
-    "agentLicense": "",
-    "phone": "",
-    "image": "https://img.youtube.com/vi/sLJqseNbQRE/hqdefault.jpg",
-    "images": [
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/83672717/06547d97-4be1-44e8-9f07-51d16bfc440b.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/83672718/de37f347-0f31-4c59-a1a3-5d9019f0c52b.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/83672719/2008c192-7b3b-4c66-b8bc-983cf75e1221.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/83672720/86283521-5cec-469c-a9e4-a8444181c083.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/83672722/16058fa9-e1d8-4e39-8eb7-788e78b1a615.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/83672723/89b6d8b5-7581-4bb4-8c7a-e6ad8cda2888.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/83672724/f286be95-f888-4012-b776-042c4f2cf894.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/83672725/38d0c2b9-ce4d-4e7e-a777-af8d4cb719dd.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/83672726/bd8193c4-1e8f-48ce-b680-b76fdd2c8520.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/83672727/fb4ff32e-787d-4401-aaae-de7f9167b25e.jpg"
-    ],
-    "agentPhoto": "",
-    "layouts": [
-      {
-        "desc": "2 Bedroom",
-        "type": "A1, A3",
-        "sqft": "732.8 - 740.3",
-        "units": 7
-      },
-      {
-        "desc": "2 Bedroom + Study",
-        "type": "A2, A4, A5, A6",
-        "sqft": "797.1 - 852.1",
-        "units": 10
-      },
-      {
-        "desc": "2 Bedroom (Penthouse)",
-        "type": "A1 (PH), A3 (PH)",
-        "sqft": "895.1 - 899.2",
-        "units": 2
-      },
-      {
-        "desc": "2 Bedroom + Study (Penthouse)",
-        "type": "A2 (PH), A4 (PH), A5 (PH)",
-        "sqft": "713.2 - 767.9",
-        "units": 3
-      },
-      {
-        "desc": "3 Bedroom",
-        "type": "B1, B3, B4, B5, B6, B8",
-        "sqft": "1050.2 - 1087.3",
-        "units": 21
-      },
-      {
-        "desc": "3 Bedroom + Study",
-        "type": "B2, B7",
-        "sqft": "1083.9 - 1179.9",
-        "units": 5
-      },
-      {
-        "desc": "3 Bedroom + Study (Penthouse)",
-        "type": "B7 (PH)",
-        "sqft": "1435.9",
-        "units": 1
-      },
-      {
-        "desc": "4 Bedroom (Penthouse)",
-        "type": "B1 (PH), B2 (PH), B3 (PH), B4 (PH), B5 (PH), B6 (PH)",
-        "sqft": "1648.4 - 1723.5",
-        "units": 6
-      },
-      {
-        "desc": "4 Bedroom - Dual Key",
-        "type": "C1",
-        "sqft": "1467.3",
-        "units": 3
-      },
-      {
-        "desc": "4 Bedroom - Dual Key (Penthouse)",
-        "type": "C1 (PH)",
-        "sqft": "2161.0",
-        "units": 1
-      }
-    ],
-    "facilities": [
-      "25m lap pool",
-      "Jacuzzi",
-      "Playground",
-      "Gymnasium",
-      "Clubhouse",
-      "Badminton Court",
-      "Playpool",
-      "BBQ Pavillion",
-      "Play Clove",
-      "Sky Grill"
-    ],
-    "priceRanges": [
-      {
-        "bedroomType": "2 Bedroom",
-        "sqft": "743",
-        "avgPsf": "",
-        "priceRange": "$1,920,000 - $2,050,000"
-      },
-      {
-        "bedroomType": "2 Bedroom Penthouse",
-        "sqft": "904 - 915",
-        "avgPsf": "",
-        "priceRange": "$2,165,000 - $2,205,000"
-      },
-      {
-        "bedroomType": "2 Bedroom Premium",
-        "sqft": "818 - 850",
-        "avgPsf": "",
-        "priceRange": "$2,060,000 - $2,345,000"
-      },
-      {
-        "bedroomType": "2 Bedroom Premium Penthouse",
-        "sqft": "1,012 - 1,033",
-        "avgPsf": "",
-        "priceRange": "$2,405,000 - $2,505,000"
-      },
-      {
-        "bedroomType": "3 Bedroom",
-        "sqft": "1,055 - 1,109",
-        "avgPsf": "",
-        "priceRange": "$2,670,000 - $3,060,000"
-      },
-      {
-        "bedroomType": "3 Bedroom Premium",
-        "sqft": "1,087",
-        "avgPsf": "",
-        "priceRange": "$2,770,000 - $2,860,000"
-      },
-      {
-        "bedroomType": "3 Bedroom Premium Penthouse",
-        "sqft": "1,442",
-        "avgPsf": "",
-        "priceRange": "$3,358,000"
-      },
-      {
-        "bedroomType": "4 Bedroom (dual Key)",
-        "sqft": "1,475",
-        "avgPsf": "",
-        "priceRange": "$3,880,000 - $4,050,000"
-      },
-      {
-        "bedroomType": "4 Bedroom Penthouse",
-        "sqft": "1,668 - 1,776",
-        "avgPsf": "",
-        "priceRange": "$3,968,000 - $4,288,000"
-      },
-      {
-        "bedroomType": "4 Bedroom Premium Penthouse(dual Key)",
-        "sqft": "2,185",
-        "avgPsf": "",
-        "priceRange": "$5,188,000"
-      },
-      {
-        "bedroomType": "2 Bedroom",
-        "sqft": "743 - 990",
-        "avgPsf": "$2,329",
-        "priceRange": "$1,600,000 - $2,188,888"
-      },
-      {
-        "bedroomType": "3 Bedroom",
-        "sqft": "1055 - 1184",
-        "avgPsf": "$2,540",
-        "priceRange": "$2,588,000 - $3,161,280"
-      }
-    ],
-    "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -8510,7 +8510,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -8528,7 +8528,7 @@
     "baths": null,
     "floorAreaSqft": "538 - 1346",
     "price": null,
-    "psf": 2435,
+    "psf": 2448,
     "topYear": "2027",
     "unitsSoldPercent": 94.4,
     "tenure": "99 years",
@@ -8689,7 +8689,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -8707,7 +8707,7 @@
     "baths": null,
     "floorAreaSqft": "678 - 1259",
     "price": null,
-    "psf": 2230,
+    "psf": 2242,
     "topYear": "2027",
     "unitsSoldPercent": 100,
     "tenure": "99 years",
@@ -8796,7 +8796,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -8814,9 +8814,9 @@
     "baths": null,
     "floorAreaSqft": "527 - 2583",
     "price": null,
-    "psf": 2657,
+    "psf": 2660,
     "topYear": "2027",
-    "unitsSoldPercent": 66.3,
+    "unitsSoldPercent": 68,
     "tenure": "Freehold",
     "totalUnits": 172,
     "developer": "KSH Ultra Unity Pte Ltd - A joint venture by KSH Holdings Ltd, SLB Development Ltd & H10 Holdings Pte Ltd (Ho Lee Group)",
@@ -9050,7 +9050,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -9086,7 +9086,7 @@
     "facilities": [],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -9235,7 +9235,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -9383,7 +9383,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -9419,7 +9419,7 @@
     "facilities": [],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -9535,7 +9535,7 @@
     ],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -9553,7 +9553,7 @@
     "baths": null,
     "floorAreaSqft": "491 - 2260",
     "price": null,
-    "psf": 2212,
+    "psf": 2214,
     "topYear": "2027",
     "unitsSoldPercent": 100,
     "tenure": "99 years",
@@ -9706,7 +9706,155 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
+    "delistedAt": null,
+    "disabled": false,
+    "featured": false,
+    "custom": false
+  },
+  {
+    "id": "pinetree-hill",
+    "slug": "pinetree-hill",
+    "url": "https://www.edgeprop.sg/new-launches/pinetree-hill",
+    "title": "Pinetree Hill",
+    "address": "D21 Singapore",
+    "district": "D21",
+    "propertyType": "Condo",
+    "beds": null,
+    "baths": null,
+    "floorAreaSqft": "538 - 2874",
+    "price": null,
+    "psf": 2571,
+    "topYear": "2027",
+    "unitsSoldPercent": 100,
+    "tenure": "99 years",
+    "totalUnits": 520,
+    "developer": "UOL Group Limited & Singapore Land Group Limited",
+    "agentName": "",
+    "agentLicense": "",
+    "phone": "",
+    "image": "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/85756188/1343edf6-332d-40d1-8b3d-851c8944a310.jpg",
+    "images": [
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/85756184/6813ccda-d4ac-410e-b3f0-a0028eacc806.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/85756185/86036c84-b7bf-4715-83fe-e97075cc20ea.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/85756186/14df6fa1-d741-461e-bd46-3eae69c2a92f.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/85756187/b26e3e97-b1c4-4a59-86dd-4ec0ab0a17ff.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/85756188/1343edf6-332d-40d1-8b3d-851c8944a310.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/85756189/7e9755d0-e25a-4a68-8e2a-8b542b17a1a4.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/85756190/da40a6f9-f386-485d-99d1-b81beeba254a.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/85756191/b88f24e5-22da-43f8-b2a3-e8f02666fc55.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/85756192/dc6a16ff-f4ff-4990-84a0-429c0ac084fc.jpg"
+    ],
+    "agentPhoto": "",
+    "layouts": [
+      {
+        "desc": "1-Bedroom + Study",
+        "type": "1BS",
+        "sqft": "538",
+        "units": null
+      },
+      {
+        "desc": "2-Bedroom",
+        "type": "2B / 2B(a)",
+        "sqft": "700-850",
+        "units": null
+      },
+      {
+        "desc": "2-Bedroom Premium",
+        "type": "2BP1 / 2BP2 / 2BP3 / 2BP4 / 2BP2(a) / 2BP3(a)",
+        "sqft": "764-915",
+        "units": null
+      },
+      {
+        "desc": "2-Bedroom Premium + Study",
+        "type": "2BPS1 / 2BPS2",
+        "sqft": "797",
+        "units": null
+      },
+      {
+        "desc": "3-Bedroom",
+        "type": "3B1 / 3B2 / 3B1(a) / 3B2(a)",
+        "sqft": "969-1,173",
+        "units": null
+      },
+      {
+        "desc": "3-Bedroom Premium + Study",
+        "type": "3BPS1 / 3BPS2 / 3BPS1(a) / 3BPS2(a)",
+        "sqft": "1,216-1,421",
+        "units": null
+      },
+      {
+        "desc": "4-Bedroom Deluxe (with Private Lift)",
+        "type": "4B / 4B(a)",
+        "sqft": "1,292-1,485",
+        "units": null
+      },
+      {
+        "desc": "4-Bedroom Premium (with Private Lift)",
+        "type": "4BP1 / 4BP2 / 4BP1(a) / 4BP2 (a)",
+        "sqft": "1,464-1,668",
+        "units": null
+      },
+      {
+        "desc": "5-Bedroom Premium (with Private Lift)",
+        "type": "5BP",
+        "sqft": "1,733",
+        "units": null
+      },
+      {
+        "desc": "Penthouse",
+        "type": "PH",
+        "sqft": "2,874",
+        "units": null
+      }
+    ],
+    "facilities": [
+      "50m Lap Pool",
+      "Forest Playground",
+      "Flower Swathe",
+      "Forest Pavilion (Pinetree Nest)",
+      "Floating Pavilion"
+    ],
+    "priceRanges": [
+      {
+        "bedroomType": "Penthouse",
+        "sqft": "2,874",
+        "avgPsf": "",
+        "priceRange": "-"
+      },
+      {
+        "bedroomType": "1 Bedroom",
+        "sqft": "538",
+        "avgPsf": "$2,477",
+        "priceRange": "$1,236,000 - $1,406,000"
+      },
+      {
+        "bedroomType": "2 Bedroom",
+        "sqft": "700 - 915",
+        "avgPsf": "$2,441",
+        "priceRange": "$1,573,000 - $2,139,000"
+      },
+      {
+        "bedroomType": "3 Bedroom",
+        "sqft": "969 - 1421",
+        "avgPsf": "$2,495",
+        "priceRange": "$2,177,000 - $3,376,000"
+      },
+      {
+        "bedroomType": "4 Bedroom",
+        "sqft": "1292 - 1668",
+        "avgPsf": "$2,553",
+        "priceRange": "$3,204,000 - $4,070,000"
+      },
+      {
+        "bedroomType": "5 Bedroom",
+        "sqft": "1733",
+        "avgPsf": "$2,631",
+        "priceRange": "$4,364,000 - $4,788,000"
+      }
+    ],
+    "status": "active",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -9724,9 +9872,9 @@
     "baths": null,
     "floorAreaSqft": null,
     "price": null,
-    "psf": 2500,
+    "psf": 2513,
     "topYear": "2028",
-    "unitsSoldPercent": 92.4,
+    "unitsSoldPercent": 93.2,
     "tenure": "99 years",
     "totalUnits": 1008,
     "developer": "SingHaiyi Group Pte Ltd & CSC Land Group (Singapore) Pte Ltd",
@@ -10025,155 +10173,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
-    "delistedAt": null,
-    "disabled": false,
-    "featured": false,
-    "custom": false
-  },
-  {
-    "id": "pinetree-hill",
-    "slug": "pinetree-hill",
-    "url": "https://www.edgeprop.sg/new-launches/pinetree-hill",
-    "title": "Pinetree Hill",
-    "address": "D21 Singapore",
-    "district": "D21",
-    "propertyType": "Condo",
-    "beds": null,
-    "baths": null,
-    "floorAreaSqft": "538 - 2874",
-    "price": null,
-    "psf": 2574,
-    "topYear": "2027",
-    "unitsSoldPercent": 100,
-    "tenure": "99 years",
-    "totalUnits": 520,
-    "developer": "UOL Group Limited & Singapore Land Group Limited",
-    "agentName": "",
-    "agentLicense": "",
-    "phone": "",
-    "image": "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/85756188/1343edf6-332d-40d1-8b3d-851c8944a310.jpg",
-    "images": [
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/85756184/6813ccda-d4ac-410e-b3f0-a0028eacc806.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/85756185/86036c84-b7bf-4715-83fe-e97075cc20ea.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/85756186/14df6fa1-d741-461e-bd46-3eae69c2a92f.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/85756187/b26e3e97-b1c4-4a59-86dd-4ec0ab0a17ff.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/85756188/1343edf6-332d-40d1-8b3d-851c8944a310.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/85756189/7e9755d0-e25a-4a68-8e2a-8b542b17a1a4.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/85756190/da40a6f9-f386-485d-99d1-b81beeba254a.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/85756191/b88f24e5-22da-43f8-b2a3-e8f02666fc55.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/85756192/dc6a16ff-f4ff-4990-84a0-429c0ac084fc.jpg"
-    ],
-    "agentPhoto": "",
-    "layouts": [
-      {
-        "desc": "1-Bedroom + Study",
-        "type": "1BS",
-        "sqft": "538",
-        "units": null
-      },
-      {
-        "desc": "2-Bedroom",
-        "type": "2B / 2B(a)",
-        "sqft": "700-850",
-        "units": null
-      },
-      {
-        "desc": "2-Bedroom Premium",
-        "type": "2BP1 / 2BP2 / 2BP3 / 2BP4 / 2BP2(a) / 2BP3(a)",
-        "sqft": "764-915",
-        "units": null
-      },
-      {
-        "desc": "2-Bedroom Premium + Study",
-        "type": "2BPS1 / 2BPS2",
-        "sqft": "797",
-        "units": null
-      },
-      {
-        "desc": "3-Bedroom",
-        "type": "3B1 / 3B2 / 3B1(a) / 3B2(a)",
-        "sqft": "969-1,173",
-        "units": null
-      },
-      {
-        "desc": "3-Bedroom Premium + Study",
-        "type": "3BPS1 / 3BPS2 / 3BPS1(a) / 3BPS2(a)",
-        "sqft": "1,216-1,421",
-        "units": null
-      },
-      {
-        "desc": "4-Bedroom Deluxe (with Private Lift)",
-        "type": "4B / 4B(a)",
-        "sqft": "1,292-1,485",
-        "units": null
-      },
-      {
-        "desc": "4-Bedroom Premium (with Private Lift)",
-        "type": "4BP1 / 4BP2 / 4BP1(a) / 4BP2 (a)",
-        "sqft": "1,464-1,668",
-        "units": null
-      },
-      {
-        "desc": "5-Bedroom Premium (with Private Lift)",
-        "type": "5BP",
-        "sqft": "1,733",
-        "units": null
-      },
-      {
-        "desc": "Penthouse",
-        "type": "PH",
-        "sqft": "2,874",
-        "units": null
-      }
-    ],
-    "facilities": [
-      "50m Lap Pool",
-      "Forest Playground",
-      "Flower Swathe",
-      "Forest Pavilion (Pinetree Nest)",
-      "Floating Pavilion"
-    ],
-    "priceRanges": [
-      {
-        "bedroomType": "Penthouse",
-        "sqft": "2,874",
-        "avgPsf": "",
-        "priceRange": "-"
-      },
-      {
-        "bedroomType": "1 Bedroom",
-        "sqft": "538",
-        "avgPsf": "$2,477",
-        "priceRange": "$1,236,000 - $1,406,000"
-      },
-      {
-        "bedroomType": "2 Bedroom",
-        "sqft": "700 - 915",
-        "avgPsf": "$2,441",
-        "priceRange": "$1,573,000 - $2,139,000"
-      },
-      {
-        "bedroomType": "3 Bedroom",
-        "sqft": "969 - 1421",
-        "avgPsf": "$2,495",
-        "priceRange": "$2,177,000 - $3,376,000"
-      },
-      {
-        "bedroomType": "4 Bedroom",
-        "sqft": "1292 - 1668",
-        "avgPsf": "$2,553",
-        "priceRange": "$3,204,000 - $4,070,000"
-      },
-      {
-        "bedroomType": "5 Bedroom",
-        "sqft": "1733",
-        "avgPsf": "$2,631",
-        "priceRange": "$4,364,000 - $4,788,000"
-      }
-    ],
-    "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -10339,7 +10339,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -10510,7 +10510,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -10528,7 +10528,7 @@
     "baths": null,
     "floorAreaSqft": "560 - 2260",
     "price": null,
-    "psf": 2741,
+    "psf": 2740,
     "topYear": "2026",
     "unitsSoldPercent": 100,
     "tenure": "Freehold",
@@ -10722,7 +10722,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -10740,7 +10740,7 @@
     "baths": null,
     "floorAreaSqft": "549 - 1884",
     "price": null,
-    "psf": 2328,
+    "psf": 2320,
     "topYear": "2027",
     "unitsSoldPercent": 100,
     "tenure": "99 years",
@@ -10895,7 +10895,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -10913,7 +10913,7 @@
     "baths": null,
     "floorAreaSqft": "624 - 3035",
     "price": null,
-    "psf": 2462,
+    "psf": 2459,
     "topYear": "",
     "unitsSoldPercent": 93.3,
     "tenure": "Freehold",
@@ -11139,7 +11139,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -11157,9 +11157,9 @@
     "baths": null,
     "floorAreaSqft": "517 - 2034",
     "price": null,
-    "psf": 2067,
+    "psf": 2075,
     "topYear": "2029",
-    "unitsSoldPercent": 98.8,
+    "unitsSoldPercent": 99,
     "tenure": "99 years",
     "totalUnits": 408,
     "developer": "City Developments Limited",
@@ -11297,7 +11297,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -11379,7 +11379,7 @@
     ],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -11397,7 +11397,7 @@
     "baths": null,
     "floorAreaSqft": null,
     "price": null,
-    "psf": 3105,
+    "psf": 3053,
     "topYear": "2025",
     "unitsSoldPercent": 100,
     "tenure": "99 years",
@@ -11499,7 +11499,275 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
+    "delistedAt": null,
+    "disabled": false,
+    "featured": false,
+    "custom": false
+  },
+  {
+    "id": "skye-at-holland",
+    "slug": "skye-at-holland",
+    "url": "https://www.edgeprop.sg/new-launches/skye-at-holland",
+    "title": "Skye at Holland",
+    "address": "D10 Singapore",
+    "district": "D10",
+    "propertyType": "Condo",
+    "beds": null,
+    "baths": null,
+    "floorAreaSqft": "581 - 1765",
+    "price": null,
+    "psf": 3208,
+    "topYear": "2029",
+    "unitsSoldPercent": 100,
+    "tenure": "99 years",
+    "totalUnits": 666,
+    "developer": "Joint Venture by UOL Group Limited, Singapore Land Group Limited, Kheng Leong Company & CapitaLand Development Pte. Ltd.",
+    "agentName": "",
+    "agentLicense": "",
+    "phone": "",
+    "image": "https://img.youtube.com/vi/CQC-erfT4Ys/hqdefault.jpg",
+    "images": [
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88595447/4e81d0aa-72ba-419f-808e-be8fed05c650.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88595450/7dc13f2a-d74d-4a91-be85-77538de48d5f.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88595451/aa593c0b-26e8-48a4-8e8d-f3fdaa1c1f6a.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88595452/9b5ea8a4-1fde-4be3-897e-497cd80a219d.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88595454/12716cf3-c714-4e11-97a0-510a855df8ec.jpg"
+    ],
+    "agentPhoto": "",
+    "layouts": [
+      {
+        "desc": "2-Bedroom",
+        "type": "B1, B2",
+        "sqft": "581",
+        "units": 74
+      },
+      {
+        "desc": "2-Bedroom Premium",
+        "type": "BP1, BP2, BP3, BP4",
+        "sqft": "667 & 678",
+        "units": 148
+      },
+      {
+        "desc": "2-Bedroom Premium +Study",
+        "type": "BPS1, BPS2, BPS3",
+        "sqft": "732 & 743",
+        "units": 148
+      },
+      {
+        "desc": "3-Bedroom",
+        "type": "C1, C2",
+        "sqft": "915",
+        "units": 74
+      },
+      {
+        "desc": "3-Bedroom Premium",
+        "type": "CP1, CP2",
+        "sqft": "1,076",
+        "units": 74
+      },
+      {
+        "desc": "4-Bedroom (with Private Lift)",
+        "type": "D1, D2",
+        "sqft": "1,238",
+        "units": 74
+      },
+      {
+        "desc": "4-Bedroom Premium (with Private Lift)",
+        "type": "DP1",
+        "sqft": "1,464",
+        "units": 37
+      },
+      {
+        "desc": "5-Bedroom Premium (with Private Lift)",
+        "type": "E1",
+        "sqft": "1,765",
+        "units": 37
+      }
+    ],
+    "facilities": [
+      "The Arrival – Guard House, Arrival Plaza",
+      "Skye Clubhouse – BBQ Pavilion, Main Function Room, Main Gym, Entertainment Room, Sky Lounge",
+      "Splash & Play – BBQ Pavilion, Kid’s Splash, Vertical Kid’s Play, Kid’s Pool, Game Room, Pet’s Play",
+      "The Pool Club – Lookout Deck, 50m Lap Pool, Aqua Gym, Poolside Alcove, Jacuzzi Alcove",
+      "Wellness Retreat – Yoga Sanctuary, Residents’ Private Gym, Chillout Lounge, Family Deck, Games corner",
+      "The Oasis – Residents’ Lounge, Spa Pool, Jacuzzi Alcove, Leisure Pool, Social Pavilion",
+      "The Hideaway – Chillout Deck, Social Lounge, Yoga Room, Hammock Garden, Steam Room"
+    ],
+    "priceRanges": [
+      {
+        "bedroomType": "2 Bedroom",
+        "sqft": "581 - 743",
+        "avgPsf": "$2,934",
+        "priceRange": "$1,510,000 - $2,434,000"
+      },
+      {
+        "bedroomType": "3 Bedroom",
+        "sqft": "915 - 1076",
+        "avgPsf": "$2,903",
+        "priceRange": "$2,394,000 - $3,411,000"
+      },
+      {
+        "bedroomType": "4 Bedroom",
+        "sqft": "1238 - 1464",
+        "avgPsf": "$2,998",
+        "priceRange": "$3,337,000 - $4,831,000"
+      },
+      {
+        "bedroomType": "5 Bedroom",
+        "sqft": "1765",
+        "avgPsf": "$3,073",
+        "priceRange": "$4,889,000 - $5,943,000"
+      }
+    ],
+    "status": "active",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
+    "delistedAt": null,
+    "disabled": false,
+    "featured": false,
+    "custom": false
+  },
+  {
+    "id": "the-sen",
+    "slug": "the-sen",
+    "url": "https://www.edgeprop.sg/new-launches/the-sen",
+    "title": "The Sen",
+    "address": "D21 Singapore",
+    "district": "D21",
+    "propertyType": "Condo",
+    "beds": "1 - 4",
+    "baths": null,
+    "floorAreaSqft": "452 - 1453",
+    "price": null,
+    "psf": 2357,
+    "topYear": "2029",
+    "unitsSoldPercent": 55,
+    "tenure": "99 years",
+    "totalUnits": 347,
+    "developer": "SL Capital (8) Pte Ltd",
+    "agentName": "",
+    "agentLicense": "",
+    "phone": "",
+    "image": "https://img.youtube.com/vi/UGYemtsNqGw/hqdefault.jpg",
+    "images": [
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88804154/d63a8f60-a5b6-41d7-874f-cd2c87c91b07.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88804195/381aad45-1d40-4ea2-9aae-766ece38ac19.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88804216/1aad78c5-96f0-4343-b7c3-62a088a5e40a.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88804237/32183f14-1810-4bb0-9bda-c7ccf7ca41e1.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88804261/59c0910e-5535-407e-a12b-ddcb38d0092b.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88804287/deeb944d-ce4a-4da6-a307-1d60673a62f4.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88804344/828a5031-c598-492d-98a5-8a367368b8eb.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88804330/614ef311-4208-445b-8129-3214be7a8571.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88804358/8e2ad8df-2714-4f55-ba29-e2d8d96018ef.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88804373/3ddde3f8-1724-4ac6-9c40-6e4b88979f2d.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88804386/437f9aed-9d2b-44d8-95e6-4dcbb47d7ea1.jpg"
+    ],
+    "agentPhoto": "",
+    "layouts": [
+      {
+        "desc": "1 Bedroom",
+        "type": "A1",
+        "sqft": "452",
+        "units": 10
+      },
+      {
+        "desc": "2 Bedroom",
+        "type": "B1, B2, B3",
+        "sqft": "678 - 732",
+        "units": 110
+      },
+      {
+        "desc": "2 Bedroom + Study",
+        "type": "B4, B4A",
+        "sqft": "764 - 775",
+        "units": 57
+      },
+      {
+        "desc": "3 Bedroom",
+        "type": "C1, C2, C3",
+        "sqft": "872 - 1,109",
+        "units": 90
+      },
+      {
+        "desc": "3 Bedroom Premium + Study",
+        "type": "C4",
+        "sqft": "1,259",
+        "units": 40
+      },
+      {
+        "desc": "4 Bedroom Premium + Study",
+        "type": "D1, D1A",
+        "sqft": "1453",
+        "units": 40
+      }
+    ],
+    "facilities": [
+      "Drop off Foyer",
+      "Child Care Centre",
+      "Serenity Waters",
+      "Play Lawn",
+      "Tai Chi Lawn",
+      "Tree Courtyard",
+      "Terracing Water Feature",
+      "Bubble Pool",
+      "Aqua Gym",
+      "Family Pool",
+      "Spa Bed",
+      "Spa Seat",
+      "Hydro Pool",
+      "Family Lounge",
+      "Pool Shower",
+      "Children’s Pool",
+      "Play Pavilion",
+      "Children’s Playground",
+      "Clubhouse",
+      "Reading Lounge",
+      "Gathering Lounge",
+      "Relaxation Lounge",
+      "Forest Fitness",
+      "BBQ Pavilion",
+      "Open Deck",
+      "Recreational Tennis Court",
+      "Water Sculpture",
+      "Picnic Lawn",
+      "Water Feature",
+      "50m Lap Pool",
+      "Main Pool Deck",
+      "Pool Shower",
+      "Serenity Lounge",
+      "Gym",
+      "Hot & Cold Bath",
+      "Toilet with Steam Room",
+      "Accessible ToiletSen Roof – 3\nDistinctive Themes:Wellness\n(Block 222) - Pilates Pavilion, Meditation Deck, Yoga Lawn, Floral Garden,\nSensory Garden3G Zone (Block 228) - Hammock Alcove, Maze Garden, Chess Garden, Community GardenFamily (Block 230) - Sky Bar Pavilion, Sky Lounge, Hangout Lounge, Sky Deck"
+    ],
+    "priceRanges": [
+      {
+        "bedroomType": "1 Bedroom",
+        "sqft": "452",
+        "avgPsf": "$2,297",
+        "priceRange": "$993,900 - $1,136,600"
+      },
+      {
+        "bedroomType": "2 Bedroom",
+        "sqft": "678 - 775",
+        "avgPsf": "$2,353",
+        "priceRange": "$1,515,000 - $1,865,000"
+      },
+      {
+        "bedroomType": "3 Bedroom",
+        "sqft": "872 - 1259",
+        "avgPsf": "$2,338",
+        "priceRange": "$1,936,000 - $2,970,000"
+      },
+      {
+        "bedroomType": "4 Bedroom",
+        "sqft": "1453",
+        "avgPsf": "$2,444",
+        "priceRange": "$3,453,700 - $3,664,100"
+      }
+    ],
+    "status": "active",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -11517,7 +11785,7 @@
     "baths": null,
     "floorAreaSqft": "495 - 1679",
     "price": null,
-    "psf": 2788,
+    "psf": 2789,
     "topYear": "2027",
     "unitsSoldPercent": 97.2,
     "tenure": "Freehold",
@@ -11526,7 +11794,7 @@
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://sg.tepcdn.com/s3fs-public/3585258571744769706.jpg?v=0.27238253120441613",
+    "image": "https://sg.tepcdn.com/s3fs-public/3585258571744769706.jpg",
     "images": [
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87742248/0c81f375-b6c5-4099-8f7a-e11a3e31db6e.jpg",
       "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87742249/5a3899e4-4a6a-4dca-9ed3-3acc570e0f2a.jpg",
@@ -11656,7 +11924,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -11827,133 +12095,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
-    "delistedAt": null,
-    "disabled": false,
-    "featured": false,
-    "custom": false
-  },
-  {
-    "id": "lyndenwoods",
-    "slug": "lyndenwoods",
-    "url": "https://www.edgeprop.sg/new-launches/lyndenwoods",
-    "title": "LyndenWoods",
-    "address": "D05 Singapore",
-    "district": "D05",
-    "propertyType": "Apartment",
-    "beds": null,
-    "baths": null,
-    "floorAreaSqft": null,
-    "price": null,
-    "psf": 2599,
-    "topYear": "2029",
-    "unitsSoldPercent": 100,
-    "tenure": "99 years",
-    "totalUnits": 343,
-    "developer": "CapitaLand Development (Singapore)",
-    "agentName": "",
-    "agentLicense": "",
-    "phone": "",
-    "image": "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87986289/a1d8cc6e-ee4c-4448-bf2a-90b22f4ec08d.jpg",
-    "images": [
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87986285/79638745-ae0b-43f7-a1bf-39240d966022.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87986286/06c01f49-10ed-4285-b360-2b049a99749e.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87986287/0f60d83d-c137-4118-abcc-c55bec892a95.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87986288/7b2ad2e6-11ff-4770-8e98-bdec93be2f9f.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87986289/a1d8cc6e-ee4c-4448-bf2a-90b22f4ec08d.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87986290/9da3cd30-f941-4040-90da-6909a48ff6d1.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87986291/009f19ec-3202-4b32-9730-4e8050036e9d.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87986295/e58332d3-36c1-47bb-b2f3-4c8e34d56560.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87986296/d9c27177-cf38-4163-9a01-e22f0c0b65e4.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87986297/cf71da8a-296d-42b2-8a02-3b3f0c12f1eb.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87986298/e40db9f5-ca1b-48f1-b961-799404002db0.jpg"
-    ],
-    "agentPhoto": "",
-    "layouts": [
-      {
-        "desc": "2-Bedroom",
-        "type": "",
-        "sqft": "fr 630 sq ft",
-        "units": 137
-      },
-      {
-        "desc": "2-Bedroom + Study",
-        "type": "",
-        "sqft": "fr 850 sq ft",
-        "units": 92
-      },
-      {
-        "desc": "3-Bedroom",
-        "type": "",
-        "sqft": "fr 1,000 sq ft",
-        "units": 45
-      },
-      {
-        "desc": "3-Bedroom + Guest Premium",
-        "type": "",
-        "sqft": "fr 1,200 sq ft",
-        "units": 46
-      },
-      {
-        "desc": "4-Bedroom Premium",
-        "type": "",
-        "sqft": "fr 1,600 sq ft",
-        "units": 23
-      }
-    ],
-    "facilities": [
-      "Arrival Plaza",
-      "Lynden Club:",
-      "Gymnasium",
-      "Social Lounge",
-      "Function Room",
-      "Infinity Lap Pool (50m)",
-      "Pool Deck",
-      "Poolside Lounge",
-      "Kids’ Pool",
-      "Outdoor Shower",
-      "Chill-Out Deck",
-      "Aroma Garden",
-      "Forest Garden",
-      "Allotment Gardens",
-      "Canopy Walkway",
-      "BBQ Pavilion 1",
-      "Cascading Spa Pool",
-      "BBQ Pavilion 2",
-      "Forest Playground",
-      "Amphitheatre Lawn",
-      "Pets’ Park",
-      "Outdoor Fitness",
-      "Pickle ball Court",
-      "Recreational Tennis Court",
-      "Co-Work Lounge",
-      "Changing Room",
-      "Management Office",
-      "Guard House",
-      "Bicycle Parking"
-    ],
-    "priceRanges": [
-      {
-        "bedroomType": "2 Bedroom",
-        "sqft": "635 - 883",
-        "avgPsf": "$2,483",
-        "priceRange": "$1,398,000 - $2,379,000"
-      },
-      {
-        "bedroomType": "3 Bedroom",
-        "sqft": "1023 - 1292",
-        "avgPsf": "$2,432",
-        "priceRange": "$2,352,000 - $3,420,000"
-      },
-      {
-        "bedroomType": "4 Bedroom",
-        "sqft": "1647",
-        "avgPsf": "$2,376",
-        "priceRange": "$3,610,000 - $4,280,000"
-      }
-    ],
-    "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -12098,275 +12240,133 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
     "custom": false
   },
   {
-    "id": "skye-at-holland",
-    "slug": "skye-at-holland",
-    "url": "https://www.edgeprop.sg/new-launches/skye-at-holland",
-    "title": "Skye at Holland",
-    "address": "D10 Singapore",
-    "district": "D10",
-    "propertyType": "Condo",
+    "id": "lyndenwoods",
+    "slug": "lyndenwoods",
+    "url": "https://www.edgeprop.sg/new-launches/lyndenwoods",
+    "title": "LyndenWoods",
+    "address": "D05 Singapore",
+    "district": "D05",
+    "propertyType": "Apartment",
     "beds": null,
     "baths": null,
-    "floorAreaSqft": "581 - 1765",
+    "floorAreaSqft": null,
     "price": null,
-    "psf": 3208,
+    "psf": 2599,
     "topYear": "2029",
     "unitsSoldPercent": 100,
     "tenure": "99 years",
-    "totalUnits": 666,
-    "developer": "Joint Venture by UOL Group Limited, Singapore Land Group Limited, Kheng Leong Company & CapitaLand Development Pte. Ltd.",
+    "totalUnits": 343,
+    "developer": "CapitaLand Development (Singapore)",
     "agentName": "",
     "agentLicense": "",
     "phone": "",
-    "image": "https://img.youtube.com/vi/CQC-erfT4Ys/hqdefault.jpg",
+    "image": "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87986289/a1d8cc6e-ee4c-4448-bf2a-90b22f4ec08d.jpg",
     "images": [
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88595447/4e81d0aa-72ba-419f-808e-be8fed05c650.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88595450/7dc13f2a-d74d-4a91-be85-77538de48d5f.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88595451/aa593c0b-26e8-48a4-8e8d-f3fdaa1c1f6a.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88595452/9b5ea8a4-1fde-4be3-897e-497cd80a219d.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88595454/12716cf3-c714-4e11-97a0-510a855df8ec.jpg"
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87986285/79638745-ae0b-43f7-a1bf-39240d966022.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87986286/06c01f49-10ed-4285-b360-2b049a99749e.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87986287/0f60d83d-c137-4118-abcc-c55bec892a95.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87986288/7b2ad2e6-11ff-4770-8e98-bdec93be2f9f.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87986289/a1d8cc6e-ee4c-4448-bf2a-90b22f4ec08d.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87986290/9da3cd30-f941-4040-90da-6909a48ff6d1.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87986291/009f19ec-3202-4b32-9730-4e8050036e9d.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87986295/e58332d3-36c1-47bb-b2f3-4c8e34d56560.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87986296/d9c27177-cf38-4163-9a01-e22f0c0b65e4.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87986297/cf71da8a-296d-42b2-8a02-3b3f0c12f1eb.jpg",
+      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/87986298/e40db9f5-ca1b-48f1-b961-799404002db0.jpg"
     ],
     "agentPhoto": "",
     "layouts": [
       {
         "desc": "2-Bedroom",
-        "type": "B1, B2",
-        "sqft": "581",
-        "units": 74
+        "type": "",
+        "sqft": "fr 630 sq ft",
+        "units": 137
       },
       {
-        "desc": "2-Bedroom Premium",
-        "type": "BP1, BP2, BP3, BP4",
-        "sqft": "667 & 678",
-        "units": 148
-      },
-      {
-        "desc": "2-Bedroom Premium +Study",
-        "type": "BPS1, BPS2, BPS3",
-        "sqft": "732 & 743",
-        "units": 148
+        "desc": "2-Bedroom + Study",
+        "type": "",
+        "sqft": "fr 850 sq ft",
+        "units": 92
       },
       {
         "desc": "3-Bedroom",
-        "type": "C1, C2",
-        "sqft": "915",
-        "units": 74
+        "type": "",
+        "sqft": "fr 1,000 sq ft",
+        "units": 45
       },
       {
-        "desc": "3-Bedroom Premium",
-        "type": "CP1, CP2",
-        "sqft": "1,076",
-        "units": 74
+        "desc": "3-Bedroom + Guest Premium",
+        "type": "",
+        "sqft": "fr 1,200 sq ft",
+        "units": 46
       },
       {
-        "desc": "4-Bedroom (with Private Lift)",
-        "type": "D1, D2",
-        "sqft": "1,238",
-        "units": 74
-      },
-      {
-        "desc": "4-Bedroom Premium (with Private Lift)",
-        "type": "DP1",
-        "sqft": "1,464",
-        "units": 37
-      },
-      {
-        "desc": "5-Bedroom Premium (with Private Lift)",
-        "type": "E1",
-        "sqft": "1,765",
-        "units": 37
+        "desc": "4-Bedroom Premium",
+        "type": "",
+        "sqft": "fr 1,600 sq ft",
+        "units": 23
       }
     ],
     "facilities": [
-      "The Arrival – Guard House, Arrival Plaza",
-      "Skye Clubhouse – BBQ Pavilion, Main Function Room, Main Gym, Entertainment Room, Sky Lounge",
-      "Splash & Play – BBQ Pavilion, Kid’s Splash, Vertical Kid’s Play, Kid’s Pool, Game Room, Pet’s Play",
-      "The Pool Club – Lookout Deck, 50m Lap Pool, Aqua Gym, Poolside Alcove, Jacuzzi Alcove",
-      "Wellness Retreat – Yoga Sanctuary, Residents’ Private Gym, Chillout Lounge, Family Deck, Games corner",
-      "The Oasis – Residents’ Lounge, Spa Pool, Jacuzzi Alcove, Leisure Pool, Social Pavilion",
-      "The Hideaway – Chillout Deck, Social Lounge, Yoga Room, Hammock Garden, Steam Room"
-    ],
-    "priceRanges": [
-      {
-        "bedroomType": "2 Bedroom",
-        "sqft": "581 - 743",
-        "avgPsf": "$2,934",
-        "priceRange": "$1,510,000 - $2,434,000"
-      },
-      {
-        "bedroomType": "3 Bedroom",
-        "sqft": "915 - 1076",
-        "avgPsf": "$2,903",
-        "priceRange": "$2,394,000 - $3,411,000"
-      },
-      {
-        "bedroomType": "4 Bedroom",
-        "sqft": "1238 - 1464",
-        "avgPsf": "$2,998",
-        "priceRange": "$3,337,000 - $4,831,000"
-      },
-      {
-        "bedroomType": "5 Bedroom",
-        "sqft": "1765",
-        "avgPsf": "$3,073",
-        "priceRange": "$4,889,000 - $5,943,000"
-      }
-    ],
-    "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
-    "delistedAt": null,
-    "disabled": false,
-    "featured": false,
-    "custom": false
-  },
-  {
-    "id": "the-sen",
-    "slug": "the-sen",
-    "url": "https://www.edgeprop.sg/new-launches/the-sen",
-    "title": "The Sen",
-    "address": "D21 Singapore",
-    "district": "D21",
-    "propertyType": "Condo",
-    "beds": "1 - 4",
-    "baths": null,
-    "floorAreaSqft": "452 - 1453",
-    "price": null,
-    "psf": 2356,
-    "topYear": "2029",
-    "unitsSoldPercent": 53.9,
-    "tenure": "99 years",
-    "totalUnits": 347,
-    "developer": "SL Capital (8) Pte Ltd",
-    "agentName": "",
-    "agentLicense": "",
-    "phone": "",
-    "image": "https://img.youtube.com/vi/UGYemtsNqGw/hqdefault.jpg",
-    "images": [
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88804154/d63a8f60-a5b6-41d7-874f-cd2c87c91b07.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88804195/381aad45-1d40-4ea2-9aae-766ece38ac19.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88804216/1aad78c5-96f0-4343-b7c3-62a088a5e40a.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88804237/32183f14-1810-4bb0-9bda-c7ccf7ca41e1.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88804261/59c0910e-5535-407e-a12b-ddcb38d0092b.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88804287/deeb944d-ce4a-4da6-a307-1d60673a62f4.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88804344/828a5031-c598-492d-98a5-8a367368b8eb.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88804330/614ef311-4208-445b-8129-3214be7a8571.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88804358/8e2ad8df-2714-4f55-ba29-e2d8d96018ef.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88804373/3ddde3f8-1724-4ac6-9c40-6e4b88979f2d.jpg",
-      "https://img.tepcdn.com/img-v2/new-launches/m-max_1000/0/88804386/437f9aed-9d2b-44d8-95e6-4dcbb47d7ea1.jpg"
-    ],
-    "agentPhoto": "",
-    "layouts": [
-      {
-        "desc": "1 Bedroom",
-        "type": "A1",
-        "sqft": "452",
-        "units": 10
-      },
-      {
-        "desc": "2 Bedroom",
-        "type": "B1, B2, B3",
-        "sqft": "678 - 732",
-        "units": 110
-      },
-      {
-        "desc": "2 Bedroom + Study",
-        "type": "B4, B4A",
-        "sqft": "764 - 775",
-        "units": 57
-      },
-      {
-        "desc": "3 Bedroom",
-        "type": "C1, C2, C3",
-        "sqft": "872 - 1,109",
-        "units": 90
-      },
-      {
-        "desc": "3 Bedroom Premium + Study",
-        "type": "C4",
-        "sqft": "1,259",
-        "units": 40
-      },
-      {
-        "desc": "4 Bedroom Premium + Study",
-        "type": "D1, D1A",
-        "sqft": "1453",
-        "units": 40
-      }
-    ],
-    "facilities": [
-      "Drop off Foyer",
-      "Child Care Centre",
-      "Serenity Waters",
-      "Play Lawn",
-      "Tai Chi Lawn",
-      "Tree Courtyard",
-      "Terracing Water Feature",
-      "Bubble Pool",
-      "Aqua Gym",
-      "Family Pool",
-      "Spa Bed",
-      "Spa Seat",
-      "Hydro Pool",
-      "Family Lounge",
-      "Pool Shower",
-      "Children’s Pool",
-      "Play Pavilion",
-      "Children’s Playground",
-      "Clubhouse",
-      "Reading Lounge",
-      "Gathering Lounge",
-      "Relaxation Lounge",
-      "Forest Fitness",
-      "BBQ Pavilion",
-      "Open Deck",
+      "Arrival Plaza",
+      "Lynden Club:",
+      "Gymnasium",
+      "Social Lounge",
+      "Function Room",
+      "Infinity Lap Pool (50m)",
+      "Pool Deck",
+      "Poolside Lounge",
+      "Kids’ Pool",
+      "Outdoor Shower",
+      "Chill-Out Deck",
+      "Aroma Garden",
+      "Forest Garden",
+      "Allotment Gardens",
+      "Canopy Walkway",
+      "BBQ Pavilion 1",
+      "Cascading Spa Pool",
+      "BBQ Pavilion 2",
+      "Forest Playground",
+      "Amphitheatre Lawn",
+      "Pets’ Park",
+      "Outdoor Fitness",
+      "Pickle ball Court",
       "Recreational Tennis Court",
-      "Water Sculpture",
-      "Picnic Lawn",
-      "Water Feature",
-      "50m Lap Pool",
-      "Main Pool Deck",
-      "Pool Shower",
-      "Serenity Lounge",
-      "Gym",
-      "Hot & Cold Bath",
-      "Toilet with Steam Room",
-      "Accessible ToiletSen Roof – 3\nDistinctive Themes:Wellness\n(Block 222) - Pilates Pavilion, Meditation Deck, Yoga Lawn, Floral Garden,\nSensory Garden3G Zone (Block 228) - Hammock Alcove, Maze Garden, Chess Garden, Community GardenFamily (Block 230) - Sky Bar Pavilion, Sky Lounge, Hangout Lounge, Sky Deck"
+      "Co-Work Lounge",
+      "Changing Room",
+      "Management Office",
+      "Guard House",
+      "Bicycle Parking"
     ],
     "priceRanges": [
       {
-        "bedroomType": "1 Bedroom",
-        "sqft": "452",
-        "avgPsf": "$2,297",
-        "priceRange": "$993,900 - $1,136,600"
-      },
-      {
         "bedroomType": "2 Bedroom",
-        "sqft": "678 - 775",
-        "avgPsf": "$2,353",
-        "priceRange": "$1,515,000 - $1,865,000"
+        "sqft": "635 - 883",
+        "avgPsf": "$2,483",
+        "priceRange": "$1,398,000 - $2,379,000"
       },
       {
         "bedroomType": "3 Bedroom",
-        "sqft": "872 - 1259",
-        "avgPsf": "$2,338",
-        "priceRange": "$1,936,000 - $2,970,000"
+        "sqft": "1023 - 1292",
+        "avgPsf": "$2,432",
+        "priceRange": "$2,352,000 - $3,420,000"
       },
       {
         "bedroomType": "4 Bedroom",
-        "sqft": "1453",
-        "avgPsf": "$2,444",
-        "priceRange": "$3,453,700 - $3,664,100"
+        "sqft": "1647",
+        "avgPsf": "$2,376",
+        "priceRange": "$3,610,000 - $4,280,000"
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -12590,7 +12590,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -12628,7 +12628,7 @@
     "facilities": [],
     "priceRanges": [],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -12646,7 +12646,7 @@
     "baths": null,
     "floorAreaSqft": "474 - 1496",
     "price": null,
-    "psf": 2217,
+    "psf": 2223,
     "topYear": "",
     "unitsSoldPercent": 100,
     "tenure": "99 years",
@@ -12744,7 +12744,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
@@ -12804,7 +12804,7 @@
       }
     ],
     "status": "active",
-    "lastSeen": "2026-11-01T10:18:38.213Z",
+    "lastSeen": "2026-11-08T10:05:48.962Z",
     "delistedAt": null,
     "disabled": false,
     "featured": false,
